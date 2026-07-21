@@ -183,6 +183,13 @@ a.card:focus-visible .tag,a.card:focus-visible .meta{color:var(--paper)}
 .pub h3{font-size:.98rem;font-weight:500;line-height:1.45;margin:4px 0 4px;max-width:75ch}
 .pub .pauthors{font-size:.84rem;margin-bottom:2px}
 .pub .pvenue{font-size:.84rem;color:var(--gray);font-style:italic}
+.pub .pdf-link{margin-top:8px}
+.pub .pdf-link a{
+  display:inline-block;text-decoration:none;
+  text-transform:uppercase;letter-spacing:.08em;font-size:.72rem;font-weight:600;
+  border:1px solid var(--ink);padding:5px 10px;
+}
+.pub .pdf-link a:hover,.pub .pdf-link a:focus-visible{background:var(--ink);color:var(--paper);outline:none}
 .pub:target{background:#f2f2f2;box-shadow:0 0 0 10px #f2f2f2}
 .pub.hidden{display:none}
 .year-block.hidden{display:none}
