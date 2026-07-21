@@ -1,0 +1,669 @@
+---
+author: Unknown
+year: Unknown
+title: Unknown_Unknown_Unveiling_PlaceBased_Effects_at_Scale
+source: Unknown_Unknown_Unveiling_PlaceBased_Effects_at_Scale.pdf
+---
+
+# Unknown_Unknown_Unveiling_PlaceBased_Effects_at_Scale
+
+**Author:** Unknown
+**Year:** Unknown
+**Source:** Unknown_Unknown_Unveiling_PlaceBased_Effects_at_Scale.pdf
+
+---
+
+## Content
+
+### Page 1
+
+Article
+Unveiling Place-Based Effects at Scale: A Multiscale
+Geographically Weighted Regression of Food Deserts
+and Cardiovascular Risk in Chile
+FranciscoVergara-Perucich1,* ,LeslieLandaeta-Díaz2 andCarlosAguirre-Nuñez3
+1 NúcleodeInvestigaciónCentroProduccióndelEspacio,UniversidaddeLasAméricas,ManuelMontt948,
+Santiago7500975,Chile
+2 NúcleodeInvestigaciónenNutriciónyCienciasAlimentarias,UniversidaddeLasAméricas,
+ManuelMontt948,Santiago7500975,Chile;llandaeta@udla.cl
+3 EscueladeArquitectura,UniversidadSanSebastián,Lota2465,Santiago8420524,Chile;carlos.aguirre@uss.cl
+* Correspondence:jvergara@udla.cl
+Abstract
+Background/Objectives: Cardiovasculardiseases(CVD)inChileareprofoundlyshaped
+by place-based determinants of diet. This study examines the association between
+fooddeserts—areaswithstructurallylimitedaccesstonutritious,affordablefood—and
+population-level cardiovascular risk across Chile’s three largest metropolitan areas
+(Santiago, Valparaíso, Concepción). Methods: We constructed a geospatial food desert
+indexcombiningOpenStreetMap-derivedretailaccessibilitywithcensusinformation,and
+linked it to georeferenced cardiovascular health records. To overcome the limitations
+ofglobalmodelsthatassumespatialstationarity,weappliedMultiscaleGeographically
+WeightedRegression(MGWR)toallowcoefficientstovaryacrossspaceandtorecover
+variable-specificprocessscales. Results: TheMGWRresultsindicatepronouncedspatial
+non-stationarityinthefooddesert–CVDassociation. Therelationshipispredominantly
+positiveacrossGranValparaíso,predominantlynegativeinGranConcepción,andhighly
+mixedwithinGranSantiago,evidencingdivergentlocalmechanismsratherthanasingle
+nationalpattern. Conclusions: Theobservedheterogeneityundermines“one-size-fits-all”
+nationalinterventionsandsupportsplace-sensitive,equity-orientedstrategies. Policyim-
+plicationsincludeterritoriallytailoredfood-retailregulationandprimary-careoutreach,
+co-designedwithlocalactors,withMGWRprovidingacriticalanalyticbasisforactionable,
+context-specificpublichealthplanning.
+Keywords: food environment; food deserts; environmental epidemiology; spatial
+epidemiology;Chile
+AcademicEditor:AlbertoArnedo-
+Pena
+1. Introduction
+Received:21October2025
+Cardiovasculardiseases(CVD)persistastheleadingcauseofmortalityglobally,a
+Revised:25November2025
+burdenincreasinglyunderstoodnotmerelyasaproductofindividualgeneticsorbehaviour,
+Accepted:23January2026
+Published:10March2026 butasamanifestationofcomplex,place-baseddeterminants. Environmentalepidemiology,
+Copyright:©2026bytheauthors. whiletraditionallyfocusedondiscretephysicochemicalpollutants,isundergoingacritical
+LicenseeMDPI,Basel,Switzerland. paradigmshift[1–3]. Thisshiftrecognizesthebuiltenvironment—theveryfabricofour
+Thisarticleisanopenaccessarticle cities—asapervasiveandchronicexposure,onethatsystematicallyshapesbehaviours,
+distributedunderthetermsand
+resourceaccess,andlong-termhealthtrajectories. Withinthisframework,theurbanfood
+conditionsoftheCreativeCommons
+environmentemergesasacriticaldomain,structurallymediatingnutritionalaccessand
+Attribution(CCBY)license.
+Epidemiologia2026,7,42 https://doi.org/10.3390/epidemiologia7020042
+
+### Page 2
+
+Epidemiologia2026,7,42 2of13
+directlyinfluencingtheglobalepidemicofnon-communicablediseases(NCDs). Thisis
+particularlysalientinlow-andmiddle-incomecountries(LMICs)likeChile,whererapid
+andofteninequitableurbanizationcompoundstheserisks,creatingstarknewgeographies
+ofhealthinequality[4].
+Thisstudyexplicitlypositionstheurbanfoodenvironmentasaconsequentialenvi-
+ronmental exposure. We conceptualize access to nutrition not primarily as a matter of
+individualchoice,butasaconditionstructurallydeterminedbyurbanform,marketdynam-
+ics,andpublicpolicy. Theconceptofthe“fooddesert”—anareawithstructurallylimited
+access to affordable, nutritious food—serves as an operational definition for a harmful
+environmentalexposure,onethatdisproportionatelyaffectssocioeconomicallyvulnerable
+populations[5,6].Thepersistentscarcityofhealthyfoodretailers,oftencoupledwithahigh
+densityofoutletspromotingenergy-dense,nutrient-poorproducts,constitutesapotent
+obesogenicexposurethatfuelscardiometabolicrisk. Byframingfoodaccessinthisway,
+wecanapplytherigoroustoolkitofenvironmentalepidemiologytoakeydriverofhealth
+disparities,shiftingthediscoursefromindividualresponsibilitytowardtheprinciplesof
+environmentaljustice.
+However, quantifying the health impact of this complex exposure presents a
+formidablemethodologicalchallenge. Theprevailingresearchparadigmhasheavilyrelied
+on“global”statisticalmodels,suchasstandardlinearregression,whichoperateunderthe
+assumptionofspatialstationarity—thenotionthattherelationshipbetweenanexposure
+and an outcome is constant across space. This assumption represents a profound over-
+simplificationinthecontextofaheterogeneous,segregatedmetropolis. Theeffectofafood
+desertoncardiovascularhealthinadense,low-incomeurbancoreisunlikelytobeidentical
+toitseffectinasprawling,car-dependentsuburb. Ignoringthisspatialnon-stationarity
+risksproducingmisleading,averaged-outconclusionsthat,whentranslatedintopolicy,
+yieldineffective“one-size-fits-all”interventionsincapableofaddressingthespecificneeds
+ofdiversecommunities.
+Sotoetal. documentedanoveralldeclineinCVDmortalityfrom159.5to94.6per
+100,000populationbetween2000and2020[7]. Lavadosetal. foundatwofoldincreasein
+strokemortalityratesacrossdifferentregions,with62%ofregionalvariabilityexplainedby
+factorslikepoverty(34%),diabetes(17%),sedentarylifestyle(8%),andoverweight(3%)[8].
+Floresetal. identifiedkeystructuraldeterminants,includingrace,sex,socioeconomiclevel,
+andeducationallevel,withlowsocioeconomicandeducationallevelsbeingmoststrongly
+associated with CVD incidence [9]. Sánchez and Albala further confirmed a negative
+correlationbetweenincomeandmortality,particularlyamongmen[10,11].
+To overcome this limitation, our study employs an advanced spatial econometric
+technique: MultiscaleGeographicallyWeightedRegression(MGWR)[12]. Asasignificant
+evolution of Geographically Weighted Regression (GWR) [13], MGWR moves beyond
+therestrictiveassumptionofasingle,uniformspatialscaleforallprocesses. Itskey
+innovationisthecalibrationofaunique,optimalbandwidthforeachpredictorvariable,
+acknowledgingthatdifferentsocialandenvironmentalprocessesoperateatdifferentspatial
+scales[12,14]. Thisallowsustomodel,forinstance,whethertheinfluenceofthelocalfood
+retailenvironmentisahyper-local,neighbourhood-levelphenomenon,whiletheimpact
+ofbroaderregionalsocioeconomicfactorsoperatesatalargerscale. Thismethodological
+refinementisindispensableforconstructingamorerealisticandinterpretablemodelof
+thecomplexexposuremixturesthatconstitutetheurbanenvironment,offeringasuperior
+approachfordiagnosingspatialheterogeneity[15,16].
+ThispaperappliestheMGWRframeworktoacriticalcasestudy: Chile’sthreelargest
+metropolitan areas (Greater Santiago, Valparaíso, and Concepción). By linking a novel
+geospatialindicatoroffooddeserts—constructedfromOpenStreetMapandcensusdata—to
+https://doi.org/10.3390/epidemiologia7020042
+
+### Page 3
+
+Epidemiologia2026,7,42 3of13
+georeferencedcardiovascularriskrecordsfromanationalhealthprogramme,wedirectly
+quantifythespatiallyvaryingassociationbetweenfooddesertexposureandpopulation-
+levelCVDrisk[5]. Ourobjectivesaretwofoldandreflectthedualsubstantiveandmethod-
+ologicalcontributionofourwork. First,weprovidearobustempiricaldemonstrationof
+themarkedspatialnon-stationarityinthisrelationship,testingthecorehypothesisthatthe
+fooddesert–CVDlinkisnotuniformbutisinsteadcontingentonlocalcontext[5,12,16].
+Second,weshowcasetheanalyticalpowerofMGWRasanext-generationtoolforspatial
+epidemiology,capableofyieldingpolicy-relevant,territorialisedinsightsintothemultiscale
+natureofplace-basedhealthdeterminants[12,14,15].
+Thefindings,whichrevealaspectrumofassociationsfromstronglypositiveinVal-
+paraísotopredominantlynegativeinConcepciónandhighlymixedinSantiago,funda-
+mentallychallengethelogicofuniformpolicyapproaches. Byrigorouslyoperationalizing
+retailaccessasaquantifiableexposure,thisstudycontributestotheadvancingfrontiersof
+environmentalepidemiology. Itunderscorestheurgentneedforplace-sensitive,equity-
+oriented public health strategies that are co-designed with municipal and community
+actors. Ultimately, ourworkchallengespolicymakersandresearcherstomovebeyond
+simplistic,national-leveltargetsandtoembracetheintricategeographicalcomplexityof
+health,fosteringamorenuanceddialogueonpreventivestrategiesthatcanmitigatethe
+healthrisksembeddedinourbuiltenvironments.
+LiteratureReview
+Cardiovascular diseases (CVD) are the leading cause of premature mortality
+globally[17,18]. Suboptimaldietandnutritionareprimarymodifiableriskfactorscon-
+tributingtoglobalmorbidity[17]. ThiscrisisissituatedwithintheGlobalSyndemic,
+defined by the concurrent existence of undernutrition, obesity, and nutrition-related
+chronicdiseases(NRCDs)[16,19].
+Theacademicfielddedicatedtostudyingtheselinks,nutritionalepidemiology,has
+faced severe criticism for its historical reliance on relatively weak observational study
+methodsandsubstandardmeasurements[3]. Thesemethodologicaldeficienciesfrequently
+leadtounwarrantedclaimsofcausality[3],fosteringscepticismamongstboththepublic
+andexperts[20]. Somecriticshavegoneasfarassuggestingthefieldshouldbeabandoned,
+arguingthatitsobservationalnatureremainsfundamentallylimited[3,12,21]. However,
+amoreproductiveconsensusadvocatesforreform, urgingscholarstorejectthenotion
+that good enough is no longer good enough [3]. This requires greater scientific rigour,
+theadoptionofstrongerdesigns(includingquasi-experimentalmethods),enhancedob-
+jectivemeasurement,andgreatertransparencythroughpreregistrationandcoreoutcome
+sets [3]. Even highly complex dietary studies, such as those examining vegetarianism
+andcancer,oftenyieldcontradictoryresultsduetotheintricacyofthetopic,emphasis-
+ingtheneedformethodologicalstrength[4]. Contemporarytools,suchasthoseusedin
+BigEpidemiology[2],offernewavenuesforanalysinglargedatasets,yetthefundamen-
+tal requirement remains high-quality evidence linking the environmental exposome to
+healthoutcomes[3].
+Thegeographicalenvironmentisnotapassivebackdropforhealthoutcomes; itis
+an active agent which shapes health and opportunity [4]. Urban planning and public
+health, historically linked disciplines, must be reunited to understand the ecology of
+food environments as a key social determinant of health [4,10]. The built environment,
+includingtheneighbourhoodcontext,isacriticaldomainforchronicdiseasedevelopment,
+comparabletootherfactorssuchaseconomicstability[13].
+https://doi.org/10.3390/epidemiologia7020042
+
+### Page 4
+
+Epidemiologia2026,7,42 4of13
+The core manifestation of nutritional inequity is the unequal distribution of retail,
+creatingfooddeserts(areaswithpooraccesstohealthyoptions)andfoodswamps(areas
+dominatedbyultra-processedfoodoutlets)[17,22,23].
+Multiple pieces of empirical evidence confirm that spatial exposure to unhealthy
+environmentssignificantlymediatesandmodifieschronicdiseaserisk:
+Ultra-Processed Food Risk: In Brazilian municipalities, a greater availability (den-
+sity) of ultra-processed foods generally increased the risk of premature mortality from
+CVDs,strokes,andIschaemicHeartDisease(IHD)[17]. Conversely,aloweravailabilityof
+unprocessedfoodsincreasedtheriskofheartattackmortalityinwomen[17].
+SocioeconomicConcentration: Theadverseeffectoflivinginafooddesertoncardio-
+vascularhealthisconcentratedamongstindividualsoflowsocioeconomicstatus(SES)[22].
+Thisisdescribedastheamplificationofthedeprivation,wherelimitedeconomicresources
+heightensusceptibilitytoenvironmentalhazards[22].
+Geographical Inequality in LMICs: Systematic reviews confirm that in Low- and
+Middle-IncomeCountries(LMICs),particularlyinurbansettings,thereisconsistentevi-
+dencelinkingavailabilitycharacteristicsintheneighbourhoodfoodenvironmenttodietary
+behaviour[24]. However,high-qualityanalyticalstudiesarescarce,andmostevidence
+stemsfromUpper-Middle-IncomeCountries(UMICs),leavingasubstantialevidencegap
+for Low-Income Countries (LICs) [19,24]. Differences in findings between LMICs and
+High-IncomeCountries(HICs)maystemfromsocioeconomicfactorsanddifferencesin
+individualmobility[24].
+ComplexUrbanPatterns: AnalysisofSantiago,Chile,demonstratedthatfooddeserts
+werespatiallyconcentratedinlowSESperipheralareas,yetparadoxically,theywerealso
+found in certain high SES central areas. This complexity suggests that food inequity is
+driven by multifaceted issues, including car dependence and urban design, which are
+profoundstructuralinequalitiesinscribedupontheterritory[6,14].
+Interventionsfocusedonchangingthebuiltenvironment,suchasintroducingnew
+supermarketsinunderservedareas,haveoftenyieldednulleffectsonoutcomeslikeBMI
+or fruit/vegetable consumption [6,23,25]. While residents often perceive a significant
+improvement in the quality of their neighbourhood food environment following such
+interventions, thisdoesnotalwaystranslateintoimproveddietarybehaviour[6]. This
+outcomehighlightsthatmerelyaddressingavailability(adomainofthefoodenvironment)
+isinsufficient;additionalstrategies,suchassubsidisedpricesorin-storemarketing,maybe
+needed[23]. Policyeffortsmustmovebeyondsimplisticapproaches[17]towardsholistic
+strategiesthatsupportsustainedbehaviouralchanges,suchasintegratingnutritioninto
+home visiting programmes [26]. The overarching goal is to achieve the affordability of
+healthydietsanddesignenvironmentsthatdonotimposedisproportionatecostsoftime
+ormobility[6].
+Totranslatesocialinjusticesintolegiblegeographicalpatternsandinformpolicy[4],
+arigorousmethodologicalframeworkisessential. Spatialepidemiology,usingtoolslike
+GeographicalInformationSystems(GIS)[1,9],allowsforthemodellingofenvironmental
+exposuresandtheanalysisofspatialdistributionpatternsindisease[5]. Thediscipline
+mustmovetowardsrobust,replicable,andscalableevidence[27].
+Afundamentalchallengeinspatialmodellingisspatialnonstationarity,wheretherela-
+tionshipbetweenpredictorsandoutcomesvariesgeographically[8]. WhileGeographically
+Weighted Regression (GWR) addresses nonstationarity by calibrating local parameters,
+itimposestherestrictionthatallprocessesoperateatasinglespatialscale,definedbya
+single optimal bandwidth [7,8]. This can lead to model misspecification when dealing
+withmulti-factorialprocesses,suchasthosecontributingtoobesity,whichoperateacross
+multiplescales[16].
+https://doi.org/10.3390/epidemiologia7020042
+
+### Page 5
+
+Epidemiologia2026,7,42 5of13
+MultiscaleGeographicallyWeightedRegression(MGWR)overcomesthisconstraint.
+MGWRcalibratesthemodelusingaback-fittingalgorithmtoderiveanoptimalbandwidth
+vector,whereeachelementidentifiesthespecificspatialscaleatwhichaparticularpredictor
+variableoperates[8,15].Thisprovidesvaluableandintuitiveinformationregardingprocess
+scale,andMGWRhasbeendemonstratedtobesuperiortoGWRinreplicatingparameter
+surfaceswithvariedspatialheterogeneity[8].Thismethodologicaladvanceisindispensable
+foridentifyingpreciselywhetherafooddesert’seffectishyper-local(asmallbandwidth)
+ormoreregional(alargebandwidth)[16].
+The implementation of MGWR necessitates strict adherence to contemporary best
+practicestoensurerobustness[16]. Thisincludesinvestigatinglocalmulticollinearity,and,
+crucially,accountingforparameteruncertainty. Theestimationofabandwidth,evenin
+MGWR,istypicallytreatedasdeterministic[16]. However, theuncertaintyinherentin
+bandwidthselectionmustbemeasured,forinstance,usingAkaikeWeights,asignoring
+thisuncertaintycanleadtoanunderestimateofthevarianceforlocalparameterestimates,
+making results appear spuriously significant [15]. The corrected Akaike Information
+Criterion(AICc)ispreferredforbandwidthselection,particularlywheretheratioofdata
+pointstoparametersislow[15].
+ByapplyingMGWR,researcherscanmovebeyonddescriptivediagnosistowardsro-
+bustpolicyevaluation,providingterritorialisableevidencethatpermitsdecision-makersto
+implementfinelytunedpolicies,suchaseconomicinstrumentsortaxmeasuresagainstun-
+healthyfoods[17],therebyachievingfairnessinurbandesign[27].Therigorousapplication
+oftheseadvancedmethodsisparticularlyvitalinthecontextofLMICs,wherecomprehen-
+sivesystematicreviewevidenceonthefoodenvironmentremainssparse,primarilydueto
+heterogeneityinexposuredefinitionandmeasurement[18].
+2. MaterialsandMethods
+2.1. StudyDesignandScope
+This study employs a cross-sectional, ecological design to investigate the spatially
+varyingrelationshipbetweentheurbanfoodenvironmentandcardiovascularrisk. The
+analysisisfocusedonChile’sthreelargestmetropolitanareas: GranSantiago(thenational
+capital),GranValparaíso(acoastalportconurbation),andGranConcepción(anindustrial,
+river-basedcity)(Figure1). Theseconurbationswereselectedduetotheirdemographic
+significance,theirdiverseurbanmorphologies,andtheavailabilityofsufficientlydense
+datatosupportrobustlocalstatisticalmodelling.Byexaminingthesedistincturbansystems
+withinasinglemiddle-incomecountrycontext,weaimtoprovideanuanced,comparative
+analysisofhowplace-basedenvironmentalexposuresshapehealthoutcomes. Theunitof
+analysisisthecensuszone,allowingforahigh-resolution,sub-municipalexaminationof
+spatialpatterns.
+2.2. DataSourcesandVariableDefinitions
+TheanalysisreliesontwoprimarygeoreferenceddatasetscompiledfortheFONIS-
+ANIDSA23I0032project.
+• FoodDesertIndex(IndependentVariable): Thisvariableoperationalizestheconcept
+of a food desert as an environmental exposure. It is a continuous index ranging
+from0(indicatinggoodaccesstohealthyfood,orafoodoasis)to1(indicatingpoor
+access, or a food desert). The index was constructed through a spatial analysis of
+food retail locations derived from OpenStreetMap and population data from the
+2017 Chilean Census, reflecting the structural availability of healthy food options
+relativetopopulationdensity.
+https://doi.org/10.3390/epidemiologia7020042
+
+### Page 6
+
+Epidemiologia2026,7,42 6of13
+• CardiovascularRiskRate(DependentVariable): Thehealthoutcomeisrepresented
+by the rate of patients enrolled in the national Cardiovascular Health Programme
+(ProgramadeSaludCardiovascular,PSCV)percensuszone. Thisvariableservesasa
+proxyfordiagnosedcardiovascularmorbiditywithinthepopulation. Thedatawasob-
+tainedfromofficialMinistryofHealthrecordsandgeoreferencedtothecorresponding
+censuszones,providingaspatiallyexplicitmeasureofcardiovascularrisk.
+Figure1.FooddesertsinChileanmetropolitanareas.
+2.3. StatisticalAnalysis
+Thecentralobjectiveofthispaperistomovebeyondtheflawedassumptionofspatial
+stationarityinherentinglobalregressionmodels. Toachievethis,ouranalyticalworkflow
+isstructuredinsequentialstages.
+Stage1: GlobalDiagnostics. Asapreliminarystep,weconductedaglobalanalysis
+to establish a baseline and justify the need for local models. A standard multiple lin-
+ear regression was performed at the national level to model the food desert index as a
+function of the PSCV rate, a 15-min city score, and the type of health provider. Subse-
+quently, wecalculatedtheGlobalMoran’sIstatisticforboththefooddesertindexand
+thePSCVratetoformallytestforspatialautocorrelation. Ak-nearestneighbours(k=8)
+spatial weights matrix was constructed to define the neighbourhood structure for this
+test. The finding of significant spatial clustering in the food desert index (I = 0.4563,
+https://doi.org/10.3390/epidemiologia7020042
+
+### Page 7
+
+Epidemiologia2026,7,42 7of13
+p < 2.2 × 10−16) invalidated the independence assumption of non-spatial models and
+confirmedthenecessityofspatiallyexplicittechniques.
+Stage2: MultiscaleGeographicallyWeightedRegression(MGWR).Thecoreofour
+analysisistheapplicationofMultiscaleGeographicallyWeightedRegression(MGWR)to
+thethreemetropolitanareas. WeselectedthisadvancedmethodoverstandardGeograph-
+icallyWeightedRegression(GWR)becauseofitsuniqueabilitytomodelprocessesthat
+operateatdifferentspatialscales. WhileGWRassumesasinglebandwidthforallrelation-
+ships,MGWRestimatesanoptimal,variable-specificbandwidthforeachpredictor,which
+iscrucialforobtainingamorerealisticandinterpretablemodeloftheurbanenvironment.
+Forthisstudy,wespecifiedabivariateMGWRmodel: RateofCVD~FoodDesert. The
+modelwascalibratedusinganadaptivebisquarekernel,whichallowstheneighborhood
+sizetovarybasedondatadensity,andbandwidthswereoptimizedusingthecorrected
+AkaikeInformationCriterion(AICc)tobalancemodelfitandcomplexity. Theoutputis
+acontinuoussurfaceoflocalregressioncoefficientsforeachcensuszone,whichisthen
+mappedtovisualizehowthestrengthanddirectionoftheassociationbetweenfooddesert
+exposureandcardiovascularriskchangesacrosstheurbanlandscape. Allanalyseswere
+conductedusingtheRstatisticalprogramminglanguage,primarilywiththespdep,sf,and
+GWmodelpackages.
+2.4. Limitations
+Thisstudyhasseveralimportantlimitations.First,itscross-sectional,ecologicaldesign
+identifiesstatisticalassociationsandcannotestablishcausality; thefindingsaresubject
+to the ecological fallacy. The observed relationships could be influenced by numerous
+unmeasuredconfoundingvariablesattheindividuallevel,suchaslifestylefactors,income,
+orresidentialself-selection. Second,theanalysisissubjecttotheModifiableArealUnit
+Problem(MAUP),meaningtheresultscouldbesensitivetothespecificboundariesofthe
+census zones used as the unit of analysis. Third, data availability restricted the robust
+applicationofMGWRtoonlythreemetropolitanareas. Finally,thePSCVdataservesasa
+proxyfordiagnosedmorbidityandmaybeinfluencedbydifferentialaccesstohealthcare
+andreportingpractices,whichcouldintroducemeasurementerrorandpartiallyexplain
+someofthecounterintuitivefindings,assuggestedbytheglobalregressionresults. Despite
+theselimitations,thestudy’sprimarystrengthliesinitsexplicitfocusonmodelingspatial
+heterogeneity,providingapowerfuldemonstrationofwhyplace-sensitive,context-specific
+approachesareessentialforeffectivepublichealthpolicy.
+3. Results
+Thissectiondetailsthestatisticalfindingsofthestudy,progressingfromanational-
+levelglobalanalysistoaspatiallyexplicitlocalanalysisoftherelationshipbetweenfood
+desertsandcardiovascularriskinChile’sthreemainmetropolitanareas.
+3.1. Global-ScaleAssociations: NationalRegressionModel
+To establish a national baseline, a multiple linear regression model was fitted to
+identifyfactorsassociatedwiththepresenceoffooddesertsacrossChile. Themodel,which
+wasstatisticallysignificant(F-statistic=9.586,p<0.001),explainedapproximately16%of
+thevariance(AdjustedR2 ≤=0.1602)inthefooddesertindex2. Thedependentvariable
+wastheFoodDesertIndex(0=nodesert,1=desert),andthepredictorsincludedtherate
+ofpatientsincardiovascularhealthprograms(PSCV),the15-mincityscore,andthetype
+oflocalhealthprovider. TheestimatedcoefficientsarepresentedinTable1.
+https://doi.org/10.3390/epidemiologia7020042
+
+### Page 8
+
+Epidemiologia2026,7,42 8of13
+Table1.CoefficientsoftheGlobalLinearRegressionModel.
+Variable Estimate Std.Error t-Value p-Value
+(Intercept) 0.837 0.10862 7.706 <0.001
+PSCVRate −0.00364 0.00161 −2.267 0.0243
+15-MinCityScore −0.01743 0.00275 −6.331 <0.001
+Provider:PRIVATE −0.15794 0.11235 −1.406 0.1612
+Provider:PUBLIC −0.10311 0.10867 −0.949 0.3437
+Twofactorsemergedasstatisticallysignificantpredictorsatthenationallevel:
+15-Minute City Score: This was the strongest predictor. The model indicates a ro-
+bustnegativeassociation(E≤−0.0174),suggestingthatforeveryone-pointincreasein
+theurbanaccessibilityscore, theprobabilityofan areabeingafooddesertdecreaseby
+1.74percentagepoints. Thisalignswiththeexpectationthatbetter-equippedneighbour-
+hoodsarelesspronetofoodinsecurity.
+PSCV Rate: A significant but counterintuitive negative relationship was found
+(E≤−0.0036). Themodelsuggeststhathigherratesofcardiovascularpatientsareasso-
+ciatedwithaslightlylowerprobabilityofanareabeingafooddesert8. Thisunexpected
+findingmayreflectcomplexconfoundingfactors,suchasthepossibilitythatareaswith
+betterhealthinfrastructure(andthusfewerfooddeserts)arealsomoreeffectiveatdiag-
+nosingandreportingcardiovascularcases. Thetypeofhealthprovider(publicvs. private)
+showednosignificantassociation.
+3.2. SpatialDistributionPatterns: Moran’sIAnalysis
+Toformallytestforspatialpatterns,aglobalspatialautocorrelationanalysisusing
+Moran’sIstatisticwasperformedonthePSCVratesandthefooddesertindex. Thisstepis
+crucialtodeterminewhetherthephenomenaaregeographicallyclustered,whichwould
+justifytheuseoflocalspatialmodels. TheresultsaresummarizedinTable2.
+Table2.GlobalMoran’sITestforSpatialAutocorrelation.
+Variable Moran’sIStatistic ExpectedValue p-Value Interpretation
+PSCVRate 0.0221 −0.0044 0.19 Random
+FoodDesert 0.4563 −0.0044 <2.2×10−16 Clustered
+Theanalysisrevealedtwodistinctspatialrealities:
+PSCV Rates: The Moran’s I statistic was very close to zero (0.0221) and was not
+statisticallysignificant(p=0.190). Thisindicatesthat,atanationalscale,thegeographic
+distributionofcardiovascularpatientratesisconsistentwitharandompattern.
+FoodDeserts: Instarkcontrast, thefooddesertindexshowedastrongandhighly
+significantpositivespatialautocorrelation(I=0.4563,p<2.2×10−16). Thisresultprovides
+compellingevidencethatfooddesertsarenotrandomlyscattered;rather,theyaresystemat-
+icallygroupedtogether,formingdistinctgeographicalclustersofnutritionaldisadvantage.
+Thisfindingvalidatestheneedforspatiallyexplicitlocalanalyses.
+3.3. LocalHeterogeneity: MultiscaleGeographicallyWeightedRegression(MGWR)
+Giventheevidenceofsignificantspatialclustering,anMGWRanalysiswasconducted
+toexplorehowtherelationshipbetweenthefooddesertindexandthePSCVratevaries
+locally. Thisanalysiswasrobustlyperformedinthethreemetropolitanareaswithsufficient
+datadensity: GranValparaíso,GranConcepción,andGranSantiago. ThemodelRateof
+CVD~FoodDesertwasfittedtoassesswhetherlivinginafooddesertisassociatedwith
+higherPSCVratesatthelocallevel.
+https://doi.org/10.3390/epidemiologia7020042
+
+### Page 9
+
+Epidemiologia2026,7,42 9of13
+3.3.1. GranValparaíso
+In Gran Valparaíso, the MGWR analysis (Table 3) revealed a clear and consis-
+tentpositiveassociationbetweenfooddesertsandcardiovascularriskacrosstheentire
+metropolitanarea.
+Table3.MGWRResultsforGranValparaíso.
+Independent Global MedianLocal RangeofLocal
+Model Relationship
+Variable Coefficient Coefficient Coefficients
+MGWR2 FoodDesert 16.37 19.65 5.007to21.279 Positive
+Thelocalcoefficientswerepositiveeverywhere,rangingfrom5.007to21.279,witha
+medianof19.65. ThisindicatesthatinValparaíso,areaswithahigherfooddesertindex
+are consistently and strongly associated with higher rates of patients in cardiovascular
+programs,supportingthehypothesisofadirectnegativelinkbetweenpoorfoodaccess
+andcardiovascularhealthinthisregion.
+3.3.2. GranConcepción
+TheresultsforGranConcepción(Table4)presentedastrikinglydifferentandcounter-
+intuitivepicture. Therelationshipwasfoundtobepredominantlynegative.
+Table4.MGWRResultsforGranConcepción.
+Independent Global MedianLocal RangeofLocal
+Model Relationship
+Variable Coefficient Coefficient Coefficients
+MGWR2 FoodDesert −35.56 −13.51 −54.045to4.233 Predominantly
+Negative
+The median local coefficient was −13.51, and the range of coefficients was largely
+negative(−54.045to4.233). ThissuggeststhatinmostpartsofConcepción,ahigherfood
+desertindexisunexpectedlyassociatedwithlowerPSCVrates. Whiletheoveralltrendis
+negative,thefactthattherangecrosseszeroindicatesthattherearesmallpocketswhere
+therelationshipcouldbenullorevenpositive.
+3.3.3. GranSantiago
+Asthelargestandmostcomplexmetropolis,Santiagoexhibitedthehighestdegreeof
+spatialheterogeneity(Table5).
+Table5.MGWRResultsforGranSantiago.
+Independent Global MedianLocal RangeofLocal
+Model Relationship
+Variable Coefficient Coefficient Coefficients
+MGWR2 FoodDesert −1.03 −3.34 −5.627to1.067 Mixed/Variable
+Theanalysisrevealedamixedandhighlyvariablerelationshipthatdoesnotfollow
+asinglepattern. Thelocalcoefficientsrangedfromnegativetopositive(−5.627to1.067),
+confirmingthattheassociationbetweenfooddesertsandcardiovascularhealthchanges
+significantlyfromonesectorofthecitytoanother. Insomemunicipalities,theexpected
+positiveassociationmayhold,whileinothers,therelationshipisnulloreveninverted,
+likelyduetothecomplexinterplayofsocioeconomicstatus,mobilityinfrastructure,and
+local health programs. This heterogeneity itself is a key finding, demonstrating that a
+uniformpublicpolicyforacityasdiverseasSantiagowouldlikelybeineffective.
+4. Discussion
+Thisstudysetouttoinvestigatetherelationshipbetweenfooddeserts,asaplace-based
+environmentalexposure,andcardiovascularriskacrossthreedistinctChileanmetropolises.
+https://doi.org/10.3390/epidemiologia7020042
+
+### Page 10
+
+Epidemiologia2026,7,42 10of13
+Thefindingsrevealspatialheterogeneity,fundamentallychallengingthenotionofauni-
+form, one-size-fits-all public policy approach to nutritional health. By moving beyond
+theassumptionofspatialstationarity,ourresultsnotonlyconfirmtheimportanceofthe
+urbanfoodenvironmentbutalsoilluminatethecomplex,context-dependentnatureofits
+impact,providingaspatiallyexplicitexplanationforwhysimpleinterventionsmayfail
+andofferingapathtowardmoreprecise,equitablepublichealthstrategies.
+TheanalysisofGranValparaísoyieldedaclearandconsistentlypositiveassociation,
+aligningwiththefooddeserthypothesis. Inthisregion,areaswithpooreraccesstohealthy
+foodaredirectlyandstronglyassociatedwithhigherratesofcardiovascularmorbidity.This
+findingempiricallysupportsliteraturelinkingexposuretounhealthyfoodenvironments
+withprematureCVDmortality[17]andunderlinestheconceptofdeprivationamplification,
+wheretheadversehealtheffectsoffooddesertsaremostconcentratedamongvulnerable
+populations[22]. ForurbancontextsthatmirrorValparaíso’sdirectpositivecorrelation,
+policiesaimedatimprovingthephysicalavailabilityofnutritiousfoodappeartobejustified
+andhigh-priorityinterventions.
+Instarkcontrast,thepredominantlynegativeandmixedassociationsfoundinGran
+Concepción and Gran Santiago, respectively, present a more complex narrative. These
+counterintuitive results do not necessarily refute the detrimental effect of food deserts.
+Instead, they provide spatial evidence for the multifaceted mechanisms suggested in
+the literature. One plausible explanation, hinted at by our global regression model, is
+confoundingbyhealthcareaccessanddatacapture. Areaswithbetterfoodaccessmay
+alsopossessmorerobusthealthsystems,leadingtohigherratesofdiagnosedandreported
+cardiovasculardisease. Thiswouldcreateaspuriousnegativecorrelationwherebetter
+environmentsappeartohaveworsehealthoutcomes.
+Furthermore,thesefindingsresonatewithliteraturehighlightingthelimitationsof
+simplistic interventions. Studies showing that the introduction of a new supermarket
+oftenhasnulleffectsondietarybehaviourandBMIunderscorethatavailabilityisonly
+onepieceofacomplexpuzzle[23,25]. Ourresultsprovideageographicalbasisforthese
+nulleffects: iftherelationshipbetweenlocalfoodaccessandhealthisnegativeornon-
+existentinlargepartsofacity,thensimplyaddinganewfoodsourceisunlikelytosucceed
+without addressing other, more powerful determinants. These may include individual
+mobilitypatterns,whichareknowntodifferbetweenhigh-incomeandlow-andmiddle-
+incomecountrycontexts[24],orcomplexurbanpatterns—suchascardependency—that
+candrivefoodinequityeveninhigh-incomeareas[5].
+Fromamethodologicalstandpoint, thisstudyservesasaproofoftheneedforad-
+vanced spatial techniques in nutritional epidemiology, responding directly to calls for
+greaterscientificrigourinthefield[3]. ByemployingMultiscaleGeographicallyWeighted
+Regression (MGWR), we move beyond the restrictive single-bandwidth assumption of
+traditionalGWR,whichcanmisspecifymodelswhendealingwithmultifactorialprocesses
+operatingatdifferentspatialscales[12,16]. MGWRfunctionshereasadiagnosticdevice,
+revealingwhereaparticularrelationshipholdsandwhereitbreaksdown. Thiscapacityto
+produceterritorialisableevidenceispreciselywhatisneededtotranslatesocialinjustices
+intolegiblegeographicalpatternsthatcaninformpolicy[27].
+Theimplicationsforpublichealthpolicyareclear. Theeraofuniform,national-level
+strategiesfortacklingfoodenvironmentsmustgivewaytoaplace-sensitive,data-driven
+approach. In a city like Valparaíso, direct interventions on food supply are warranted.
+InConcepción,theimmediatepriorityshouldbetoinvestigatepotentialconfoundingby
+healthcaredatasystems. InSantiago,interventionsmustbehyper-local—designedatthe
+municipalorevenneighbourhoodscale—andtailoredtothespecificdriversofinequity
+ineachcontext. Ultimately,ourfindingsadvocateaholisticstrategythatmovesbeyond
+https://doi.org/10.3390/epidemiologia7020042
+
+### Page 11
+
+Epidemiologia2026,7,42 11of13
+merelyaddressingavailabilitytowardpoliciesthatensuretheaffordabilityofhealthydiets
+in environments that do not impose disproportionate costs of time or mobility[17,27].
+Future research should build on this work with longitudinal designs to better probe
+causality and integrate individual-level mobility data to refine our understanding of
+environmentalexposure.
+5. Conclusions
+Thisstudyhasprovidedahigh-resolution,spatiallyexplicitanalysisoftherelationship
+between food deserts and cardiovascular risk in urban Chile, revealing a landscape of
+profound geographical complexity. By framing the food environment as a modifiable
+environmental exposure and applying advanced spatial methods, our findings move
+beyondsimplistic,universalassumptionstoofferamorenuancedunderstandingofhow
+place shapes health. The core contribution of this work lies not in identifying a single,
+uniform effect, but in demonstrating that the mechanisms linking food accessibility to
+cardiovascularhealthareintrinsicallycontext-dependent,demandingafundamentalshift
+inhowwedesignandimplementpublichealthpolicy.
+ThedivergentresultsfromChile’sthreelargestmetropolisestellataleofthreecities.
+InGranValparaíso,theconsistentpositiveassociationbetweenfooddesertsandcardio-
+vascularriskalignswiththeclassicenvironmentalhealthhypothesis, providingstrong
+justificationforinterventionsthatdirectlyimprovetheavailabilityofhealthyfood. How-
+ever,thepredominantlynegativeandmixedresultsinGranConcepciónandGranSantiago,
+respectively,challengethisstraightforwardnarrative. Thesecounterintuitivefindingsdo
+notnecessarilynegatetheharmfuleffectsofpoorfoodaccess;rather,theyilluminatethe
+criticalroleofconfoundingfactorsandthelimitationsofecologicalstudydesigns. They
+suggest that in some urban contexts, variables such as differential access to healthcare,
+thequalityofhealthdatareporting,andcomplexmobilitypatternsmayobscureoreven
+inverttheexpectedrelationshipattheaggregatelevel. Thisunderscoresakeylessonfor
+environmentalepidemiology: theabsenceofasimple,directassociationdoesnotmean
+theabsenceofaproblembutratherpointstoamorecomplexcausalwebthatrequires
+deeperinvestigation.
+Methodologically,thisstudyservesasarobustproofofconceptfortheapplicationof
+MultiscaleGeographicallyWeightedRegression(MGWR)innutritionalandenvironmental
+epidemiology. Thetechniqueprovedindispensableformovingbeyondtheflawedassump-
+tionofspatialstationarity,providingadiagnosticstethoscopetolistentotheuniquehealth
+dynamicsofdifferenturbanterritories. TheabilityofMGWRtorevealwhereastatistical
+relationshipholds,whereitweakens,andwhereitinvertstransformsitfromamereana-
+lyticaltoolintoapowerfulinstrumentforpolicydesign. Itprovidestheterritorialisable
+evidencenecessarytoavoidthepitfallsof“one-size-fits-all”solutions,whicharelikelyto
+failinthefaceofsuchmarkedlocalheterogeneity.
+The policy implications stemming from these findings are clear and urgent. The
+evidence strongly refutes the efficacy of monolithic, top-down national strategies and
+callsforaparadigmshifttowardplace-sensitiveandadaptivepublichealthgovernance.
+Interventionsmustbetailoredtothespecificspatialsignatureofeachurbanarea: direct
+retailandaccess-basedpoliciesmaybeeffectiveincitieslikeValparaíso,whereasinplaces
+likeConcepción,theprioritymightfirstbetoauditandimprovehealthdatasystems. Fora
+complexmosaiclikeSantiago,ahyper-localapproach,co-designedwithmunicipaland
+communityactorswhounderstandtheuniquebarriersandassetsoftheirneighborhoods,
+isessential.
+Ultimately,thisresearchmakesacaseforamoregeographicallyintelligentandethi-
+callyconsciousformofpublichealth.Themapsofnutritionalinequalityare,intheiressence,
+https://doi.org/10.3390/epidemiologia7020042
+
+### Page 12
+
+Epidemiologia2026,7,42 12of13
+mapsofenvironmentalinjustice. Bymakingthesepatternslegible,spatialepidemiology
+providestheevidenceneededtoholdsystemsaccountableandtodesigninterventions
+thatarenotonlyeffectivebutalsoequitable. Thefutureofthefieldliesinbuildingupon
+thisworkthroughlongitudinalstudies,integratingindividual-levelmobilitydatatobetter
+measureexposure,andapplyingtheseadvancedmethodsinotherLMICcontexts. This
+shiftisnotmerelymethodologicalbutnormative;itdemandsthatwerecognizethecityas
+anactivedeterminantofhealthandusethetoolsofspatialsciencetobeginredesigningit
+forjustice.
+AuthorContributions:Conceptualization,F.V.-P.,L.L.-D.andC.A.-N.;methodology,F.V.-P.,L.L.-D.
+andC.A.-N.;software,F.V.-P.andC.A.-N.;validation,F.V.-P.,L.L.-D.andC.A.-N.;formalanalysis,
+F.V.-P.,L.L.-D.andC.A.-N.;investigation,F.V.-P.,L.L.-D.andC.A.-N.;resources,F.V.-P.,L.L.-D.and
+C.A.-N.; data curation, F.V.-P.; writing—original draft preparation, F.V.-P.; writing—review and
+editing,F.V.-P.,L.L.-D.andC.A.-N.;visualization,F.V.-P.,L.L.-D.andC.A.-N.;supervision,F.V.-P.,
+L.L.-D.andC.A.-N.;projectadministration,L.L.-D.;fundingacquisition,L.L.-D.Allauthorshave
+readandagreedtothepublishedversionofthemanuscript.
+Funding:Thisresearchreceivednoexternalfunding.TheAPCwasfundedbytheFondodeAPCde
+laUniversidaddeLasAméricas,VicerrectoríadeInvestigación.
+InstitutionalReviewBoardStatement:ThestudywasapprovedbytheEthicsCommitteeofUniver-
+sidaddeLasAméricas,Chile,inaccordancewiththeDeclarationofHelsinki(1975)(ApprovalCode:
+CEC_FE_2023011,date:24November2023).Theresearchdidnotinvolvedirecthumanparticipation;
+itexclusivelyusedaggregated,anonymizeddatabasesprovidedbytheChileanMinistryofHealth.
+InformedConsentStatement:Notapplicable.Thestudydidnotinvolvehumanparticipantsdirectly.
+DataAvailabilityStatement:Datasupportingthefindingsofthisstudyareavailableuponreasonable
+requesttothecorrespondingauthor.Thestudyreliedonsecondarydatasources,ensuringnoethical
+issuesindatacollection.
+ConflictsofInterest:Theauthorsdeclarenoconflictsofinterest.Thefundershadnoroleinthedesign
+ofthestudy;inthecollection,analyses,orinterpretationofdata;inthewritingofthemanuscript;or
+inthedecisiontopublishtheresults.
+References
+1. Ritz,B.R.AlongwayfromSteubenville: EnvironmentalEpidemiologyinarapidlychangingworld. Am. J.Epidemiol. 2023,
+192,1811–1819.[CrossRef][PubMed]
+2. Rao,S.;Armistead,I.;Messacar,K.;Alden,N.B.;Schmoll,E.;Austin,E.;Dominguez,S.R.Shiftingepidemiologyandseverityof
+respiratorysyncytialvirusinchildrenduringtheCOVID-19pandemic.JAMAPediatr.2023,177,730–732.[CrossRef]
+3. Morrison,C.N.;Mair,C.F.;Bates,L.;Duncan,D.T.;Branas,C.C.;Bushover,B.R.;Mehranbod,C.A.;Gobaud,A.N.;Uong,S.;
+Forrest,S.;etal.Definingspatialepidemiology:Asystematicreviewandre-orientation.Epidemiology2024,35,542–555.[CrossRef]
+[PubMed]
+4. Vergara-Perucich,F.;Landaeta-Díaz,L.;Aguirre-Núñez,C.SpatialEpidemiologyandFoodAccessibilityinCities;EthicsInternational
+PressLtd.:Cambridge,UK,2025.
+5. Landaeta-Díaz,L.;Vergara-Perucich,F.;Aguirre-Nuñez,C.;Cancino-Contreras,F.;Correa-Parra,J.;Ulloa-León,F.UrbanFood
+DesertsandCardiovascularHealth:EvaluatingtheImpactofNutritionalInequitiesonElderlyPopulationsinSantiago.Appl.Sci.
+2024,14,7575.[CrossRef]
+6. Vergara-Perucich,F.;Landaeta-Díaz,L.;Aguirre-Nuñez,C.Feedingthecity: AddressingnutritionalinequalityinSantiago’s
+urbanplanning.J.Urban.Int.Res.PlacemakingUrbanSustain.2025,1–20.[CrossRef]
+7. Soto, A.; Balboa-Castillo, T.; Andrade-Mayorga, O.; Marzuca-Nassr, G.; Muñoz, S.; Morales, G. Trends in Mortality from
+CardiovascularDiseasesinChile,2000–2020.Rev.Panam.SaludPublica2023,47,127.[CrossRef]
+8. Lavados,P.M.; Díaz,V.; Jadue,L.; Olavarría,V.V.; Cárcamo,D.A.; Delgado,I.SocioeconomicandCardiovascularVariables
+ExplainingRegionalVariationsinStrokeMortalityinChile:AnEcologicalStudy.Neuroepidemiology2011,37,45–51.[CrossRef]
+9. Flores,A.;Saelzer,L.;Cartagena-Ramos,D.Socialdeterminantsofhealththatinfluenceintheincidence/prevalenceofcardiovas-
+culardisease.SaludCienc.Tecnol.2023,3,343.[CrossRef]
+https://doi.org/10.3390/epidemiologia7020042
+
+### Page 13
+
+Epidemiologia2026,7,42 13of13
+10. Sánchez,R.H.;Albala,B.C.Desigualdadesensalud:AdultoencomunasdelGranSantiago.Rev.Med.Chile2004,132,453–460.
+[CrossRef]
+11. Alonso,F.T.;Nazzal,C.;Alvarado,M.E.MortalidadporcardiopatíaisquémicaenChile:Quiénes,cuántosydónde.Rev.Panam.
+SaludPública2010,28,319–325.[CrossRef][PubMed]
+12. Fotheringham,A.S.;Yang,W.;Kang,W.MultiscaleGeographicallyWeightedRegression(MGWR).Ann.Am.Assoc.Geogr.2017,
+107,1247–1265.[CrossRef]
+13. Fotheringham,A.S.;Brunsdon,C.;Charlton,M.GeographicallyWeightedRegression:TheAnalysisofSpatiallyVaryingRelationships;
+Wiley:Hoboken,NJ,USA,2002.
+14. Li,Z.;Fotheringham,A.S.;Oshan,T.M.;Wolf,L.J.MeasuringBandwidthUncertaintyinMultiscaleGeographicallyWeighted
+RegressionUsingAkaikeWeights.Ann.Am.Assoc.Geogr.2020,110,1500–1520.[CrossRef]
+15. Oshan,T.M.;Li,Z.;Kang,W.;Wolf,L.J.;Fotheringham,A.S.mgwr: APythonImplementationofMultiscaleGeographically
+WeightedRegressionforInvestigatingProcessSpatialHeterogeneityandScale.ISPRSInt.J.Geo-Inf.2019,8,269.[CrossRef]
+16. Oshan,T.M.;Smith,J.P.;Fotheringham,A.S.Targetingthespatialcontextofobesitydeterminantsviamultiscalegeographically
+weightedregression.Int.J.HealthGeogr.2020,19,11.[CrossRef][PubMed]
+17. Victor, A.; de Cássia Ribeiro Silva, R.; de Jesus Silva, N.; Ferreira, A.; Barreto, M.L.; Campello, T. Influence of Unhealthy
+FoodEnvironmentonPrematureCardiovascularDiseaseMortalityinBrazil: AnEcologicApproach. Am. J.Prev. Med. 2022,
+64,160–168.[CrossRef][PubMed]
+18. Zwad,C.H.;Loos,M.L.;vanNieuwenhuijzen,P.;Talsma,M.J.;Frings-Dresen,M.H.;TjinATon,E.J.;Vaartjes,I.Builtenvironment
+andcardiovasculardiseaseevents:Anumbrellareviewofsystematicreviews.Eur.J.Prev.Cardiol.2023,30,1801–1811.[CrossRef]
+19. Turner,C.;Kalamatianou,S.;Drewnowski,A.;Walls,H.Foodenvironmentresearchinlow-andmiddle-incomecountries:A
+systematicscopingreview.Adv.Nutr.2020,11,387–397.[CrossRef]
+20. Ritchie,S.ScienceFictions:HowFraud,Bias,Negligence,andHypeUnderminetheSearchforTruth;MetropolitanBooks;HenryHolt
+andCompany:NewYork,NY,USA,2020.
+21. Teicholz,N.;Taubes,G.WhyWeGetFat:AndWhattoDoAboutIt;Vintage:NewYork,NY,USA,2011.
+22. Testa,A.;Jackson,N.;O’Malley,D.M.Fooddesertsandcardiovascularhealthrisk:Mediationandmoderationbysocioeconomic
+status.PublicHealthNutr.2020,24,117–124.[CrossRef][PubMed]
+23. Ulrich,V.;Hillier,A.;DiSantis,K.I.TheImpactofaNewNonprofitSupermarketwithinanUrbanFoodDesertonHousehold
+FoodShopping. Med. Res. Arch. 2015, 4. Availableonline: https://esmed.org/MRA/mra/article/view/236(accessedon
+20October2025).
+24. Westbury,S.;Ghosh,I.;Jones,H.M.;Mensah,D.;Samuel,F.;Irache,A.;Oyebode,O.Theinfluenceoftheurbanfoodenvironment
+ondiet,nutritionandhealthoutcomesinlow-incomeandmiddle-incomecountries:Asystematicreview.BMJGlob.Health2021,
+6,e006358.[CrossRef]
+25. Mayne,M.S.;Anand,S.;Badaczewski,A.;O’Malley,D.M.;Dulin,P.;Lillie,M.Naturalandquasi-experimentsinobesityresearch:
+Asystematicreview.Obes.Rev.2015,16,362–375.[CrossRef][PubMed]
+26. Salvy,S.J.;delaHaye,K.;Galama,T.;Goran,M.I.Homevisitationprograms:Anuntappedopportunityforthedeliveryofearly
+childhoodobesityprevention.Obes.Rev.2017,18,149–163.[CrossRef][PubMed][PubMedCentral]
+27. Vergara-Perucich,F.;Landaeta-Díaz,L.;Aguirre-Núñez,C.AtlasEpidemiologíaEspacialAlimentaria;AcademiaEspacial:Santiago,
+Chile,2025.
+Disclaimer/Publisher’sNote: Thestatements, opinionsanddatacontainedinallpublicationsaresolelythoseoftheindividual
+author(s)andcontributor(s)andnotofMDPIand/ortheeditor(s).MDPIand/ortheeditor(s)disclaimresponsibilityforanyinjuryto
+peopleorpropertyresultingfromanyideas,methods,instructionsorproductsreferredtointhecontent.
+https://doi.org/10.3390/epidemiologia7020042
+

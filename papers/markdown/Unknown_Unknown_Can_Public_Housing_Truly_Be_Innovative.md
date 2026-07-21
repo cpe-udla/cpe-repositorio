@@ -1,0 +1,1027 @@
+---
+author: Unknown
+year: Unknown
+title: Unknown_Unknown_Can_Public_Housing_Truly_Be_Innovative
+source: Unknown_Unknown_Can_Public_Housing_Truly_Be_Innovative.pdf
+---
+
+# Unknown_Unknown_Can_Public_Housing_Truly_Be_Innovative
+
+**Author:** Unknown
+**Year:** Unknown
+**Source:** Unknown_Unknown_Can_Public_Housing_Truly_Be_Innovative.pdf
+
+---
+
+## Content
+
+### Page 1
+
+Article
+Can Public Housing Truly Be Innovative? Lessons from Vienna
+to Reimagine the Future of Local Governance
+FranciscoVergara-Perucich
+NucleodeInvestigaciónCentroProduccióndelEspacio,UniversidaddeLasAméricas,Providencia,
+Santiago7500975,Chile;jvergara@udla.cl
+Abstract: ThisarticleexaminesVienna’spublichousingmodelasanexemplarycaseof
+institutionalinnovationinthepublicsector,definedbyitsregulatorystability,universalist
+orientation, and resistance to the commodification of urban land. Through a thematic
+analysisofscientificsourcesindexedinScopusandofficialdocumentsfromtheCityof
+ViennaandtheAustrianlegislativeframework,thestudyidentifiesboththeachievements
+andthestructuraltensionswithinthesystem.Thefindingsrevealaformofslowinnovation
+grounded in the capacity to integrate new agendas—such as social and environmental
+sustainabilityorcollaborativemodesofliving—intoanalreadyconsolidatedregulatory
+framework.However,greyareaspersist,particularlywithregardtotheexclusionofvulner-
+ablegroups,communityfragmentation,andthelimitedreplicabilityofalternativemodels.
+Thestudycontributestoexpandingtheconceptofinnovationinpublicadministration
+beyondtechnocraticapproaches,highlightingthevalueofadaptiveinstitutionalism.
+Keywords: public housing; institutional innovation; public administration; urban
+inclusion;Vienna
+1. Introduction
+Inthecontemporarycontextofgrowingsocial,economic,andenvironmentalchal-
+lenges,innovationinthepublicsectorhasbecomeastrategicpriorityforbothgovernments
+and researchers. There is a pressing need for a broad and situated understanding of
+public-sectorinnovationstrategiesthatgobeyondtraditionaltechnocraticorefficiency-
+Received:29March2025
+Revised:4June2025 focused approaches. One area in which this need is particularly urgent—though often
+Accepted:9June2025 underestimated—is housing policy. Housing is not only a basic consumer good and a
+Published:17June2025 socialright;itisalsoafieldofcontentionoverhowthestatestructureswelfareprovision,
+Citation:Vergara-Perucich,F.(2025). regulatesmarkets,andshapesurbanlife. Thus,innovationinhousingentailstransforming
+CanPublicHousingTrulyBe technicalmechanismsofprovisionandrethinkingformsofgovernance,socialinclusion,
+Innovative?LessonsfromViennato
+andspatialjusticethatunderpinhousingmodels.
+ReimaginetheFutureofLocal
+Therecentliteraturehasbeguntodocumentavarietyofpublic-sectorinnovations
+Governance.AdministrativeSciences,
+inthehousingfield,withemphasisonhowlocalgovernmentshavedesignedintegrated
+15(6),233. https://doi.org/10.3390/
+admsci15060233 strategiestopromotetheinclusionofvulnerablepopulations. Fra˛tczak-Müller(2022),for
+example,highlightsthathousingpoliciescombinedwithsocialsupportandcommunity
+Copyright:©2025bytheauthor.
+participationcansignificantlyimprovelevelsofsocialinclusioninurbancontextsover
+LicenseeMDPI,Basel,Switzerland.
+Thisarticleisanopenaccessarticle a relatively short period. Similarly, Nzau and Trillo (2020) underscore the potential of
+distributedunderthetermsand toolssuchaslandvaluecaptureandinclusionaryhousingtogenerateaffordablehous-
+conditionsoftheCreativeCommons ingunitsinneighbourhoodsundergoingregeneration,therebypreventinggentrification
+Attribution(CCBY)license
+anddisplacement. Decentralisationofdecision-makingpowerandthestrengtheningof
+(https://creativecommons.org/
+municipalcapacitiesalsoemergeasenablingconditionsforinnovation,astheyallowthe
+licenses/by/4.0/).
+Adm.Sci.2025,15,233 https://doi.org/10.3390/admsci15060233
+
+### Page 2
+
+Adm.Sci.2025,15,233 2of20
+developmentofparticipatoryhousingplanstailoredtolocalcontexts(FerreiraCosta,2020;
+F.Vergara-Perucich,2021;J.F.Vergara-Perucich&Boano,2019). Inthisregard,co-creation
+andparticipatoryservicedesign—asarguedbyEseonu(2022)—constituteemergingforms
+ofsocialinnovationthatinvolvemarginalisedgroupsasactiveagentsintheformulation
+anddeliveryofpublicpolicies(Arias-Loyola&Vergara-Perucich,2021).
+SalimandDrenth(2020)inturnemphasisehowcitiesthatadoptapproachesgrounded
+incross-sectorpartnerships,communityempowerment,andsmartcityconceptscande-
+velopmoreinclusiveandresilienthousingmodels(AlvarezdeAndresetal.,2019;Boano
+&Vergara-Perucich,2016; Carrasco&O’Brien,2021; Jones,2017). Thepositiveimpacts
+ofsuchinitiativesarenotlimitedtothehousingdomain: recentstudiesshowcorrelated
+improvementsinhealth,education,andoverallwellbeing,particularlyamongvulnerable
+groupssuchasfemale-headedhouseholds,olderpeopleandmigrants(Adetolaetal.,2024;
+Bonhomme,2021;Contrerasetal.,2019;ContrerasGatica&SeguelCalderón,2023). As
+such,housingpolicyinnovationmustnotbeunderstoodmerelyasatechnicalenhancement
+inconstructionordistribution,butratherasacomplexfieldinwhichpublicstrategiesaim
+toredefinetheurbansocialcontract.
+Withinthisframework,thepresentarticleoffersanempiricalandanalyticalcontribu-
+tiontothestudyofpublic-sectorinnovationinhousingbycriticallyexaminingthecaseof
+Vienna,Austria. FarfrombeingmerelyasuccessfulanomalyintheEuropeancontext,the
+Viennesemodelrepresentsadeeplystableinstitutionalinfrastructure,whichhasmanaged
+topreserveandrenewalarge-scale,affordable,andstructurallyinclusivesystemofpublic
+housing. Viennahasconsistentlyrankedamongthetopcitiesininternationalqualityof
+lifeindices,suchastheEconomistIntelligenceUnit’sGlobalLiveabilityIndex(Economist
+IntelligenceUnit,2024;Khomenkoetal.,2020). However,thisimageofurbanexcellence
+mustbecriticallyqualifiedandexamined. Severalstudieshavepointedoutthat,despiteits
+highscores,thecityfacessignificantchallenges: forexample,8%ofprematuremortalityin
+Viennaisattributabletoexposuretoenvironmentalfactorsexceedingrecommendedlevels,
+revealingthegapbetweenglobalevaluationmetricsandtheactuallivingconditions—or
+eventhesubjectiveexperience—ofresidentsinwhatisoftenconsideredthebestcityinthe
+worldtolivein.
+Thecriticalliteraturehasalsoquestionedthemethodologicalassumptionsofthese
+rankings, arguing that they are often designed for a global elite and tend to obscure
+thedimensionofhousingaffordability(Cramer-Greenbaum,2021). Thismethodological
+exclusionisparticularlyproblematicinthecontextofgrowingfinancialisationofurban
+land, where many cities with high liveability rankings simultaneously display severe
+housing cost burdens for a significant share of their population (Aalbers, 2012; Rolnik,
+2013).InVienna’scase,thisbiasistroubling,particularlygiventhatintra-urbaninequalities
+haveintensifiedandthatlower-incomegroupsfacehigherlevelsofenvironmentalriskand
+difficultiesinaccessingprotectedsegmentsofthehousingstock.
+Forallthesereasons,theViennesemodelprovidesfertilegroundnotonlyforvalidat-
+ingbestpracticesbutalsoforidentifyinglimitations,contradictions,andopportunitiesfor
+innovationfromwithinaparadigmaticcase. Viennaisselectednotonlyforitsexemplary
+status,havingmaintainedalarge-scale,affordablepublichousingsystemfordecades,but
+alsobecauseitsunderlyingprinciplesoffertransferableinsights. Coreelementssuchas
+long-termstrategicplanning,stablelegalframeworks,andinstitutionalresilienceagainst
+fullmarketcommodificationprovidevaluable,adaptablelessonsforothercitiesstriving
+forhousingequity,evenwhenconsideringVienna’sspecificsocio-historicalcontext.
+Unlikeotherapproachesthatequateinnovationwithtechnologicaldisruptionordigi-
+talgovernance,thisstudyfocusesonwhatcouldbetermed“slowinstitutionalinnovation”.
+Thisconceptischaracterisedbyhistoricalaccumulation,adeliberateresistancetomarket
+
+### Page 3
+
+Adm.Sci.2025,15,233 3of20
+logics,andthegradual,purposefulincorporationofsocialandenvironmentalreforms.This
+distinguishesitfromthemoredeterministictrajectoryimpliedbypathdependency,orthe
+potentiallyaimlessadjustmentsofsimpleincrementalism,byemphasisinganintentional
+evolution rooted in established values. Specifically, the article examines how Vienna’s
+housingmodelhasadoptedecologicaltransitionstrategies,anti-financialisationmecha-
+nisms,andemergingformsofurbanco-production—suchashousingcommons—without
+abandoningitspublicethos. Thisformofinnovationisnotgroundedinnoveltyperse,but
+intheinstitutionalcapacitytostrategicallyintegratenewagendaswithoutundermining
+corenormativefoundations. Itisthisstrongnormativeanchoringandtheselectiveinte-
+grationofchangetopreserveitsfoundationalethos,ratherthanaprimaryfocusonrapid
+flexibilityorresponsivenessforitsownsake(asoftenemphasisedinadaptivegovernance),
+thatdefinesitsuniquecharacter.
+Thisstudyseekstoanswerthefollowingprimaryresearchquestion: Howdoesthe
+Viennapublichousingmodel,conceptualisedasaformofinstitutionalinnovation,manage
+to integrate new agendas—such as social and environmental sustainability or collabo-
+rativeliving—intoitshistoricallyconsolidatedregulatoryframework,andwhatarethe
+keyachievementsandinherentstructuraltensionsthatcharacterisethisadaptiveprocess?
+To answer this question, the study pursues three main aims: (1) To critically examine
+Vienna’spublichousingmodelthroughthelensof‘slowinstitutionalinnovation,’focusing
+on its historical capacity for adapting and integrating new agendas while resisting full
+marketization. (2)Toidentifyandanalysethespecificmechanismsandpolicyinstruments
+that underpin this model’s stability, its universalist orientation, and its approach to in-
+corporatingcontemporarychallengeslikesocialandenvironmentalsustainability. (3)To
+evaluatetheresultingachievementsintermsofhousingaffordabilityandquality,alongside
+anassessmentofthestructuraltensions,includingissuesofsocialexclusion,community
+fragmentation,andthemodel’sreplicability. Consequently,thisarticleseekstocontribute
+by(a)empiricallygroundingandexpandingtheconceptof‘slowinstitutionalinnovation’
+withinpublicadministrationandurbanstudies;(b)providinganuanced,evidence-based
+analysisofaparadigmaticpublichousingsystem,highlightinglessonsfrombothitssuc-
+cessesandlimitations;and(c)offeringinsightsforpolicymakersondevelopingresilient
+and inclusive urban housing strategies that value long-term institutional capacity over
+purelydisruptiveapproaches.
+Furthermore,thearticleengageswiththebroadbodyofliteratureonhousinginno-
+vationinlocalgovernment,particularlyinEuropeancontexts,wherepersistentbarriers—
+such as outdated regulatory frameworks, budgetary constraints, and limited technical
+capacities—have been widely documented, alongside promising implementation ap-
+proaches(Batra,2021; Gurran,2003; Hackeetal.,2019; Morphet&Clifford,2021). The
+Vienneseexperienceshowshowsomeofthesebarrierscanbemitigatedthroughlong-term
+strategicplanning,stablelegalframeworks,andaninstitutionalarchitecturecapableofsus-
+taininghousingasacentralpublicpolicy.However,italsorevealsthataccumulatedsuccess
+doesnotguaranteeimmunityfromphenomenasuchassymbolicexclusion,neighbourhood
+fragmentation,ortheecologicallimitationsofurbanexpansion.
+TheViennesecaseallowsforareorientationofthepublic-sectorinnovationdebate
+towardtheneedtostrengtheninstitutionalmodelscapableofsustaininginclusivepolicies
+overtime,withoutrelyingsolelyondisruptiveimpulses. Thisarticlearguesthatgenuine
+innovation does not lie only in inventing new solutions, but in knowing how to adapt
+and expand those that have already proven effective, just, and resilient in the complex
+contextstheworldwillcontinuetofaceinthecomingyears. Indoingso,itcontributestoa
+morenuanced,situated,andcriticalperspectiveonpublic-sectorinnovationinthehousing
+domain,inlinewiththeaimsofthisSpecialIssue.
+
+### Page 4
+
+Adm.Sci.2025,15,233 4of20
+2. TheoreticalFramework
+2.1. HistoricalContext
+ThehistoryofVienna’spublichousingmodeliscommonlytracedbacktotheinter-war
+period,whenthemunicipalgovernment—ledbytheSocialDemocraticParty—initiated
+themajortransformationsassociatedwiththeso-calledRedViennaera(Essletzbichler&
+Forcher,2022). Theaimwastoensuredecentlivingconditionsfortheworkingclass,which,
+followingtheFirstWorldWarandthecollapseoftheAustro-HungarianEmpire, faced
+severehousingshortages. Toaddressthis,numerousGemeindebauten(municipalhousing
+blocks)wereconstructedbetween1919and1934,financedprimarilythroughdedicated
+taxation and directed by the local administration. This foundational moment laid the
+groundworkforamodelthat,withvariousmodifications,hasenduredtothepresentday,
+constitutingadistinctivecaseintheEuropeanpublichousingdebate(Ederetal.,2018).
+AftertheSecondWorldWar,themunicipalityreneweditscommitmenttohousingpol-
+icy,undertakingthereconstructionoflargeareasofthecitywhilemaintainingitsstrategy
+ofdirectintervention. Asaresult,RedViennaevolvedbeyonditsinitialphase,givingriseto
+oneofthelargestportfoliosofpublichousingintheWesternworld. Duringthe1950sand
+1960s,Viennacontinuedtoexpanditsstockofsocialrentalhousing,applyingstrictrent
+controlsandsubsidymechanisms(Essletzbichler&Forcher,2022). Inthisway,municipal
+housing became accessible to a broad spectrum of the population, not just the poorest
+households(Franz&Gruber,2018). Thisintegrationhelpedpreventthestigmatisationof
+publichousingandfosteredsignificantsocialmixingacrossmanyneighbourhoods.
+However, from the 1980s onwards, local policies began to shift. Direct housing
+constructionbythemunicipalitydeclined,andincreasingresponsibilitywasdelegatedto
+limited-profithousingassociations(Franz&Gruber,2018). Thisentailedarelativechange
+in governance: the municipality assumed the role of regulator and funder rather than
+directbuilder. Evenso,thesubsidyandcontrolframeworksremainedrobust,meaning
+rentsremainedmoderatebyEuropeanstandards(Ederetal.,2018). Indeed,themodelwas
+upheldbyasuiteofinstruments: profitcapsfornon-profitassociations,astrongemphasis
+onconstructionquality,andcloselymonitoredhousingallocationprocedures. Inthisway,
+stateinterventionextendedthroughouttheentirehousingproductionandusagecycle.
+Inthepost-warperiod,thereputationoftheViennesemodelwasfurthersolidifiedasan
+exampleofurbanpolicythatcombinedhighhousingstandardswithrelativeaffordability
+(Essletzbichler&Forcher,2022;Franz&Gruber,2018). Yetfromthe1990sonwardsand
+intothetwenty-firstcentury, newpressuresemerged: risinglandcostsincentralareas,
+thegrowingfinancialisationoftheeconomy(Aigner,2022),andtheneedtoaccommodate
+population groups with different profiles than before—such as migrants, single-parent
+families,andrefugees. Ononehand,Vienna’sintegrationintoglobaldynamicsencouraged
+investorstopurchaseflatsasassets,aphenomenondescribedbyAigner(2022)throughthe
+riseinVorsorgewohnungen(investmentapartments),whichstrainsthestate’scapacityto
+curbpriceescalation. Ontheother,increasingdemographicdiversityposeschallengesfor
+housingallocationandmaintenance(Aigner,2019).
+Successivereformsaimedatpartialliberalisationofthehousingsectorhaveimpacted
+themunicipalstock,whichremainssubstantialbutisunderpressuretomoderniseand
+competewiththeprivatesector(Essletzbichler&Forcher,2022). Asseveralauthorsnote,
+thecitylargelyceasedlarge-scaledirectmunicipalconstructioninthe1990s,relyingin-
+steadonnon-profitco-operativesandregulatorymechanisms—suchasrentcontrolsand
+projectcompetitions—toupholdthemodel(Franz&Gruber,2018). Whilethisapproach
+has preserved relative stability, it has also produced a dual structure: lower-cost mu-
+nicipal units on one side, and the co-operative or limited-profit subsector on the other
+
+### Page 5
+
+Adm.Sci.2025,15,233 5of20
+(Ederetal.,2018). Ineffect,themunicipalitybroadenedtherangeofactorsinvolved—a
+kindofsemi-privatisation—withoutentirelyrelinquishingstateintervention.
+Anotherkeyhistoricalfactorislandpolicy. Thankstothecity’searlyandstrategic
+landacquisitionsduringpreviousdecadesandthelegacyofRedVienna,themunicipal-
+ityhasretainedadegreeofcontroloverwhereandhownewresidentialcomplexesare
+built. Nonetheless,sincethelatetwentiethcentury,risinglandpricesandinvestorinterest
+have increasingly hindered the realisation of large-scale social housing projects. In re-
+sponse,Vienna’sadministrationhasimplementedmechanismssuchasdesigncompetitions
+thatprioritisearchitecturalquality,environmentalsustainability,andsocialsustainability.
+These initiatives aim to reconcile the tradition of public control with the demands of a
+globalisedeconomy.
+Atthesametime,Vienna’sinternalsociopoliticaldynamicshavealsoshapedhousing
+policy. After decades of Social Democratic dominance, the rise in a populist right has
+challengedaspectsofsocialspendingandmobilisedsegmentsoftheworkingclass. This
+politicaldebatehasrevivedtheimageofRedViennaasasymbolofinclusivepolicy,while
+alsoexposingtensionswithintheelectoralbase,particularlyregardingwhoshouldreceive
+housingpriority,nationalitycriteria,andlengthofresidencyrequirements(Essletzbichler
+&Forcher,2022).
+Enteringthetwenty-firstcentury,variousstudieshavepointedtotheriseingentri-
+ficationandthedisplacementofthemostvulnerablepopulationstoperipheraldistricts.
+Although less intense than in other European metropolises, these processes reveal that
+socio-spatialsegmentationisstillpresentinwhatisoftencalledthemostliveablecityin
+the world (Aigner, 2022; Banabak et al., 2024). The Viennese model, therefore, faces the
+challengeofpreservingitsuniversalistethoswhileadaptingtoaglobalisedmarketdriven
+byspeculativecapitalflows. Nevertheless,mostauthorsagreethat,despitethesepressures,
+Viennacontinuestomaintainlevelsofhousingaffordabilityandsocialcohesionthatsur-
+passtheEuropeanaverage—regardlessofhowdistractingglobalrankingscanbewhen
+theyconflateplacebrandingwitheverydaylife(Ederetal.,2018;Franz&Gruber,2018).
+ThehistoricaltrajectoryofVienna’spublichousingmodelbeganwitharadicalpush
+formunicipalconstructionduringtheRedViennaperiod. Followingthepost-warrecovery,
+themodelwasconsolidatedintooneofthemostprominentexamplesofstateintervention
+inthehousingmarket. Bythelatetwentiethcentury,areorganisationtookplaceinwhich
+thestatecededspacetonon-profitcooperativeswhilereinforcingregulationandsubsidised
+financing. Today,amidrisinglandpricesandglobalfinancialisation,thecitymustbalance
+itssociallegacywithprivatesectorcompetitionandemergingdemographicneeds. Despite
+internalcontradictions,Viennaremainsaglobalreferencepointforhowsustainedpublic
+intervention—rootedinthelegacyofRedVienna—canmaintainalargestockofaffordable
+housingandmoderateurbansegregation. AsynthesisofVienna’spublichousingpolicyis
+presentedinTable1.
+
+### Page 6
+
+Adm.Sci.2025,15,233 6of20
+Table1.SynthesisofVienna’spublichousingpolicyhistory.Source:Authors’ownwork.
+Period SociopoliticalContext MainMeasures Outcomes/Impact References
+• Massiveconstructionof
+• CityunderSocialDemocratic • Around60,000municipal
+Gemeindebauten(municipal
+ruleafterWWI. housingunitsbuiltinadecade.
+housingblocks).
+• Foundationslaidforalarge
+1919–1934(RedVienna) • Growinghousingcrisis. • Fundedthroughspecific publicstockwithmoderaterents EssletzbichlerandForcher(2022);
+taxation. andintegratedservices(schools, Ederetal.(2018)
+commonareas).
+• Firststeptowardestablishing
+• Strongbeliefinstate • Policiestargetedatthe
+“RedVienna”asasocialcity
+intervention. workingclass.
+brand.
+• Authoritarianregimes • Municipalhousingstock
+(Austro-fascismfollowedby maintainedbutnotsignificantly
+1934–1945(Interwar& Nazism). • Reductioninmunicipal expanded. EssletzbichlerandForcher(2022)
+WWIIperiod) housingprogrammes.
+• Manysocialinitiatives • Deteriorationinsomeblocksdue
+suspended. tolackofmaintenance.
+• Reactivationofmunicipal • Expansionofsocialhousing
+• ReconstructionafterWWII. housingusingstatefundsand
+provision.
+MarshallPlanaid.
+FranzandGruber(2018);
+Postwar(1945–1960s) • Consolidationofalarge-scale
+EssletzbichlerandForcher(2022)
+• ContinuedSocialDemocratic • Implementationofstrictrent publichousingmodel;municipal
+dominanceincitygovernance. controlsandconstruction housingremainedaccessibletoa
+subsidies. largeproportionofthe
+population.
+
+### Page 7
+
+Adm.Sci.2025,15,233 7of20
+Table1.Cont.
+Period SociopoliticalContext MainMeasures Outcomes/Impact References
+• WelfarestatepeakinEurope, • Strengthenedstatesubsidies • UpgradesinGemeindebauten
+despiteearlysignsoffiscal andadjustmentstodirect quality(rehabilitations,
+crisis. construction. modernisations).
+1970s–1980s Ederetal.(2018);
+• Increasedtechnical • Publicinvestmentincreased,but FranzandGruber(2018)
+• Risingpublichousing earlysignsemergedofthe
+sophisticationinmunicipal
+maintenancecosts. limitationsofapurely
+management.
+state-drivenformula.
+• Globalchanges: • Introductionofcompetitive
+• Declineindirectmunicipal
+neoliberalisation,market projectandlandallocation
+construction.
+pressure. procedures.
+• Alargestockofsocialrental
+1990s–early2000s • Risingimmigrationand • DelegationtoLimited-Profit h to o t u al s ) i , n b g u m ta a l i l n o t c a a i t n io ed nt ( e ~ n 4 s 0 i % on o s f Marqua A rd i t g a n n e d r( G 20 la 1 s 9 e ) r(2023);
+demanddiversification. HousingAssociations.
+arose(waitinglists,stricter
+eligibility).
+• Rentcontrolsmaintained, • Increasedcompetitioninthe
+thoughslightlyloosened. cooperativesector.
+• Highshareofaffordablehousing
+• Globalfinancialisationof • Adoptionofnewstandards
+preserved;gentrificationis
+housing. (sustainability,innovation).
+mitigatedbutnoteliminated.
+• Renewedinterestin • Tensionbetweenthesocial
+2000s–present • Risinglandvaluesincentral Aigner(2022);Banabaketal.(2024);
+collaborativemodels legacyandincreasedprivate
+areas. Ederetal.(2018)
+(co-housing,commons). investment.
+• Criticismarisesoverexclusionof
+• Debatesongentrification • Pricecontainmentand
+specificgroups(refugees,
+emerge. inclusivezoningpolicies.
+low-incomemigrants).
+
+### Page 8
+
+Adm.Sci.2025,15,233 8of20
+2.2. TheViennaModel
+Vienna’senduringhousingsystemismultifaceted,builtuponascaffoldingofclearly
+definedcomponentsandinfluencingfactors. Toenhanceclarity,itskeyoperationalfeatures
+canbedelineatedasfollows:
+• AComprehensiveLegalandRegulatoryFramework:AtitscoreistheGeneralTenancy
+Law (Mietrechtsgesetz, MRG), which establishes critical protections such as rent
+ceilings,definestenantandlandlordrightsandobligations,andsafeguardsagainst
+arbitraryeviction.
+• CentralisedPublicAdministrationandManagement: Themunicipalagency,Wiener
+Wohnen,playsapivotalroleinadministeringtheextensivemunicipalhousingstock
+(Gemeindebauten)andenforcingcohabitationregulationsdetailedintheHausord-
+nung(houserules)(MagistratderStadtWien—WienerWohnen,2024b).
+• Dual Financial Subsidy System: A distinctive feature is the dual subsidy model,
+wherepublicfundssupportboththesupplyside(financingnewconstructionand
+renovations)andthedemandside(providingdirectassistancetolow-incometenants)
+(MagistratderStadtWien—WienerWohnen,2024d,2024e). Thisiscomplementedby
+regulatedoperatingcosts(Betriebskosten)fortenants.
+• Integral Role of Non-Profit Housing Associations: Limited-profit housing associ-
+ations (Bauträger&lt), organised under bodies like the Österreichischer Verband
+gemeinnütziger Bauvereinigungen (2016), function as crucial partners in develop-
+ingandmanagingasignificantportionofVienna’sregulatedrentalhousing,histor-
+icallycomplementingdirectmunicipalprovisionandadheringtostrictqualityand
+affordabilitycriteria.
+• SociallyOrientedAllocationandTenancySupport: Themodelincorporatesspecific
+criteriaforhousingallocationalongsiderobustsupportmechanisms,suchasadvisory
+servicesandassistancefortenantsinrentarrears(MagistratderStadtWien—Wiener
+Wohnen,2024a),aimedatensuringresidentialstabilityandpreventingeviction.
+• Thesecoremechanismsfunctionwithinadynamicenvironmentshapedbysignificant
+influencingfactors,includingpersistentfinancializationpressures,thechallengeof
+rising land values, and the evolving demographic needs of a diverse population,
+includingmigrantsandrefugees.Thefollowingdetailedanalysiswillfurtherelaborate
+ontheseelementsandintegratecriticalperspectivesfromtheacademicliterature.
+Accordingtothecity’sofficialdocuments(MagistratderStadtWien—WienerWohnen,
+2024d,2024e),overonemillionresidentsliveinhousingpromotedormanagedbymu-
+nicipal authorities and non-profit associations, with a substantial proportion residing
+intheso-calledGemeindebauten. Theprimarylegalinstrumentgoverningtenanciesis
+theGeneralTenancyLaw(Mietrechtsgesetz,MRG),whichdefinesrentceilings,tenants’
+and landlords’ rights and obligations, as well as contractual duration and protections
+againsteviction.
+Throughitsagency,WienerWohnen,theCityofViennaadministersthemunicipal
+buildingsandsetsoutregulationsforcohabitationasoutlinedintheHausordnung(Magis-
+tratderStadtWien—WienerWohnen,2024b). Theserulesspecify,forinstance,theneed
+to maintain communal areas, observe quiet hours during the night, and ensure the un-
+obstructeduseofcorridorsandstaircases. Tenantsarenotallowedtoleavefurnitureor
+waste in the hallways, and noise is prohibited between 10:00 p.m. and 6:00 a.m. The
+administrationisalsocommittedtointerveningincasesofstructuraldamage,providedthe
+issueisreportedinatimelymanner. Monthlyhousingcostsincludechargesforcleaning
+ofcommonareas,hallwaylighting,fireinsurance,andothercostsreferredtoasBetrieb-
+skosten. These vary according to the size of the dwelling and may include additional
+chargesforliftsorotherbuildingamenities. Thereisalsoastrongemphasisonneighbourly
+
+### Page 9
+
+Adm.Sci.2025,15,233 9of20
+cooperation,suchastheexpectationthatbulkywasteisnotleftincorridorsbutdisposed
+ofatdesignatedcollectionpoints.
+Incasesofrentarrears,therearesupportmechanismsandadvisoryservicesasdetailed
+inthedocumentonrentpaymentassistance(MagistratderStadtWien—WienerWohnen,
+2024a),whichincludesoptionssuchasinstalmentagreementsoraccesstonationalschemes
+liketheWohnschirm,offeredbytheMinistryofSocialAffairs,subjecttoeligibility. The
+overarchingaim,accordingtotheauthorities,istopreventevictionandmaintainresidential
+stability. Morebroadly,thefederalMietrechtsgesetzincludesspecificprotectionsforsocial
+housingtenants.
+Thisformalstructureiscomplementedbytheworkofnon-profithousingdevelopers
+or Bauträger, organised under the Österreichischer Verband gemeinnütziger Bauvere-
+inigungen (2016), an umbrella organisation with a history spanning seventy years. Its
+commemorativeFestschrifthighlightsthehistoricalsignificanceofhousingcooperatives
+andlimited-profitassociationsinprovidingaffordablehousing,particularlyduringthe
+post-war period and the subsequent expansion of the protected housing stock. These
+associationshaveplayedacriticalroleinensuringthatViennamaintainsahighproportion
+ofregulatedrentalhousing,thushelpingtobufferspeculativepressures. Asofficialpubli-
+cationsstate(MagistratderStadtWien—WienerWohnen,2024d,2024e),thecityemploys
+a dual subsidy model: funding is allocated both to the supply side (new construction
+andrenovation)andthedemandside(supportforlow-incometenants). Thisapproach
+contrastswiththatofotherEuropeancontexts,whereonlytenantsreceivedirectsupport.
+Nonetheless, the academic literature introduces important nuances regarding the
+model’s tensions. Aigner (2019, 2022) notes the increasing influence of financialisation
+throughVorsorgewohnungen(investmentflats),wheresmallandmediuminvestorsseek
+profitthroughapartmentpurchases. Thisphenomenonrisksdrivinguppricesandun-
+dermining the affordability principle at the core of the Viennese model. Aigner (2019)
+alsodocumentshowtheentryofrefugeesandmigrantsisnotalwayscompatiblewith
+registrationproceduresandtheselectioncriteriaofWienerWohnen,creatingbarriersto
+accessingmunicipalhousing. Inparallel,Banabaketal. identifyapatternofdisplacement
+or“suburbanisationofpoverty”,wherebylow-incomepopulationsseekcheaperrentsin
+peripheralareas,movingfurtherawayfromcentrallylocated,better-equippedneighbour-
+hoods. FranzandGruberpointoutthat,whilethereputationofWohnenfüralle(“housing
+forall”)endures,risinglandpricesandhousingdemandcouldcreatebottlenecks;theyalso
+emphasisetheneedtomoderniseallocationprocessesandsimplifyregulationstoprevent
+costinflationinhousingconstruction.
+Despitethesechallenges,themunicipalpoliciesandthecooperativesystemarestill
+seenasinstrumentalinpreventingextremesocio-spatialstratificationinhigh-valueurban
+zones,enablingadegreeofsocialmixing. Similarly,thenotionofCommons,asdescribed
+byHölzlandHölzl,reinforceslocalinventivenessthroughcollaborativehousingprojects
+initiatedbycitizencollectivesandalignedwithmunicipalpolicy. Althoughtheseprojects
+remain a minority within the overall system, they illustrate the model’s flexibility in
+experimentingwithnewformsoftenureandmanagement.
+Vienna’shousingsystemthusoperatesthroughacombinationofalarge-scalemu-
+nicipalstockmanagedbyWienerWohnenunderclearlydefinedoperationalrules—from
+theHausordnunggoverningdailylifetoprotocolsforarrearssupport—andnon-profit
+cooperativessustainedthroughpublicsubsidies. ThefederalMietrechtsgesetzprovides
+legalsupportfortenantprotectionandthedefinitionofrightsandobligations.Nonetheless,
+criticalstudiespointtomountingpressurefrominvestorsandrisinglandprices,which
+maychallengethemodel’suniversalistethos. Aslongasthecitycontinuestoinvestin
+theconstructionofGemeindebautenandtooverseehousingcosts, theViennesemodel
+
+### Page 10
+
+Adm.Sci.2025,15,233 10of20
+remainsabenchmarkforpublichousingpolicy,firmlyrootedinpublicintervention,yet
+notimmunetothecontradictionsofcontemporaryurbanrealities.
+3. MaterialsandMethods
+Themethodologyemployedinthisstudyisasystematicsearchandqualitativeevi-
+dencesynthesisofsecondarysources,withtheaimofproducingacriticalevaluationof
+theViennapublichousingmodelbyexaminingitshistoricaltransformations,institutional
+architecture,andcontemporarytensions.
+The corpus analysed comprised scientific literature and official documents. The
+scientific literature was primarily identified through the Scopus database. The search
+strategy employed combinations of keywords including, but not limited to, “Vienna”
+AND (“public housing” OR “social housing” OR “Gemeindebauten”) AND (“housing
+policy”OR“institutionalinnovation”OR“urbaninclusion”OR“housinggovernance”OR
+“affordability”).Thesearchwasnotrestrictedbypublicationdatetoensurehistoricaldepth,
+butfocusedonmaterialsaccessibleuptoearly2024tocapturethemostcurrentdiscussions.
+Inclusioncriteriaforacademicarticleswere(i)peer-reviewedscholarlyworks(articles,
+and to a lesser extent, key academic book chapters if directly relevant); (ii) published
+in English or German; (iii) direct thematic relevance to Vienna’s public housing model,
+engagingin-depthwithissuessuchasaffordability,sustainability,exclusion,governance,
+oralternativehousingmodels;(iv)emphasisonarticlespublishedinhigh-impactjournals
+inthefieldsofurbanstudies,publicpolicy,andterritorialplanningtoensureabaselineof
+academicrigourandquality;(v)officialdocumentsweresourcedfromtheCityofVienna
+(MagistratderStadtWien—WienerWohnen)andtheAustrianlegislativeframework.
+Theinitialdatabasesearchyieldedapproximately150records. Titlesandabstracts
+werescreenedforrelevanceagainsttheinclusioncriteria,reducingthepoolto50articlesfor
+full-textreview. Followingadetailedassessmentofthefulltexts,29academicarticleswere
+selectedfortheirdirectcontributiontotheresearchobjectives.Theseweresupplementedby
+8keyofficialdocumentscrucialforunderstandingtheregulatoryandoperationalaspects
+oftheViennesemodel. Thisdual-sourcestrategyenabledtriangulationbetweenempirical
+data,regulatoryframeworks,andtheoreticaldebates(Bowen,2009;Yin,2003). Theselected
+academicarticlesincludekeycontributionsfromscholarssuchas(Kadi,2015;Kadi&Lilius,
+2024),Aigner(2019,2022),FranzandGruber(2018),EssletzbichlerandForcher(2022),and
+Ederetal. (2018). TheofficialdocumentsincludesourcessuchastheMietrechtsgesetz
+[GeneralTenancyLawofAustria,theMunicipalHousinginViennabrochure(Magistrat
+derStadtWien—WienerWohnen,2024d),theHausordnung(MagistratderStadtWien—
+WienerWohnen,2024b),theBetriebskostendocumentonoperatingcosts(Magistratder
+StadtWien—WienerWohnen,2024c),protocolsonnon-paymentassistance(Magistratder
+StadtWien—WienerWohnen,2024a),andtheFestschriftoftheÖsterreichischerVerband
+gemeinnützigerBauvereinigungen(2016).
+Theanalysisfollowedaqualitative-interpretativemethodologicalstrategy,organised
+intothreeinterconnectedphases.
+Coding: Inthefirstphase,anopenandaxialcodingprocess(Bowen,2009;Richards&
+Hemphill,2018)wasappliedtoallselectedsources. Theobjectivewastosystematically
+identifyrecurringconcepts(e.g.,‘slowinnovation’,‘universalism’),analyticaloppositions
+(e.g.,‘inclusionvs. exclusion’,‘stabilityvs. rigidity’),andthematicpatternsrelatedtothe
+Viennesehousingmodel.
+ThematicClustering: Basedonthiscoding,athematicclusteringwasdeveloped. This
+allowed the classification of the information from the sources into seven major analyti-
+cal axes: institutional stability, accessibility, socio-spatial equity, financialisation, social
+innovation,sustainability(bothsocialandenvironmental),andsymbolicdimensions.
+
+### Page 11
+
+Adm.Sci.2025,15,233 11of20
+Thematic Analysis and Interpretation: The second phase consisted of a thematic
+analysis (Braun & Clarke, 2006) with emphasis on the relationship between normative
+discourse (e.g., official policy aims) and urban experience (e.g., empirical findings of
+exclusionorfragmentation),facilitatingacontrastbetweeninstitutionalprescriptionsand
+theempiricalfindingsdocumentedintheliterature.Thethirdphaseinvolvedanintegrative
+interpretationoftheresults,followinganabductivelogic(Bhattacherjee,2012),aimedat
+connectingtheemergentfindingswithconceptualframeworksinpublicadministration
+andurbanpolicy.
+Tofurtherelaborateontherigourofthisthree-phaseanalyticalstrategy,theinitial
+coding process was primarily inductive, allowing themes to emerge directly from the
+data through open coding; this was then refined using axial coding to systematically
+develop categories. While these themes were data-driven, their subsequent clustering
+into the seven major analytical axes was guided by the study’s core research questions
+andthematicfocusareas,thusforminganempiricallyderivedframeworkfortheanalysis.
+Throughoutthethematicanalysisphase,whichinvolvedcomparingandcontrastingdata
+acrosstheseaxes,carefulattentionwasgivenbytheauthor(s)todistinguishingnormative
+claimswithinofficialdocumentsfromempiricalevidenceandcriticalperspectivesinthe
+scholarlyliterature, ensuringabalancedinterpretation. Iterativereviewandreflexivity
+wereemployedbytheauthor(s)throughoutthisprocesstoensureconsistencyanddepth
+(Braun&Clarke,2006;Richards&Hemphill,2018).
+Amongthelimitationsofthisstudy,itisimportanttonotetheabsenceofempirical
+fieldwork, relying solely on secondary data, which restricts access to citizen-based or
+neighbourhood-leveldiscoursesthatarenotinstitutionallycodified. Furthermore,while
+theViennesemodelisparadigmatic,itisalsoembeddedinspecifichistoricalandpolitical
+conditions,andthusanygeneralisationmustbeapproachedwithcaution(Creswell,2007;
+Yin,2003).
+4. Results: LightsandShadowsofVienna’sHousingParadigm
+Vienna’s public housing model has long been regarded as a global benchmark for
+inclusiveurbanism,priceregulation,andinstitutionalstability. Rootedinthelegacyof
+RedVienna,ithasenduredthankstoarobuststateapparatusandaconsistentpolitical
+commitmenttothesocialfunctionofhousing. Thishistoricaltrajectoryhasenabledthecity
+tomaintainalarge,accessible,andhigh-qualityhousingstock,evenasmuchofEuropehas
+witnessedaretreatofthestatefromurbanaffairs.KadiandLilius(2024)emphasisethatthis
+stabilityisnoaccident,buttheproductofaninstitutionalarchitectureexplicitlydesignedto
+upholdredistributivepoliciesandresistthecommodificationofhousing,therebyavoiding
+massprivatisationandallowingforasustainedproductionofsocialhousingwithinan
+expandingmetropolitancontext.
+However,thisimageofsuccessmustnotobscuretheinternaltensionsandcontradic-
+tionsthatthemodelencapsulates. Whilesocio-economicsegregationhasbeenstructurally
+contained,specificdynamicsofexclusionpersist. Aigner(2019)demonstratesthatrefugees,
+despite the availability of a vast social housing stock, encounter numerous barriers to
+accessingtheformalsystem,oftenbeingforcedintoprecariousinformalsubmarkets. Far
+frombeinganisolatedcase,thishighlightsoneofthemodel’sfundamentalparadoxes: its
+universalistethoscoexistswitheligibilitycriteriaandinstitutionalpracticesthatreproduce
+exclusion. Alongsimilarlines,WolfgringandPeverini(2024)identifythatthemosteco-
+nomicallyvulnerablegroupscontinuetorelyontheprivaterentalmarket,exposingthem
+toheightenedhousinginsecurity.
+Moreover,themodel’sstabilityhasnotshieldeditfromprocessesofre-commodification.
+Kadi(2015)warnsthatsincethe1990s,responsibilityforproducingsocialhousinghasbeen
+
+### Page 12
+
+Adm.Sci.2025,15,233 12of20
+increasinglydelegatedtonon-profitassociations,reducingthemunicipality’sdirectrole.
+Thisshifthasstrainedtheuniversalistcharacterofthesystem,asallocation,construction,
+andfinancingmechanismsarenowmoreinfluencedbylogicsofefficiencyandfinancial
+sustainability. Additionally,Aigner(2022)showshowthefinancialisationofhousinghas
+advancedthroughinvestmentinstrumentssuchastheVorsorgewohnung,which,despite
+theiroriginalintentions,havecontributedtopriceinflationanderodedaffordability.
+Yet the model also reveals signs of adaptability and renewal. In response to the
+limitationsofconventionalpublicprovision,collaborativehousinginitiativeshaveemerged,
+proposingalternativewaysofproducingandmanagingresidentialspace.Hölzletal.(2022)
+explore the case of the habiTAT movement, which supports self-managed, collectively
+ownedhousingprojects. Althoughstillmarginalwithintheoverallsystem,theseinitiatives
+reflectgrassrootspoliticalinnovationaimedatreconfiguringtherelationshipbetweenstate,
+market,andcommunity. ThisalternativemomentumhasalsobeenexploredbySchikowitz
+and Pohler (2024), who analyse the relational practices of Baugruppen as attempts to
+transcend both the standardisation of public housing and the commodification of the
+privatemarket. However,theseeffortsareconstrainedbyrigidregulatoryframeworks
+andinstitutionalexpectations,revealingthateventhemostinnovativehousingpractices
+remainentangledinstructuraltensions.
+The symbolic dimension of the model is similarly marked by ambivalence. In his
+analysis of the Hundertwasser-Haus, Kraftl (2007) argues that this iconic building en-
+capsulatestheutopianidealofVienneseliving,butthatsuchutopiabecomesincoherent
+whenconfrontedwiththelivedexperiencesofitsresidents,whodonotnecessarilyengage
+with the narrative projected by the architecture. Similarly, initiatives such as those in
+SonnwendviertelOst,studiedbyBabosetal. (2024),promotesharedspatialpracticesand
+neighbourhoodidentity,yettheirstructuralimpactislimitedbypoliticalandinstitutional
+constraints,hinderingtheirreplicability.
+Vienna’ssocialcohesiongoals,centraltoitsurbanplanningphilosophy,havealsobeen
+questionedfromanempiricalperspective. Unterdorfer(2016),throughanethnographic
+studyinRudolfsheim-Fünfhaus,showsthattherhetoricofsocialmixingdoesnotnecessar-
+ilytranslateintomeaningfuleverydayinteractionbetweenresidents. Thiscastsdoubton
+themodel’seffectivenessinfosteringsustainedsocialengagement,therebyweakeningone
+ofitsmostfrequentlycitednormativepillars. Whatispresentedasintegrationsometimes
+appearsfragmentedineverydaylife,revealingrelationaldisconnectionsthatliebeyond
+thereachofhousingpolicy.
+Fromamacro-comparativeperspective,Tammaruetal. (2015)positionViennaamong
+theEuropeancitieswiththelowestlevelsofsocio-economicsegregation,partlyduetoits
+publichousingsystem. However,theyalsowarnofarecentwideningofsocialinequalities,
+which could undermine this structural advantage unless the model is adapted to new
+economic and demographic realities. This risk is underscored by Paidakaki and Lang
+(2021), who argue that social sustainability in housing can only be maintained if it is
+pursuedasacollectivepoliticalprojectinvolvingstateactors,communities,andthethird
+sector. Thiswouldrequirethesystemtoembracenewhouseholdconfigurations,foster
+democraticparticipation,andstrengthenpublic-communitycooperationmechanisms.
+In this light, Vienna’s public housing experience represents a blend of undeniable
+achievements in affordability, stability, and institutional control, alongside unresolved
+challenges around effective inclusion, adaptability to emerging conditions, ecological
+sustainability,andopennesstonovelformsofliving(Table2). Themodelhasnotfailed,
+butneitherisitthefinishedproductofitsownsuccess. Itsstrengthliespartlyinitscapacity
+tomaintainapublicinfrastructureinthefaceofcommodificationpressures,andpartlyin
+itsabilitytoincorporatenewdemandswithoutbetrayingitsfoundingprinciples. Yetthis
+
+### Page 13
+
+Adm.Sci.2025,15,233 13of20
+callsforcriticalreflectiononitsownassumptions,awillingnesstoengageininstitutional
+innovation,andaconsciousefforttopreventstabilityfromcalcifyingintoinertia. Vienna’s
+publichousingmodel,ratherthanacompletedparadigm,emergesasadynamicfieldof
+tensions—betweentraditionandrenewal,inclusionandexclusion,institutionaldesignand
+livedexperience.
+Table2.SummaryoflightsandshadowsofhousingpolicyinVienna.Source:Authors’ownwork.
+ThematicAxis Lights(PositiveAspects) Shadows(NegativeAspects)
+Strongcontinuityofthepublic Dependenceonstableinstitutional
+housingsystemsupportedbyclear structures,whichmayexhibitrigidity
+InstitutionalStability
+rules,long-termplanning,andfirm inthefaceofcrisesorabruptpolitical
+politicalwill(Kadi&Lilius,2024). changes(Marquardt&Glaser,2023).
+Structuralexclusionspersist:
+Broadprovisionofpublichousing
+refugeesandthepoorestsegmentsof
+andrentcontrolreducepressureon
+thepopulationfaceaccessbarriers
+AccessibilityandAffordability theprivatemarketandbenefit
+andarepushedintoprecarious
+middle-incomegroups(Franz&
+submarkets(Aigner,2019;Wolfgring
+Gruber,2018).
+&Peverini,2024).
+Recentwideningofsocialgaps;the
+Lowsocio-economicsegregationin
+idealof“socialmix”doesnot
+theEuropeancontext;equitable
+necessarilytranslateinto
+Socio-SpatialEquity accesstourbanamenities(Morawetz
+neighbourhoodcohesionor
+&Klaiber,2022;Tammaruetal.,
+meaningfulinteraction(Unterdorfer,
+2015).
+2016).
+Subtlere-commodificationprocesses
+Effectivepublicregulationhas
+throughinstrumentssuchasthe
+curtailedlarge-scaleprivatisationof
+ResistancetoFinancialisation Vorsorgewohnung,whichincrease
+thehousingstock(Kadi&Lilius,
+pricesandundermineaffordability
+2024).
+(Aigner,2022).
+Emergenceofcollaborativehousing Structuralandregulatorylimitations
+initiatives(habiTAT,Baugruppen) imposedbythepublicapparatus;
+SocialInnovationandAlternative
+aimingtore-politicisehousingand stillmarginalinstitutionalsupport
+Models
+countermarketlogic(Hölzletal., hampersscalability(Schikowitz&
+2022;Schikowitz&Pohler,2024). Pohler,2024).
+Presenceofutopianarchitecturesuch Disconnectionbetweenthesymbolic
+astheHundertwasser-Hausand idealofdwellingandthelived
+SymbolicandCulturalDimension
+neighbourhoodswithstronglocal experiencesofresidents(Kraftl,
+identities(Babosetal.,2024). 2007).
+Civilsociety–statealliancespromote Institutionalexclusionof
+moreinclusiveandparticipatory non-normativefamilyconfigurations
+SocialSustainability
+governancemodels(Paidakaki& andlimitstoeffectiveparticipation
+Lang,2021). persist(Paidakaki&Lang,2021).
+Continuedemphasisonexpansion
+Ongoinginitiativesaimtolinksocial
+ratherthanrehabilitationweakens
+EnvironmentalSustainability andenvironmentaljusticeinurban
+climatejusticegoals(Novyetal.,
+planning(Novyetal.,2001).
+2001).
+5. Discussion
+Thedialoguebetweentheclaimsoutlinedinthearticle’sintroductionandthefindings
+presentedinthe“LightsandShadows”sectionenablesacriticalbridgetobebuiltbetween
+thenormativeprinciplesunderpinningtheViennesehousingmodelandthetensionsthat
+ariseinitspracticalimplementation. TheintroductionfirmlyassertsthatVienna’shousing
+
+### Page 14
+
+Adm.Sci.2025,15,233 14of20
+systemdoesnotembodypublic-sectorinnovationinthedisruptivesensebutratherrepre-
+sentsaformof“slowinstitutionalinnovation”—groundedinthesystem’scapacitytoadapt
+progressivelywithoutcompromisingitsfoundationalethos. Thisframingsuggeststhatthe
+strengthofthemodelliesnotinitsabilitytoreinventitselfconstantly,butinitsabilitytoab-
+sorbnewagendas—suchasenvironmentalsustainabilityorurbanco-production—withina
+consolidatedgovernancestructure.However,asthefollowinganalysiswillelaborate,when
+thisvisionissetagainstdocumentedempiricalrealities,tensionsemergethatproblematise
+thecelebratedstability,exposingunderlyingstructurallimitsandpersistentinequitiesthat
+mustbeincorporatedintoanyforward-lookingreflectiononthemodel’sfuture.
+5.1. EmpiricalInsights: NavigatingAchievementsandContradictions
+An empirically observable strength of the Viennese model is its remarkable capac-
+ity to maintain high levels of housing accessibility amidst intense market pressure. As
+highlightedinthe“Lights”section,robustlegalframeworks,comprehensivesupply-and
+demand-sidesubsidies,andanactivepublicapparatushavehistoricallysustainedasig-
+nificantstockofregulatedrentalhousing. Thisachievementininstitutionalcontrolover
+urban space production and allocation is notable in comparative terms. However, this
+accessibilityisempiricallydemonstratedtobefarfromuniversal. TheresearchofAigner,
+andofWolfgringandPeverini,forinstance,providesclearevidenceofhowspecificsocial
+groups—particularlyrefugees,recentmigrants,andhouseholdsinextremepoverty—are
+effectively excluded from the formal system due to institutional barriers or restrictive
+eligibilitycriteria.
+Furthermore, while the Viennese model shows an openness to incorporating new
+dimensionslikecollaborativehousing,empiricalstudiesoninitiativessuchasthehabi-
+TATcollectiveorBaugruppen(exploredbyHölzletal.,2022;Schikowitz&Pohler,2024)
+illustratethattheseformsofsocialinnovationoftenemergefrompoorlyinstitutionalised
+margins. Theirpotentialforscalabilitywithinthedominant,morerigidsystemappears
+limited,suggestingthesealternativemodelsareabsorbedratherthanstructurallypromoted
+bytheexistingframework.
+Thesymbolicdimensionofthemodelalsorevealsagapbetweennormativeidealsand
+empiricalrealities. WhileViennaisoftenlaudedforupholdingavisionofspatialjustice
+andsocialintegration,researchbyKraftloniconicprojectsliketheHundertwasser-Haus
+indicatesadissonancebetweenarchitecturalnarrativesofutopianlivingandresidents’
+actual lived experiences. Similarly, Unterdorfer’s work suggests that policy-driven so-
+cialmixingdoesnotautomaticallytranslateintomeaningfulneighbourlyinteractionor
+enhancedcommunitysolidarity.
+Finally,concerningenvironmentalsustainability,whileViennahasinitiated“greening”
+strategiesinitsurbanplanning,empiricalcritiques,suchasthosebyNovyetal. (2001),
+point to a prevailing logic of urban expansion that often overshadows efforts towards
+rehabilitating the existing housing stock. This preference can weaken broader climate
+justiceobjectives,highlightingapersistenttensionbetweennewenvironmentalagendas
+andtraditionalgrowthparadigms.
+5.2. ConceptualReassessmentandNormativeImplications
+The empirical evidence of selective accessibility and the constrained scalability of
+grassrootssocialinnovationsnecessitatesareinterpretationofthe“slowinstitutionalinno-
+vation”conceptualisedinthisarticle. Whilethemodeladeptlyincorporatescertainnew
+agendas,itsinnovativecapacityseemsshapedbyalogicofinstitutionalself-preservation.
+Thesystemappearstoadoptnewpracticesprimarilywhentheyalignwithandmaintainits
+
+### Page 15
+
+Adm.Sci.2025,15,233 15of20
+corenormativearchitecture;however,thisverystability,ahallmarkofitssuccess,mayalso
+inhibitmoreprofoundordisruptivetransformationsdeemednecessarybysomecritics.
+Thus, “innovation from within” might require significant external momentum or
+a deliberate normative recalibration that fosters greater institutional flexibility without
+sacrificingqualityoraffordability. Figure1representesabriefsummaryoffindingsrelated
+totheVienna’smodel.
+Figure1.SummaryoffindingsontheVienna’sslowinstitutionalinnovationmodel.
+Thedocumenteddisconnectbetweentheidealofintegratedcommunitylifeandthe
+often-fragmented lived experiences of residents calls for a normative rethinking of the
+model. Thisinvolveslookingbeyondlegalandphysicalhousingstructurestoconsider
+howrelationaldynamicsandgenuinecommunityco-productioncanbemoreeffectively
+supported. Similarly,theobserveddualityinenvironmentalefforts—agradualembrace
+ofgreenagendasconstrainedbytraditionalurbandevelopmentpatterns—underscores
+that the Viennese model, far from being a static paradigm, is a dynamic field of con-
+testation requiring continuous improvement and critical self-assessment regarding its
+ecologicalcommitments.
+TheVienneseexperiencedemonstratesthatinnovationinpublichousingneednot
+bearadicalbreakwiththepastbutcanbeaprogressivereconfigurationoflong-standing
+foundations. Thisrealisation,however,bringsforthsubstantivenormativechallengesfor
+thefuture: Howcangenuineinclusionbebroadenedwithoutdilutingthequalitycontrol
+andregulatorymechanismsthatarecentraltothemodel’srenown? Howcanthesystem
+becomemoregenuinelyopentoparticipatoryformsofco-productionwithoutinducing
+fragmentationoroperationalinefficiencies? And,crucially,howcanecological,economic,
+andsocialimperativesbeintegratedmorecoherentlywithinaregulatoryframeworkshaped
+byhistoricallydistinctconditions? Thisdiscussion,therefore,offersanuancedassessment
+
+### Page 16
+
+Adm.Sci.2025,15,233 16of20
+oftheViennesecase,intendedasacalltocriticallyrethinkpublicpolicyinnovationwhen
+historicalsuccessesbegintorevealtheirinherentlimitationsandblindspots.
+6. Conclusions
+ThisstudyreaffirmsVienna’spublichousingmodelasaparadigmaticcaseofslow
+institutionalinnovationwithinthepublicsector. Characterisednotbydisruptiveupheaval
+but by an enduring capacity to uphold social justice, public land control, and housing
+accessibility through stable legal mechanisms and a long-term administrative architec-
+ture,itsefficacyinresistingmarketfinancialisationandensuringbroadaffordabilityisa
+centralfinding. Nevertheless,thiscelebratedstabilitycoexistswithsignificantstructural
+tensions,includingtheexclusionofcertainvulnerablegroups,fragmentedcommunityex-
+periences,andchallengesindeeplyintegratingcomprehensivesustainabilityandgenuinely
+participatorygovernance.
+Theprimarytheoreticalcontributionofthisarticleliesintheconceptualizationand
+empiricalgroundingofslowinstitutionalinnovation. Thisconceptenrichesthebroader
+innovation literature by offering a critical alternative to dominant narratives that often
+equatepublicsectorinnovationprimarilywithrapid,technologicallydrivendisruption
+ormarket-mimickingreforms. Wearguethatslowinstitutionalinnovation,asexempli-
+fiedbyVienna,highlightshowestablishedpublicinstitutionscanachieveprofoundand
+sustainablesocietalimpactthroughgradualadaptation,thesteadfastupholdingofnor-
+mativecommitments(likehousingasasocialright),andstrategicresistancetowholesale
+commodification. This perspective underscores the value of adaptive institutionalism,
+demonstratingthatresilience,equity,anddemocraticlegitimacycanbeequallyvitaldimen-
+sionsofinnovation,particularlyincoreareasofwelfarestategovernancesuchashousing.
+TheVienneseexperienceofferscriticalandtransferableinsightsforpolicymakers(Table3)
+strivingtocreatemoreequitableandstablehousingsystems:
+• PrioritiseLong-TermInstitutionalStabilityandPublicStewardship: Municipalities
+shouldfocusonbuildingandmaintainingrobustpublicorsociallycontrolledland
+banks,implementingeffectiverentregulationmechanisms,andensuringsustained,
+ring-fencedpublicinvestmentinboththeconstructionofnewaffordableunitsandthe
+comprehensivemaintenanceandecologicalretrofittingofexistingstock. Thisrequires
+along-termvisionthatmovesbeyondshort-term,market-ledsolutions.
+• DevelopIntegratedandGenuinelyInclusiveAllocationSystems:Whilepreservingthe
+benefitsofbroadeligibility,housingauthoritiesmustproactivelydesignandimple-
+menttargetedstrategiestocounteracttheexclusionofhighlyvulnerablepopulations
+(e.g.,newlyarrivedrefugees,individualsinextremepoverty,thosewithprecarious
+legalstatus). Thiscouldinvolveenhancinginter-agencycollaboration,simplifying
+accessprocedures,andprovidingdedicatedsupportservices.
+• EmbedGenuineCommunityParticipationandFosterCo-Production:Tomovebeyond
+superficialconsultation,policymakersshouldcreatestructuralopportunitiesformean-
+ingfultenantinvolvementinthegovernanceandmanagementoftheirhousing. Fur-
+thermore,enablinglegalandfinancialframeworksareneededtosupportthegrowth
+andintegrationofalternativetenureandmanagementmodels,suchasco-housing
+andcommunitylandtrusts,allowingthemtoscalebeyondnicheexperiments.
+• ChampionDeepEnvironmentalandSocialSustainabilityHolistically: Urbanhousing
+policymustcomprehensivelyintegrateecologicalandsocialgoals. Thismeanspriori-
+tisingthedeepecologicalrenovationofexistingbuildingsalongsidesustainablenew
+construction,andstrategicallydesigninghousingenvironmentsthatactivelyfoster
+socialinteraction,mutualsupport, andatangiblesenseofcommunity, ratherthan
+merelyaimingforademographicmix.
+
+### Page 17
+
+Adm.Sci.2025,15,233 17of20
+Table3.Summaryofpolicyrecommendations.
+KeyArea PolicyRecommendations FutureResearchDirections
+Prioritiselong-termpubliccontrolof
+land,implementeffectiverent Conductcomparativeinstitutional
+regulation,andensuresustained analysesbetweenViennaandother
+InstitutionalStability&Stewardship publicinvestmentinnew citiestoidentifytheconditionsthat
+constructionand enableorconstrain“slowinnovation”
+maintenance/retrofittingofexisting indifferentcontexts.
+stock.
+Developtargetedstrategiesto Conductethnographicresearchto
+counteractexclusionbyenhancing explorethelivedrealitiesofresidents,
+Inclusivity&Allocation inter-agencycollaboration, howtheynavigategovernance,and
+simplifyingaccess,andproviding howinclusioneffortsareperceived
+dedicatedsupportservices. ontheground.
+Createstructuralopportunitiesfor
+meaningfultenantinvolvementin
+Investigatethebarriersandenablers
+governance. Establishlegaland
+toscalingupgrassrootshousing
+Governance&Participation financialframeworkstohelp
+innovationswithinlarger,more
+alternativetenuremodels(e.g.,
+bureaucraticsystems.
+co-housing)scalebeyondniche
+experiments.
+Prioritisedeepecologicalrenovation Explorehowsustainabilityand
+ofexistingbuildingsanddesign community-buildingeffortsare
+Sustainability housingenvironmentsthatactively enactedandexperiencedatthe
+fostersocialinteractionanda groundlevelthroughfine-grained
+tangiblesenseofcommunity. ethnographicstudies.
+Theconclusionsofthisstudyshouldbeconsideredinlightofitslimitations,primarily
+itsrelianceonsecondarydata,theabsenceofsystematiccross-nationalcomparison,anda
+limitedexaminationoftheinternaladministrativeprocessesoftheViennesesystem. These
+limitations,however,openavenuesforfutureresearch:
+• Comparative Institutional Analyses of “Slow Innovation”: Future research could
+conductin-depth,qualitativecomparativestudiesbetweenViennaandothercities(e.g.,
+Helsinki,asexploredbyKadi&Lilius,orcitieswithmoreresidualhousingsystems)
+to identify the specific institutional configurations, political conditions, and policy
+leversthatenableorconstrainthedevelopmentandresilienceof“slowinnovation”in
+diversesocio-economiccontexts.
+• Ethnographic Exploration of Governance and Lived Realities: There is a need for
+fine-grainedethnographicresearchwithinvariousViennesepublic,cooperative,and
+co-housing settings. Such studies could investigate how residents experience and
+negotiategovernancestructures,howsocialinteractionsareshapedbydesignand
+management,andhoweffortstowardsinclusion,sustainability,andparticipationare
+perceivedandenactedatthegroundlevel.
+• Investigating Mechanisms for Scaling and Adapting Innovations: Future studies
+shouldcriticallyexaminethebarriersandenablerstoscalingupsuccessfulgrassroots
+housinginnovations(likeBaugruppenorhabiTATprojects)withinlarger,morebu-
+reaucratized housing systems. This includes exploring how core principles of the
+Viennesemodel(e.g.,publiclandcontrol,dualsubsidysystems)mightbeadaptedin
+citieswithdifferentpoliticaleconomiesandresourceconstraints.
+• DevelopingFrameworksforEvaluating“SlowInstitutionalInnovation”: Researchis
+neededtodeveloprobustanalyticalframeworksandmetricsspecificallydesigned
+
+### Page 18
+
+Adm.Sci.2025,15,233 18of20
+toassessthemultifacetedimpactsof“slowinstitutionalinnovation.”Theseshould
+capturenotonlyquantitativeoutputsbutalsoqualitativedimensionssuchasinstitu-
+tionalresilience,democraticlegitimacy,long-termsocialequity,andthecapacityfor
+adaptivelearningwithinpublicorganisations.
+Inconclusion,Vienna’senduringpublichousingmodelservesasacrucialreminder
+that effective, equitable, and sustainable urban development can stem from patient, in-
+stitutionallyembeddedinnovation. Itsongoingadaptationoffersvitallessonsforcities
+worldwidestrivingtoreaffirmhousingasafundamentalsocialrightandacornerstoneof
+inclusiveurbanlife.
+Funding:ThisresearchwaspartiallyfundedbyANID-FONDECYT,grantnumber1241297.TheAPC
+wasfundedbyUniversidaddeLasAmericas,Chile.
+InstitutionalReviewBoardStatement:Notapplicable.
+InformedConsentStatement:Notapplicable.
+DataAvailabilityStatement:Nonewdatawerecreatedoranalyzedinthisstudy.Datasharingis
+notapplicabletothisarticle.
+ConflictsofInterest:Theauthordeclaresnoconflictsofinterest.
+References
+Aalbers,M.B.(2012).Subprimecities:Thepoliticaleconomyofmortgagemarkets.JohnWiley&Sons.ISBN978-1-4443-3776-1.
+Adetola, A.A., Courage, I., Azubuike, C.O., &Obinna, I.(2024). Economicandsocialimpactofaffordablehousingpolicies: A
+comparativereview.InternationalJournalofAppliedResearchinSocialSciences,6,1433–1448.[CrossRef]
+Aigner,A.(2019).HousingentrypathwaysofrefugeesinVienna,acityofsocialhousing.HousingStudies,34(5),779–803.[CrossRef]
+Aigner,A.(2022).What’swrongwithinvestmentapartments?Ontheconstructionofa‘financialized’rentalinvestmentproductin
+Vienna.HousingStudies,37(2),355–375.[CrossRef]
+AlvarezdeAndres,E.,Cabrera,C.,&Smith,H.(2019).Resistanceasresilience:Acomparativeanalysisofstate-communityconflicts
+aroundself-builthousinginSpain,SenegalandArgentina.HabitatInternational,86,116–125.[CrossRef]
+Arias-Loyola,M.,&Vergara-Perucich,F.(2021).Co-producingtherighttofail:ResilientgrassrootcooperativisminaChileaninformal
+settlement.InternationalDevelopmentPlanningReview,43(1),33–62.[CrossRef]
+Babos,A.,Orbán,A.,&Benko˝,M.(2024).Innovativehousingmodelstosupportshareduseofspace:ThecasestudyofSonnwendviertel
+OstinVienna.City,TerritoryandArchitecture,11,24.[CrossRef]
+Banabak,S.,Kadi,J.,&Schneider,A.E.(2024).Gentrificationandthesuburbanizationofpoverty:Evidencefromahighlyregulated
+housingsystem.UrbanGeography,45(10),1596–1618.[CrossRef]
+Batra,R.(2021).Athematicanalysistoidentifybarriers,gaps,andchallengesfortheimplementationofpublic-private-partnershipsin
+housing.HabitatInternational,118,102454.[CrossRef]
+Bhattacherjee,A.(2012).Socialscienceresearch:Principles,methods,andpractices.UniversityofSouthFlorida.ISBN978-1-4751-4612-7.
+Boano,C.,&Vergara-Perucich,J.F.(2016).Bajoescasez.¿Mediacasabasta?ReflexionessobreelPritzkerdeAlejandroAravena[Under
+scarcity.Ishalfahouseenough?ReflectionsonAlejandroAravena’sPritzker].RevistadeArquitectura,21,37–46.[CrossRef]
+Bonhomme,M.(2021).RacisminmulticulturalneighbourhoodsinChile:Housingprecarityandcoexistenceinamigratorycontext.
+BitácoraUrbanoTerritorial,31(1),167–181.[CrossRef]
+Bowen,G.A.(2009).Documentanalysisasaqualitativeresearchmethod.QualitativeResearchJournal,9(2),27–40.[CrossRef]
+Braun,V.,&Clarke,V.(2006).Usingthematicanalysisinpsychology.QualitativeResearchinPsychology,3(2),77–101.[CrossRef]
+Carrasco,S.,&O’Brien,D.(2021).Beyondthefreedomtobuild:Long-termoutcomesofElemental’sincrementalhousinginQuinta
+Monroy.URBE:RevistaBrasileiradeGestãoUrbana,13,e20200173.[CrossRef]
+Contreras,Y.,Neville,L.,&Gonzalez,R.(2019).In-formalityinaccesstohousingforLatinAmericanmigrants:Acasestudyofan
+intermediateChileancity.InternationalJournalofHousingPolicy,19(3),411–435.[CrossRef]
+ContrerasGatica,Y.,&SeguelCalderón,B.(2023).Gentrificacióneinmigración:Unarelaciónfrentealacrisismigratoriayhabitacional
+chilena[Gentrificationandimmigration:ArelationshipinthefaceoftheChileanmigratoryandhousingcrisis].ScriptaNova,27,
+41169.[CrossRef]
+Cramer-Greenbaum,S.(2021).Whocanafforda‘livable’place?Thepartoflivingglobalrankingsleaveout.InternationalJournalof
+UrbanSustainableDevelopment,13(1),70–82.[CrossRef]
+Creswell,J.W.(2007).Researchdesign:Qualitative,quantitativeandmixedmethodapproaches(2nded.).SAGEPublications.[CrossRef]
+
+### Page 19
+
+Adm.Sci.2025,15,233 19of20
+Economist Intelligence Unit. (2024). Global liveability index 2024. Available online: https://www.eiu.com/n/campaigns/global
+-liveability-index-2024/(accessedon28March2025).
+Eder, J., Gruber, E., Görgl, P., & Hemetsberger, M. (2018). How Vienna grows: Monitoring of current trends of population and
+settlementdynamicsintheViennaurbanregion[WieWienwächst:MonitoringaktuellerTrendshinsichtlichBevölkerungs-und
+SiedlungsentwicklunginderStadtregionWien].RaumforschungundRaumordnung,76(4),327–343.[CrossRef]
+Eseonu, T.(2022). Co-creationassocialinnovation: Including‘hard-to-reach’groupsinpublicservicedelivery. PublicMoney&
+Management,42(4),306–313.[CrossRef]
+Essletzbichler,J.,&Forcher,J.(2022). “RedVienna”andtheriseofthepopulistright. EuropeanUrbanandRegionalStudies,29(2),
+126–141.[CrossRef]
+FerreiraCosta,C.G.(2020).Disasterriskmanagementasaprocesstoforgeclimate-resilientpathways:LessonslearnedfromCabo
+Verde.DesenvolvimentoeMeioAmbiente,53,205–227.[CrossRef]
+Franz,Y.,&Gruber,E.(2018). Housing“forall”intimesofthehousingmarketcrisis? ThesocialhousingconstructioninVienna
+betweenclaimandreality[Wohnen“füralle”inZeitenderWohnungsmarktkrise?:DersozialeWohnungsbauinWienzwischen
+AnspruchundWirklichkeit].Standort,42,98–104.[CrossRef]
+Fra˛tczak-Müller,J.(2022). Innovativehousingpolicyand(vulnerable)residents’qualityoflife. FrontiersinPsychology,13,751208.
+[CrossRef]
+Gurran,N.(2003).Housinglocally:PositioningAustralianlocalgovernmenthousingforanewcentury.UrbanPolicyandResearch,
+21(4),393–412.[CrossRef]
+Hacke,U.,Müller,K.,&Dütschke,E.(2019). Cohousing—Socialimpactsandmajorimplementationchallenges. GAIA—Ecological
+PerspectivesforScienceandSociety,28(S1),233–239.[CrossRef]
+Hölzl,C.,Hölzl,D.,&Amacher,D.(2022).Netzwerkstrategienvon“HousingCommons”inderGründungsphase—DasBeispielder
+“habitat”-Hausprojekte“SchloR”und“BikesandRails”inWien[Networkstrategiesof“HousingCommons”inthefounding
+phase—Theexampleofthe“habiTAT”housingprojects“SchloR”and“BikesandRails”inVienna].MonatsheftefürÖkonomie,
+GeschichteundGesellschaftskritik,1,171–198.[CrossRef]
+Jones,P.(2017).Housingresilienceandtheinformalcity.JournalofRegionalandCityPlanning,28(2),129–145.[CrossRef]
+Kadi,J.(2015).Recommodifyinghousinginformerly“Red”Vienna?Housing,TheoryandSociety,32(3),247–265.[CrossRef]
+Kadi,J.,&Lilius,J.(2024).TheremarkablestabilityofsocialhousinginViennaandHelsinki:Amulti-dimensionalanalysis.Housing
+Studies,39(7),1607–1631.[CrossRef]
+Khomenko,S.,Nieuwenhuijsen,M.,Ambròs,A.,Wegener,S.,&Mueller,N.(2020).Isaliveablecityahealthycity?Healthimpactsof
+urbanandtransportplanninginVienna,Austria.EnvironmentalResearch,183,109238.[CrossRef]
+Kraftl,P.(2007).Utopia,performativity,andtheunhomely.EnvironmentandPlanningD:SocietyandSpace,25(1),120–143.[CrossRef]
+MagistratderStadtWien—WienerWohnen.(2024a).Hilfebeimietschulden.MagistratderStadtWien.
+MagistratderStadtWien—WienerWohnen.(2024b).Hausordnung.MagistratderStadtWien.Availableonline:https://www.wien.gv
+.at/wohnen/wohnbautechnik/pruefen/betriebskostenrechner.html(accessedon28March2025).
+MagistratderStadtWien—WienerWohnen.(2024c).Betriebskosten.MagistratderStadtWien.
+MagistratderStadtWien—WienerWohnen.(2024d).MunicipalhousinginVienna:History,facts&figures.MagistratderStadtWien.
+MagistratderStadtWien—WienerWohnen.(2024e).Derwienergemeindebau:Geschichte,daten,fakten.MagistratderStadtWien.
+Marquardt,S.,&Glaser,D.(2023).Howmuchstateandhowmuchmarket?ComparingsocialhousinginberlinandVienna.InGerman
+politics(Vol.32,Issue2,pp.361–380).Routledge.[CrossRef]
+Morawetz,U.B.,&Klaiber,H.A.(2022).Doeshousingpolicyimpactincomesortingnearurbanamenities?EvidencefromVienna,
+Austria.TheAnnalsofRegionalScience,69(2),2.[CrossRef]
+Morphet,J.,&Clifford,B.(2021).Revivinglocalauthorityhousingdelivery:Challengingausteritythroughmunicipalentrepreneurialism.Routledge.
+Novy,A.,Redak,V.,Jäger,J.,&Hamedinger,A.(2001).TheendofRedVienna:Recentrupturesandcontinuitiesinurbangovernance.
+EuropeanUrbanandRegionalStudies,8(2),131–144.[CrossRef]
+Nzau,B.,&Trillo,C.(2020). Affordablehousingprovisionininformalsettlementsthroughlandvaluecaptureandinclusionary
+housing.Sustainability,12(15),5975.[CrossRef]
+ÖsterreichischerVerbandgemeinnützigerBauvereinigungen.(2016).70JahreÖsterreichischerVerbandgemeinnützigerBauvereinigungen—
+Revisionsverband:Festschrift.MRG.
+Paidakaki,A.,&Lang,R.(2021).Uncoveringsocialsustainabilityinhousingsystemsthroughthelensofinstitutionalcapital:Astudy
+oftwohousingalliancesinVienna,Austria.Sustainability,13(17),9726.[CrossRef]
+Richards,K.A.R.,&Hemphill,M.A.(2018).Apracticalguidetocollaborativequalitativedataanalysis.JournalofTeachinginPhysical
+Education,37(2),225–231.[CrossRef]
+Rolnik,R.(2013).Lateneoliberalism:Thefinancializationofhomeownershipandhousingrights.InternationalJournalofUrbanand
+RegionalResearch,37(3),1058–1066.[CrossRef]
+
+### Page 20
+
+Adm.Sci.2025,15,233 20of20
+Salim,W.,&Drenth,M.(2020).Localgovernanceandaccesstourbanservices:PoliticalandsocialinclusioninIndonesia.InS.Cheema
+(Ed.),Governanceforurbanservices(pp.153–183).Springer.[CrossRef]
+Schikowitz,A.,&Pohler,N.(2024).Varietiesofalternativeness:RelationalpracticesincollaborativehousinginVienna.TheSociological
+Review,72(2),301–321.[CrossRef]
+Tammaru,T.,Marcin´czak,S.,vanHam,M.,&Musterd,S.(Eds.).(2015).Socio-economicsegregationinEuropeancapitalcities:Eastmeets
+West.Routledge.
+Unterdorfer,D.(2016).“Ihavenocontacttootherinhabitants...”SocialmixinginaViennesedistrict—Thedichotomyofaconcept
+[“IchhabekeinenKontaktzuanderenBewohnern...”SozialeDurchmischungineinemWienerBezirk—DieDichotomieeines
+Konzeptes].MitteilungenderÖsterreichischenGeographischenGesellschaft,158,109–132.[CrossRef]
+Vergara-Perucich,F.(2021). Participatoryactionplanningastransductivereasoning: TowardstherighttothecityinLosArenales,
+Antofagasta,Chile.CommunityDevelopmentJournal,56(3),449–469.[CrossRef]
+Vergara-Perucich,J.F.,&Boano,C.(2019).Vidaurbananeoliberal:Estudiodefactoresdejerarquizaciónyfragmentacióncontrael
+derechoalaciudadenChile[Neoliberalurbanlife:Studyofhierarchizationandfragmentationfactorsagainsttherighttothe
+cityinChile].RevistadeDireitodaCidade,11(1),426–452.[CrossRef]
+Wolfgring,C.,&Peverini,M.(2024).Housingthepoor?AccessibilityandexclusioninthelocalhousingsystemsofViennaandMilan.
+JournalofHousingandtheBuiltEnvironment,39,1783–1819.[CrossRef]
+Yin,R.K.(2003).Casestudyresearch:Designandmethods(3rded.).SAGEPublications.
+Disclaimer/Publisher’sNote: Thestatements, opinionsanddatacontainedinallpublicationsaresolelythoseoftheindividual
+author(s)andcontributor(s)andnotofMDPIand/ortheeditor(s).MDPIand/ortheeditor(s)disclaimresponsibilityforanyinjuryto
+peopleorpropertyresultingfromanyideas,methods,instructionsorproductsreferredtointhecontent.
+

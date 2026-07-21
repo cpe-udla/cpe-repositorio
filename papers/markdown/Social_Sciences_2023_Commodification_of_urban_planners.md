@@ -1,0 +1,1317 @@
+---
+author: Social Sciences
+year: 2023
+title: Commodification of urban planners
+source: Social_Sciences_2023_Commodification_of_urban_planners.pdf
+---
+
+# Commodification of urban planners
+
+**Author:** Social Sciences
+**Year:** 2023
+**Source:** Social_Sciences_2023_Commodification_of_urban_planners.pdf
+
+---
+
+## Content
+
+### Page 1
+
+social sciences
+$
+£¥ €
+Article
+Commodification in Urban Planning: Exploring the Habitus of
+Practitioners in a Neoliberal Context
+FranciscoVergara-Perucich1,*andMartínArias-Loyola2
+1 NúcleoCentroProduccióndelEspacio,UniversidaddelasAméricas-Chile,Providencia7500975,Chile
+2 DepartamentodeEconomía,UniversidadCatólicadelNorte,Av.Angamos0610,Antofagasta1240000,Chile;
+marias@ucn.cl
+* Correspondence:jvergara@udla.cl
+Abstract:Theconceptofhabitus,asintroducedbyPierreBourdieu,servesasalenstounderstand
+thesubjectivedispositionsandperceptionsthatinfluencedecision-makingwithinthesocialrealm.
+Thisstudydelvesintotheintricaterelationshipbetweenurbanplanners’habitusandthecommod-
+ificationprocessesinherentinaneoliberalsociety. Throughthematicanalysisofsemi-structured
+interviews with 27 Chilean urban planners, this research identifies typologies that capture their
+disciplinarystancesonthreepivotalurbanismfacets: thecity’sconceptualization,thenuancesof
+urban practice, and visions of utopia. A salient finding is the palpable tension urban planners
+experience,tornbetweentheaspirationtofosterawell-conceivedcityandthecommodifyingforces
+thatshapedecision-making.Thiscommodificationoftheplanner’sethosemergesasabyproduct
+ofentrenchedneoliberalinstitutionalpractices.Thisstudydelineatesthreedistincthabitustypolo-
+gies: thepublic,private,andacademicurbanplanner,eachexhibitingvariedperspectivesonthe
+commodificationofurbanplanning.Collectively,theseinsightsshedlightontheprofoundwaysin
+whichneoliberalparadigmsinfluenceurbanplanning,revealingbothitsdisciplinaryboundariesand
+inherentcontradictions.
+Keywords:habitus;themeanalysis;neoliberalism;urbanplanning
+Citation:Vergara-Perucich,Francisco,
+1. Introduction
+andMartínArias-Loyola.2024.
+Neoliberalism exerts a significant influence on urban planning throughout Latin
+CommodificationinUrbanPlanning:
+America, ushering in an era of market-centric urbanism and exacerbating socio-spatial
+ExploringtheHabitusofPractitioners
+inaNeoliberalContext.SocialSciences inequality(Brites2017). ThisphenomenonisnotablyevidentinthecaseofSantiago,where
+13: 22. https://doi.org/10.3390/ neoliberalpolicieshaveplayedapivotalroleinshapingthetrajectoryofurbandevelopment
+socsci13010022 (Fuentealba 2019). In Mexico City, the privatization of land and the implementation of
+market-orientedhousingpolicieshavebeenkeydriversofurbansprawl(SalinasArreortua
+AcademicEditor:CarlosTeixeira
+andPardoMontaño2018). Similarly,inSaoBernardodoCampo,Brazil,theascendancy
+Received:23October2023 oftherealestatesectorhasunderminedprogressiveandredistributiveplanningefforts,
+Revised:28November2023 highlightingtheformidablechallengesinherentinimplementinginclusiveurbanplanning
+Accepted:1December2023 withinaneoliberalcontext(Souzaetal.2020).Collectively,thesestudiesprovidecompelling
+Published:26December2023 evidenceoftheintricateandoftencontentiousrelationshipbetweenneoliberalismandthe
+practiceofurbanplanningintheLatinAmericancontext.
+Chile, the cradle of global neoliberalism (Harvey 2005), initiated its urban model
+in1979withtheNationalUrbanDevelopmentPolicy(Daher1991;Gross1991;Vergara-
+Copyright: © 2023 by the authors.
+PerucichandBoano2020a). Thiswaslaterratifiedbytheregulatoryframeworkprovided
+Licensee MDPI, Basel, Switzerland.
+bythe1980PoliticalConstitution,andconsolidatedthroughsubsidiaryurbandevelopment
+Thisarticleisanopenaccessarticle
+instruments. Theseshapedspatialtransformationsthat,incitieslikeitscapitalSantiago,
+distributed under the terms and
+remainhighlyvisibletothisday. Specifically,thecharacteristicsoftheneoliberalurban
+conditionsoftheCreativeCommons
+Attribution(CCBY)license(https:// modelfocusontheimportancegiventopropertyandcapitaltoguideurbandevelopment
+creativecommons.org/licenses/by/ forms, assigning a dominant role to the market as a shaper of space. Meanwhile, the
+4.0/). stateassumesasubsidiaryroleforinstanceswherethemarketdoesnotparticipatedueto
+Soc.Sci.2024,13,22.https://doi.org/10.3390/socsci13010022 https://www.mdpi.com/journal/socsci
+
+### Tables on Page 1
+
+
+|  |
+|---|
+| $
+£¥ |
+
+
+### Page 2
+
+Soc.Sci.2024,13,22 2of24
+unprofitability(Anderson2014;Castree2006;López2020;PinsonandMorelJournel2016;
+Vergara-PerucichandBoano2019).
+Itisduetothiseconomicfocusthatanalysesofneoliberalisationprocessestendto
+centreonmarket,state,andconsumerstructures. However,theydon’talwaysfocusonthe
+actorsimplementingactionsemanatingfromtheseneoliberalstructures. Inthespecificcase
+ofurbanisminChile,thisapproachisabsent. Studiesontheneoliberalcity(Janoschkaand
+Hidalgo2014),theneoliberalurbanmodel(TorresJofré2017),anditseffectsareabundantin
+literature. Yet,thesubjectivepositioningofurbanplannersregardingdisciplinarypractice
+within the neoliberal framework remains open to empirical exploration. The complex
+andmultifacetedrelationshipbetweenneoliberalismandurbanplanning,aselucidated
+byscholarslikeDavidHarvey, isasubjectofrigorousinquiry(Sager2011). Neoliberal
+urbanpolicies,drivenbythemobilityofinvestmentcapital,inter-citycompetition,andthe
+ethosofpublicentrepreneurialism,poseformidablechallengestotraditionalparadigms
+ofpublicplanning. Theneoliberalisationofsocial,economic,andpoliticalprocesseshas
+usheredinamarket-orientedorientationinurbandevelopment,planning,andgovernance,
+engendering inherent contradictions in the very governance structures of cities (Tas¸an-
+Kok2012). Citieshaveemergedascentralbattlegroundsintheunevenandcrisis-laden
+trajectoryofneoliberalrestructuringprojects,withpre-existinginstitutionalandspatial
+landscapesprofoundlyinfluencingtheintricateinterplaybetweenneoliberalinitiatives
+andtheresultanturbantransformations(Pecketal.2009). Thecontinuumofneoliberalism,
+ranging from radical system transformation to policy adjustments, is intricately linked
+toabroadertypologyofapproachesconcerningthereconfigurationofaccumulationand
+regulationwithinadvancedcapitalistsocieties,withurbangovernanceoccupyingapivotal
+roleinthisevolvingdiscourse(Jessop2002).
+Thisstudyfocusesonthisknowledgecontribution,seekingtogenerateinterpretations
+thatinformtypologiesofurbanplanners’habitustooperatewithinaneoliberaldisciplinary
+actionfield. UsingSantiagodeChileasacasestudyiskey,asitscity-makingapproach
+still follows principles established during the neoliberalisation of the urban planning
+apparatus,primarilybasedonitsdismantlingandtransfertothemarket(Valenciaand
+Marco2007). Institutionaldesignforawayofcity-makingisformedthroughexperience
+and perceptions people have towards such experiences, forming a consciousness that
+guides attitudes and behaviours, similarly to studies in the sociology of art (Bourdieu
+1990,1997,2014). Thisprocessanditspersistencearemaintainednotonlybyinstitutional
+design, but by a mode of conduct of the professionals responsible for executing and
+designingcities,whichcouldbetermedhabitus. Inthissense,byformulatingthehabitus
+ofadisciplinarybody,predispositionsandorientationsforjudgementscanbeexplored,
+contributingtodecision-makingandrelationshipsbetweenactors(YilmazandKuru2021).
+PierreBourdieudefineshabitusassystemsofdurableandtransferabledispositions,whose
+structuringactsasgeneratingandorganisingprinciplesofpracticesandrepresentations.
+These can produce outcomes without necessarily seeking such results consciously, but
+ratherbecauseofconductinherenttoanactionfield(Bourdieu1991). WithinBourdieu’s
+broadmethodologicalcontributions,habitusisinscribedwithinthetheoryofaction,where
+agents acquire autonomy levels arising from adopting field rules, assuming a strategic
+disposition towards decisions (Silvina Daldi 2018). Thus, habitus is a social product of
+socio-historicaloriginthat,havingcertainstructures,operatesasasocialproducer,enabling
+thecontinuityofcertainagents’waysofdoinginthesocialworld(Rodrigo2015).
+The social field is understood as a local and social order upon which individuals
+positionthemselvestocarryoutgamesbetweenactors,identifyingtheirrespectivedisposi-
+tionsinthem(Fligstein2001;StewartandFielding2021). Habitussynthesisesindividuals’
+approachtothesegames(Bourdieu2004),allowingknowledgeofwhatistakenforgranted
+by these actors in each of the steps they take within the playing field (Reay 2015). In
+socialresearchpractice,habituscanbeseenasanorganisationtechniqueofinformation
+emanatedbyagents,allowingtheconstructionofanarrativeabouttheirpreconceivedand
+unconsciousdispositionstowardscertainsituationsinherenttotheirtasksanddailylife.
+
+### Page 3
+
+Soc.Sci.2024,13,22 3of24
+Inthiscase,habitusispertinenttocharacterisingurbanplanners’subjectivedispositions
+whenoperatingwithintheneoliberalsocialworld.
+SincethesocialoutbreakofOctober2019,Chilehasenteredadeeppoliticaltransfor-
+mationprocessthatcouldbringnewwaysofrelatinginsociety(Arias-Loyola2021;Salazar
+2020;Mayol2019;Vassalloetal.2021),startingwiththeredefinitionofitssocialcontractby
+discussingtheformationofanewconstitution. Inthiscontext,oneofthekeyaspectsis
+recognisingcity-makingmodesbeforethisoutbreak,toprospectpotentialchangesinwhat
+couldbepost-neoliberalorwelfareurbanism. InChile’scase,studiesonurbanplanners’
+habitusdonotexist,makingthisakeyinputforthetimesahead.
+Hence,therelevanceofthisarticleisjustified,analysingunderthehabitusmethod-
+ologicalframeworkthe27semi-structuredinterviewsconductedbetweenJanuary2015
+andAugust2016withvariousChileanurbanplanners. Thisstudyexplorestheirdispo-
+sitionstowardsthreefieldsrelatedtotheirdisciplinarytasks: ageneralviewofSantiago
+deChile,thepracticeofurbanisminsuchacity,andreflectionsontheroleofutopiain
+urbanthinking. Thesethemesweretriggerstoidentifyspecificviewsandpredispositions
+towardsthesetopics, seekingtoidentifyanddifferentiatethehabitusoftheseactorsin
+theurbanismplayingfield. Fromtheseinterviews,acodingandmatrixorganisationof
+resultsiscarriedout,analysedwiththethematicanalysistechnique. Theresearchbehind
+this article is triggered by the following research questions: (1) How do the habitus of
+public,private,andacademicurbanplannersinChilemanifest,andwhataretheirdefining
+characteristicsinthecontextofneoliberalurbanism? (2)Inwhatwaysdothesehabitus
+influencetheurbanplanningpracticesanddecision-makingprocesses,andhowarethey,
+inturn,shapedbytheneoliberalurbancontext?
+Theobjectivesofthisarticlearethefollowing:
+1. ToexploreanddelineatethedistincthabitusofChileanurbanplannerswithinthe
+context of a neoliberal urban landscape, focusing on three specific types: public,
+private,andacademicurbanplanners.
+2. Toanalysehowthesehabitusinfluenceandareinfluencedbythepractices,disposi-
+tions,anddecision-makingprocessesinurbanplanninganddevelopment.
+3. Toinvestigatetheextenttowhichthesehabitusenableorconstraintherealisation
+of urban visions, particularly in relation to utopian ideals, within the prevailing
+neoliberalframework.
+4. TocontributetheoreticallytotheunderstandingofurbanplanningpracticesinChile
+byapplyingBourdieu’sconceptofhabitus,therebyofferinganuancedperspectiveon
+theinterplaybetweenprofessionaldispositionsandurbandevelopmentdynamics.
+Fromthisanalysis,asynthesisofresultsisconstructedforeachofthefields,andthree
+typologies of the urban planner’s habitus in Chile’s neoliberal context are constructed.
+Thisallowstheidentificationofthreespecifichabitus: thepublicurbanplanner—based
+ontechnicalknowledgeofthenormbutawareofitslimitations,criticaloftheeconomic
+model;theprivateurbanplanner—criticalofrentasthemainobjectiveoftheirpractice
+butdependentonit,exercisestheirprofessionincontradiction;andtheacademicurban
+planner—withsomecreativeandcriticalindependencebutwithoutmaterialresults.
+1.1. Chile: AnUrbanSocietyCommodifiedbyNeoliberalism
+Chile’slongandnarrowgeographyhasseveraluniquehistorical-politicalfeaturesthat
+havemadethecountryanunexpectedkeyplayerontheglobalstage. SincetheSpanish
+colonisation,thecountry’sfatehasbeentiedtotheoligo-productionandexportofraw
+materialssuchasminerals,salmon,andforestryproducts. Currently,itholdsthelargest
+reservesandistheleadingproducerofcopper,aswellasbeingpartofthe“LithiumTrian-
+gle”alongsideBoliviaandArgentina,boastingthelargestreservesandglobalproduction
+(USGS2020). Thiswealthhasfacilitatedthesocio-economicandterritorialdeepeningof
+the country’s extractivist development strategy, first implemented globally during the
+civic-military dictatorship that began in 1973 (Harvey 2005), and deepened during the
+representativedemocracyperiodfrom1990onwards(Arias-Loyola2021;Barton2002). For
+
+### Page 4
+
+Soc.Sci.2024,13,22 4of24
+decades,theworld’sfirstneoliberalexperimentdazzled,andhighmacroeconomicgrowth
+ratescombinedwithrelativepoliticalstabilityledittobeconsidered“oneofthegreatest
+economicmiraclesofourtime”byinfluentialthinkerslikeFriedrichvonHayek(Ebenstein
+2014,p.300)and“anevenmoreimpressivepoliticalmiracle”accordingtoMiltonFriedman
+(1994,p. 177).
+Thus,formanyinternationalinstitutions,suchastheWorldBank(Foxley2004),the
+extractivist neoliberalism model, colloquially known as “the Chilean model” was seen
+as a successful example of development based on the exploitation of natural resources,
+primarily minerals. Most of the mining exploitation occurs in the country’s northern
+region,whiletheheadquartersofmultinationalminingcompaniesandthestate-owned
+CODELCOareconcentratedinSantiago,thenation’scapital. Santiagocapturesmuchof
+the value produced in the extractive industries, as well as the exercise of the country’s
+economicandpoliticalpower. Thishasledtoincreasinginequality,wherealargeportion
+of the Chilean population and its territories live in chronic debt and job precarity due
+tothecompleteprivatisationofsocialrights(education,health,pensions,housing,etc.)
+drivenbytheneoliberalmodel(Vergara-PerucichandBoano2019,2020b). Theprofound
+inequalitiesdrivenbyneoliberalism,institutionallyreifiedinthe1980politicalconstitution,
+havegeneratedgrowingdiscontentamongtheChileanpopulation,especiallyinterritories
+peripheral to political and economic power, such as Santiago’s poorest communes and
+extractiveregions,consideredsacrificezones.
+Thisunrestfinallyeruptedon18October2019,initiatingaseriesofprotestsinvarious
+citiesacrossthecountrydemandingstructuralchanges(Arias-Loyola2021),thespecific
+consequencesofwhicharestillmaturing. Inthecontextofurbanstudies,HenriLefebvre’s
+conceptualizationofurbanlifeoffersacriticalandcomprehensiveperspective. Lefebvre,
+in his seminal work “The Production of Space” (Lefebvre 1974), posits that urban life
+isnotmerelyabyproductofspatialarrangements,butratheradynamicprocesswhere
+spaceiscontinuouslyproducedandreproducedthroughsocialpractices. Heemphasizes
+the centrality of everyday life in the urban experience, arguing that it is through the
+routineactivitiesofitsinhabitantsthatthecityisbothshapedandexperienced. Lefebvre’s
+approach transcends traditional notions of urbanism by integrating elements of social,
+political,andeconomictheory,therebyframingurbanlifeasamultifacetedanddialectical
+phenomenon. Thisperspectiveiscrucialinunderstandingthecomplexinterplaybetween
+spatial structures and social processes in urban environments, highlighting how urban
+spacesarenotonlyphysicallocalesbutalsoarenasofsocialactionandinteraction,deeply
+imbued with meanings and values (Lefebvre 1974). While the research for this article
+commencedpriortothesocialoutbreak,theinsightsgleanedfromtheperspectivesofits
+participantscanilluminatetheunderlyingcausesofthishistoricChileaneventthatbeganin
+October2019. Thisperiodmarkedasignificantmomentwhensocietycollectivelyrebelled
+againstanurbanlifestylethatfailedtoalignwiththeirexpectations,officialnarratives,and
+thestarkcontrastbetweentheelite’soptimismandthedailyrealitiesofthemajorityof
+citizens.Wecontendthatthefindingsofthisarticleoffervaluableexplanationsforthesocial
+outbreak. WhatisclearisthattheChileansocialoutbreak,thepandemic,andtheclimate
+criseswillproducechangesinurbanism,wherethenaturalisationofthecommodification
+ofsocio-spatialpracticesisunderscrutiny. Thesechangeswillaffectthewayscitiesare
+made,anditisrelevanttosituatethecasewithsomehistoricalcontext.
+Urbanism in Chile emerged under the instruction of Austrian urban planner Karl
+Brunner in the 1930s, known as scientific urbanism (Bannen Lanata and Silva Pedraza
+2016;Gurovich1996),generatingavirtuousurbanproductionprocessforabout40years
+until the 1973 coup, when the planning apparatus was suspended by the dictatorship.
+Theregimefocusedeffortsonbenefitingbusinessgroupsthroughvarioustaxexemptions
+forconstruction,aswellasreorganisingcitiesbyfreeinguplandfromwell-locatedareas
+occupied by settlers to create new urban peripheries in the nation’s main cities, with
+particularly visible effects in Santiago de Chile, its capital city (Bohoslavsky et al. 2019;
+CeledonForster2019). The1979nationalurbandevelopmentpolicypavedthewayforan
+
+### Page 5
+
+Soc.Sci.2024,13,22 5of24
+urbanisticmodelcentredonfundamentallymercantilistprinciples: (i)landisnotscarce,
+(ii)housingscarcitywillbesolvedbythemarket,(iii)allstateinterventionincitiesshould
+aimtoimprovelandprofitability,and(iv)thegoalofurbandevelopmentistoenhance
+the profitability of the real estate business (CNDU 2015; Daher 1991; Gross 1990, 1991;
+Vergara-Perucich2019).
+Inthiscontext,transformationsincitypraxisandthebeliefsystemforurbanplanners
+andarchitects’decision-makingwerealsoexposedtosignificantchanges. Thesehavebeen
+scarcelyexplored, butaredirectlyrelatedtotheurbanformofChileancitiesproduced
+over the last 40 years (Vergara-Perucich and Boano 2020a). On the cusp of a change in
+theprevailingurbanmodel,thisstudyoffersanhistoricalrecordofhowagroupofurban
+planners practising their profession in Santiago de Chile evaluated their role in society.
+Fromthesedescriptions,itexploreshowtheirbeliefsystemsanddecision-makingprinciples
+couldbecategorisedintohabitusinfluencedbyanethos,basedonthecommodificationof
+socio-spatialrelationships.
+1.2. OnHabitus,LefebvreandCategoriesforUnpackingUrbanPractices
+In the realm of urban studies, particularly when examining the lived experiences
+andpracticesofurbanpractitioners,PierreBourdieu’sconceptofhabitusemergesasan
+invaluable analytical tool. Bourdieu’s habitus, as Wagner and McLaughlin (2015) note,
+enriches the psychologically informed debates around social class, offering a nuanced
+understandingofhowclassstructuresinfluenceindividualbehavioursandperceptionsin
+urbansettings. Lizardo(2004)furtheremphasizestherelevanceofBourdieu’sframework
+inunderstandingtheinterplayofeconomic,social,andculturalcapitalincontemporary
+urbanlife. Thisapproachisparticularlypertinentinanalysinghowtheseformsofcapital
+shapethepracticesandexperiencesofurbanpractitioners.
+WarwickandBoard(2017)highlighttheutilityofhabitusinconceptualizingagency
+andthecapacitytotransformsocialstructures. Thisaspectiscrucialinunderstandinghow
+urbanpractitionersnavigateandpotentiallyreshapetheurbanenvironment,influencedby
+theirsocialandculturalbackgrounds. Collet(2009)underscoresBourdieu’scontributionto
+comprehendingthecomplexprocessesofsocialinteractions,centraltotheactionlearning
+that takes place within urban contexts. The habitus provides a lens through which the
+intricatedynamicsoftheseinteractionscanbeexamined,revealinghowurbanpractitioners
+engagewithandareshapedbytheirurbanmilieu. Cottle(2022)arguesthatthegreater
+thechangeinthesocialenvironment,themoresalientthebenefitsofusinghabitusasa
+tooltoanalyseagents’behaviour. Thisisparticularlyrelevantinurbansettings, which
+are often sites of rapid and profound social change. By applying Bourdieu’s habitus,
+researcherscangaindeeperinsightsintohowurbanpractitionersadapttoandinfluence
+thesechangingenvironments.
+Wacquant(2012)advocatesforcombininganethnographicmethodologicaldesign
+withaBourdieusianconceptualframeworktoenablepowerfulcriticalanalysisandcontex-
+tualizedsocio-politicalcommentary. Thisapproachisespeciallyeffectiveinurbanstudies,
+whereethnographycancapturethelivedexperiencesofurbanpractitioners, andBour-
+dieu’stheoreticalconstructscanhelpinterprettheseexperienceswithinbroadersocialand
+politicalcontexts.
+Furthermore,Bourdieu’sframeworkisinstrumentalindissectingtheimpactsofne-
+oliberalismonurbanlife. Neoliberalism,asapoliticalprojectofstate-crafting,emphasizes
+disciplinaryworkfare,neutralizingprisonfare,andthetropeofindividualresponsibility,
+allservingthecommodificationprocess. Inthiscontext, habitusoffersacriticallensto
+understandhowurbanpractitionersnavigateandrespondtotheneoliberalrestructuring
+ofurbanspacesandpolicies. IncorporatingHenriLefebvre’striadicconceptualizationof
+thecity,practice,andutopiafrom“TheUrbanRevolution”alongsidePierreBourdieu’s
+habitusoffersanuancedmethodologicalapproachforstudyingurbanlife. WhileBour-
+dieu’shabitusservesasanoperativetool,groundingtheanalysisintheeverydaypractices
+anddispositionsofurbanpractitioners,Lefebvre’sconceptsprovideabroaderconceptual
+
+### Page 6
+
+Soc.Sci.2024,13,22 6of24
+framework. The city, in Lefebvre’s view, transcends its physicality, embodying a com-
+plex social construct. This perspective aligns with Bourdieu’s understanding of social
+and cultural influences on individual behaviours, enriching the analysis of how urban
+environmentsareexperiencedandshaped. Lefebvre’semphasisonpracticedovetailswith
+Bourdieu’sfocusonhabitualactions,highlightingthecontinuousproductionandreproduc-
+tionofurbanspacesthrougheverydayactivities. Thisintersectionoffersinsightsintothe
+dynamicrelationshipbetweenurbanstructuresandtheagencyofinhabitants. Moreover,
+Lefebvre’snotionofurbanutopia,asanidealdrivingurbandevelopment,complements
+Bourdieu’shabitusbysheddinglightonhowaspirationsandvisionsofurbanpractitioners,
+influenced by their social and cultural capital, shape their interactions within the city.
+UtilizingBourdieu’shabitusfordetailed,operativeanalysisandLefebvre’sconceptsfor
+abroaderconceptualunderstanding,thiscombinedapproachprovidesacomprehensive
+methodologicalframeworkforexaminingthecomplexitiesofurbanlife,practices,andthe
+pursuitofutopianvisionsinurbanspaces.
+TakingLefebvre’scontributiontourbanstudies,inordertoarticulateitwiththeuse
+ofthehabitustostudypractitionersapproachtourbanismsinChile,thedefinitionsofcity,
+practice,andutopiaareoperativelyincorporatedintothetheoreticalmatrixofthisresearch
+asfollows:
+City: Incorporating the insights of Henri Lefebvre and contemporary scholars, the city
+emergesasamultifacetedentity,transcendingitsphysicalitytoembodyacomplexsocial
+constructshapedbyhistorical,cultural,andeconomicforces. Lefebvre’sportrayalofthe
+cityasa‘workofart’underscoresitsgenesisfromhumanactivityandimagination,where
+socialrelationsarenotjustrepresented. butactivelyconstructedwithinitsspatialconfines
+(Purcell2014). Thisdynamic,ever-evolvingnatureofthecity,asahubofdiversityanda
+crucibleforsocietalcontradictions,positionsitasapivotalarenaforrevolutionarychange
+andthecreationofnovelsocialspaces. Farfrombeingamerebackdrop,thecityactively
+participatesinthedramaofurbanlife,continuouslymouldedbyandmouldingthesocial
+practicesofitsinhabitants. ThisperspectivealignswithMolano’sassertionofthe‘right
+tothecity’asapotentresponsetoneoliberalurbanism,empoweringurbandwellersto
+reclaimandreshapetheirurbanenvironments(Molano2016). Thus,thecity,inLefebvre’s
+framework,isnotjustalocusofhumanexistence,butaliving,breathingentity,intimately
+linkedtotherhythmsandexperiencesofthosewhoinhabititsspaces.
+Practice: In redefining the concept of “practice” through the lens of Henri Lefebvre’s
+theoretical framework, it becomes evident that practice is a multifaceted and dynamic
+concept, central to understanding the interplay between individuals and their spatial
+and social environments. Lefebvre perceives practice not just as routine behavior, but
+as a critical component in the production and transformation of space, where space is
+simultaneouslyaresultandafacilitatorofthesepractices(Elden2014). Thisperspective
+isintegraltohisspatialtheory,highlightingthedialecticalrelationshipbetweenhuman
+agency and spatial structures. Practice, in Lefebvre’s view, is laden with the potential
+to both replicate and alter social realities, thus playing a crucial role in the continuous
+evolutionofurbanandsociallandscapes. Colemanfurtherelucidatesthisbycharacterizing
+Lefebvre’s idea of practice as a critique of everyday life, suggesting that practice is an
+explorationofthehumanadventure, deeplyembeddedinthemundaneyetsignificant
+activitiesthatconstitutedailyexistence(Coleman2015). Thisapproachelevatestheconcept
+of practice to a primary analytical tool for dissecting the intricate connections between
+space,society,andtheminutiaeofeverydaylife.
+Utopia: Intherealmofurbanism,HenriLefebvre’sconceptof“Utopia”isintricatelylinked
+tohiscriticalperspectiveonspaceasasociallyconstructedentity,highlightingthetrans-
+formativepotentialofurbanspacesinfosteringrevolutionarysocietalchange. Lefebvre’s
+interpretationofutopiadivergesfromthenotionofastatic,idealizedmodel;instead,he
+envisions it as a dynamic, ongoing process that cultivates spaces conducive to the full
+realizationofhumanpotentialandtheestablishmentofamoreequitableandparticipatory
+society(Coleman2013). Thisapproachdirectlychallengesthenormsofcapitalist-driven
+
+### Page 7
+
+Soc.Sci.2024,13,22 7of24
+urbandevelopment,advocatingforaprofoundre-envisioningofurbanspacesasrealmsof
+livedexperiencewheredailylifeisnotmerelyaccommodatedbutexalted. Inthiscontext,
+spacebecomesadeeplypoliticalentity,mirroringandinfluencingsocialdynamics. Pinder
+emphasizesthisbynotingLefebvre’sengagementwiththe“possible-impossible”,aconcept
+thatemergedfromacriticaldialoguewithotherstrandsofutopianurbanism(Pinder2015).
+Furthermore,ColemanelaboratesonLefebvre’smultifacetedvisionofutopia,describing
+itas‘dialecticalutopianism’,ablendofexperimentalandtheoreticalutopias(Coleman
+2015). This dialectical approach underscores the notion of utopia as both a theoretical
+constructandapractical,experimentalendeavour,continuouslyevolvinginresponseto
+thecomplexitiesofurbanlifeandsocietaldevelopment.
+Using‘city’,‘practice’,and‘utopia’asanalyticalframeworks,theresearchconducts
+areviewbasedoninterviewswithurbanpractitioners. Thisapproachenablesadeeper
+understandingoftheethosbehindtheirdecisions,theirinterpretationsoftheneoliberal
+context,anditsinfluenceontheirpractices. Fromtheseresponses,thestudycategorizes
+theresultsandidentifiesvarioushabitus.
+2. MaterialsandMethods
+This research is inductive, exploratory, and qualitative in nature, based on semi-
+structuredinterviews,usingthecasestudyresearchdesignproposedbyYin(2009). The
+semi-structuredinterviewisavariantofthein-depthinterview(May2001). Thismethod
+canbeviewedasapurposefulconversation,wheretheinterviewerandintervieweeengage
+asequalsinahorizontaldialogueonaspecifictopic(Seidman2006). Toeffectivelyapply
+thismethod,theinterviewermustbefamiliarwiththeareastheywanttheinterviewees
+toaddress. Oneoftheadvantagesofthesemi-structuredinterviewisthatitallowsfor
+explorationofvariousperspectivesonthetopicathandandprovidesnewinformationor
+interpretationsaboutthesubjectofstudy.
+Asemi-structuredinterviewincludesopen-endedquestionstoencouragethedevelop-
+mentofresponseswithoutspecificboundaries,althoughitisrecommendedtomaintain
+certain time margins to facilitate the coding and interpretation of the answers. In this
+research, the purpose of using the semi-structured interview technique was to extract
+from the interviewee’s various personal experiences as urban planners, to understand
+theconflictsandtrendstheyobserveintheirdailypracticeofthisdiscipline. Theuseof
+thismethodhasbeencrucialtoinformingtheanalysisandsubsequentconstructionofthe
+urbanplanners’habitusundertheneoliberalmodel.
+ThestudyhasfocusedonprofessionalsworkingintheMetropolitanAreaofSantiago,
+consideringthatthisurbanspaceconstitutesacomplexurbansystemof34interdepen-
+dentcommunesunlikeanyotherinthecountry,concentratingabout40%ofthenational
+populationand60%oftheGDP.Itscomplexityallowsittobeseenasacaseofadeeply
+neoliberalised metropolis, where urban practice is fluid and constant. Understanding
+therelationshipbetweenSantiago’surbanplannersandtheneoliberalmodelshedslight
+onmanyofitscontradictions, therebyfacilitatingitsinterpretationthroughBourdieu’s
+habitusmethod.
+Thesamplewasconstructedfollowingthejudgmentsamplingtechniqueexplained
+byMarshall(1996),whichinvolvescreatinganinitialsampleofintervieweesaimingto
+interview those who will be most productive in answering the research objectives—in
+thiscase, toconstructtheurbanplanner’shabitusinaneoliberalsocialfieldinthecity
+of Santiago de Chile. Table 1 anonymously indicates a general characterization of the
+interviewedagents. Marshallsuggestshavingasetofguidingquestionsthatlaterallow
+classifyingtheanswersbytopics,butitwasalsoacceptedthattheintervieweessuggest
+topicsorproposeaddingnewinterviewees. Thisishowthreemoreintervieweeswere
+addedtothesample. Sincetheaimwastogatherinformationthatinformedapractice
+ontheneoliberalfield,itwasimportantthattheintervieweesrecognisedneoliberalism
+as an existing condition in Chile, something that was not necessarily universal in the
+Chileancontext.
+
+### Page 8
+
+Soc.Sci.2024,13,22 8of24
+Hence, a list of agents with a recognised analytical capacity in urban studies was
+needed, or at least with proven ability to be informed about recent disciplinary devel-
+opmentsinChile. Thesample, therefore, consistsofprominentauthorsofprojectsand
+researchonthedisciplinaryfieldofurbanism,whohavebeenpartofrenownedinstitu-
+tions related to urban development in academia, civil organizations, government, and
+theprivatesector. Therewasanimbalancebetweenmaleandfemalerespondents,which
+producesagenderrepresentationproblem,highlightingtherelativemasculinisationinthe
+interpretationscollectedasaweaknessofthiswork. Noquestionsrelatedtoagendered
+perspectivewereaskedintheseinterviews,anaspectthatispartofthemethodological
+shortcomings of the research. In part, this problem arose because, from an initial ten-
+tative list of 40 interviewees, only 22 agreed to the interviews. Then, from that list of
+22confirmedinterviews,5wereaddedbysuggestionofsomeintervieweesinasnowball
+modality. Byinterviewnumber20,therewasalreadyacertainsaturationofthesample,
+meaningtheresponsesbetweendifferentintervieweesbegantorepeatinargumentsand
+positions,ensuringthatbynumber27,thesamplewasalreadyrepresentativetodevelopa
+characterizationbyhabitus.
+Table1.Sampleofinterviewees.Source:authors.
+InterviewID Gender PlaceofInterview RealmofPractice
+I1 m Santiago Academia
+I2 m Santiago NGO
+I3 f Santiago Private
+I4 f Santiago Academia
+I5 f Santiago Public
+I6 m Santiago Public
+I7 m Santiago Academia
+I8 m Santiago Private
+I9 m Santiago Public
+I10 m Santiago Private
+I11 m Valparaíso Public
+I12 m ViñadelMar Public
+I13 m Santiago NGO
+I14 m Santiago Academia
+I15 m Santiago NGO
+I16 m Santiago NGO
+I17 m Santiago Public
+I18 m Santiago NGO
+I19 m Santiago NGO
+I20 m Valdivia Academia
+I21 m Santiago Private
+I22 m Santiago Private
+I23 m Santiago Private
+I24 m Santiago Private
+I25 m Santiago Private
+I26 m Santiago NGO
+I27 m Santiago Public
+
+### Page 9
+
+Soc.Sci.2024,13,22 9of24
+TheinterviewswereconductedinthecitiesofSantiago(24),Valparaíso(1),Viñadel
+Mar(1),andValdivia(1). Fromtheseinterviews,narrativeswerecollectedonhowurban
+planningoperatesinaneoliberalsocialworld. Mostoftheinterviewees’responseswere
+recordedinaudio,andallinterviewsincludedwrittennotes. Infiveinterviews,therecord-
+ingdevicefailed,whichwasonlydiscoveredwhenstartingthetranscription. Thenotes
+takenduringtheinterviewwerecrucialtoaddresstheseissues. Questionswereformulated
+toguidetheinterviews,involvingafirstparttounderstandtheagents’relationshipwith
+urbanismandasecondpartwithprovocationsoncertaintopics, attemptingtofostera
+broadconversationonaspectssuchaspolitics,practice,utopia,andthecapitalistcity.
+Thelimitationsofthisarticlemaybeunderstoodinthat,in2019,Chileexperienced
+asocialoutbreak,sincewhendifferentinterpretationsofthecauseshaveemergedinthe
+literature. However, given that this study was conducted just before this outbreak, we
+believethatitscontributionliesinofferingpotentialcausesthatprecededtheeventsof
+October2019inSantiago. Thus,thisgeographicalbiasisalsoanopportunitytoprovide
+newinterpretivevectorsforthecausesofthesocialoutbreakinChile,fromtheurbanspace
+whereitwouldoriginatethreeyearsafterthecompletionofthefieldworkforthisresearch.
+Duringthedevelopmentoftheinterviews,apreliminaryanalysisoftheresponseswas
+carriedouttoextractsomeofthemostcommonargumentsabouttherelationshipbetween
+urbanplannersandneoliberalism. Aftertheinterviewswerecompleted,thenoteswere
+essentialtoconstructinganinitialnarrativethatwaslaterpopulatedwiththecontentof
+thetranscriptions. Finally,theresultingtextwasanalysedusingtheNvivosoftware,where
+codificationsandcontentsynthesiswereapplied,whichalsohelpedguidethethematic
+analysisprocess.
+Thematic analysis is an analysis technique that involves organising findings or in-
+terpretations by general themes, then delving deeper by generating different thematic
+frameworks,usuallyappliedtointerviewtranscriptionsorethnographicprocesses(Braun
+andClarke2006;Mielesetal.2012). TheinterviewswerereviewedintheNvivosoftware,
+selectingthoseresponseswithrichercontent,organisedconsideringthethreetopicsabout
+thecity,practice,andutopia,toconfigurethetypologiesofthehabitusoftheinterviewed
+urbanplanners.
+Habitusisconstructedfromindividualsubjectivestructuresthatacceptcertainlevels
+of uncertainty in definitions. For this research, an operability of the habitus has been
+adopted based on the contributions of Luis Rodrigo (Benito and Miguel 2012; Rodrigo
+2015),whostatesthathabitusaretheoreticalconstructionsintheformoftypologiescom-
+posedofempiricaldataand,thus,constituteidealtypesthatseektohighlightcommon
+characteristicsthatcouldbefoundinotheragentsofreality. Purityasapossibilityofresults
+is rejected, since its composition is based on subjective dimensions associated with the
+agents’perceptionandobjectivedimensionsbasedontheirexperience(Rodrigo2015). In
+this case, urbanistic habitus will be understood as the subjective dispositions of urban
+plannerstooperateandrelatewithinaneoliberalsocialorder.
+Toconstructthetypologiesofthehabitus(Figure1),someagents’positionsoncer-
+taintopicsforspecificfieldsarepresentedbelow. Followingthemethodologicalstrategy
+of thematic analysis, in the first order, it is allowed for the interviewees’ voice to con-
+structthenarrative,andthenthetypologiesthatemergefromtheanalysisofthesources
+areconfigured.
+
+### Page 10
+
+SSoocc.. SSccii.. 22002244,, 1133,, x2 2FOR PEER REVIEW 10
+1 0
+o
+o
+f
+f
+2
+2
+5
+4
+FFiigguurree 11.. DDiiaaggrraamm ooff tthhee mmeetthhooddoollooggyy ooff tthhiiss rreesseeaarrcchh..
+3. Results: FieldsofActionforUrbanPlannersundertheChileanNeoliberal
+3. Results: Fields of Action for Urban Planners under the Chilean Neoliberal Urban
+UrbanModel
+Model
+Afteranalysingnearly30hofaudioandsynthesizingtheinterviewsinto20,000words
+After analysing nearly 30 h of audio and synthesizing the interviews into 20,000 words
+thatbestaddressedtheobjectivesofthisresearch,threefieldswereconfiguredbasedon
+that best addressed the objectives of this research, three fields were configured based on the
+theinterviewees’experiences. Thesefieldslaterconvergedintoanapproximationofan
+interviewees’ experiences. These fields later converged into an approximation of an urban
+urbanplanner’shabitusinaneoliberalcontextfordifferenttypologies. Itisanticipatedthat
+planner’s habitus in a neoliberal context for different typologies. It is anticipated that there
+therehasbeenacertainlevelofconvergenceinmostoftheactors’interpretationsofthe
+has been a certain level of convergence in most of the actors’ interpretations of the proposed
+proposedfields. However,thedivergencesfoundallowforamorenuancedunderstanding
+fields. However, the divergences found allow for a more nuanced understanding of the
+ofthehabitus,whichwilllaterbeusedtoconstructthetypologies. Aspartofthecoding
+habitus, which will later be used to construct the typologies. As part of the coding process,
+process,itwasfoundthatthesentimentswhendiscussingthesetopicsweremostlynegative,
+it was found that the sentiments when discussing these topics were mostly negative,
+meaningtheemotionalchargeofthephrasesandargumentsstemmedfromfeelingsof
+meaning the emotional charge of the phrases and arguments stemmed from feelings of
+powerlessness,pessimism,andevenangerinsomecases(Figure2).
+powerlessness, pessimism, and even anger in some cases (Figure 2).
+Asecondinitialapproachtotheinterviewsfromthecodingprocessallowedforthe
+A second initial approach to the interviews from the coding process allowed for the
+identificationofthemostfrequentlyusedconceptsduringtheinterviews. Thewordcloud
+iidneFnitgifuicreat3ioinn doifc tahtees msoomst efroefqtuheenstelyr eupseeadt ecdonecxepprtess sdiuonrisn,gw thhiec hinhteerlvpieidwesn. tTifhyec werotaridn cwloauyds
+ionf Fpirgeusreen 3ti ningdiidcaetaess dsoumrien goft thheesine treerpveieawteds. eOxpnreosnsieonhsa,n wdh,itchhe hwelopr dide“nsttaiftye ”cesrttaanind swoauyst,
+owfh perreesemnotisntgo ifdietsasu sdeudriensgc rtihbee isnatenrevgieawtivs.e Ocno nonnoet hatainodn,, tohfete wnoarlldu “dsitnagtet”o satnanudnss oautits,f wachtoerrye
+mroolestt oowf iatsr dusseth deecsictryibuens dae nreagaptriov-eb cuosninneostsatbioians, ,owftehnic hallauldiginngs wtoi tahn guennseartaislfdacetfionryit iroonles
+toofwaanrdeos litbheer aclitsyt autned(Hera arv peyro2-b0u05si)n.eTshs ebrieass,e ewmhsictho ableiggnrse awteitrhi ngteenreesrtali ndtehfienictoionncse potf oaf
+“nleaonldib”earasla stfautned (Hamarevnetya l2e0l0e5m).e Tnhteorfet sheeemneso tloib beer aglriseaattieorn inptreorceests sin,a tsheit caopnpceeaprts otfh “altafnodr”t haes
+ain tfeurnvdieawmeeensttahl ereeleimsleintttl eoufn dtheer stnaenodliibnegraolfisthateioimn pplircoacteiossn, saosf laitn dapfopreathrse dthevate lofoprm tehnet
+ionftearjvuisetwseoecsie tthye.re is little understanding of the implications of land for the development of
+a justT shoecnie,tay.t hirdfrequentlyusedtermwas“example”,associatedwithtryingtodemon-
+strateTohpeinn, ioan sthwiritdh cfareseqsu.eTnhtilsy muasyedre flteercmta nweaesd t“oesxhaomwplteh”a,t saosmsoeciraetfleedc tiwonitshc otrrryeisnpgo ntdo
+dtoemurobnasntrraetae liotpy,inwiohnicsh wwitahs caalsseos.s eTehnisi nmtahye rleefslsecgtr oau nnedeedd t,om sohroewim thaagti nsoamtivee rreefflleeccttioionns,
+cdoertraecshpeodnfdro tmo uthrbeasntr ricetallyiteym, wpihriicchal w. Tahse aslesoin sietieanl iinns tihghe tlsesasr egfruonudnadmede,n mtaolrteo icmonasgtiintuattiinvge
+rthefeledcitfifoenre, ndtehtaacbhiteuds ftrhoamt wthilel lsatrteicrtlbye eemxppliariincaedl. .These initial insights are fundamental to
+constNituextitn,gth tehed idsipffoesrietinotn hsatbhiatutsil ltuhsattr watiellt lhaetearg been tesx’pploaisniteidon. sforthedifferentproposed
+topicsarepresented.
+
+### Page 11
+
+Soc. Sci. 2024, 13, x FOR PEER REVIEW 11 of 25
+S oc. Sci. 2024, 13, x FOR PEER REVIEW 11 of 25
+S oc.Sci.2024,13,22 11of24
+Figure 2. Classification of text references in relation to feelings expressed during the interviews.
+Figure 2. Classification of text references in relation to feelings expressed during the interviews.
+Figure2.Classificationoftextreferencesinrelationtofeelingsexpressedduringtheinterviews.
+FFigiguurree3 .3.M Mosotsut suesdedw owrodrsdbsy btyh ethinet einrvteiervwieeewse.eTsh. eTwheo rwdsorcditsy ,cuitryb,a unr,bCahni,l eC,ahnilde,S aanndti aSgaonhtiaavgeo bheaevne
+Figure 3. Most used words by the interviewees. The words city, urban, Chile, and Santiago have
+eb bxe ece elun nd e eex xdc c l lfu urod dme e d dt f fhr rio osm mlis t tth hai i s ss l lti ihs set t ya a s sa rt t heh e ery yed a aur r e en dr r e ead dnu utn nbd deia ann ngt t pb bae eri i n ntg go fp pta ahr ret t qo ouf f et t h hste ei oq qnu use e.s s t t i i o o n n s s . .
+Next, the dispositions that illustrate the agents’ positions for the different proposed
+Next, the dispositions that illustrate the agents’ positions for the different proposed
+topics are presented.
+topics are presented.
+
+### Page 12
+
+Soc.Sci.2024,13,22 12of24
+3.1. SantiagodeChileasanObjectofStudy
+Most of the interviewees live and work in Santiago de Chile. Their perception of
+thecitytendstobeofanurbanareawithprofoundproblemsstemmingfromitsspatial
+configuration,leaningtowardsinequalityandclassdivisionofurbanspace,whichresults
+inacertainqualityinsomeplacesandaverydifferentoneinothers:
+“[Santiago] is the capital of inequality. There are many worlds where all the
+urbanevilsandattributescanbefound. It’salsoatickingtimebomb,withno
+decompressioncontrols. Butit’sanexampleofwhythemarketcan’ttakecareof
+thecitybecauseitproducesbubblesofgoodandbadqualityoflife”(I11).
+“Santiagoisadiverseorratherheterogeneouscity. It’sanadministrativecentre
+comparabletoEuropeancitiesintheeasternsector,verygoodintermsofquality.
+Buttheotherthree-quartersofthecityareveryindivisible,wherethemajorityof
+peoplelive;it’sadividedcitywhere,duetotheconcentrationofactivitiesand
+distances,thepoorandtherichdon’tinteract”(I4).
+RegardingSantiago,theemphasistendstobeonitsstructuralinequality,asaresult
+ofaneconomicmodelthatisfundamentallyunequalandthenrepresentedinbuiltspace.
+Whiletheviewofthisconfigurationtendstoberelativelynegative,therearealsosome
+moreoptimisticviewsthatdonotfailtorecognizeinequalityasaproblem,asindicatedby
+intervieweenumber12:
+“Santiago is a candidate to become the capital of Latin America. Santiago’s
+economic process is very dynamic and is improving. It has a bad reputation,
+though, and it’s worth getting rid of that bad reputation. For example, the
+accumulationofwealthisastronomicallydifferentfromotherregionalcities,and
+thatclearlyexplainsthesocialsegregationithas”(I12).
+Inlinewiththisstatement,there’stherecognitionofthecityasanentityproduced
+fromaneoliberalmodelthatturnsallpublicassetsintocommoditiesforsalefortheprofit
+ofeconomicgroups:
+“Santiagohadtobethisway,undercapitalistlogics. Notbecauseitdoesn’taspire
+tothis,butbecausetheprofitsthecityprovidesareameansforthefinancialsys-
+temtoalsoobtainprofits.Then,thesubsidiarylogicoftheStateperpetuatesthese
+formsoflandprofitability.Thebadthingisthattheprofitsgointothepocketsofa
+few,there’snodistributionorredistributionofwealth. Withthis,themarginality
+ofcitizensappears, andinshort, societyasawholeisspeculatedupon... The
+value of the land in polarization and capitalization is relevant to most, but it
+seemsthatmanybelievethisphenomenonisveryindirect. Itsoundsabstract
+to most. If it doesn’t work with more systemic awareness, it’s difficult. Only
+whentheseproblemsarelinkedtopeople’ssocialproblemsandtheinformation
+issimplifieddopeopleunderstandthemagnitudeoftheproblem”(I7).
+ThestatementsofintervieweeI7indicatealackofknowledgeaboutthecausesthat
+gaverisetothiscity,somethingthatisnotonlyattributedtothecitizensbutalsotodecision-
+makers. “Thecityistheresultofeconomicandpoliticalsocialrelations;it’sareflection
+ofamarketdevelopmentmodelthatisnotunjustperse, butwe, theactorsbehindthe
+market,areunjust”(I6). Ingeneral,itisobservedthattheintervieweesrecognizecertain
+causesthatproduceanunequalurbanform. However,thereislittleself-criticism,andthe
+diagnosestendtoblameotherswhodidnotmaketherightdecisionswhen,inpractice,the
+intervieweesareopinionleadersandoftenhavealsobeendecision-makers.
+Regardinghowthecitybecamesounequal,therearedifferentconvergentapproaches
+towardsanexplanationthatgoesbeyondtheeconomicmodel. There’sthegovernance
+issue,“Santiagois32estates,anunregulatedmetropolitanplot”(I10). Thisreferstothe
+nationalmunicipallogic,whereeachcommunemustself-financeitsmanagement,which
+isanotherwaytounderstandinequalitysincecommunesthatconcentratehigh-income
+householdsorjobshaveaneasiertimegatheringresourcesthanothercommunes. Tothis
+
+### Page 13
+
+Soc.Sci.2024,13,22 13of24
+municipalgovernanceproblemisaddedtheabsenceofacoordinatingauthorityforsuch
+anextendedmetropolis,“it’smorethanproven: socialsegregationishardertomanagethe
+largerthecityis. It’sevidencethatneedstobeaddressedbecauseitimpactseverything”
+(I9). Thus,there’saviewthatthecity’sexpansiongrowthcontributestomakingitdifficult
+todevelopsolutionsthatsolvetheproblemofspatialinequality,inwhichpoliticaldecisions
+havebeenfundamental:
+“IthasbeenthelackofamultidisciplinaryvisionthathasmadeSantiagowhat
+itistoday. InChile,developmenthasbeenledbytheMinistryofPublicWorks
+andtheMinistryofFinance,whichisthinkingaboutthecitymacroeconomically,
+rather than a holistic vision. For example, the public works carried out seek
+productivityandnotqualityoflife”(i16).
+Santiago,perceivedasacityproducedfortheinterestsofcapitalanditsgrowth,wasa
+commonthemeduringtheinterviews. Whileitisnotentirelydeclared,theinterviewees
+tendtofindcausesoftheurbanprobleminanothergroupofactors: thosewhoworkin
+thestateblamethemarket;thoseinprofessionalpracticeblamethestate;whileacademics
+blame both. Certainly, in academia, there is a more complex diagnosis, but from the
+experiencesofthestateandthemarket,itcanbeseenthatthereisalsoalatentreflectionon
+theunderlyingproblems. Despitesharingthedisciplinaryfieldofurbanism,thereseems
+tobelittledialoguebetweenthediagnoseswhich,beyondtheblame,tendtoconverge: an
+unequal,deregulatedcityincrisiswithcomplexsolutions,whichwillnecessarilydemand
+culturalchanges,asindicatedbyintervieweeI4andintervieweeI17:
+“InSantiago,therelationshipbetweenthecityandequityishardtoachieve. It
+seemsthatChileansocietyisnotverywillingtointegrate: thepoorwiththepoor
+don’twanttointegrate,andthesamegoesfortherich,obviously. Peopledon’t
+wanttomixbecauseofalotofprejudiceaboutothers. Thisisaculturalproblem;
+there’sarealpsychosisaboutthefearofthepoor,whichisaccompaniedbyan
+invisibilityoftheother”(I4).
+“It’sasicklivingbeing. Ithasfunctionalinterdependence,despitesegregation,
+whichaffectsevenmoods.Thecityisawhole;theyarelikestatesofconsciousness
+typicalofacitythatlivesinsocialinjustice,likeanorganism”(I17).
+RegardingthecityofSantiago,eventhemostoptimisticviewsemphasizetheimpor-
+tanceofresolvingthestructuralinequalitythataffectsitandspatialsegregation. However,
+thereisasaturationofarguments,meaningthedescriptionsofthecityarerepeatedwith
+differentemphasesbutinthesamedirection,indicatingthatmostoftheintervieweestend
+to get stuck in the neoliberal economic model as the cause, and then it was difficult to
+achievedeeperinsights. Eventheagentsparticipatinginprofessionalpracticepointedto
+neoliberalismasthemaincauseofSantiago’sform.
+3.2. FieldofUrbanPractice
+TheurbanpracticeintheMetropolitanAreaofSantiagopresentsacompellingcase
+studyinurbangovernance,characterizedbyanintricateinterplayofpolitical,economic,
+and professional dynamics. Politically, the region is governed through a multi-tiered
+system involving national, regional, and municipal authorities, each wielding varying
+degrees of influence over urban planning and policy decisions. Economically, the area
+has been significantly shaped by neoliberal policies since the late 20th century, with a
+strongemphasisonmarket-drivendevelopmentandprivatesectorinvolvementinurban
+projects. Thiseconomicapproachhasledtorapidurbanexpansionandsignificantprivate
+investmentintheregion,butalsotochallengessuchasspatialsegregationandhousing
+affordabilityissues. Professionally,urbanplanninginSantiagoisafielddominatedbya
+mixofgovernmentplannersandprivatesectorprofessionals,withthelatteroftenplaying
+a pivotal role due to the market-oriented nature of urban development. However, this
+professional landscape is not without its tensions, as planners frequently navigate the
+complex terrain of political interests, economic pressures, and social equity concerns.
+
+### Page 14
+
+Soc.Sci.2024,13,22 14of24
+The resultant urban form of Santiago thus emerges as a product of these multifaceted
+andsometimesconflictinginfluences,reflectingbroadertrendsinurbangovernanceand
+developmentintheglobalsouth.
+Urbanpracticecanbereviewedmainlyfromresearchassociatedwithacademia,the
+development of projects associated with the professional field and civil organizations,
+and the management of public resources associated with state practice. Regarding the
+state,thereissomeinternalconfusionduetotheexcessivenumberofentitiesinvolved
+inthecitywithoutclearcoordination,where“thereisnoestablishedmodel,onlycertain
+guidingguidelinesarefollowed”(I2). Then,practiceanddecisionsdependonthespecific
+requests of the capital provider: “methodologies depend on the client’s requirements.
+The programmatic requirements are sought to be grounded” (I3). The adaptability of
+thesemethodologiesisexpectedforcommissionedprofessionals,butthereisaquestionof
+whetherthereisrealdecision-makingpowerovertheresultsorifthereareonlycreative
+spacesandrealdecision-makinginareasthatdonottouchprofitability,bothintheprivate
+andpublicsectors:
+“Torequestabudget[fromtheMinistryof]Financeforurbanprojects,theMin-
+istryofSocialDevelopment,throughtheNationalInvestmentSystem,favourably
+recommendsanurbanprojectorinitiative,alwaysdependingonsocialprofitabil-
+ity. This is an economist view, and this view deepens inequality for a simple
+reason: itconcentratesinvestmentincitieswithlargerpopulations. Thereisno
+evaluationofsocioeconomicconditions,andthisgeneratessegregation,leading
+toprojectsthatweregoodbutendupbeingbadfromanurbanpointofview.
+Then,duetofragmentation,theMinistryofSocialDevelopmenthasfewresources
+toevaluateanurbanproject,buttheyalsohavealotofneedsandtendtousethe
+minimumintermsofurbanstandards. Thiscriterionobeysanothereconomist
+reason,atalowercost,highersocialprofitability,andintheend,thatdefinesthe
+developmentofanurbanproject”(I11).
+ThebudgetingprocessofSantiago’scommunes,deeplyrootedinaself-managedfund-
+ingsystem,playsacrucialroleinperpetuatingurbaninequalitywithinthemetropolitan
+area. Thissystem,primarilyreliantonlocalpropertytaxes,inherentlyfavourswealthier
+communeswithhigherpropertyvalues,enablingthemtogeneratesubstantialrevenue
+forimprovedpublicservicesandinfrastructure. Instarkcontrast,lessaffluentcommunes,
+constrainedbylowerpropertyvalues,struggletoraiseadequatefunds,leadingtopoorer
+servicesandaconsequentreinforcementofsocio-economicdisparities. Althoughcentral
+governmenttransfersprovidesomefinancialrelief,theyoftenfallshortofsignificantly
+bridgingthegapbetweenrichandpoorcommunes. Thebudgetingprocessitself,ablend
+of technical assessments by professional municipal staff and final decision-making by
+electedofficials,isinfluencedbyacomplexinterplayofprofessionalexpertiseandpolitical
+dynamics. Thisscenariohighlightsacriticalchallengeinurbangovernance: addressing
+entrenchedinequalitiesamidstadecentralizedfundingstructurethatintrinsicallylinksa
+commune’sfinancialhealthtoitspropertymarket,therebyexacerbatingthedividebetween
+theaffluentandlessprosperousareasofSantiago.
+Another aspect mentioned is the problem generated by the fragmentation of the
+entities that operate on the city, especially when making specific diagnoses to improve
+project outcomes. This also occurs at the level of disciplinary fragments, shaped in a
+universityeducationmodelthatdoesnotpromoteinterdisciplinarity,nordoesitpromote
+the integration of diverse knowledge into urban practice. This education is essentially
+aestheticandproject-based,withlittlecontentindatamanagement,publicpolicy,sociology,
+andurbaneconomics. Thus:
+“Obtaininginformationisdifficult. Usingthegovernment’sActiveTransparency
+mechanismstoobtainthenecessarydatadoesnotguaranteequalityinformation,
+asmuchinformationisdiscontinued,georeferencingisprecariousanduncoor-
+dinatedbetween, forexample, theInternalRevenueServiceandtheNational
+InstituteofStatistics. Thedistancebetweendataandspatialityisproblematic.
+
+### Page 15
+
+Soc.Sci.2024,13,22 15of24
+Non-urbaninformationisterribleinChile. Thefragmentationofinformationin
+publicentitiesisbrutal;eachentityhasitsdatasystem”(I2).
+“So,howcananarchitectinfluencethepoliticalsphere? Spatialpracticeisthepartic-
+ularproject,butitisdifficulttoarticulatepeoplewithspace. Thatisthemainobjective
+ofarchitectureaspolitics. Howdoarchitectsseethelandproblem? Thereisanaesthetic
+explorationofthepoliticalrelationshipandarchitecture,butthisisanacceleratorofspatial
+practices,notofrelevantpoliticalchanges. Ontheotherhand,thereisnostatepolicyon
+thepublic”(I21).
+Likewise,theintervieweesreflectlittleontheteachingroleincriticaltraininginthe
+faceofthecity’surgentproblems. Although,asmentionedearlier,thereisaconsensuson
+certaindiagnoses,professionalpracticeforcessomepositionstobechangedtofitwithinthe
+realmofthepossible,ofwhatwillactuallybefundedandbuilt. Fromthestrongacademic
+diagnosis,thereisnorealbridgetoapragmaticlevelofthesediagnoses. Instead,thereare
+adaptationsinwhichthediscoursedoesnotnecessarilymatchthework:
+“Inacademia,thereisacertaincoherentandconsensualnarrative,butevenso,
+that discourse is not applicable. For example, Pablo Allard and his academic
+visionchangedwhenworkingwithPiñera;hehadtodoit. Academiadoesnot
+includerealityinitsdailyexercise. Forexample,profitability,thereisaprejudice
+abouttalkingaboutmoneyinarchitecture,oratleastinacademia,resistingthe
+logicsofthecapitalistmodel. Then,thereisnodeepeningofthecriticismofthe
+capitalistmodel;thelogicsbehinditarenotunderstood”(I16).
+Despitethissituation,inrecentyearstherehavebeeninstanceswherethecommon
+senseoftheacademiccommunityhasmanagedtogenerateurbanagendasthatdefendthe
+commongood:
+“Forexample,forthenewNationalUrbanDevelopmentPolicy,thedeanshad
+toformablockagainsttheChileanConstructionChamber. This,toinstallthe
+needforalandpolicy. Iamnotexaggeratinginsayingthat,forthefirsttimein
+alongtime,agroupofarchitectsistakingonarelevantroleinthecity,assum-
+ingsignificantethicalresponsibility, placingthelandinthecityassomething
+fundamental”(I18).
+However,therearedifficultiesassociatedwiththeroleofpropertyinthedevelopment
+ofurbanpractice: “thereistraumawithagrarianreformandchangesinlandmanagement.
+Thisislinkedtoprivatepropertyandland”(I18). This“trauma”alludedtobytheintervie-
+weeconditionswhatisorisnotpossibletocarryoutinpractice,mainlybecausetheright
+topropertyisextremelystronginChilethankstothewayitisinscribedinthepolitical
+constitutionofthedictatorshipof1980. Thisultimatelydeterminesanurbandevelopment
+modelthatfocusesonsomepublicelementssuchasinfrastructureornorms,butalwaysin
+linewitheconomicpowers:
+“Whenworkingonpublicpolicies,onemustrecognizethescopeofwhatispossi-
+ble,whichissomewhatfrustratingbecauseradicalpositionsarenotimplemented.
+Ourlobbyingcapacityisvitalintheseprocesses. WeworkwiththeChileanCon-
+structionChamberandwiththeAssociationofArchitectureOffices,butwealso
+work with The Movement for a Just Reconstruction and with Ciudad Viva as
+well,withprofessionalassociationsanduniversities”(I9).
+“TheStateisapartnerandperhapsthemainactorinurbaneconomicpower. Itis
+atransmitterofwealth. FromtheState,theneoliberaldiscourseisinvisible,butit
+isinpractice. WebelievethattheStateisfair,butinpracticenotsomuch. The
+shockdoctrinenormalizedcapitalism,andwestilldon’tknowhowtogetoutof
+thismold”(I25).
+Theinterviewees,althoughcriticaloftheneoliberalmodel,rarelycriticizetheprivate
+world. In general, the viewsfocus onthe role ofthe State, whichis tied handsin most
+urbanaspects,preciselybecauseofapro-businessregulatoryframework. However,many
+
+### Page 16
+
+Soc.Sci.2024,13,22 16of24
+specificallycriticalviewsofmarketagentswerenotcollected, whoareoftenpresented
+asaresultofthelackofregulation. Thatis,theproblemoftheethicsofcityproduction
+issomewhatabsentinthesediagnoses. Continuingwiththisviewofthestate’srole,in
+Chile,spacedesignisrarelyperformedfromthestate,althoughitdoesoccurwithsome
+infrastructureelements. Theurbanformprovidedbythestateismainlycentredonlarge
+spatialelementsthatcontributetofacilitatingthecirculationofcapital:
+“Chileanurbanplannershavelittleawarenessofurbaninfrastructure,starting
+from the subway to highways, in terms of building the urban landscape. In
+Santiago,thislandscapeismainlyconfiguredthroughinfrastructures,andthat,
+in general, is decided by politicians. There is a positioning of the new urban
+planners in the ears of politicians, however, their impact is not yet fully seen
+inthecities. Ontheotherhand,equipmenthasnotbeenunderstoodasurban
+projects,butasindividualandisolatedarchitecturalprojects. Then,theMinistry
+of Public Works, in charge of most of these infrastructures, does not have an
+urbandesigndepartment,forexample”(I21).
+Insummary,urbanpracticeundertheChileanneoliberalcontexthasanimportant
+componentassociatedwiththestate’sroleinthestandardsitsetsforcitydevelopment. In
+thissense,itdoesnotgomuchfurtherthanfiguresandcasesontheideologicalstructure
+of that state and its spatial results. There is also no view of the operational practice of
+urbanisminthecityorspecificcriticismsofurbanresults. Itseemsthattheanswerstoa
+bettercitywouldbeintheStateandnotinamoreethicalandlessmercantilistprofessional
+practice.Farfrombeingabias,theconvergenceofsimilarviewslooksmorelikeadiagnosis
+oftheproblemofthedisciplinarypracticeofurbanisminChile.
+3.3. FacingUtopia
+ForHenriLefebvre(1961),oneofthegreatestdisciplinaryvirtuesofurbanismistobe
+afieldthatmustconstantlyworkwiththeimaginationofadifferentsociety,withwhathe
+calledconcreteutopia. Thatis,criticalreflectionsonthecurrentrealitythatbecamefeasible
+projects according to the economic, social, methodological, technological, and political
+scopesofthetime. InthecaseofurbanisminChile,accordingtotheresultsofthisresearch,
+itseemsthatthereisaconsensusontheideathatutopiahadtoberenouncedinfavour
+ofcapital. “Thereisnoimagination, it’snotconvenient”, saysinterviewee10, alluding
+tothefactthattheimaginativenatureofurbanismisnotonlyunprofitablebutriskyfor
+capital. “Gran Santiago lost the ability to imagine itself. The Metropolitan Regulatory
+PlanofSantiago100isanexample,whereonlytheurbanlimitisthoughtofandnotthe
+imagination of the city. There is no utopia. We are trapped by an image of a machine”
+(I2). Thisurbanlimit’smainroleistodefinenewareasforrealestateexploitationandthe
+productionofnewhigh-costinfrastructures.
+Suchurbanisticsimplicitydisguisedasametropolitantransformationplanispartof
+oneoftheinterviewees’observations. Theyrefertothefactthatinitiativesfromthestate
+seemtobepushedwithprofitabilityobjectives,notnecessarilyseekingthecommongood.
+Regardingthislackofimagination,manyintervieweespointedtopoliticalparties,entities
+supposedlyorganisedtoproposealternativefutureideastothecommunity,whichbecome
+politicalprojects. Inpoliticalparties,thecityisabsent:
+“Thosewhowerecalledtothinkaboututopiadidnotdoit,andtodaySantiago’s
+scalebecameunapproachable. Moreover,withthereturntodemocracy,specula-
+tionincreased,andmassivehousingproduction. Intheend,thereisnothought
+ofSantiago’sdemocraticcity;afalseimageofdevelopmentwasgenerated. The
+mostcriticalurbanplannerswerestunned;theydidnotknowhowtoact. That’s
+wheretheimageofSantiagodevelopedbyinvestorsisconsecrated”(I11).
+“Politicalpartiesdidnotseethecityassomethingrelevantbecausetheillusion
+thateverythingwasgoingverywell-madepeoplebelievethatthecitywasnotan
+issue. TodayIamstruckbytheabsenceofthecityinthisstructuraldiscussion
+
+### Page 17
+
+Soc.Sci.2024,13,22 17of24
+ofchangestocome. Thecityisacollectiveandcommunityexercise,andweare
+inacountrywherethemodelmadetheState’sactionretractwithasubsidiary
+bias, making it absent in urban matters. The 1980 constitution is ideal for an
+authoritarian,soitreliesheavilyontheleadershipofthenation’sheadandits
+priorities. Butthereisalsothealwaysimportantissueofprivatepropertyand
+thepowerofprivatepropertyconsolidatedinthisConstitution”(I12).
+Precisely,Chilefacesanessentiallyimaginativeprocess,suchasdraftinganewconsti-
+tutionfor2022. Manyagendasareunderwaytoproposesomecityideas,however,muchof
+thoseideashavemoretodowithamemorythanwithnewideas. “Theprospectofafuture
+Santiagoisexploredinthepast,50yearsago,butnotmuchtoday”(I9). Itisfrustratingto
+observethatanessentialpartoftheutopianthinkingoftheinterviewedurbanplanners
+referstoapastevent,nostalgiaforapoliticalprojecttruncatedbythedictatorship. Itcanbe
+arguedthatthistruncatedprojectisstilldesirable,butitcanalsobecriticizedthatthereare
+nootheralternativesthatdonotnecessarilyrefertonostalgiaasanimaginativealternative,
+whichisactuallyanexerciseinhistoricalmemory. Ontheotherhand,inthefaceofthe
+crushingneoliberalmodel,otherviewsaremorecriticalofthefuture:
+“TheextremistChileanneoliberalismmakesthiscitynecessaryforLatinAmerica,
+bothasanextremebusinesscentreandasareserveforcapital,almostlikeacity-
+state. CulturalimportationmakesSantiagoakindofglobalneoliberalreserve. ...
+Ibelievethatinthefuturetherewillbeaperfectionofthismarketsystem”(I21).
+“Based on Santiago as it is worked on in the urban today, I see an attractive
+product. IimagineaterriblecopyofNewYork,that’showIimagineit,asweare
+today;andI’moptimistic.”(I14).
+Fromtheinterviews,itwaschallengingtoobtainmoreimaginativedescriptions;on
+thecontrary,manyofthecommentsontheideaofthinkingaboutSantiagointhefuture
+wereratherpessimistic. Theneoliberalmodelisstronglycriticized,andthefrustrationdoes
+notseemtocomefromtheshortcomingsofthismodel,butfromnotknowinghowtooffer
+aviablealternativetoit. Notevenapost-neoliberalcitywaspresentedamong27experts
+separately,certainlysurprising. Therearesomeideasofimportingotherurbanimages,
+butnoalternativesthatbreakwithwhatwouldbeadeepeningofthecurrenturbanform.
+While there is no post-neoliberal urban image, there is more clarity about some urgent
+pathstoreversetheperfectionoftheneoliberalurbanutopia:
+“Eitherwemakealandreform,or[wewillbemuchworse]. Ifwewanttochange
+Santiago,theStatemustactstronglyinthis. Politicsisnolongerabletomanage
+indignation,thefutureisnowindispute,andhereyoucanseewherethiscityis
+going,towardsthecrisis”(I18).
+Evenso,themostimaginativesolutionsandideastendtorefertopublicpoliciesand
+donotpostulatenewspatialitiesthatpushsuchvisions. Thatis,thereisnotargetimage,
+butthereisadiagnosisoftheaspectsofurbaneconomyandtheregulatoryframeworkthat
+keeptheneoliberalcityinadeepeningprocess. Thisdeficiencymaybepartoftheabsence
+ofapoliticalprojectthataccompaniestheurbanimage. Thatis,ifagroupofexperturban
+plannerscriticalofneoliberalismcannotimagineapost-neoliberalcity,itisdifficultforany
+othersocialagenttodoso.
+Inexaminingthe2019socialoutbreakinChile,acriticalanalysisofurbanplanning
+andpoliticalimaginationrevealssignificantinsights.Thetextunderscoresadeparturefrom
+HenriLefebvre’sconceptof‘concreteutopia’inurbanism,highlightingashiftinChilean
+urbanplanningtowardsprioritisingcapitalandprofitabilityoverimaginative,societal-
+centricurbanspaces. Thisshiftisemblematicofabroaderpoliticalinertia,particularly
+withinpoliticalpartiesandstateinitiatives,whereurbandevelopmentisdrivenmoreby
+marketforcesthanbycommunalaspirations. Thepredominanceofaneoliberalframework
+inSantiago’surbandevelopmentiscriticallyviewedasfavouringeliteinterestsandmarket
+mechanisms,neglectingthecollectivesocialvision. Thisapproachhasledtourbanspaces
+that are more reflective of economic imperatives than of inclusive societal needs. The
+
+### Page 18
+
+Soc.Sci.2024,13,22 18of24
+interviewswithurbanplannersrevealapalpablefrustrationstemmingfromtheabsenceof
+viablealternativestothisneoliberalmodel,asentimentthatsignificantlycontributedtothe
+socialunrest. Theprocessofdraftinganewconstitutionisseenasapivotalopportunity
+for reimagining urban spaces, yet there is a noted tendency to look backward rather
+thanforward,indicatingareluctancetoproposeinnovativeurbanfutures. Thisanalysis
+suggeststhatthesocialoutbreakcanbepartiallyattributedtoafailureinurbanplanning
+andpoliticalimagination,wheretheinabilitytoenvisionandcreateinclusiveurbanspaces
+resonatedwiththebroadersocietaldiscontent,fuellingtheunrest. Theneoliberalapproach,
+with its emphasis on market forces and private interests, emerges as a central factor in
+thisurbanplanningfailure,underscoringtheneedforamoreimaginativeandinclusive
+approachtourbandevelopmentinChile.
+4. Discussion
+DrawingfromthemethodologicalcontributionsofBourdieu,toconstructthehabitus
+ofChileanurbanplanners,interviewshavebeenconductedtorecognizetheconditions
+presentintheagents,byidentifyingsomecognitiveandmotivationalstructuresinrelation
+tothehistoryandrelationshipsofhowtheseagentsincorporatedcertainwaysofoperating
+thatultimatelyintegrateandbecomespontaneousdispositionsoftheagentsineachfield
+(Bourdieu1977,1990,1991). Withtheevidenceobtainedfromtheinterviews,threetypolo-
+Soc. Sci. 2024, 13, x FOR PEER REVIEW 19 of 25
+giesaredetermined(Figure4)thatdescribetheurbanisticsubjectivityoftheagentswho
+haveparticipatedinthisresearch.
+FFigiguurere4 4..D Diaiaggrarammo offd disicscuursrisviveec caateteggoorirsiasatitoionnw witihtht htheec ocoddeseso offe aecahchc actaetgegooryr.y.
+44.1.1..H Haabbitiutusso offt htheeP PuubblilcicU UrrbbaannP Plalannnnerer
+CChhaararactcetreirsiesdedb ybyw owrkoirnkgining sitna testeanteti tieenstoitrietso doer vteol odpeavcetilvoipti easctthivaittideisr etchtlayt ddeipreecntdly
+odnespteanted founn sdtiantge ffuronmdincgiv firloomrg cainviisl aotrigoanns.isaTthioenirs.p Trhacetiirc perfaocctuicsee fsoocunsweso ornk iwngorwkiinthg awnidth
+uanndde rusntadnedrsintagnpduinbgli cpuinbsltircu imnsetnrutsm,deenvtse,l odpeivneglonpoinng-p nroofint-parcotifviti taiecsti,vaintidesf,e aenlidn gfetehlaintgth tehiart
+wthoerkir iwsnoercke isss anreycefossratrhye fdoerv tehleo pdmeveenltoopfmtheentc oomf tmheo ncogmoomdoans goonoedo afsth oenper oiof rtihtiee sporifotrhietiiers
+reogf uthlaerirt arsekgsu.lTahr itsahskasb.i tTuhsisis hcaribtiitcuasl oisf tchreitimcaalr okfe tththea mthaarskesth athpaetd htahse schitaypbeudt trheec ocgitnyi sbeust
+significantlimitationsintheregulatoryfieldtoregulatetheseurbanprocesses. Theyalso
+recognises significant limitations in the regulatory field to regulate these urban processes.
+seethefragmentationofpublicentitiesasadisadvantageforthecommongoodandan
+They also see the fragmentation of public entities as a disadvantage for the common good
+and an advantage for market agents to organise and coordinate public priorities in
+accordance with political power.
+This habitus focuses its diagnosis on an essentially unfair economic model. It sees
+public policy as an urban project, even when that policy does not have an urban form,
+which creates a dissociation between idea and result. It is challenging for this habitus to
+imagine urban forms, as its imagination applies to normative aspects or more systemic
+models than specifically spatial ones. The origin of this habitus is neoliberal technocracy
+itself, which constitutes a difficulty when developing initiatives outside that ideological
+framework, beyond being aware of the problems it generates.
+4.2. Habitus of the Private Urban Planner
+Characterised by developing their professional practice in the private sector,
+preferably with private financing, although they occasionally also work with public
+funds. Their practice focuses on developing commissioned works that usually adapt to
+the financial objectives of clients or their economic possibilities. In both cases, there are
+structural limitations to the practice related to economic reasons rather than the design
+and innovation capabilities of the habitus. Aware of these limitations, they see the
+neoliberal model as an original problem, which is the economic ordering principle of
+decisions on city matters as a blind spot. This is because the imperative to increase capital
+is predominant, and without a change in that logic, structural changes are difficult.
+
+### Page 19
+
+Soc.Sci.2024,13,22 19of24
+advantageformarketagentstoorganiseandcoordinatepublicprioritiesinaccordance
+withpoliticalpower.
+Thishabitusfocusesitsdiagnosisonanessentiallyunfaireconomicmodel. Itsees
+public policy as an urban project, even when that policy does not have an urban form,
+whichcreatesadissociationbetweenideaandresult. Itischallengingforthishabitusto
+imagineurbanforms,asitsimaginationappliestonormativeaspectsormoresystemic
+modelsthanspecificallyspatialones. Theoriginofthishabitusisneoliberaltechnocracy
+itself,whichconstitutesadifficultywhendevelopinginitiativesoutsidethatideological
+framework,beyondbeingawareoftheproblemsitgenerates.
+4.2. HabitusofthePrivateUrbanPlanner
+Characterisedbydevelopingtheirprofessionalpracticeintheprivatesector,preferably
+with private financing, although they occasionally also work with public funds. Their
+practicefocusesondevelopingcommissionedworksthatusuallyadapttothefinancial
+objectives of clients or their economic possibilities. In both cases, there are structural
+limitationstothepracticerelatedtoeconomicreasonsratherthanthedesignandinnovation
+capabilitiesofthehabitus. Awareoftheselimitations,theyseetheneoliberalmodelasan
+originalproblem,whichistheeconomicorderingprincipleofdecisionsoncitymattersasa
+blindspot. Thisisbecausetheimperativetoincreasecapitalispredominant,andwithouta
+changeinthatlogic,structuralchangesaredifficult.
+Theycallforamorepresentstateincityproduction,althoughmorefromtheperspec-
+tiveoffinancinginitiativesthatotherwisemustbefinancedbyprivateentities,asinthe
+caseofhousing. Itisamoreimaginativehabitusinspacebutwithapragmaticviewof
+whatisorisnotapplicabletoreality. Theoriginofthishabitusisthedisempowerment
+ofurbanplannersincitydecision-makingagainsttheempowermentoffinancialcapital
+to define where the most profitable space is developed, something that emerged more
+stronglyinthemid-1980s.
+4.3. HabitusoftheAcademicUrbanPlanner
+Characterisedbyworkinginhighereducationinstitutions,teachingandresearching
+urbanmatters,withinstitutionalfundsorpublicfunds,whichgivesthemsomewhatmore
+creativeindependence,butrarelydotheirideasendinmaterialworksornormativeprojects.
+Theyhavebroaderviewsonurbanproblemsbutlackanappreciationofthesenseofwhatis
+achievable,thatis,theytendtovaluethediagnosismorethanthedevelopmentoffeasible
+proposalsunderprevailingconditionsorthatmanagetotransformthoseconditions. The
+academic process of urbanistic thought has information that crosses the habitus of the
+publicandprivateurbanplanner,butitdoesnotmanagetoshedtheneoliberalframework
+of imagination. It is a habitus that also, when proposing, tends towards pessimistic or
+positionsframedwithinthecurrentneoliberalboundaries.
+Despiteoperatinginspacesprotectedbytheresearchmethodologyitself,thereare
+notmanyimaginative, groundbreaking, orutopiancontributionsthatemergefromthe
+findings. Thatis, thehabitusoftheacademicurbanplannerknowshowtoreadurban
+problemswell,butsomethingstopstheirimaginativeprocesses,possiblythedistancefrom
+spatialdesignortheabsenceofaprofessionalneedtoachievematerialresults.
+4.4. TheoreticalContribution
+Theliterature,rootedinBourdieu’sconceptualizationofhabitus,providesarobust
+frameworkforunderstandingthedispositionsandpracticesofprofessionalswithintheir
+respectivefields. InthecontextofChileanurbanplanners,thefindingsofthisstudyoffera
+nuancedanddetailedexplorationofhowtheseprofessionalsnavigatetheneoliberalurban
+landscape,revealingthreedistincthabitus:thepublic,private,andacademicurbanplanner.
+Thehabitusofthepublicurbanplanner,asshowedbythefindings,resonateswiththe
+literature’sportrayalofprofessionalsoperatingwithinstateentitiesoractivitiesrelianton
+statefunding. Theircommitmenttothecommongoodandtheircriticalstancetowardsthe
+
+### Page 20
+
+Soc.Sci.2024,13,22 20of24
+market-drivenshapingofthecityalignwithBourdieu’snotionofhabitusasasystemof
+dispositionsshapedbyhistoricalandsocialcontexts. However,theirstruggletoenvision
+urbanformsbeyondnormativeorsystemicmodelsunderscoresthechallengestheyfacein
+transcendingtheneoliberaltechnocraticoriginsoftheirhabitus.
+Similarly,thehabitusoftheprivateurbanplanner,characterizedbytheirengagement
+in the private sector and their pragmatic approach to urban development, reflects the
+literature’semphasisontheeconomicimperativesthatdominatetheneoliberalcity. Their
+callforgreaterstateinvolvementincityproductionandtheirrecognitionofthestructural
+limitationsimposedbyeconomicconsiderationshighlightthetensionsinherentintheir
+professionalpractice. Thefindingssuggestthatwhiletheyareacutelyawareoftheneolib-
+eralconstraints,theygrapplewiththechallengeofreconcilingthesewiththeirprofessional
+andethicalcommitments.
+Theacademicurbanplanner’shabitus, presentsauniquejuxtapositionofcreative
+independenceandacertaininertiaintranslatingideasintotangibleurbandevelopments.
+While they possess a broader perspective on urban challenges, their tendency towards
+pessimismorcontinuity,andtheirstruggletobreakfreefromtheneoliberalimagination,
+alignwithBourdieu’sunderstandingofhabitusasbothaproductandproducerofsocial
+structures. Thefindingsunderscoretheneedforamoreimaginativeandtransformative
+approach to urbanism, one that goes beyond diagnosing problems to envisioning and
+implementingalternativeurbanfutures.
+Thesefindingsofferanuancedunderstandingofhowthecommodificationofurban
+practices,rootedinneoliberalideologies,deeplypermeatestheprofessionaldispositions
+and actions of urban planners in Chile. By delineating three distinct habitus—public,
+private,andacademic—thestudyilluminatesthevaryingdegreestowhichmarket-driven
+imperativesinfluenceurbanplanningdecisionsandstrategies. Whileeachhabitusem-
+bodies unique challenges and perspectives, they collectively underscore the pervasive
+influenceofneoliberalcommodificationonurbanism. Thishighlightsthetensionbetween
+market-drivenobjectivesandtheethicalandsocialresponsibilitiesofurbanplanners,re-
+vealing the complexities and contradictions of navigatingurban development within a
+commodifiedlandscape.
+Theinterplaybetween“thecity,practice,andutopia”andthethreeidentifiedhabitus
+ofChileanurbanplanners—public,private,andacademic—offersarichtapestryforun-
+derstandingurbandevelopmentwithinaneoliberalcontext. Thecity,asaphysicaland
+socialconstruct,isthecanvasuponwhichthesehabitusenacttheirpracticesandideals.
+Forthepublicurbanplanner,thecityisarealmofpolicyandpublicgood,yettheirpractice
+isoftenconstrainedbythelimitationsofaneoliberalframework,hinderingtherealization
+ofutopianvisionsthattranscendmarket-drivenimperatives. Theirfocusonnormativeand
+systemicmodels,ratherthanspatialinnovation,reflectsahabitusshapedbythehistorical
+andsocio-politicalmilieu,emphasizingtheroleofthestateyetstrugglingagainstthegrain
+ofmarketforces.
+Incontrast,theprivateurbanplanner’shabitusisdeeplyembeddedintheneoliberal
+commodificationofurbanspaces. Theirpractice,primarilydrivenbymarketdynamics
+andprivatecapital,shapesthecityinwaysthatoftenprioritiseeconomicimperativesover
+socialorethicalconsiderations. Thishabitus,whilepragmaticandspatiallyimaginative,is
+limitedbytheoverarchingneoliberallogic,constrainingtheirabilitytoconceptualiseand
+implementurbanformsthatdivergefromprofit-drivenmodels. Thetensionbetweentheir
+professionalexpertiseandthemarketrealitiesunderscoresaconflictedrelationshipwith
+utopianideals,wherevisionsofalternativeurbanfuturesaretemperedbytheprevailing
+economicorder.
+Theacademicurbanplanner,operatingwithintherealmsoftheoryandeducation,
+embodiesahabitusthatisbothcriticalandconstrained. Theirbroaderunderstandingof
+urbanissuesallowsforamorecomprehensivecritiqueofneoliberalurbanism,yettheir
+practiceoftenremainsdetachedfromtangibleurbandevelopment. Thisdetachmentresults
+inahabitusthatisknowledgeableyetpessimistic,capableofdiagnosingurbanproblems
+
+### Page 21
+
+Soc.Sci.2024,13,22 21of24
+but less effective in proposing feasible, transformative solutions. The academic urban
+planner’sstruggletotranscendtheneoliberalimaginationhighlightsacrucialgapbetween
+theoreticalunderstandingandpracticalapplication,underscoringthechallengeofbridging
+idealisticurbanvisionswiththerealitiesofcontemporaryurbanpractice. Thisdichotomy
+betweentheoryandpracticeintheacademichabitusrevealsthecomplexitiesofactualizing
+utopianidealswithintheconstraintsoftheneoliberalcity.
+5. Conclusions
+Theneoliberalmodelhassuchanimposingforcethatinareaslikeurbanplanningithas
+managedtoshapethehabitusofurbanplanners,sothattheirdecisionsandoperationsalign
+ordonotreallyinterferewiththerent-seekingobjectivesthatthemodeldemandsofthe
+city. Thisgeneratessubjectivepositionsthat,whilerecognisingaprobleminneoliberalism,
+cannotbreakoutofthatfieldtoexploreproposalsfarfromthemarginsestablishedbythe
+modelitself.Thereis,then,anawarenessofneoliberalaction,butnodetachment.Therefore,
+thehabitusinitsthreeinterpretationspresentedhereoperateasastanceresultingfrom
+pragmatism, Chile’s recent social history, and the ways to operate successfully in the
+neoliberalurbanfield,thatis,infavourofcapitalprofitability,whetherfromthepublicor
+privatesector.
+Unexpectedly,theacademicurbanplanner’shabitusseemsunabletoofferalternatives
+different from what exists; while it is critical of this world, its imagination does not go
+muchfurtherthanwhatalreadyexistsinotherneoliberalnationsorfromimprovingsome
+existingwaysofcity-makinginChile. Thatis,basedontheidentifiedhabitus,theabsence
+ofimaginationisacommoncriticalfactor. Inthecurrentscenario,whereademocratically
+electedcollegiatebodyrethinksthepoliticalconstitutionoftherepublic,basedonthese
+urbanplanners, itcan besaid thatthere is not yet atarget imageof thepost-neoliberal
+societyonwhichtotestnewsectionsforasocialagreementthataims,fromurbandisciplines
+inChile,toovercomeneoliberalism. Thisisseenasapendingandurgenttask. Therecent
+pandemicalsobringsurgenturbanchallenges,seekinghealthier,lessextendedcitieswith
+betterorganizationalcapacityforacrisis.
+Regardingtothiswork,inarevisiontobedevelopedontheongoingchangesinChile,
+itwillbeessentialandunavoidabletoincorporategenderissuesnotonlyinthesampling
+processbutalsointheprevioustheoreticaldiscussion.Oneofthemostmentionedelements
+duringtheconstituentdiscussionistomovetowardsacarecity,somethingthathasnot
+appearedduringtheinterviewsanalysedherebutisakeyfactorwithintheframework
+offeministurbanism(Moser1993; Muxietal.2011). Thesamplecanalsobeexpanded
+to other regions of Chile, seeking more diverse approaches that allow producing more
+complexhabitustypologies. Thiswork,despiteitslimitations,presentsamethodologythat
+allowsdevelopingnewmethodologicalinterpretationsofthehabitusapplicabletospatial
+disciplinessuchasurbanplanning,architecture,ordesign. Adeeperexplorationofeach
+ofthehabitusdescribedherecanalsogeneratenewspecificresearchlinesforeachfield
+ofactionthatwillbeenrichedbyintegratingfactorsassociatedwithgenderstudiesand
+perspectivesfromregions.
+Consideringthefindingspresentedinthisarticle,it’sevidentthatthecommodifica-
+tionofthecityundertheneoliberalmodelhasnotonlyreshapedthephysicalandsocial
+landscapesbuthasalsodeeplyinfluencedthehabitusofurbanplanners. Theneoliberal
+paradigm,withitsemphasisonmarket-drivensolutions,hasentrencheditselfsodeeply
+thateventhosecriticalofitsimplicationsfindthemselvesconstrainedbyitsboundaries.
+Thiscommodificationhastransformedcitiesfromspacesofcollectivelivingandshared
+experiencesintoassetsandinvestmentopportunities. Theurbanplanners,whetherop-
+eratinginpublic,private,oracademicspheres,arenavigatingaterrainwherethecity’s
+valueisoftenreducedtoitseconomicpotentialratherthanitssocio-culturalsignificance.
+Thisarticleunderscorestheurgentneedforareimaginedurbanism,onethattranscends
+theneoliberalconfinesandrepositionsthecityasaspaceforpeople,notjustprofit. As
+citiescontinuetoevolve, itisimperativethaturbanplanningreclaimsitsvisionarypo-
+
+### Page 22
+
+Soc.Sci.2024,13,22 22of24
+tential, prioritising human-centric, sustainable, and inclusive urban futures over mere
+market-drivenobjectives.
+AuthorContributions: Conceptualization,F.V.-P.andM.A.-L.;methodology,F.V.-P.andM.A.-L.;
+software,F.V.-P.;validation,F.V.-P.andM.A.-L.;formalanalysis,F.V.-P.andM.A.-L.;investigation,
+F.V.-P.; resources, F.V.-P. and M.A.-L.; data curation, F.V.-P. and M.A.-L.; writing—original draft
+preparation, F.V.-P.andM.A.-L.; writing—reviewandediting, F.V.-P.andM.A.-L.; visualization,
+F.V.-P.; fundingacquisition, F.V.-P.Allauthorshavereadandagreedtothepublishedversionof
+themanuscript.
+Funding: ThisresearchwasfundedbyANIDGrantnumber72140060. TheAPCwasfundedby
+UniversidaddeLasAméricasGrantnumber176.
+InstitutionalReviewBoardStatement:TheethicalapprovalforthisresearchisProjectID6168/001:
+Interpreting“TheUrbanRevolution”:SegregativeproductionofspaceinSantiagothroughacompar-
+ativestudy,grantedbyChairoftheUCLResearchEthicsCommittee(REC)oftheUniversityCollege
+London,UKin2014.ThestudywasconductedinaccordancewiththeDeclarationofHelsinki,and
+approvedbytheInstitutionalReviewBoardofUCLasindicatedabove.
+InformedConsentStatement:Informedconsentwasobtainedfromallsubjectsinvolvedinthestudy.
+Data Availability Statement: Data available on request due to ethical restrictions and privacy
+agreementswithinterviewees.
+ConflictsofInterest:Theauthorsdeclarenoconflictofinterest.
+References
+Anderson,MatthewB.2014.ClassMonopolyRentandtheContemporaryNeoliberalCity.GeographyCompass8:13–24.[CrossRef]
+Arias-Loyola,Martín.2021.Evadeneoliberalism’sturnstiles!LessonsfromtheChileanEstallidoSocial.EnvironmentandPlanningA53:
+599–606.[CrossRef]
+BannenLanata,Pedro,andCarlosSilvaPedraza.2016.SantiagodeChile:Comprensiónyconfiguracióndeunaciudadmodernaa
+partirdelavisitadeKarlBrunner,1932.EstudiosdelHabitat14.Availableonline:http://sedici.unlp.edu.ar/handle/10915/58114
+(accessedon7November2023).
+Barton,JonathanR.2002.StatecontinuismoandPinochetismo:ThekeystotheChileantransition.BulletinofLatinAmericanResearch21:
+358–74.[CrossRef]
+Benito,Rodrigo,andLuisMiguel.2012.AdaptaciónyResistenciaalOrdenSocialNeoliberalenChile:HabitusyDiscursosSocialesEl
+casodelaRegióndeAntofagasta.UniversidadPolitécnicadeValencia.Availableonline:http://hdl.handle.net/10550/26360
+(accessedon7November2023).
+Bohoslavsky,JuanPablo,SebastiánSmart,andKarinnaFernandez. 2019. ComplicidadEconómicaconlaDictaduraChilena: UnPaís
+DesigualaLaFuerza.Santiago:LOMEdiciones.
+Bourdieu,Pierre.1977.OutlineofaTheoryofPractice.InCambridgeStudiesinSocialAnthropology.EditedbyJackGoody.Cambridge:
+CambridgeUniversityPress,vol.16.[CrossRef]
+Bourdieu,Pierre.1990.SociologíayCultura.Paris:RevueFrançaisedeSociologie.[CrossRef]
+Bourdieu,Pierre.1991.Estructuras,Hábitus,Prácticas.InElSentidoPráctico.Madrid:Taurus,pp.91–111.
+Bourdieu,Pierre.1997.RazonesPrácticas.SobrelaTeoríadelaAcción.Barcelona:Anagrama.
+Bourdieu,Pierre.2004.ElOficiodeCientífico.CienciadelaCienciayReflexividad.Barcelona:Anagrama.[CrossRef]
+Bourdieu,Pierre.2014.SobreelEstado.CursosenelCollègedeFrance(1989–1992).Barcelona:Anagrama.
+Braun, Virginia, and Victoria Clarke. 2006. Using thematic analysis in psychology. Qualitative Research in Psychology 3: 77–101.
+[CrossRef]
+Brites,WalterFernando.2017.Laciudadenlaencrucijadaneoliberal.Urbanismomercado-céntricoydesigualdadsocio-espacialen
+AméricaLatina.UrbeRevistaBrasileiradeGestãoUrbana9:573–86.[CrossRef]
+Castree,Noel. 2006. Fromneoliberalismtoneoliberalisation: Consolations,confusions,andnecessaryillusions. Environmentand
+PlanningA38:1–6.[CrossRef]
+CeledonForster,Alejandra.2019.OperaciónPiloto:Santiagoentresactos.Revista180:1–12.[CrossRef]
+CNDU. 2015. Política Nacional de Desarrollo Urbano. Available online: http://cndu.gob.cl/wp-content/uploads/2014/10/L4
+-Politica-Nacional-Urbana.pdf(accessedon7November2023).
+Coleman,Nathaniel.2013.UtopianProspectofHenriLefebvre.SpaceandCulture16:349–63.[CrossRef]
+Coleman,Nathaniel.2015.LefebvreforArchitects.London:Routledge.
+Collet,Francois.2009.DoesHabitusMatter?AComparativeReviewofBourdieu’sHabitusandSimon’sBoundedRationalitywith
+SomeImplicationsforEconomicSociology.SociologicalTheory27:419–34.[CrossRef]
+
+### Page 23
+
+Soc.Sci.2024,13,22 23of24
+Cottle,Michelle. 2022. WhatcanBourdieuoffertheethnographerinneoliberaltimes: Reflectingonmethodologicalpossibilities.
+EthnographyandEducation17:331–47.[CrossRef]
+Daher,Antonio.1991.NeoliberalismourbanoenChile.EstudiosPúblicos43:281–99.
+Ebenstein,Alan.2014.FriedrichHayek:ABiography.NewYork:St.Martin’sPress.
+Elden,Stuart.2014.UnderstandingHenriLefebvre.London:Continuum.
+Fligstein,Neil.2001.Socialskillandthetheoryoffields.SociologicalTheory19:105–25.[CrossRef]
+Foxley,Alejandro.2004.Successesandfailuresinpovertyeradication:Chile.PaperpresentedattheScalingupPovertyReduction:A
+GlobalLearningProcessandConference,Shanghai,China,May25–27.
+Friedman,Milton.1994.PassingdowntheChileanRecipe.ForeignAffairs73:177–78.[CrossRef]
+Fuentealba,Ricardo.2019.ReviewofNeoliberalismandurbandevelopmentinLatinAmerica.TheCaseofSantiago.EuropeanReviewof
+LatinAmericanandCaribbeanStudiesRev.1.[CrossRef]
+Gross,Patricio.1990.SantiagodeChile:Ideologíaymodelosurbanos.EURE.RevistaLatinoamericanadeEstudiosUrbanoRegionales16:
+67–86.
+Gross,Patricio.1991.PlanificacionUrbanaYModelosPoliticos.EURE(Santiago)17:27–52.
+Gurovich,Alberto.1996.LavenidadeKarlBrunnerengloriaymajestad:Lainfluenciadesusleccionesenlaprofesionalizacióndel
+urbanismoenChile.RevistadeArquitectura7:8–13.[CrossRef]
+Harvey,David.2005.ABriefHistoryofNeoliberalism.NewYork:OxfordUniversityPress.
+Janoschka,Michael,andRodrigoHidalgo.2014.LaCiudadNeoliberal:EstímulosdeReflexiónCrítica.Santiago:EditorialUniversitaria.
+Jessop,Bob.2002.TheFutureoftheCapitalistState.Cambridge:PolityPress.
+Lefebvre,Henri.1961.Utopieexpérimentale:Pourunnouvelurbanisme.RevueFrançaisedeSociologie2:191–98.[CrossRef]
+Lefebvre,Henri.1974.LaProductiondeL’espace.Paris:Anthropos.
+Lizardo,Omar.2004.TheCognitiveOriginsofBourdieu’sHabitus.JournalfortheTheoryofSocialBehaviour34:375–401.[CrossRef]
+López,LisettMárquez.2020.Elcapitalinmobiliario-financieroylaproduccióndelaciudadlatinoamericanahoy.CadernosMetrópole22:
+665–82.[CrossRef]
+Marshall,Martin.1996.Samplingforqualitativeresearch.FamilyPractice13:522–25.[CrossRef][PubMed]
+May,Tim.2001.SocialResearch—Issues,MethodsandProcess.NewYork:McGrawHill.
+Mayol,Alberto.2019.BigBang:EstallidoSocial2019.Santiago:Catalonia.
+Mieles,María,GracielaTonon,andSaraAlvarado. 2012. Investigacióncualitativa: Elanálisistemáticoparaeltratamientodela
+informacióndesdeelenfoquedelafenomenologíasocial.UniversitasHumanística74:195–226.
+Molano,Frank.2016.Elderechoalaciudad:DeHenriLefebvrealosanálisissobrelaciudad.Folios.SegundaÉpoca44:3–19.[CrossRef]
+Moser,Caroline.1993.GenderPlanningandDevelopment:Theory,PracticeandTraining.London:Routledge.
+Muxi,Zaida,RoserCasanovas,AdrianaCicoletto,MartaFonseca,andBlancaGutierrez.2011.¿Quéaportalaperspectivadegéneroal
+urbanismo?Feminismos17:105–29.[CrossRef]
+Peck,Jamie,NikTheodore,andNeilBrenner.2009.NeoliberalUrbanism:Models,Moments,Mutations.SAISReviewofInternational
+Affairs29:49–66.[CrossRef]
+Pinder,David.2015.Reconstitutingthepossible:Lefebvre,Utopiaandtheurbanquestion.InternationalJournalofUrbanandRegional
+Research39:97–127.[CrossRef]
+Pinson,Gilles,andChristelleMorelJournel.2016.Theneoliberalcity-theory,evidence,debates.Territory,Politics,Governance4:137–53.
+[CrossRef]
+Purcell,Mark.2014.Possibleworlds:Henrilefebvreandtherighttothecity.JournalofUrbanAffairs36:141–45.[CrossRef]
+Reay,Diane.2015.Habitusandthepsychosocial:Bourdieuwithfeelings.CambridgeJournalofEducation45:9–23.[CrossRef]
+Rodrigo,LuisMiguel.2015.HabituspolíticosenlaregióndeAntofagasta:Unapropuestametodológica.PapersRevistadeSociologia
+101:97–127.[CrossRef]
+Sager,Tore.2011.Neo-liberalurbanplanningpolicies:Aliteraturesurvey1990–2010.ProgressinPlanning76:147–99.[CrossRef]
+Salazar,Gabriel.2020.AcciónConstituyente,1sted.Santiago:TajamarEdiciones.
+SalinasArreortua,Luis,andAnaPardoMontaño.2018.Urbanismoneoliberalenlaexpansióndelasciudades.Elcasodeciudadde
+México.BitácoraUrbanoTerritorial28:113–19.[CrossRef]
+Seidman,Irving.2006.InterviewingasQualitativeResearch:AGuideforResearchersinEducationandtheSocialSciences.PsycCRI-
+TIQUES37:717–18.[CrossRef]
+SilvinaDaldi,Natalia.2018.Arquitectas.EstrategiasyobstáculosdeinsercióndelasprimerasmujeresalcampodelaArquitectura
+argentina(primeramitaddelsigloXX).HábitatySociedad11:15–29.[CrossRef]
+Souza,Claudia-VirginiaCabralDe,JeroenKlink,andRosanaDenaldi. 2020. Planejamentoreformista-progressista,instrumentos
+urbanísticosea(re)produçãodoespaçoemtempodeneoliberalização.UmaexploraçãoapartirdocasodeSãoBernardodo
+Campo(SãoPaulo).EURE(Santiago)46:203–23.[CrossRef]
+Stewart,Catherine,andAngelaFielding.2021.ExploringtheEmbodiedHabitusofEarlyCareerSocialWorkers.AustralianSocialWork
+75:495–507.[CrossRef]
+Tas¸an-Kok,Tuna.2012.Introduction:ContradictionsofNeoliberalUrbanPlanning.InContradictionsofNeoliberalPlanning.Editedby
+TunaTasan-KokandGuyBaeten.Dordrecht:Springer,vol.102,pp.1–19.[CrossRef]
+TorresJofré,Mario.2017.PlaneamientourbanoenChile:Undesafíodesdeelmodeloneoliberal.Espacios4:64–79.[CrossRef]
+
+### Page 24
+
+Soc.Sci.2024,13,22 24of24
+USGS.2020.MineralsComoditiesSummaries2020;Washington,DC:U.S.GeologicalSurvey.
+Valencia,Marco,andA.Marco.2007.RevoluciónneoliberalycrisisdelEstadoPlanificador.Eldesmontajedelaplaneaciónurbanaen
+Chile.1975–1985.DiseñoUrbanoyPaisaje4:1–23.Availableonline:http://dup.ucentral.cl/pdf/12_rev_neoliberal.pdf(accessed
+on7November2023).
+Vassallo,Ianira,MicheleCerrutiBut,GiuliaSetti,andAgimKercuku,eds.2021.SpatialTensionsinUrbanDesign,1sted.Cham:Springer
+InternationalPublishing.[CrossRef]
+Vergara-Perucich,Francisco.2019.UrbanDesignUnderNeoliberalism,1sted.London:Routledge.[CrossRef]
+Vergara-Perucich,Francisco,andCamilloBoano.2019.Vidaurbananeoliberal:Estudiodefactoresdejerarquizaciónyfragmentación
+contraelderechoalaciudadenChile.RevistadeDireitoDaCidade11:426–52.[CrossRef]
+Vergara-Perucich, Francisco, andCamilloBoano. 2020a. ExploringtheContradictionintheEthosofUrbanPractitionersunder
+Neoliberalism: ACaseStudyofHousingProductioninChile. JournalofPlanningEducationandResearch,0739456X20971684.
+[CrossRef]
+Vergara-Perucich,Francisco,andCamilloBoano.2020b.Thebigbangofneoliberalurbanism:TheGigantomachyofSantiago’surban
+development.EnvironmentandPlanningC:PoliticsandSpace39:184–203.[CrossRef]
+Wacquant,Loïc.2012.Threestepstoahistoricalanthropologyofactuallyexistingneoliberalism:Ahistoricalanthropologyofactually
+existingneoliberalism.SocialAnthropology20:66–79.[CrossRef]
+Wagner,Bernhard,andKennethMcLaughlin. 2015. Politicisingthepsychologyofsocialclass: TherelevanceofPierreBourdieu’s
+habitusforpsychologicalresearch.Theory&Psychology25:202–21.[CrossRef]
+Warwick,RobJanetMcCray,andDouglasBoard.2017.Bourdieu’shabitusandfield:Implicationsonthepracticeandtheoryofcritical
+actionlearning.ActionLearning:ResearchandPractice14:104–19.[CrossRef]
+Yilmaz,EceNurDemir,andAlevÇakmakog˘luKuru.2021.AnEvaluationonHabitusinVisualArtsEducation.CukurovaUniversity
+FacultyofEducationJournal50:677–97.[CrossRef]
+Yin,Robert.2009.CaseStudyResearch:DesignandMethods,4thed.ThousandOaks:Sage.
+Disclaimer/Publisher’sNote: Thestatements, opinionsanddatacontainedinallpublicationsaresolelythoseoftheindividual
+author(s)andcontributor(s)andnotofMDPIand/ortheeditor(s).MDPIand/ortheeditor(s)disclaimresponsibilityforanyinjuryto
+peopleorpropertyresultingfromanyideas,methods,instructionsorproductsreferredtointhecontent.
+
