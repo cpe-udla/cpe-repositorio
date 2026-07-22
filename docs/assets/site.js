@@ -1,11 +1,14 @@
-// menú móvil + buscador de publicaciones
 (function(){
+  var i18n = document.body.dataset;
+  var menuOpenLabel = i18n.menuOpen || 'Menú';
+  var menuCloseLabel = i18n.menuClose || 'Cerrar';
+  var countTemplate = i18n.pubCountTemplate || '{n} de {total} publicaciones';
   var btn = document.getElementById('menuToggle');
   if(btn){
     btn.addEventListener('click', function(){
       var open = document.body.classList.toggle('menu-open');
       btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-      btn.textContent = open ? 'Cerrar' : 'Menú';
+      btn.textContent = open ? menuCloseLabel : menuOpenLabel;
     });
   }
   var q = document.getElementById('pubSearch');
@@ -29,7 +32,7 @@
         var any = b.querySelector('.pub:not(.hidden)');
         b.classList.toggle('hidden', !any);
       });
-      if(count) count.textContent = visible + ' de ' + total + ' publicaciones';
+      if(count) count.textContent = countTemplate.replace('{n}', visible).replace('{total}', total);
     }
     q.addEventListener('input', update);
     update();
