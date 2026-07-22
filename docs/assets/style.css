@@ -57,6 +57,8 @@ a{color:var(--ink)}
 }
 .side-pubs li:last-child a{border-bottom:0}
 .side-pubs a:hover,.side-pubs a:focus-visible{background:var(--ink);color:var(--paper);outline:none}
+.side-github{margin-bottom:16px}
+.side-github a{font-weight:600}
 
 .side-meta{margin-top:auto;display:flex;flex-direction:column;gap:22px;padding-top:10px}
 .side-links{list-style:none}
