@@ -205,6 +205,25 @@ a.card:focus-visible .tag,a.card:focus-visible .meta{color:var(--paper)}
 .video figcaption b{display:block;font-weight:500}
 .video figcaption span{color:var(--gray);font-size:.76rem;text-transform:uppercase;letter-spacing:.08em}
 
+/* seminario arquitectura y etnografía */
+.seminar-cta{
+  display:flex;flex-wrap:wrap;align-items:center;gap:16px;
+  border:1px solid var(--ink);padding:22px 24px;margin:28px 0 44px;
+}
+.seminar-cta p{margin:0;max-width:48ch;font-size:.92rem}
+.seminar-cta a.btn{
+  display:inline-block;text-decoration:none;white-space:nowrap;
+  text-transform:uppercase;letter-spacing:.1em;font-size:.78rem;font-weight:600;
+  background:var(--ink);color:var(--paper);padding:12px 20px;
+}
+.seminar-cta a.btn:hover,.seminar-cta a.btn:focus-visible{opacity:.82;outline:none}
+.prose blockquote{
+  margin:20px 0;padding:4px 0 4px 18px;border-left:3px solid var(--ink);
+  font-style:italic;color:var(--gray);max-width:68ch;
+}
+html[dir="rtl"] .prose blockquote{border-left:0;border-right:3px solid var(--ink);padding:4px 18px 4px 0}
+.prose ul.questions li{margin-bottom:10px}
+
 /* pie */
 .footer{
   margin-top:80px;border-top:1px solid var(--ink);padding-top:18px;
