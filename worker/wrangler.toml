@@ -17,7 +17,7 @@ RAMA = "main"
 # Carpeta del repositorio donde vive el sitio ("" en Test1; "docs" en cpe-udla/cpe-repositorio).
 RAIZ_SITIO = "docs"
 # Páginas abiertas a intervención, separadas por comas. En todas las demás la terminal solo responde preguntas.
-EDITABLES = "index.html"
+EDITABLES = "index.html,en/index.html,fr/index.html,pt/index.html,ru/index.html,zh/index.html,ar/index.html"
 # Hoja de estilos común que el modelo editor recibe como referencia (no la modifica).
 HOJA_COMUN = "assets/style.css"
 # "directo": cada intervención se publica como commit en RAMA.
@@ -34,7 +34,7 @@ UMBRAL_TEXTO = "0.95"
 # "1" filtra las instrucciones con Llama Guard 3 antes de pasarlas al editor; "0" lo desactiva.
 MODERACION = "1"
 # Orígenes (sin barra final) desde los que se aceptan intervenciones, separados por comas.
-ORIGENES_PERMITIDOS = "https://cpe-udla.github.io"
+ORIGENES_PERMITIDOS = "https://cpe-udla.github.io,https://cpe-udla.org,https://www.cpe-udla.org"
 
 # Máximo de 6 peticiones (propuestas, publicaciones o preguntas) por minuto y por IP.
 [[ratelimits]]
