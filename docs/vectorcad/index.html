@@ -805,7 +805,7 @@ class Document {
     };
   }
   pushUndo(label="") {
-    this._undo.push({ label, raw: this.entities.map(e => structuredClone(e)) });
+    this._undo.push({ label, raw: this.entities.map(e => ({ p: Object.getPrototypeOf(e), d: structuredClone(e) })) });
     if (this._undo.length > 80) this._undo.shift();
     this._redo = [];
     this.modified = true;
@@ -813,16 +813,16 @@ class Document {
   undo() {
     if (!this._undo.length) return null;
     const s = this._undo.pop();
-    this._redo.push({ label: s.label, raw: this.entities.map(e => structuredClone(e)) });
-    this.entities = s.raw.map(e => { const c = structuredClone(e); Object.setPrototypeOf(c, Object.getPrototypeOf(e)); return c; });
+    this._redo.push({ label: s.label, raw: this.entities.map(e => ({ p: Object.getPrototypeOf(e), d: structuredClone(e) })) });
+    this.entities = s.raw.map(x => Object.setPrototypeOf(structuredClone(x.d), x.p));
     this.modified = true;
     return s.label || "operación";
   }
   redo() {
     if (!this._redo.length) return null;
     const s = this._redo.pop();
-    this._undo.push({ label: s.label, raw: this.entities.map(e => structuredClone(e)) });
-    this.entities = s.raw.map(e => { const c = structuredClone(e); Object.setPrototypeOf(c, Object.getPrototypeOf(e)); return c; });
+    this._undo.push({ label: s.label, raw: this.entities.map(e => ({ p: Object.getPrototypeOf(e), d: structuredClone(e) })) });
+    this.entities = s.raw.map(x => Object.setPrototypeOf(structuredClone(x.d), x.p));
     this.modified = true;
     return s.label || "operación";
   }
@@ -1667,4 +1667,750 @@ function* cmdZoomWindow(ctx) {
   ctx.view.zoomBox(Math.min(a[0],b[0]), Math.min(a[1],b[1]),
                    Math.max(a[0],b[0]), Math.max(a[1],b[1]));
 }
-function
+
+/* -------- RECORTAR / ALARGAR -------- */
+function _segParam(a, b, p) {
+  const d = V.sub(b, a), l2 = V.dot(d, d);
+  return l2 < TOL ? 0 : V.dot(V.sub(p, a), d) / l2;
+}
+function _cutters(ctx, except) {
+  const out = [];
+  for (const e of ctx.doc.visibleEntities()) if (e !== except) out.push(...e.primitives());
+  return out;
+}
+function _polyPt(pts, closed, s) {
+  const n = pts.length, m = closed ? n : n - 1;
+  s = Math.max(0, Math.min(s, m));
+  let i = Math.floor(s); if (i >= m) i = m - 1;
+  return V.lerp(pts[i], pts[(i + 1) % n], s - i);
+}
+function _polyBetween(pts, closed, s0, s1) {
+  const n = pts.length, m = closed ? n : n - 1;
+  if (closed && s1 <= s0) s1 += m;
+  const out = [_polyPt(pts, closed, s0 % (m + (closed ? 0 : 1)))];
+  for (let k = Math.floor(s0) + 1; k < s1 - 1e-9; k++) out.push([...pts[k % n]]);
+  const end = _polyPt(pts, closed, closed ? s1 % m : s1);
+  if (V.dist(out[out.length - 1], end) > 1e-9) out.push(end);
+  return out;
+}
+function* cmdTrim(ctx) {
+  ctx.log("Aristas de corte: todos los objetos visibles.");
+  while (true) {
+    const p = yield new Prompt("Objeto a recortar (clic sobre la parte a eliminar) <Enter=fin>", "point");
+    if (!p) return;
+    const e = ctx.pick(p);
+    if (!e) { ctx.log("No se encontró ningún objeto ahí.", "warn"); continue; }
+    const cut = _cutters(ctx, e);
+    const opts = { layer: e.layer, color: e.color };
+    if (e instanceof Line) {
+      const me = ["seg", e.p1, e.p2];
+      const ts = [];
+      for (const q of cut) for (const ip of primInt(me, q)) {
+        const t = _segParam(e.p1, e.p2, ip);
+        if (t > 1e-7 && t < 1 - 1e-7) ts.push(t);
+      }
+      if (!ts.length) { ctx.log("Sin intersecciones: no hay nada que recortar.", "warn"); continue; }
+      const tp = _segParam(e.p1, e.p2, closestOnSeg(p, e.p1, e.p2));
+      let ta = 0, tb = 1;
+      for (const t of ts) { if (t < tp && t > ta) ta = t; if (t > tp && t < tb) tb = t; }
+      ctx.remove([e]);
+      if (ta > 1e-7) ctx.add(new Line(e.p1, V.lerp(e.p1, e.p2, ta), opts));
+      if (tb < 1 - 1e-7) ctx.add(new Line(V.lerp(e.p1, e.p2, tb), e.p2, opts));
+    } else if (e instanceof Circle || e instanceof Arc) {
+      const isArc = e instanceof Arc;
+      const a0 = isArc ? e.a0 : 0;
+      const span = isArc ? (normAng(e.a1 - e.a0) || TAU) : TAU;
+      const me = ["arc", e.center, e.radius, a0, isArc ? e.a1 : TAU];
+      const us = [];
+      for (const q of cut) for (const ip of primInt(me, q)) {
+        const u = normAng(Math.atan2(ip[1] - e.center[1], ip[0] - e.center[0]) - a0);
+        if (u > 1e-7 && (!isArc || u < span - 1e-7)) us.push(u);
+      }
+      const up = normAng(Math.atan2(p[1] - e.center[1], p[0] - e.center[0]) - a0);
+      if (!isArc) {
+        if (us.length < 2) { ctx.log("Un círculo necesita al menos dos intersecciones.", "warn"); continue; }
+        us.sort((x, y) => x - y);
+        let prev = us[us.length - 1], next = us[0];
+        for (let i = 0; i < us.length; i++) {
+          const j = (i + 1) % us.length;
+          const lo = us[i], hi = j === 0 ? us[0] + TAU : us[j];
+          const uu = up < lo ? up + TAU : up;
+          if (uu >= lo && uu <= hi) { prev = us[i]; next = us[j]; break; }
+        }
+        ctx.remove([e]);
+        ctx.add(new Arc(e.center, e.radius, next, prev, opts));
+      } else {
+        if (!us.length) { ctx.log("Sin intersecciones: no hay nada que recortar.", "warn"); continue; }
+        let ua = 0, ub = span;
+        for (const u of us) { if (u < up && u > ua) ua = u; if (u > up && u < ub) ub = u; }
+        ctx.remove([e]);
+        if (ua > 1e-7) ctx.add(new Arc(e.center, e.radius, a0, a0 + ua, opts));
+        if (ub < span - 1e-7) ctx.add(new Arc(e.center, e.radius, a0 + ub, a0 + span, opts));
+      }
+    } else if (e instanceof Polyline) {
+      const prs = e.primitives();
+      const ss = [];
+      prs.forEach((pr, i) => {
+        for (const q of cut) for (const ip of primInt(pr, q)) {
+          const t = _segParam(pr[1], pr[2], ip);
+          ss.push(i + Math.max(0, Math.min(1, t)));
+        }
+      });
+      let bi = 0, bd = Infinity;
+      prs.forEach((pr, i) => { const d = distPointSeg(p, pr[1], pr[2]); if (d < bd) { bd = d; bi = i; } });
+      const sp = bi + _segParam(prs[bi][1], prs[bi][2], closestOnSeg(p, prs[bi][1], prs[bi][2]));
+      const m = prs.length;
+      const uniq = [...new Set(ss.map(s => +s.toFixed(9)))].filter(s => e.closed || (s > 1e-7 && s < m - 1e-7)).sort((a, b) => a - b);
+      if (e.closed) {
+        if (uniq.length < 2) { ctx.log("Una polilínea cerrada necesita al menos dos intersecciones.", "warn"); continue; }
+        let prev = uniq[uniq.length - 1], next = uniq[0];
+        for (let i = 0; i < uniq.length; i++) {
+          const j = (i + 1) % uniq.length;
+          const lo = uniq[i], hi = j === 0 ? uniq[0] + m : uniq[j];
+          const s2 = sp < lo ? sp + m : sp;
+          if (s2 >= lo && s2 <= hi) { prev = uniq[i]; next = uniq[j]; break; }
+        }
+        ctx.remove([e]);
+        ctx.add(new Polyline(_polyBetween(e.points, true, next, prev), false, opts));
+      } else {
+        if (!uniq.length) { ctx.log("Sin intersecciones: no hay nada que recortar.", "warn"); continue; }
+        let sa = 0, sb = m;
+        for (const s of uniq) { if (s < sp && s > sa) sa = s; if (s > sp && s < sb) sb = s; }
+        ctx.remove([e]);
+        if (sa > 1e-7) ctx.add(new Polyline(_polyBetween(e.points, false, 0, sa), false, opts));
+        if (sb < m - 1e-7) ctx.add(new Polyline(_polyBetween(e.points, false, sb, m), false, opts));
+      }
+    } else {
+      ctx.log("Ese tipo de objeto no se puede recortar.", "warn");
+    }
+  }
+}
+function* cmdExtend(ctx) {
+  ctx.log("Contornos: todos los objetos visibles.");
+  while (true) {
+    const p = yield new Prompt("Línea a alargar (clic cerca del extremo) <Enter=fin>", "point");
+    if (!p) return;
+    const e = ctx.pick(p);
+    if (!(e instanceof Line)) { ctx.log("Selecciona una línea.", "warn"); continue; }
+    const atEnd = V.dist(p, e.p2) < V.dist(p, e.p1);
+    const me = ["seg", e.p1, e.p2];
+    let best = null;
+    for (const q of _cutters(ctx, e)) for (const ip of primInt(me, q, true, false)) {
+      const t = _segParam(e.p1, e.p2, ip);
+      if (atEnd && t > 1 + 1e-7 && (best === null || t < best)) best = t;
+      if (!atEnd && t < -1e-7 && (best === null || t > best)) best = t;
+    }
+    if (best === null) { ctx.log("No hay contorno en esa dirección.", "warn"); continue; }
+    ctx.touch();
+    const np = V.lerp(e.p1, e.p2, best);
+    if (atEnd) e.p2 = np; else e.p1 = np;
+  }
+}
+
+/* -------- CONSULTA -------- */
+function* cmdDist(ctx) {
+  const a = yield new Prompt("Primer punto", "point");
+  if (!a) return;
+  const b = yield new Prompt("Segundo punto", "point", { base: a });
+  if (!b) return;
+  ctx.log(`Distancia = ${fmt(V.dist(a, b))} ${ctx.doc.units}   ΔX = ${fmt(b[0]-a[0])}   ΔY = ${fmt(b[1]-a[1])}   Ángulo = ${fmt(V.angle(a, b)*180/Math.PI, 2)}°`);
+}
+function* cmdId(ctx) {
+  const p = yield new Prompt("Punto a identificar", "point");
+  if (p) ctx.log(`X = ${fmt(p[0])}   Y = ${fmt(p[1])}`);
+}
+function* cmdArea(ctx) {
+  const sel = yield* selOrPrompt(ctx, "Objetos cerrados para medir");
+  if (!sel.length) return;
+  let A = 0, L = 0;
+  for (const e of sel) { A += e.area(); L += e.length(); }
+  ctx.log(`${sel.length} objeto(s) · Área total = ${fmt(A)} ${ctx.doc.units}²   Perímetro/longitud = ${fmt(L)} ${ctx.doc.units}`);
+}
+function* cmdList(ctx) {
+  const sel = yield* selOrPrompt(ctx, "Objetos a listar");
+  for (const e of sel) {
+    ctx.log(`${e.kind} #${e.id} · capa ${e.layer} · ` + e.props().map(p => `${p[1]}=${p[2]}`).join("  "));
+  }
+}
+
+/* -------- SISTEMA -------- */
+function* cmdLayer(ctx) {
+  const s = yield new Prompt(`Nombre de capa a activar o crear <${ctx.doc.currentLayer}>`, "text");
+  if (!s) return;
+  const name = s.trim();
+  const isNew = !ctx.doc.layers[name];
+  ctx.doc.addLayer(name);
+  ctx.doc.currentLayer = name;
+  ctx.log(`${isNew ? "Capa creada y activada" : "Capa activa"}: ${name}`);
+}
+function* cmdGrid(ctx) {
+  const g = yield new Prompt("Espaciado de rejilla/snap", "number", { default: ctx.view.grid });
+  const v = parseFloat(g);
+  if (!(v > 0)) return;
+  ctx.view.grid = v;
+  ctx.log(`Rejilla = ${fmt(v)} ${ctx.doc.units}`);
+}
+function* cmdSelectAll(ctx) {
+  ctx.doc.selectAll();
+  ctx.log(`${ctx.doc.selection().length} objeto(s) seleccionados.`);
+}
+
+/* ============================================================
+   6. REGISTRO DE COMANDOS
+   ============================================================ */
+// [alias, nombre, grupo, descripción, función, esGenerador, limpiaSelección]
+const COMMAND_DEFS = [
+  [["L","LINEA","LINE"], "LÍNEA", "draw", "Segmentos de línea encadenados", cmdLine, true],
+  [["PL","POLILINEA"], "POLILÍNEA", "draw", "Polilínea abierta o cerrada", cmdPolyline, true],
+  [["REC","RECTANG"], "RECTÁNGULO", "draw", "Rectángulo por dos esquinas", cmdRectangle, true],
+  [["POL","POLIGONO"], "POLÍGONO", "draw", "Polígono regular inscrito/circunscrito", cmdPolygon, true],
+  [["C","CIRCULO"], "CÍRCULO", "draw", "Círculo por centro y radio", cmdCircle, true],
+  [["A","ARCO"], "ARCO", "draw", "Arco por centro, inicio y fin", cmdArc, true],
+  [["EL","ELIPSE"], "ELIPSE", "draw", "Elipse por centro y ejes", cmdEllipse, true],
+  [["PO","PUNTO"], "PUNTO", "draw", "Puntos de referencia", cmdPoint, true],
+  [["T","TEXTO"], "TEXTO", "draw", "Texto de una línea", cmdText, true],
+  [["M","MOVER"], "MOVER", "edit", "Desplaza objetos", cmdMove, true, true],
+  [["CO","CP","COPIAR"], "COPIAR", "edit", "Copia objetos (múltiple)", cmdCopy, true, true],
+  [["RO","ROTAR"], "ROTAR", "edit", "Rota objetos por ángulo o punto", cmdRotate, true, true],
+  [["SC","ESCALA"], "ESCALA", "edit", "Escala objetos por factor", cmdScale, true, true],
+  [["MI","SIMETRIA"], "SIMETRÍA", "edit", "Refleja objetos respecto de un eje", cmdMirror, true, true],
+  [["O","DESFASE","OFFSET"], "DESFASE", "edit", "Copia paralela a distancia", cmdOffset, true, true],
+  [["TR","RECORTA"], "RECORTAR", "edit", "Recorta en las intersecciones", cmdTrim, true, true],
+  [["EX","ALARGA"], "ALARGAR", "edit", "Alarga una línea hasta el siguiente objeto", cmdExtend, true, true],
+  [["E","BORRA","SUPR"], "BORRAR", "edit", "Elimina objetos", cmdDelete, true, true],
+  [["X","DESCOMP"], "DESCOMPONER", "edit", "Descompone polilíneas en líneas", cmdExplode, true, true],
+  [["J","UNIR"], "UNIR", "edit", "Une líneas/polilíneas contiguas", cmdJoin, true, true],
+  [["Z","ZOOM"], "ZOOM", "view", "Zoom: factor, E, V, P, S", cmdZoom, true],
+  [["ZE"], "ZOOM EXTENSIÓN", "view", "Encuadra todo el dibujo", app => app.view.zoomExtents(), false],
+  [["ZW","ZV"], "ZOOM VENTANA", "view", "Zoom por ventana", cmdZoomWindow, true],
+  [["ZP"], "ZOOM PREVIO", "view", "Vuelve a la vista anterior", app => app.view.prevView(), false],
+  [["U","DESHACER"], "DESHACER", "view", "Deshace la última operación", app => app.undo(), false],
+  [["RE","REHACER","REDO"], "REHACER", "view", "Rehace la operación deshecha", app => app.redo(), false],
+  [["LA","CAPA"], "CAPA", "view", "Activa o crea una capa", cmdLayer, true],
+  [["GR","REJILLA"], "REJILLA", "view", "Espaciado de rejilla y snap", cmdGrid, true],
+  [["DI","DIST"], "DISTANCIA", "view", "Mide distancia y ángulo", cmdDist, true],
+  [["ID"], "ID", "view", "Coordenadas de un punto", cmdId, true],
+  [["AA","AREA"], "ÁREA", "view", "Área y perímetro de objetos", cmdArea, true, true],
+  [["LI","LIST"], "LISTAR", "view", "Propiedades de objetos en el historial", cmdList, true],
+  [["TODO","ALL"], "SELECCIONAR TODO", "view", "Selecciona todos los objetos editables", cmdSelectAll, true],
+  [["NEW","NUEVO"], "NUEVO", "view", "Dibujo nuevo", app => app.newDoc(), false],
+  [["SAVE","GUARDAR"], "GUARDAR", "view", "Descarga el dibujo en JSON", app => app.save(), false],
+  [["OPEN","ABRIR"], "ABRIR", "view", "Abre un dibujo JSON", app => app.open(), false],
+  [["PNG"], "PNG", "view", "Exporta la vista como imagen PNG", app => app.exportPNG(), false],
+  [["?","AYUDA","HELP"], "AYUDA", "view", "Muestra esta ayuda", app => app.showHelp(), false]
+];
+const COMMANDS = {};
+for (const d of COMMAND_DEFS) {
+  const def = { aliases: d[0], name: d[1], group: d[2], desc: d[3], fn: d[4], gen: d[5], clearSel: !!d[6] };
+  for (const a of d[0]) COMMANDS[a] = def;
+}
+
+/* ============================================================
+   7. APLICACIÓN
+   ============================================================ */
+const EDITABLE_PROPS = new Set(["x1","y1","x2","y2","len","ang","cx","cy","r","d","a0","a1",
+  "rx","ry","rot","txt","h","x","y","closed"]);
+
+function setEntityProp(e, key, raw) {
+  if (key === "txt") { e.text = raw; return true; }
+  const v = parseFloat(raw);
+  if (!isFinite(v)) return false;
+  const deg = v * Math.PI / 180;
+  if (e instanceof Line) {
+    if (key === "x1") e.p1[0] = v; else if (key === "y1") e.p1[1] = v;
+    else if (key === "x2") e.p2[0] = v; else if (key === "y2") e.p2[1] = v;
+    else if (key === "len") { const a = V.angle(e.p1, e.p2); e.p2 = [e.p1[0]+v*Math.cos(a), e.p1[1]+v*Math.sin(a)]; }
+    else if (key === "ang") { const L = V.dist(e.p1, e.p2); e.p2 = [e.p1[0]+L*Math.cos(deg), e.p1[1]+L*Math.sin(deg)]; }
+    else return false;
+    return true;
+  }
+  if (e instanceof Circle || e instanceof Arc || e instanceof Ellipse) {
+    if (key === "cx") { e.center[0] = v; return true; }
+    if (key === "cy") { e.center[1] = v; return true; }
+  }
+  if (e instanceof Circle) {
+    if (key === "r" && v > 0) e.radius = v; else if (key === "d" && v > 0) e.radius = v/2; else return false;
+    return true;
+  }
+  if (e instanceof Arc) {
+    if (key === "r" && v > 0) e.radius = v; else if (key === "a0") e.a0 = deg; else if (key === "a1") e.a1 = deg; else return false;
+    return true;
+  }
+  if (e instanceof Ellipse) {
+    if (key === "rx" && v > 0) e.rx = v; else if (key === "ry" && v > 0) e.ry = v; else if (key === "rot") e.angle = deg; else return false;
+    return true;
+  }
+  if (e instanceof TextEnt) {
+    if (key === "h" && v > 0) e.height = v; else if (key === "rot") e.angle = deg;
+    else if (key === "x") e.pos[0] = v; else if (key === "y") e.pos[1] = v; else return false;
+    return true;
+  }
+  if (e instanceof PointEnt) {
+    if (key === "x") e.pos[0] = v; else if (key === "y") e.pos[1] = v; else return false;
+    return true;
+  }
+  if (e instanceof Polyline && key === "closed") { e.closed = v !== 0; return true; }
+  return false;
+}
+
+class App {
+  constructor() {
+    this.doc = new Document();
+    this.view = new Canvas(document.getElementById("canvas"), this.doc);
+    this.textHeight = 2.5;
+    this.offsetDist = 1.0;
+    this.gen = null;
+    this.cmdDef = null;
+    this.prompt = null;
+    this.lastCmd = null;
+    this.lastPoint = null;
+    this.inputHistory = [];
+    this.histIdx = -1;
+    this.$hist = document.getElementById("history");
+    this.$input = document.getElementById("cmd-input");
+    this.$label = document.getElementById("prompt-label");
+    this.$coord = document.getElementById("coord-label");
+    this.$zoom = document.getElementById("zoom-label");
+    this.$layers = document.getElementById("layers-list");
+    this.$props = document.getElementById("props-list");
+    this.$layerLabel = document.getElementById("layer-label");
+    this._bind();
+    this._buildHelp();
+    this.refreshAll();
+    this.log("VectorCAD Web · Centro Producción del Espacio · UDLA");
+    this.log("Escribe un comando (L, PL, C, REC…) o usa la barra superior. ? = ayuda.");
+  }
+
+  /* ---- historial ---- */
+  log(msg, level="info") {
+    const div = document.createElement("div");
+    if (level !== "info") div.className = level;
+    div.textContent = msg;
+    this.$hist.appendChild(div);
+    while (this.$hist.childNodes.length > 400) this.$hist.removeChild(this.$hist.firstChild);
+    this.$hist.scrollTop = this.$hist.scrollHeight;
+  }
+
+  /* ---- eventos ---- */
+  _bind() {
+    const v = this.view;
+    v.onPointPicked = w => this._onPick(w);
+    v.onMouseMove = w => { this.$coord.textContent = `X ${fmt(w[0],3)}   Y ${fmt(w[1],3)}`; };
+    v.onSelectionChanged = () => this.refreshProps();
+    v.onZoomChanged = () => this.refreshStatus();
+    v.el.addEventListener("mouseup", () => setTimeout(() => this.$input.focus(), 0));
+    v.el.addEventListener("contextmenu", () => this.submit(""));
+    window.addEventListener("resize", () => v.resize());
+
+    document.querySelectorAll("#toolbar button[data-alias]").forEach(b => {
+      b.addEventListener("click", () => { this.runCommand(b.dataset.alias); this.$input.focus(); });
+    });
+    document.querySelectorAll("#statusbar .tog").forEach(t => {
+      t.addEventListener("click", () => { this.toggle(t.dataset.tog); this.$input.focus(); });
+    });
+    document.getElementById("add-layer").addEventListener("click", () => {
+      let i = Object.keys(this.doc.layers).length;
+      while (this.doc.layers["Capa" + i]) i++;
+      const name = window.prompt("Nombre de la nueva capa:", "Capa" + i);
+      if (name && name.trim()) {
+        this.doc.addLayer(name.trim());
+        this.doc.currentLayer = name.trim();
+        this.refreshAll();
+      }
+    });
+
+    this.$input.addEventListener("keydown", e => this._onInputKey(e));
+    document.addEventListener("keydown", e => this._onGlobalKey(e));
+    window.addEventListener("beforeunload", e => {
+      if (this.doc.modified && this.doc.entities.length) { e.preventDefault(); e.returnValue = ""; }
+    });
+    document.getElementById("help-modal").addEventListener("click", e => {
+      if (e.target.id === "help-modal") e.currentTarget.classList.remove("show");
+    });
+  }
+  _onInputKey(e) {
+    const textMode = this.prompt && this.prompt.mode === "text";
+    if (e.key === "Enter" || (e.key === " " && !textMode)) {
+      e.preventDefault();
+      const s = this.$input.value;
+      this.$input.value = "";
+      if (s.trim()) { this.inputHistory.push(s.trim()); if (this.inputHistory.length > 100) this.inputHistory.shift(); }
+      this.histIdx = -1;
+      this.submit(s);
+    } else if (e.key === "ArrowUp" || e.key === "ArrowDown") {
+      if (!this.inputHistory.length) return;
+      e.preventDefault();
+      const n = this.inputHistory.length;
+      if (e.key === "ArrowUp") this.histIdx = this.histIdx < 0 ? n - 1 : Math.max(0, this.histIdx - 1);
+      else this.histIdx = this.histIdx < 0 ? -1 : (this.histIdx + 1 >= n ? -1 : this.histIdx + 1);
+      this.$input.value = this.histIdx < 0 ? "" : this.inputHistory[this.histIdx];
+    }
+  }
+  _onGlobalKey(e) {
+    const fkeys = { F3: "osnap", F7: "grid", F8: "ortho", F9: "snap", F10: "polar" };
+    if (fkeys[e.key]) { e.preventDefault(); this.toggle(fkeys[e.key]); return; }
+    const t = e.target;
+    const inOther = t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA" || t.tagName === "SELECT") && t !== this.$input;
+    if (inOther) return;
+    const inputEmpty = this.$input.value === "";
+    if (e.key === "Escape") {
+      e.preventDefault();
+      document.getElementById("help-modal").classList.remove("show");
+      if (this.gen) this.cancel();
+      else { this.doc.clearSelection(); this.refreshProps(); this.view.draw(); }
+      this.$input.value = "";
+      return;
+    }
+    if (!inputEmpty) return;
+    if ((e.key === "Delete" || e.key === "Supr") && !this.gen && this.doc.selection().length) {
+      e.preventDefault(); this.runCommand("E"); return;
+    }
+    const mod = e.ctrlKey || e.metaKey;
+    if (mod && !e.shiftKey && e.key.toLowerCase() === "z") { e.preventDefault(); this.runCommand("U"); return; }
+    if (mod && (e.key.toLowerCase() === "y" || (e.shiftKey && e.key.toLowerCase() === "z"))) { e.preventDefault(); this.runCommand("RE"); return; }
+    if (mod && e.key.toLowerCase() === "a" && !this.gen) { e.preventDefault(); this.runCommand("TODO"); return; }
+    if (t !== this.$input && !mod && !e.altKey && (e.key.length === 1 || e.key === "Enter")) {
+      this.$input.focus();
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); this.submit(""); }
+    }
+  }
+
+  /* ---- ejecución de comandos ---- */
+  runCommand(alias) {
+    const key = String(alias).trim().toUpperCase();
+    const def = COMMANDS[key];
+    if (!def) { this.log(`Comando desconocido: "${alias}". Escribe ? para ver la ayuda.`, "error"); return; }
+    if (this.gen) this.cancel(true);
+    this.log(`Comando: ${def.name}`, "cmd");
+    if (!["U","RE","?","AYUDA","HELP"].includes(key)) this.lastCmd = key;
+    if (!def.gen) {
+      try { def.fn(this); } catch (err) { console.error(err); this.log("Error: " + err.message, "error"); }
+      this.refreshAll();
+      return;
+    }
+    const ctx = new Ctx(this);
+    ctx.name = def.name;
+    this.cmdDef = def;
+    this.gen = def.fn(ctx);
+    this._step(undefined);
+  }
+  _step(value) {
+    let r;
+    try { r = this.gen.next(value); }
+    catch (err) { console.error(err); this.log("Error: " + err.message, "error"); this._finish(); return; }
+    if (r.done) { this._finish(); return; }
+    this._setPrompt(r.value);
+    this.refreshAll();
+  }
+  _setPrompt(p) {
+    this.prompt = p;
+    let txt = p.text;
+    if (p.mode === "number" && p.default !== undefined && p.default !== null && !/<[^>]*>/.test(txt)) txt += ` <${fmt(+p.default)}>`;
+    this.$label.textContent = txt + ":";
+    const v = this.view;
+    v.pickMode = p.mode !== "select";
+    v.basePoint = p.base || null;
+    v.previewFn = p.preview || null;
+    v.el.style.cursor = v.pickMode ? "crosshair" : "default";
+    v.draw();
+  }
+  _finish() {
+    const def = this.cmdDef;
+    this.gen = null; this.cmdDef = null; this.prompt = null;
+    const v = this.view;
+    v.pickMode = false; v.basePoint = null; v.previewFn = null; v.osnapHit = null;
+    v.el.style.cursor = "crosshair";
+    this.$label.textContent = "Comando:";
+    if (def && def.clearSel) this.doc.clearSelection();
+    this.refreshAll();
+  }
+  cancel(silent=false) {
+    if (!this.gen) return;
+    try { this.gen.return(); } catch (_) {}
+    if (!silent) this.log("*Cancelado*", "warn");
+    this._finish();
+  }
+  _onPick(w) {
+    const p = this.prompt;
+    if (!p || !this.gen) return;
+    if (p.mode === "point") {
+      this.lastPoint = w;
+      this.log(`  ${fmt(w[0],3)}, ${fmt(w[1],3)}`);
+      this._step(w);
+    } else if (p.mode === "number" && p.base) {
+      this._step(V.dist(p.base, w));
+    }
+  }
+  submit(raw) {
+    const s = (raw || "").trim();
+    if (!this.gen) {
+      if (!s) { if (this.lastCmd) this.runCommand(this.lastCmd); return; }
+      this.runCommand(s);
+      return;
+    }
+    const p = this.prompt;
+    if (s) this.log(`  ${s}`);
+    if (p.mode === "select") {
+      if (/^(TODO|ALL|T)$/i.test(s)) this.doc.selectAll();
+      this._step(this.doc.selection().filter(e => this.doc.isEditable(e)));
+      return;
+    }
+    if (!s) {
+      const def = (p.mode === "number" || p.mode === "keyword") ? (p.default ?? null) : null;
+      this._step(def);
+      return;
+    }
+    const up = s.toUpperCase();
+    if (p.keywords && Object.prototype.hasOwnProperty.call(p.keywords, up)) { this._step(p.keywords[up]); return; }
+    if (p.mode === "text") { this._step(raw.replace(/^\s+|\s+$/g, "")); return; }
+    if (p.mode === "keyword") { this._step(s); return; }
+    if (p.mode === "number") {
+      const v = parseFloat(s.replace(",", "."));
+      if (isNaN(v)) { this.log("Se requiere un número.", "warn"); return; }
+      this._step(v);
+      return;
+    }
+    // modo punto
+    const pt = this.parsePoint(s, p);
+    if (pt === null) {
+      this.log("Punto no válido. Usa x,y · @dx,dy · @dist<áng · dist<áng · distancia.", "warn");
+      return;
+    }
+    if (typeof pt === "number") { this._step(pt); return; }
+    this.lastPoint = pt;
+    this._step(pt);
+  }
+  parsePoint(s, p) {
+    const num = x => { const v = parseFloat(x); return isFinite(v) && /^\s*[-+]?(\d+\.?\d*|\.\d+)([eE][-+]?\d+)?\s*$/.test(x) ? v : NaN; };
+    const ref = p.base || this.lastPoint || [0, 0];
+    let rel = false;
+    if (s.startsWith("@")) { rel = true; s = s.slice(1); if (!s) return [...ref]; }
+    if (s.includes("<")) {
+      const [a, b] = s.split("<");
+      const d = num(a), ang = num(b);
+      if (isNaN(d) || isNaN(ang)) return null;
+      const r = ang * Math.PI / 180;
+      const o = rel ? ref : [0, 0];
+      return [o[0] + d * Math.cos(r), o[1] + d * Math.sin(r)];
+    }
+    const parts = s.split(/[,;]/);
+    if (parts.length === 2) {
+      const x = num(parts[0]), y = num(parts[1]);
+      if (isNaN(x) || isNaN(y)) return null;
+      return rel ? [ref[0] + x, ref[1] + y] : [x, y];
+    }
+    if (parts.length === 1 && !rel) {
+      const d = num(parts[0]);
+      if (isNaN(d)) return null;
+      if (p.numeric) return d;
+      if (!p.base) { this.log("Distancia directa requiere un punto base.", "warn"); return null; }
+      const cur = this.view.resolvePoint(this.view.mouseScreen);
+      let dir = V.norm(V.sub(cur, p.base));
+      if (dir[0] === 0 && dir[1] === 0) dir = [1, 0];
+      return V.add(p.base, V.mul(dir, d));
+    }
+    return null;
+  }
+
+  /* ---- acciones de sistema ---- */
+  undo() {
+    const l = this.doc.undo();
+    this.log(l ? `Deshecho: ${l}` : "Nada que deshacer.", l ? "info" : "warn");
+  }
+  redo() {
+    const l = this.doc.redo();
+    this.log(l ? `Rehecho: ${l}` : "Nada que rehacer.", l ? "info" : "warn");
+  }
+  newDoc() {
+    if (this.doc.modified && this.doc.entities.length && !window.confirm("¿Descartar el dibujo actual?")) return;
+    this._replaceDoc(new Document());
+    this.view.scale = 20; this.view.panX = this.view._w/2; this.view.panY = this.view._h/2;
+    this.log("Dibujo nuevo.");
+  }
+  _replaceDoc(doc) {
+    this.doc = doc;
+    this.view.doc = doc;
+    this.refreshAll();
+  }
+  save() {
+    const blob = new Blob([this.doc.toJSON()], { type: "application/json" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "dibujo.vcad.json";
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+    this.doc.modified = false;
+    this.log("Dibujo guardado (descarga JSON).");
+  }
+  open() {
+    const inp = document.createElement("input");
+    inp.type = "file"; inp.accept = ".json,application/json";
+    inp.onchange = () => {
+      const f = inp.files && inp.files[0];
+      if (!f) return;
+      const rd = new FileReader();
+      rd.onload = () => {
+        try {
+          const d = new Document();
+          d.loadJSON(rd.result);
+          this._replaceDoc(d);
+          this.view.zoomExtents();
+          this.log(`Abierto: ${f.name} (${d.entities.length} objetos).`);
+        } catch (err) { this.log("No se pudo leer el archivo: " + err.message, "error"); }
+      };
+      rd.readAsText(f);
+    };
+    inp.click();
+  }
+  exportPNG() {
+    const v = this.view;
+    const ms = v.mouseScreen, oh = v.osnapHit;
+    v.mouseScreen = [-1000, -1000]; v.osnapHit = null;
+    v.draw();
+    const url = v.el.toDataURL("image/png");
+    v.mouseScreen = ms; v.osnapHit = oh;
+    v.draw();
+    const a = document.createElement("a");
+    a.href = url; a.download = "dibujo.png";
+    document.body.appendChild(a); a.click(); a.remove();
+    this.log("Vista exportada como PNG.");
+  }
+  showHelp() { document.getElementById("help-modal").classList.add("show"); }
+  _buildHelp() {
+    const groups = { draw: "help-table-draw", edit: "help-table-edit", view: "help-table-view" };
+    for (const d of COMMAND_DEFS) {
+      const tbl = document.getElementById(groups[d[2]]);
+      if (!tbl) continue;
+      const tr = document.createElement("tr");
+      const td1 = document.createElement("td"); td1.textContent = d[0].join(", ");
+      const td2 = document.createElement("td"); td2.textContent = `${d[1]} — ${d[3]}`;
+      tr.append(td1, td2); tbl.appendChild(tr);
+    }
+  }
+  toggle(name) {
+    const v = this.view;
+    if (name === "snap") v.snapOn = !v.snapOn;
+    else if (name === "grid") v.showGrid = !v.showGrid;
+    else if (name === "ortho") { v.ortho = !v.ortho; if (v.ortho) v.polar = false; }
+    else if (name === "polar") { v.polar = !v.polar; if (v.polar) v.ortho = false; }
+    else if (name === "osnap") { v.osnapOn = !v.osnapOn; if (!v.osnapOn) v.osnapHit = null; }
+    const lbl = { snap: "SNAP", grid: "REJILLA", ortho: "ORTO", polar: "POLAR", osnap: "REFENT" }[name];
+    const state = { snap: v.snapOn, grid: v.showGrid, ortho: v.ortho, polar: v.polar, osnap: v.osnapOn }[name];
+    this.log(`<${lbl} ${state ? "activado" : "desactivado"}>`);
+    this.refreshStatus();
+    v.draw();
+  }
+
+  /* ---- paneles ---- */
+  refreshAll() {
+    this.refreshLayers();
+    this.refreshProps();
+    this.refreshStatus();
+    this.view.draw();
+  }
+  refreshStatus() {
+    const v = this.view;
+    this.$zoom.textContent = `zoom ${fmt(v.scale, 3)} px/u`;
+    this.$layerLabel.textContent = `capa: ${this.doc.currentLayer} [${this.doc.units}]`;
+    const st = { snap: v.snapOn, grid: v.showGrid, ortho: v.ortho, polar: v.polar, osnap: v.osnapOn };
+    document.querySelectorAll("#statusbar .tog").forEach(t => t.classList.toggle("on", !!st[t.dataset.tog]));
+  }
+  refreshLayers() {
+    const doc = this.doc;
+    this.$layers.innerHTML = "";
+    for (const l of Object.values(doc.layers)) {
+      const row = document.createElement("div");
+      row.className = "layer-row" + (l.name === doc.currentLayer ? " current" : "");
+      const eye = document.createElement("span");
+      eye.className = "layer-eye" + (l.visible ? " on" : "");
+      eye.textContent = "👁"; eye.title = "Visible";
+      eye.onclick = ev => { ev.stopPropagation(); l.visible = !l.visible; this.refreshAll(); };
+      const lock = document.createElement("span");
+      lock.className = "layer-lock" + (l.locked ? " on" : "");
+      lock.textContent = "🔒"; lock.title = "Bloqueada";
+      lock.onclick = ev => { ev.stopPropagation(); l.locked = !l.locked; this.refreshAll(); };
+      const sw = document.createElement("span");
+      sw.className = "layer-swatch"; sw.style.background = l.color; sw.title = "Color";
+      sw.onclick = ev => {
+        ev.stopPropagation();
+        const ci = document.createElement("input");
+        ci.type = "color"; ci.value = /^#[0-9a-f]{6}$/i.test(l.color) ? l.color : "#e2e2e6";
+        ci.oninput = () => { l.color = ci.value; this.refreshLayers(); this.view.draw(); };
+        ci.click();
+      };
+      const nm = document.createElement("span");
+      nm.className = "layer-name" + (l.name === doc.currentLayer ? " bold" : "");
+      nm.textContent = l.name;
+      nm.title = "Clic: activar · Doble clic: mover selección a esta capa";
+      row.onclick = () => { doc.currentLayer = l.name; this.refreshAll(); this.$input.focus(); };
+      row.ondblclick = () => {
+        const sel = doc.selection();
+        if (!sel.length) return;
+        doc.pushUndo("cambiar capa");
+        for (const e of sel) e.layer = l.name;
+        this.log(`${sel.length} objeto(s) movidos a la capa ${l.name}.`);
+        this.refreshAll();
+      };
+      row.append(eye, lock, sw, nm);
+      this.$layers.appendChild(row);
+    }
+  }
+  refreshProps() {
+    const sel = this.doc.selection();
+    const box = this.$props;
+    box.innerHTML = "";
+    if (!sel.length) { box.innerHTML = '<div class="empty">Sin selección</div>'; return; }
+    const row = (k, val, key, ent) => {
+      const r = document.createElement("div"); r.className = "prop-row";
+      const a = document.createElement("span"); a.className = "prop-key"; a.textContent = k;
+      r.appendChild(a);
+      if (key && ent && EDITABLE_PROPS.has(key) && this.doc.isEditable(ent)) {
+        const inp = document.createElement("input");
+        inp.value = val;
+        inp.className = "prop-val";
+        inp.style.cssText = "background:transparent;border:1px solid transparent;color:inherit;width:110px;font:inherit;text-align:right;padding:0 2px;";
+        inp.onfocus = () => { inp.style.borderColor = "#3d5afe"; inp.select(); };
+        const commit = () => {
+          inp.style.borderColor = "transparent";
+          if (inp.value === val) return;
+          this.doc.pushUndo("propiedad");
+          if (!setEntityProp(ent, key, inp.value)) { this.doc.undo(); this.doc._redo.pop(); this.log("Valor no válido.", "warn"); }
+          this.refreshProps(); this.view.draw();
+        };
+        inp.onkeydown = ev => {
+          if (ev.key === "Enter") { ev.preventDefault(); inp.blur(); this.$input.focus(); }
+          else if (ev.key === "Escape") { inp.value = val; inp.blur(); this.$input.focus(); }
+          ev.stopPropagation();
+        };
+        inp.onblur = commit;
+        r.appendChild(inp);
+      } else {
+        const b = document.createElement("span"); b.className = "prop-val"; b.textContent = val;
+        r.appendChild(b);
+      }
+      box.appendChild(r);
+    };
+    if (sel.length === 1) {
+      const e = sel[0];
+      row("Tipo", e.kind);
+      row("Capa", e.layer);
+      for (const [key, label, val] of e.props()) row(label, val, key, e);
+    } else {
+      row("Objetos", String(sel.length));
+      const counts = {};
+      for (const e of sel) counts[e.kind] = (counts[e.kind] || 0) + 1;
+      for (const [k, n] of Object.entries(counts)) row(k, String(n));
+      row("Longitud total", fmt(sel.reduce((s, e) => s + e.length(), 0)));
+    }
+  }
+}
+
+let app;
+window.addEventListener("DOMContentLoaded", () => {
+  app = new App();
+  window.vectorcad = app;
+  app.$input.focus();
+});
+</script>
+</body>
+</html>
