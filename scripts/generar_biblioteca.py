@@ -1,7 +1,8 @@
 """Genera terminal/biblioteca.json: vincula cada publicación de publicaciones.html
 con su texto completo en markdown (papers/markdown del repositorio del CPE).
 
-Uso: python3 scripts/generar_biblioteca.py <ruta a cpe-repositorio/papers/markdown>
+Uso: python3 scripts/generar_biblioteca.py [carpeta de markdown]
+(por defecto, papers/markdown de este repositorio)
 
 El asistente de la terminal usa este índice para explicar los hallazgos de un
 paper a partir de su texto, y no solo de su título.
@@ -13,7 +14,9 @@ import sys
 import unicodedata
 from pathlib import Path
 
-RAIZ = Path(__file__).resolve().parent.parent
+REPO = Path(__file__).resolve().parent.parent
+# El sitio publicado vive en docs/.
+RAIZ = REPO / "docs"
 VACIAS = set("""a al and are as at by con de del el en for from in is la las los of on or para por que the to un una y
 with sobre entre como desde hacia chile chilean santiago""".split())
 
@@ -62,4 +65,4 @@ def main(carpeta):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    main(sys.argv[1] if len(sys.argv) > 1 else REPO / "papers" / "markdown")

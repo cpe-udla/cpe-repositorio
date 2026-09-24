@@ -283,7 +283,7 @@ test('historia y estado', async () => {
 
 test('la portada real del CPE atraviesa el saneador y el control de integridad sin pérdidas', async () => {
   const { readFileSync } = await import('node:fs');
-  const real = readFileSync(new URL('../../index.html', import.meta.url), 'utf8');
+  const real = readFileSync(new URL('../../docs/index.html', import.meta.url), 'utf8');
   github.contenido = real;
   const cuerpo = real.slice(real.indexOf('<!-- ZONA-DIALECTICA:INICIO -->') + 32, real.indexOf('<!-- ZONA-DIALECTICA:FIN -->'));
   respuestaModelo = `<style id="estilo-dialectico">.grid{grid-template-columns:1fr}</style>\n${cuerpo}`;
@@ -312,7 +312,7 @@ test('los cambios que se resuelven con CSS no reescriben el HTML', async () => {
 
 test('el listado de publicaciones viaja compacto al modelo y se restituye', async () => {
   const { readFileSync } = await import('node:fs');
-  const real = readFileSync(new URL('../../index.html', import.meta.url), 'utf8');
+  const real = readFileSync(new URL('../../docs/index.html', import.meta.url), 'utf8');
   github.contenido = real;
   modoModelo = 'sse';
   // El modelo devuelve la página reorganizada con el listado vacío, como se le pidió.
