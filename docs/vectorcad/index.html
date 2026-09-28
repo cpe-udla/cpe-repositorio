@@ -96,6 +96,21 @@
     line-height:1;border:none;}
   .modal code{background:var(--panel-alt);padding:1px 5px;border-radius:3px;
     font-size:11px;}
+  .layer-select{background:var(--panel-alt);color:var(--text);border:1px solid var(--line);
+    border-radius:3px;font:inherit;font-size:12px;padding:1px 4px;max-width:150px;}
+  #props-modal .modal{min-width:340px;}
+  #props-modal .pm-row{display:flex;justify-content:space-between;align-items:center;
+    gap:10px;padding:5px 0;border-bottom:1px solid var(--line);font-size:12px;}
+  #props-modal .pm-row .k{color:var(--muted);}
+  #props-modal .pm-row input,#props-modal .pm-row select{background:var(--panel-alt);
+    color:var(--text);border:1px solid var(--line);border-radius:3px;font-family:ui-monospace,monospace;
+    font-size:12px;padding:3px 6px;width:170px;text-align:right;}
+  #props-modal .pm-row select{text-align:left;}
+  #props-modal .pm-row input:focus,#props-modal .pm-row select:focus{border-color:#3d5afe;outline:none;}
+  #props-modal .pm-btns{display:flex;justify-content:flex-end;gap:8px;margin-top:14px;}
+  #props-modal .pm-btns button{background:var(--panel-alt);color:var(--text);border:1px solid var(--line);
+    padding:5px 14px;border-radius:3px;cursor:pointer;font:inherit;}
+  #props-modal .pm-btns button.primary{border-color:var(--accent);color:var(--accent);}
 </style>
 </head>
 <body>
@@ -119,6 +134,7 @@
     <span class="sep"></span>
     <button data-alias="E" title="Borrar">Borrar</button>
     <button data-alias="X" title="Descomponer">Explotar</button>
+    <button data-alias="PR" title="Propiedades del objeto (PR)">Propiedades</button>
     <span class="sep"></span>
     <button data-alias="ZE" title="Zoom extensión">Zoom Ext</button>
     <button data-alias="U" title="Deshacer">Deshacer</button>
@@ -164,6 +180,18 @@
   </div>
 </div>
 
+<div class="modal-bg" id="props-modal">
+  <div class="modal">
+    <button class="close" id="pm-close">×</button>
+    <h2>Propiedades</h2>
+    <div id="pm-body"></div>
+    <div class="pm-btns">
+      <button id="pm-cancel">Cancelar</button>
+      <button id="pm-apply" class="primary">Aplicar</button>
+    </div>
+  </div>
+</div>
+
 <div class="modal-bg" id="help-modal">
   <div class="modal">
     <button class="close" onclick="document.getElementById('help-modal').classList.remove('show')">×</button>
@@ -191,6 +219,12 @@
     <p style="font-size:12px;color:var(--muted);">
       Arrastra de derecha a izquierda para <b>captura</b> (cruza), de izquierda a derecha para <b>ventana</b>.
       Mayús+clic o Ctrl+clic añade a la selección.
+    </p>
+    <h3>Cambiar de capa</h3>
+    <p style="font-size:12px;line-height:1.7;">
+      Selecciona objetos y elige la capa en el desplegable <b>Capa</b> del panel Propiedades,
+      escribe <code>PR</code> (PROPIEDADES) para abrir el panel editable, o <code>CC</code> (CAMBIACAPA)
+      y el nombre de la capa (si no existe, se crea). También: doble clic sobre una capa del panel Capas.
     </p>
   </div>
 </div>
@@ -1843,6 +1877,18 @@ function* cmdLayer(ctx) {
   ctx.doc.currentLayer = name;
   ctx.log(`${isNew ? "Capa creada y activada" : "Capa activa"}: ${name}`);
 }
+function* cmdChangeLayer(ctx) {
+  const sel = yield* selOrPrompt(ctx, "Objetos a cambiar de capa");
+  if (!sel.length) return;
+  const s = yield new Prompt(`Capa de destino <${ctx.doc.currentLayer}>`, "text");
+  const name = (s === null || s === undefined || !String(s).trim()) ? ctx.doc.currentLayer : String(s).trim();
+  ctx.app.setLayerOf(sel, name);
+}
+function* cmdProps(ctx) {
+  const sel = yield* selOrPrompt(ctx, "Objetos para editar propiedades");
+  if (!sel.length) return;
+  ctx.app.openPropsDialog(sel);
+}
 function* cmdGrid(ctx) {
   const g = yield new Prompt("Espaciado de rejilla/snap", "number", { default: ctx.view.grid });
   const v = parseFloat(g);
@@ -1887,6 +1933,8 @@ const COMMAND_DEFS = [
   [["U","DESHACER"], "DESHACER", "view", "Deshace la última operación", app => app.undo(), false],
   [["RE","REHACER","REDO"], "REHACER", "view", "Rehace la operación deshecha", app => app.redo(), false],
   [["LA","CAPA"], "CAPA", "view", "Activa o crea una capa", cmdLayer, true],
+  [["CC","CAMBIACAPA"], "CAMBIAR CAPA", "edit", "Mueve los objetos seleccionados a otra capa", cmdChangeLayer, true, true],
+  [["PR","PROPIEDADES","PROPS"], "PROPIEDADES", "edit", "Panel editable de propiedades (capa y geometría)", cmdProps, true],
   [["GR","REJILLA"], "REJILLA", "view", "Espaciado de rejilla y snap", cmdGrid, true],
   [["DI","DIST"], "DISTANCIA", "view", "Mide distancia y ángulo", cmdDist, true],
   [["ID"], "ID", "view", "Coordenadas de un punto", cmdId, true],
@@ -2024,6 +2072,12 @@ class App {
     window.addEventListener("beforeunload", e => {
       if (this.doc.modified && this.doc.entities.length) { e.preventDefault(); e.returnValue = ""; }
     });
+    document.getElementById("pm-close").onclick = () => this.closePropsDialog();
+    document.getElementById("pm-cancel").onclick = () => this.closePropsDialog();
+    document.getElementById("pm-apply").onclick = () => this._applyPropsDialog();
+    document.getElementById("props-modal").addEventListener("click", e => {
+      if (e.target.id === "props-modal") this.closePropsDialog();
+    });
     document.getElementById("help-modal").addEventListener("click", e => {
       if (e.target.id === "help-modal") e.currentTarget.classList.remove("show");
     });
@@ -2056,6 +2110,7 @@ class App {
     if (e.key === "Escape") {
       e.preventDefault();
       document.getElementById("help-modal").classList.remove("show");
+      this.closePropsDialog();
       if (this.gen) this.cancel();
       else { this.doc.clearSelection(); this.refreshProps(); this.view.draw(); }
       this.$input.value = "";
@@ -2301,6 +2356,141 @@ class App {
     v.draw();
   }
 
+  /* ---- capas de objetos ---- */
+  setLayerOf(ents, name) {
+    ents = (ents || []).filter(e => this.doc.isEditable(e));
+    name = String(name || "").trim();
+    if (!ents.length || !name) return 0;
+    const isNew = !this.doc.layers[name];
+    const moving = ents.filter(e => e.layer !== name);
+    if (!moving.length && !isNew) { this.log(`Los objetos ya están en la capa ${name}.`); return 0; }
+    this.doc.addLayer(name);
+    if (moving.length) {
+      this.doc.pushUndo("cambiar capa");
+      for (const e of moving) e.layer = name;
+    }
+    this.log(`${moving.length} objeto(s) movidos a la capa ${name}${isNew ? " (capa nueva)" : ""}.`);
+    this.refreshAll();
+    return moving.length;
+  }
+  _askNewLayerName() {
+    let i = Object.keys(this.doc.layers).length;
+    while (this.doc.layers["Capa" + i]) i++;
+    const n = window.prompt("Nombre de la nueva capa:", "Capa" + i);
+    return n && n.trim() ? n.trim() : null;
+  }
+  _layerSelect(ents, onPick) {
+    const sel = document.createElement("select");
+    sel.className = "layer-select";
+    const names = new Set(ents.map(e => e.layer));
+    if (names.size > 1) {
+      const o = document.createElement("option");
+      o.value = ""; o.textContent = "(varias)"; sel.appendChild(o);
+    }
+    for (const l of Object.values(this.doc.layers)) {
+      const o = document.createElement("option");
+      o.value = l.name; o.textContent = l.name; sel.appendChild(o);
+    }
+    const nw = document.createElement("option");
+    nw.value = "\u0000new"; nw.textContent = "＋ Nueva capa…"; sel.appendChild(nw);
+    sel.value = names.size === 1 ? [...names][0] : "";
+    const prev = sel.value;
+    sel.onchange = () => {
+      let v = sel.value;
+      if (v === "\u0000new") {
+        v = this._askNewLayerName();
+        if (!v) { sel.value = prev; return; }
+      }
+      if (v) onPick(v);
+    };
+    sel.onkeydown = ev => ev.stopPropagation();
+    return sel;
+  }
+  openPropsDialog(ents) {
+    ents = (ents || []).filter(e => this.doc.isEditable(e));
+    if (!ents.length) { this.log("No hay objetos editables seleccionados.", "warn"); return; }
+    this._pmEnts = ents;
+    this._pmNewLayer = null;
+    const body = document.getElementById("pm-body");
+    body.innerHTML = "";
+    const addRow = (label, el) => {
+      const r = document.createElement("div"); r.className = "pm-row";
+      const k = document.createElement("span"); k.className = "k"; k.textContent = label;
+      r.append(k, el); body.appendChild(r);
+    };
+    const txt = v => { const s = document.createElement("span"); s.textContent = v; s.style.fontFamily = "ui-monospace,monospace"; return s; };
+    if (ents.length === 1) addRow("Tipo", txt(ents[0].kind + " #" + ents[0].id));
+    else {
+      const counts = {};
+      for (const e of ents) counts[e.kind] = (counts[e.kind] || 0) + 1;
+      addRow("Objetos", txt(`${ents.length} (` + Object.entries(counts).map(([k,n]) => `${k}×${n}`).join(", ") + ")"));
+    }
+    // capa (sin aplicar hasta pulsar Aplicar)
+    const ls = this._layerSelect(ents, v => {
+      if (!this.doc.layers[v]) {
+        this._pmNewLayer = v;
+        const o = document.createElement("option"); o.value = v; o.textContent = v + " (nueva)";
+        ls.insertBefore(o, ls.lastChild);
+        ls.value = v;
+      }
+    });
+    ls.id = "pm-layer";
+    ls.onkeydown = ev => { ev.stopPropagation(); if (ev.key === "Enter") { ev.preventDefault(); this._applyPropsDialog(); } else if (ev.key === "Escape") this.closePropsDialog(); };
+    addRow("Capa", ls);
+    // geometría editable (solo un objeto)
+    this._pmFields = [];
+    if (ents.length === 1) {
+      const e = ents[0];
+      for (const [key, label, val] of e.props()) {
+        if (EDITABLE_PROPS.has(key)) {
+          const inp = document.createElement("input");
+          inp.value = val; inp.dataset.key = key; inp.dataset.orig = val;
+          inp.onkeydown = ev => {
+            ev.stopPropagation();
+            if (ev.key === "Enter") { ev.preventDefault(); this._applyPropsDialog(); }
+            else if (ev.key === "Escape") this.closePropsDialog();
+          };
+          this._pmFields.push(inp);
+          addRow(label, inp);
+        } else addRow(label, txt(val));
+      }
+    }
+    document.getElementById("props-modal").classList.add("show");
+    setTimeout(() => ls.focus(), 0);
+  }
+  closePropsDialog() {
+    const m = document.getElementById("props-modal");
+    if (!m.classList.contains("show")) return;
+    m.classList.remove("show");
+    this._pmEnts = null;
+    this.$input.focus();
+  }
+  _applyPropsDialog() {
+    const ents = this._pmEnts;
+    if (!ents) return;
+    const layer = document.getElementById("pm-layer").value;
+    const changedFields = this._pmFields.filter(f => f.value !== f.dataset.orig);
+    const layerChange = layer && layer !== "\u0000new" && ents.some(e => e.layer !== layer);
+    if (!layerChange && !changedFields.length) { this.closePropsDialog(); return; }
+    this.doc.pushUndo("propiedades");
+    if (layerChange) {
+      const isNew = !this.doc.layers[layer];
+      this.doc.addLayer(layer);
+      for (const e of ents) e.layer = layer;
+      this.log(`${ents.length} objeto(s) movidos a la capa ${layer}${isNew ? " (capa nueva)" : ""}.`);
+    }
+    let bad = 0;
+    // orden: primero coordenadas, luego longitud/ángulo, para que len/ang usen los puntos nuevos
+    const order = k => (k === "len" || k === "ang") ? 1 : 0;
+    for (const f of changedFields.sort((a, b) => order(a.dataset.key) - order(b.dataset.key))) {
+      if (!setEntityProp(ents[0], f.dataset.key, f.value)) bad++;
+    }
+    if (changedFields.length) this.log(`${changedFields.length - bad} propiedad(es) modificadas.`);
+    if (bad) this.log(`${bad} valor(es) no válidos fueron ignorados.`, "warn");
+    this.closePropsDialog();
+    this.refreshAll();
+  }
+
   /* ---- paneles ---- */
   refreshAll() {
     this.refreshLayers();
@@ -2360,6 +2550,19 @@ class App {
     const box = this.$props;
     box.innerHTML = "";
     if (!sel.length) { box.innerHTML = '<div class="empty">Sin selección</div>'; return; }
+    const layerRow = () => {
+      const r = document.createElement("div"); r.className = "prop-row";
+      const a = document.createElement("span"); a.className = "prop-key"; a.textContent = "Capa";
+      const editable = sel.filter(e => this.doc.isEditable(e));
+      if (editable.length) {
+        r.append(a, this._layerSelect(editable, v => { this.setLayerOf(editable, v); this.$input.focus(); }));
+      } else {
+        const b = document.createElement("span"); b.className = "prop-val";
+        b.textContent = [...new Set(sel.map(e => e.layer))].join(", ");
+        r.append(a, b);
+      }
+      box.appendChild(r);
+    };
     const row = (k, val, key, ent) => {
       const r = document.createElement("div"); r.className = "prop-row";
       const a = document.createElement("span"); a.className = "prop-key"; a.textContent = k;
@@ -2393,10 +2596,11 @@ class App {
     if (sel.length === 1) {
       const e = sel[0];
       row("Tipo", e.kind);
-      row("Capa", e.layer);
+      layerRow();
       for (const [key, label, val] of e.props()) row(label, val, key, e);
     } else {
       row("Objetos", String(sel.length));
+      layerRow();
       const counts = {};
       for (const e of sel) counts[e.kind] = (counts[e.kind] || 0) + 1;
       for (const [k, n] of Object.entries(counts)) row(k, String(n));
