@@ -289,3 +289,8 @@ html[dir="rtl"] .side-lang{right:auto;left:14px}
   .side-lang{width:132px;padding:6px 8px}
   .side-lang .side-label{display:none}
 }
+
+/* CLACSO */
+.clacso-badge{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.clacso-badge img{height:40px;width:auto;display:block;flex:none}
+.clacso-badge p{margin:0}
