@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>VectorCAD Web — Centro Producción del Espacio</title>
+<title>VectorCAD Web 5.0 — Centro Producción del Espacio</title>
 <style>
   :root {
     --bg:#141417; --panel:#161619; --panel-alt:#1e1e23; --line:#2a2a31;
@@ -111,6 +111,37 @@
   #props-modal .pm-btns button{background:var(--panel-alt);color:var(--text);border:1px solid var(--line);
     padding:5px 14px;border-radius:3px;cursor:pointer;font:inherit;}
   #props-modal .pm-btns button.primary{border-color:var(--accent);color:var(--accent);}
+  #propbar{display:flex;gap:10px;align-items:center;padding:3px 8px;background:var(--panel);
+    border-bottom:1px solid var(--line);flex-wrap:wrap;font-size:12px;}
+  #propbar label{display:flex;align-items:center;gap:5px;color:var(--muted);}
+  #propbar select{background:var(--panel-alt);color:var(--text);border:1px solid var(--line);
+    border-radius:3px;font:inherit;font-size:12px;padding:2px 4px;max-width:150px;}
+  #propbar.sel select{border-color:#6a5a1a;}
+  #din{position:fixed;display:none;gap:6px;z-index:50;pointer-events:none;font:12px ui-monospace,monospace;}
+  #din span{background:#1b1b20;border:1px solid var(--line);color:var(--text);padding:2px 7px;border-radius:3px;}
+  #din span.act{border-color:var(--accent);color:var(--accent);}
+  #lm-table th{color:var(--muted);font-weight:600;white-space:nowrap;}
+  #lm-table td{padding:4px 6px;vertical-align:middle;}
+  #lm-table td:first-child{font-family:inherit;color:inherit;}
+  #lm-table .lm-name{font-family:ui-monospace,monospace;color:var(--accent);cursor:text;}
+  #lm-table select,#lm-table input[type=color]{background:var(--panel-alt);color:var(--text);
+    border:1px solid var(--line);border-radius:3px;font:inherit;font-size:12px;padding:1px 3px;}
+  #lm-table input[type=color]{width:34px;height:22px;padding:0;}
+  #lm-table .lm-del{background:transparent;border:0;cursor:pointer;color:var(--text);}
+  .modal .pm-btns{display:flex;justify-content:flex-end;gap:8px;margin-top:14px;}
+  .modal .pm-btns button{background:var(--panel-alt);color:var(--text);border:1px solid var(--line);
+    padding:5px 14px;border-radius:3px;cursor:pointer;font:inherit;}
+  .modal .pm-btns button.primary{border-color:var(--accent);color:var(--accent);}
+  .plot-grid{display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap;}
+  .plot-ctl{width:300px;flex:none;}
+  .plot-prev{flex:1;min-width:260px;height:60vh;background:#3a3a42;border-radius:4px;padding:10px;display:flex;
+    align-items:center;justify-content:center;}
+  .plot-prev svg{box-shadow:0 2px 12px rgba(0,0,0,.5);}
+  #plot-modal .pm-row{display:flex;justify-content:space-between;align-items:center;gap:10px;
+    padding:4px 0;border-bottom:1px solid var(--line);font-size:12px;}
+  #plot-modal .pm-row .k{color:var(--muted);}
+  #plot-modal input,#plot-modal select{background:var(--panel-alt);color:var(--text);border:1px solid var(--line);
+    border-radius:3px;font:inherit;font-size:12px;padding:3px 6px;width:130px;}
 </style>
 </head>
 <body>
@@ -144,8 +175,13 @@
     <button data-alias="SAVE" title="Guardar JSON">Guardar</button>
     <button data-alias="OPEN" title="Abrir JSON">Abrir</button>
     <button data-alias="PNG" title="Exportar PNG">PNG</button>
+    <span class="sep"></span>
+    <button data-alias="LAYMGR" title="Administrador de capas">Capas</button>
+    <button data-alias="LWT" title="Mostrar grosores de línea (LWT)">Grosor</button>
+    <button data-alias="PLOT" title="Impresora virtual (Ctrl+P)">Imprimir</button>
     <button data-alias="?" title="Ayuda">?</button>
   </div>
+  <div id="propbar"></div>
   <div id="main">
     <div id="canvas-wrap"><canvas id="canvas"></canvas></div>
     <div id="right-dock">
@@ -176,9 +212,13 @@
     <span class="tog" data-tog="ortho">ORTO</span>
     <span class="tog" data-tog="polar">POLAR</span>
     <span class="tog" data-tog="osnap">REFENT</span>
+    <span class="tog" data-tog="lwt">GROSOR</span>
+    <span class="tog" data-tog="din">DIN</span>
     <span id="layer-label">capa: 0 [mm]</span>
   </div>
 </div>
+
+<div id="din"></div>
 
 <div class="modal-bg" id="props-modal">
   <div class="modal">
@@ -195,7 +235,7 @@
 <div class="modal-bg" id="help-modal">
   <div class="modal">
     <button class="close" onclick="document.getElementById('help-modal').classList.remove('show')">×</button>
-    <h2>VectorCAD Web — Comandos</h2>
+    <h2>VectorCAD Web 5.0 — Comandos</h2>
     <p style="color:var(--muted);font-size:12px;">Versión web del sistema de dibujo 2D paramétrico del <b>Centro Producción del Espacio · UDLA</b>.</p>
     <h3>Entrada de puntos</h3>
     <p style="font-size:12px;">
@@ -214,11 +254,24 @@
       <b>Rueda</b> zoom · <b>Botón central</b> o <b>Mayús+arrastrar</b> encuadre ·
       <b>Esc</b> cancelar · <b>Supr</b> borrar selección · <b>Enter</b> repetir último comando ·
       <b>↑</b>/<b>↓</b> historial · <b>F3</b> refent · <b>F7</b> rejilla · <b>F8</b> orto ·
-      <b>F9</b> snap · <b>F10</b> polar.
+      <b>F9</b> snap · <b>F10</b> polar · <b>F12</b> entrada dinámica · <b>Ctrl+P</b> imprimir · <b>Tab</b> autocompleta alias.
     </p>
     <p style="font-size:12px;color:var(--muted);">
       Arrastra de derecha a izquierda para <b>captura</b> (cruza), de izquierda a derecha para <b>ventana</b>.
       Mayús+clic o Ctrl+clic añade a la selección.
+    </p>
+    <h3>Novedades 5.0</h3>
+    <p style="font-size:12px;line-height:1.7;">
+      <b>Entrada dinámica (F12)</b>: durante un comando escribe la distancia y pulsa <b>Tab</b> para fijarla y pasar al ángulo
+      (X→Y en el primer punto); <b>Enter</b> o <b>Espacio</b> acepta. Los campos aceptan expresiones (<code>1200/2</code>).<br>
+      <b>Grosores y tipos de línea</b>: barra de propiedades (capa · color · tipo · grosor) que fija los valores actuales o cambia la
+      selección; <code>LW</code>, <code>LT</code>, <code>COLOR</code>, <code>LWT</code> (ver grosores), <code>MA</code> (igualar propiedades).<br>
+      <b>Capas</b>: administrador (<code>LAYMGR</code>) con encender, bloquear, imprimir, color, tipo y grosor; <code>LAYMCUR</code>,
+      <code>LAYCUR</code>, <code>LAYMOVE</code>, <code>LAYISO</code>/<code>LAYUNISO</code>, <code>LAYOFF</code>/<code>LAYON</code>,
+      <code>LAYLCK</code>/<code>LAYULK</code>, <code>-LA</code>.<br>
+      <b>Impresora virtual</b> (<code>PLOT</code>, Ctrl+P): PDF vectorial (vía «Guardar como PDF»), SVG o PNG; papel ISO/Carta/personalizado,
+      extensión/pantalla/selección, escala 1:N o ajustada, plumillas, grosores, cajetín, marco, escala gráfica y norte, con vista previa.<br>
+      Preferencias persistentes y <b>arrastrar y soltar</b> un archivo .json sobre el lienzo para abrirlo.
     </p>
     <h3>Cambiar de capa</h3>
     <p style="font-size:12px;line-height:1.7;">
@@ -408,6 +461,9 @@ class Entity {
     this.id = ++_seq;
     this.layer = opts.layer || "0";
     this.color = opts.color || null;
+    this.lineweight = opts.lineweight ?? -1;      // -1 = PorCapa
+    this.linetype = opts.linetype || "ByLayer";
+    this._fresh = true;
     this.selected = false;
   }
   primitives() { return []; }
@@ -447,6 +503,7 @@ class Entity {
     const c = structuredClone(this);
     Object.setPrototypeOf(c, Object.getPrototypeOf(this));
     c.id = ++_seq;
+    c._fresh = false;
     c.selected = false;
     return c;
   }
@@ -485,7 +542,8 @@ class Entity {
   }
   props() { return []; }
   toDict() {
-    return { kind: this.kind, layer: this.layer, color: this.color };
+    return { kind: this.kind, layer: this.layer, color: this.color,
+             lineweight: this.lineweight, linetype: this.linetype };
   }
 }
 
@@ -765,7 +823,12 @@ class TextEnt extends Entity {
 const ENTITY_TYPES = { Line, Polyline, Circle, Arc, Ellipse, Point: PointEnt, Text: TextEnt };
 function entityFromDict(d) {
   const C = ENTITY_TYPES[d.kind];
-  return C ? C.fromDict(d) : null;
+  if (!C) return null;
+  const e = C.fromDict(d);
+  e.lineweight = d.lineweight ?? -1;
+  e.linetype = d.linetype || "ByLayer";
+  e._fresh = false;
+  return e;
 }
 
 /* ============================================================
@@ -774,11 +837,20 @@ function entityFromDict(d) {
 const PALETTE = ["#e2e2e6","#ff5252","#ffd54f","#66bb6a","#4fc3f7",
                  "#ba68c8","#ff8a65","#4db6ac","#9e9e9e","#f06292"];
 const UNITS = "mm";
+// Grosores normalizados (mm), como en AutoCAD / ISO 128, y patrones de trazo en mm de papel.
+const LINEWEIGHTS = [0.00,0.05,0.09,0.13,0.15,0.18,0.20,0.25,0.30,0.35,0.40,0.50,0.53,0.60,0.70,0.80,
+                     0.90,1.00,1.06,1.20,1.40,1.58,2.00,2.11];
+const LINETYPES = { Continuous: [], Dashed: [6,3], Dotted: [0.5,2], DashDot: [8,2.5,0.5,2.5],
+                    Hidden: [3,1.5], Center: [12,3,3,3], Phantom: [12,2.5,3,2.5,3,2.5] };
+const LT_LABEL = { ByLayer:"PorCapa", Continuous:"Continua", Dashed:"Trazos", Dotted:"Puntos",
+                   DashDot:"Trazo-punto", Hidden:"Oculta", Center:"Eje", Phantom:"Fantasma" };
+const PX_MM = 96 / 25.4;
 
 class Layer {
   constructor(name, color="#e2e2e6") {
     this.name = name; this.color = color;
-    this.visible = true; this.locked = false;
+    this.visible = true; this.locked = false; this.plot = true;
+    this.lineweight = 0.25; this.linetype = "Continuous";
   }
 }
 
@@ -787,6 +859,9 @@ class Document {
     this.entities = [];
     this.layers = { "0": new Layer("0") };
     this.currentLayer = "0";
+    this.currentColor = null;          // null = PorCapa
+    this.currentLineweight = -1;       // -1 = PorCapa
+    this.currentLinetype = "ByLayer";
     this.units = UNITS;
     this.modified = false;
     this._undo = [];
@@ -801,10 +876,21 @@ class Document {
   }
   layerOf(e) { return this.layers[e.layer] || this.layers[this.currentLayer]; }
   colorOf(e) { return e.color || this.layerOf(e).color; }
+  lwOf(e) { return e.lineweight >= 0 ? e.lineweight : (this.layerOf(e).lineweight ?? 0.25); }
+  ltOf(e) {
+    const t = e.linetype && e.linetype !== "ByLayer" ? e.linetype : (this.layerOf(e).linetype || "Continuous");
+    return LINETYPES[t] ? t : "Continuous";
+  }
   isEditable(e) { const l = this.layers[e.layer]; return !!l && l.visible && !l.locked; }
   visibleEntities() { return this.entities.filter(e => (this.layers[e.layer]||{}).visible !== false); }
   add(e) {
     if (!this.layers[e.layer]) e.layer = this.currentLayer;
+    if (e._fresh) {
+      e._fresh = false;
+      if (!e.color && this.currentColor) e.color = this.currentColor;
+      if (e.lineweight < 0) e.lineweight = this.currentLineweight;
+      if (!e.linetype || e.linetype === "ByLayer") e.linetype = this.currentLinetype;
+    }
     this.entities.push(e);
     this.modified = true;
     return e;
@@ -862,8 +948,9 @@ class Document {
   }
   toJSON() {
     return JSON.stringify({
-      app: "VectorCAD Web", version: "2.0", units: this.units,
+      app: "VectorCAD Web", version: "5.0", units: this.units,
       currentLayer: this.currentLayer,
+      currentColor: this.currentColor, currentLineweight: this.currentLineweight, currentLinetype: this.currentLinetype,
       layers: Object.values(this.layers).map(l => ({...l})),
       entities: this.entities.map(e => e.toDict())
     }, null, 1);
@@ -874,11 +961,16 @@ class Document {
     for (const ld of (d.layers || [])) {
       const l = new Layer(ld.name, ld.color || "#e2e2e6");
       l.visible = ld.visible !== false; l.locked = !!ld.locked;
+      l.plot = ld.plot !== false;
+      l.lineweight = ld.lineweight ?? 0.25; l.linetype = LINETYPES[ld.linetype] ? ld.linetype : "Continuous";
       this.layers[l.name] = l;
     }
     if (!Object.keys(this.layers).length) this.layers = { "0": new Layer("0") };
     this.currentLayer = d.currentLayer || Object.keys(this.layers)[0];
     this.units = d.units || UNITS;
+    this.currentColor = d.currentColor || null;
+    this.currentLineweight = d.currentLineweight ?? -1;
+    this.currentLinetype = d.currentLinetype || "ByLayer";
     this.entities = [];
     for (const ed of (d.entities || [])) {
       const e = entityFromDict(ed);
@@ -916,6 +1008,9 @@ class Canvas {
     this.ortho = false;
     this.polar = false;
     this.polarStep = 15;
+    this.showLw = false;      // LWT: grosores reales en pantalla
+    this.dinDist = null;      // entrada dinámica: distancia/ángulo fijados
+    this.dinAng = null;
     this.osnapModes = { end:true, mid:true, cen:true, qua:true, int:true, per:true, nod:true, ins:true, nea:false };
     this.mouseScreen = [0,0];
     this.mouseWorld = [0,0];
@@ -1013,6 +1108,12 @@ class Canvas {
   }
   resolvePoint(sp) {
     let w = this.toWorld(sp);
+    if (this.basePoint && (this.dinDist != null || this.dinAng != null)) {
+      const b = this.basePoint, d = V.sub(w, b);
+      const L = this.dinDist != null ? this.dinDist : V.len(d);
+      const a = this.dinAng != null ? this.dinAng : Math.atan2(d[1], d[0]);
+      return [b[0] + L*Math.cos(a), b[1] + L*Math.sin(a)];
+    }
     if (this.osnapHit) return this.osnapHit[1];
     if (this.basePoint && (this.ortho || this.polar)) {
       const b = this.basePoint;
@@ -1198,8 +1299,12 @@ class Canvas {
   }
   penFor(e, ghost=false) {
     if (ghost) return { color: "#4fc3f7", width: 1.4, dash: [5,4] };
-    const col = e.selected ? "#ffd54f" : this.doc.colorOf(e);
-    return { color: col, width: e.selected ? 2.2 : 1.4, dash: [] };
+    const doc = this.doc;
+    const col = e.selected ? "#ffd54f" : doc.colorOf(e);
+    let w = this.showLw ? Math.max(1, doc.lwOf(e) * PX_MM) : 1.4;
+    if (e.selected) w += 0.8;
+    const pat = LINETYPES[doc.ltOf(e)] || [];
+    return { color: col, width: w, dash: pat.length ? pat.map(x => Math.max(1, x * PX_MM)) : [] };
   }
   draw() {
     const g = this.ctx;
@@ -2022,11 +2127,14 @@ class App {
     this.$layers = document.getElementById("layers-list");
     this.$props = document.getElementById("props-list");
     this.$layerLabel = document.getElementById("layer-label");
+    this.dinLocked = null; this.dinField = 0; this._isoState = null; this.plotter = null;
+    this.loadPrefs();
     this._bind();
+    this.buildPropbar();
     this._buildHelp();
     this.refreshAll();
-    this.log("VectorCAD Web · Centro Producción del Espacio · UDLA");
-    this.log("Escribe un comando (L, PL, C, REC…) o usa la barra superior. ? = ayuda.");
+    this.log("VectorCAD Web 5.0 · Centro Producción del Espacio · UDLA");
+    this.log("Escribe un comando (L, PL, C, REC…) o usa la barra superior. ? = ayuda · F12 entrada dinámica · Ctrl+P imprimir.");
   }
 
   /* ---- historial ---- */
@@ -2043,8 +2151,16 @@ class App {
   _bind() {
     const v = this.view;
     v.onPointPicked = w => this._onPick(w);
-    v.onMouseMove = w => { this.$coord.textContent = `X ${fmt(w[0],3)}   Y ${fmt(w[1],3)}`; };
-    v.onSelectionChanged = () => this.refreshProps();
+    v.onMouseMove = w => { this.$coord.textContent = `X ${fmt(w[0],3)}   Y ${fmt(w[1],3)}`; this.updateDin(); };
+    v.onSelectionChanged = () => { this.refreshProps(); this.refreshPropbar(); };
+    const wrap = document.getElementById("canvas-wrap");
+    wrap.addEventListener("dragover", e => e.preventDefault());
+    wrap.addEventListener("drop", e => {
+      e.preventDefault();
+      const f = e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files[0];
+      if (f) this.loadFile(f);
+    });
+    this.$input.addEventListener("input", () => this.dinInput());
     v.onZoomChanged = () => this.refreshStatus();
     v.el.addEventListener("mouseup", () => setTimeout(() => this.$input.focus(), 0));
     v.el.addEventListener("contextmenu", () => this.submit(""));
@@ -2084,6 +2200,8 @@ class App {
   }
   _onInputKey(e) {
     const textMode = this.prompt && this.prompt.mode === "text";
+    if (e.key === "Tab") { e.preventDefault(); if (!this.dinTab() && !this.gen) this.completeAlias(); return; }
+    if ((e.key === "Enter" || (e.key === " " && !textMode)) && this.dinCommit()) { e.preventDefault(); return; }
     if (e.key === "Enter" || (e.key === " " && !textMode)) {
       e.preventDefault();
       const s = this.$input.value;
@@ -2101,8 +2219,9 @@ class App {
     }
   }
   _onGlobalKey(e) {
-    const fkeys = { F3: "osnap", F7: "grid", F8: "ortho", F9: "snap", F10: "polar" };
+    const fkeys = { F3: "osnap", F7: "grid", F8: "ortho", F9: "snap", F10: "polar", F12: "din" };
     if (fkeys[e.key]) { e.preventDefault(); this.toggle(fkeys[e.key]); return; }
+    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "p") { e.preventDefault(); this.openPlot(); return; }
     const t = e.target;
     const inOther = t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA" || t.tagName === "SELECT") && t !== this.$input;
     if (inOther) return;
@@ -2110,6 +2229,7 @@ class App {
     if (e.key === "Escape") {
       e.preventDefault();
       document.getElementById("help-modal").classList.remove("show");
+      for (const id of ["plot-modal", "layers-modal"]) { const m = document.getElementById(id); if (m) m.classList.remove("show"); }
       this.closePropsDialog();
       if (this.gen) this.cancel();
       else { this.doc.clearSelection(); this.refreshProps(); this.view.draw(); }
@@ -2151,6 +2271,7 @@ class App {
   }
   _step(value) {
     let r;
+    this.dinReset();
     try { r = this.gen.next(value); }
     catch (err) { console.error(err); this.log("Error: " + err.message, "error"); this._finish(); return; }
     if (r.done) { this._finish(); return; }
@@ -2168,6 +2289,7 @@ class App {
     v.previewFn = p.preview || null;
     v.el.style.cursor = v.pickMode ? "crosshair" : "default";
     v.draw();
+    this.updateDin();
   }
   _finish() {
     const def = this.cmdDef;
@@ -2176,6 +2298,7 @@ class App {
     v.pickMode = false; v.basePoint = null; v.previewFn = null; v.osnapHit = null;
     v.el.style.cursor = "crosshair";
     this.$label.textContent = "Comando:";
+    this.dinReset();
     if (def && def.clearSel) this.doc.clearSelection();
     this.refreshAll();
   }
@@ -2349,9 +2472,12 @@ class App {
     else if (name === "ortho") { v.ortho = !v.ortho; if (v.ortho) v.polar = false; }
     else if (name === "polar") { v.polar = !v.polar; if (v.polar) v.ortho = false; }
     else if (name === "osnap") { v.osnapOn = !v.osnapOn; if (!v.osnapOn) v.osnapHit = null; }
-    const lbl = { snap: "SNAP", grid: "REJILLA", ortho: "ORTO", polar: "POLAR", osnap: "REFENT" }[name];
-    const state = { snap: v.snapOn, grid: v.showGrid, ortho: v.ortho, polar: v.polar, osnap: v.osnapOn }[name];
+    else if (name === "lwt") v.showLw = !v.showLw;
+    else if (name === "din") { this.din = !this.din; this.dinReset(); }
+    const lbl = { snap: "SNAP", grid: "REJILLA", ortho: "ORTO", polar: "POLAR", osnap: "REFENT", lwt: "GROSOR", din: "DIN" }[name];
+    const state = { snap: v.snapOn, grid: v.showGrid, ortho: v.ortho, polar: v.polar, osnap: v.osnapOn, lwt: v.showLw, din: this.din }[name];
     this.log(`<${lbl} ${state ? "activado" : "desactivado"}>`);
+    this.savePrefs();
     this.refreshStatus();
     v.draw();
   }
@@ -2495,6 +2621,7 @@ class App {
   refreshAll() {
     this.refreshLayers();
     this.refreshProps();
+    this.refreshPropbar();
     this.refreshStatus();
     this.view.draw();
   }
@@ -2502,7 +2629,7 @@ class App {
     const v = this.view;
     this.$zoom.textContent = `zoom ${fmt(v.scale, 3)} px/u`;
     this.$layerLabel.textContent = `capa: ${this.doc.currentLayer} [${this.doc.units}]`;
-    const st = { snap: v.snapOn, grid: v.showGrid, ortho: v.ortho, polar: v.polar, osnap: v.osnapOn };
+    const st = { snap: v.snapOn, grid: v.showGrid, ortho: v.ortho, polar: v.polar, osnap: v.osnapOn, lwt: v.showLw, din: this.din };
     document.querySelectorAll("#statusbar .tog").forEach(t => t.classList.toggle("on", !!st[t.dataset.tog]));
   }
   refreshLayers() {
@@ -2608,6 +2735,667 @@ class App {
     }
   }
 }
+
+/* ============================================================
+   8. VECTORCAD 5.0 — grosores, tipos de línea, capas, comandos
+   ============================================================ */
+const lwLabel = v => (v === null || v === undefined || v < 0) ? "PorCapa" : v.toFixed(2) + " mm";
+const lwSnap = v => LINEWEIGHTS.reduce((b, x) => Math.abs(x - v) < Math.abs(b - v) ? x : b, LINEWEIGHTS[0]);
+const COLOR_NAMES = { BLANCO:"#e2e2e6", ROJO:"#ff5252", AMARILLO:"#ffd54f", VERDE:"#66bb6a", CIAN:"#4fc3f7",
+  AZUL:"#3d5afe", MAGENTA:"#ba68c8", NARANJA:"#ff8a65", TURQUESA:"#4db6ac", GRIS:"#9e9e9e", ROSA:"#f06292", NEGRO:"#000000" };
+const LT_KEYS = { P:"ByLayer", C:"Continuous", T:"Dashed", PU:"Dotted", TP:"DashDot", O:"Hidden", E:"Center", F:"Phantom" };
+
+function parseColorInput(s) {
+  s = String(s || "").trim().toUpperCase();
+  if (!s || s === "P" || s === "PORCAPA" || s === "BYLAYER") return null;
+  if (/^#[0-9A-F]{6}$/.test(s)) return s.toLowerCase();
+  if (/^\d+$/.test(s)) { const i = parseInt(s, 10); if (i >= 1 && i <= PALETTE.length) return PALETTE[i-1]; }
+  if (COLOR_NAMES[s]) return COLOR_NAMES[s];
+  return undefined;
+}
+function parseLwInput(s) {
+  s = String(s || "").trim().toUpperCase();
+  if (s === "P" || s === "PORCAPA" || s === "BYLAYER") return -1;
+  const v = parseFloat(s.replace(",", "."));
+  return isFinite(v) && v >= 0 && v <= 2.11 ? lwSnap(v) : undefined;
+}
+function findLayer(doc, name) {
+  name = String(name || "").trim().toLowerCase();
+  return Object.values(doc.layers).find(l => l.name.toLowerCase() === name) || null;
+}
+function* _selOrAsk(ctx, msg) { return yield* selOrPrompt(ctx, msg); }
+
+function* cmdLW(ctx) {
+  const sel = ctx.sel();
+  const cur = sel.length ? "selección" : "actual " + lwLabel(ctx.doc.currentLineweight);
+  const s = yield new Prompt(`Grosor en mm (0.00–2.11) o P=PorCapa [${cur}]`, "text");
+  if (!s) return;
+  const v = parseLwInput(s);
+  if (v === undefined) { ctx.log("Grosor no válido.", "warn"); return; }
+  ctx.app.applyProp("lineweight", v);
+}
+function* cmdColor(ctx) {
+  const sel = ctx.sel();
+  const s = yield new Prompt(`Color: P=PorCapa, 1–${PALETTE.length}, #rrggbb o nombre (rojo, azul…) [${sel.length ? "selección" : "actual"}]`, "text");
+  if (!s) return;
+  const c = parseColorInput(s);
+  if (c === undefined) { ctx.log("Color no válido.", "warn"); return; }
+  ctx.app.applyProp("color", c);
+}
+function* cmdLT(ctx) {
+  const sel = ctx.sel();
+  const s = yield new Prompt(`Tipo de línea [P=PorCapa/C=continua/T=trazos/PU=puntos/TP=trazo-punto/O=oculta/E=eje/F=fantasma] [${sel.length ? "selección" : "actual"}]`, "text");
+  if (!s) return;
+  const k = LT_KEYS[s.trim().toUpperCase()];
+  if (!k) { ctx.log("Tipo de línea no válido.", "warn"); return; }
+  ctx.app.applyProp("linetype", k);
+}
+function* cmdMatch(ctx) {
+  const src = yield new Prompt("Selecciona el objeto origen <Enter=aceptar>", "select");
+  const o = (src || [])[0];
+  if (!o) return;
+  ctx.doc.clearSelection();
+  const dst = yield new Prompt("Selecciona los objetos destino <Enter=aceptar>", "select");
+  const list = (dst || []).filter(e => e !== o && ctx.doc.isEditable(e));
+  if (!list.length) return;
+  ctx.touch();
+  for (const e of list) { e.layer = o.layer; e.color = o.color; e.lineweight = o.lineweight; e.linetype = o.linetype; }
+  ctx.log(`Propiedades de ${o.kind} aplicadas a ${list.length} objeto(s).`);
+}
+function* cmdLayMCur(ctx) {
+  const sel = yield* selOrPrompt(ctx, "Selecciona un objeto cuya capa será la actual");
+  if (!sel.length) return;
+  ctx.doc.currentLayer = sel[0].layer;
+  ctx.log(`Capa actual: ${sel[0].layer}`);
+}
+function* cmdLayCur(ctx) {
+  const sel = yield* selOrPrompt(ctx, "Objetos que pasan a la capa actual");
+  if (!sel.length) return;
+  ctx.app.setLayerOf(sel, ctx.doc.currentLayer);
+}
+function _layersOf(ctx, sel) { return [...new Set(sel.map(e => e.layer))].map(n => ctx.doc.layers[n]).filter(Boolean); }
+function* cmdLayIso(ctx) {
+  const sel = yield* selOrPrompt(ctx, "Objetos de las capas a aislar");
+  if (!sel.length) return;
+  const keep = new Set(sel.map(e => e.layer));
+  if (!ctx.app._isoState) ctx.app._isoState = Object.fromEntries(Object.values(ctx.doc.layers).map(l => [l.name, l.visible]));
+  for (const l of Object.values(ctx.doc.layers)) l.visible = keep.has(l.name);
+  ctx.doc.clearSelection();
+  ctx.log(`Aisladas: ${[...keep].join(", ")}. LAYUNISO para restaurar.`);
+}
+function cmdLayUniso(app) {
+  const st = app._isoState;
+  if (!st) { app.log("No hay capas aisladas.", "warn"); return; }
+  for (const [n, vis] of Object.entries(st)) if (app.doc.layers[n]) app.doc.layers[n].visible = vis;
+  app._isoState = null;
+  app.log("Capas restauradas.");
+}
+function* cmdLayOff(ctx) {
+  const sel = yield* selOrPrompt(ctx, "Objetos de las capas a apagar");
+  const ls = _layersOf(ctx, sel);
+  if (!ls.length) return;
+  for (const l of ls) l.visible = false;
+  ctx.doc.clearSelection();
+  ctx.log(`Apagadas: ${ls.map(l => l.name).join(", ")}`);
+}
+function cmdLayOn(app) { for (const l of Object.values(app.doc.layers)) l.visible = true; app._isoState = null; app.log("Todas las capas encendidas."); }
+function* cmdLayLck(ctx) {
+  const sel = yield* selOrPrompt(ctx, "Objetos de las capas a bloquear");
+  const ls = _layersOf(ctx, sel);
+  if (!ls.length) return;
+  for (const l of ls) l.locked = true;
+  ctx.doc.clearSelection();
+  ctx.log(`Bloqueadas: ${ls.map(l => l.name).join(", ")}`);
+}
+function cmdLayUlk(app) { for (const l of Object.values(app.doc.layers)) l.locked = false; app.log("Todas las capas desbloqueadas."); }
+function* cmdLayerCLI(ctx) {
+  const o = yield new Prompt("Capa [?/Crear/Activar/Color/Tipo/Grosor/aPagar/Enciende/Bloquea/Desbloquea/Borra]", "text");
+  const op = String(o || "").trim().toUpperCase();
+  if (!op) return;
+  const doc = ctx.doc;
+  if (op === "?") {
+    for (const l of Object.values(doc.layers)) {
+      const n = doc.entities.filter(e => e.layer === l.name).length;
+      ctx.log(`  ${l.name}${l.name === doc.currentLayer ? " *" : ""} · ${l.visible ? "on" : "off"}${l.locked ? " · bloqueada" : ""} · ${l.color} · ${l.linetype} · ${lwLabel(l.lineweight)} · ${n} obj.`);
+    }
+    return;
+  }
+  if (!["C","A","CO","T","G","P","E","B","D","BO"].includes(op)) { ctx.log("Opción no válida.", "warn"); return; }
+  const nm = yield new Prompt("Nombre de la capa", "text");
+  if (!nm || !nm.trim()) return;
+  if (op === "C") { const isNew = !findLayer(doc, nm); doc.addLayer(nm.trim()); doc.currentLayer = findLayer(doc, nm).name; ctx.log(isNew ? "Capa creada y activada." : "Capa activada."); return; }
+  const l = findLayer(doc, nm);
+  if (!l) { ctx.log(`La capa "${nm}" no existe.`, "warn"); return; }
+  if (op === "A") doc.currentLayer = l.name;
+  else if (op === "P") l.visible = false;
+  else if (op === "E") l.visible = true;
+  else if (op === "B") l.locked = true;
+  else if (op === "D") l.locked = false;
+  else if (op === "BO") {
+    if (l.name === "0" || l.name === doc.currentLayer || doc.entities.some(e => e.layer === l.name)) { ctx.log("No se puede borrar: es la capa 0, la actual o contiene objetos.", "warn"); return; }
+    delete doc.layers[l.name];
+  } else {
+    const v = yield new Prompt(op === "CO" ? "Color (1–10, #rrggbb o nombre)" : op === "T" ? "Tipo (C/T/PU/TP/O/E/F)" : "Grosor mm", "text");
+    if (op === "CO") { const c = parseColorInput(v); if (!c) { ctx.log("Color no válido.", "warn"); return; } l.color = c; }
+    else if (op === "T") { const k = LT_KEYS[String(v || "").trim().toUpperCase()]; if (!k || k === "ByLayer") { ctx.log("Tipo no válido.", "warn"); return; } l.linetype = k; }
+    else { const w = parseLwInput(v); if (w === undefined || w < 0) { ctx.log("Grosor no válido.", "warn"); return; } l.lineweight = w; }
+  }
+  ctx.log(`Capa ${l.name} actualizada.`);
+}
+
+[
+  [["LW","GROSOR"], "GROSOR", "edit", "Grosor de línea (selección o actual)", cmdLW, true],
+  [["COLOR","COL"], "COLOR", "edit", "Color (selección o actual); P = PorCapa", cmdColor, true],
+  [["LT","TIPOLINEA"], "TIPO DE LÍNEA", "edit", "Tipo de línea (selección o actual)", cmdLT, true],
+  [["LWT","MOSTRARGROSOR"], "VER GROSORES", "view", "Muestra u oculta los grosores en pantalla", app => app.toggle("lwt"), false],
+  [["MA","IGUALAR","MATCHPROP"], "IGUALAR PROPIEDADES", "edit", "Copia capa, color, tipo y grosor de un objeto a otros", cmdMatch, true, true],
+  [["LAYMGR","CAPAS","LAYERS"], "ADMINISTRADOR DE CAPAS", "view", "Encender, bloquear, imprimir, color, tipo y grosor por capa", app => app.openLayerManager(), false],
+  [["-LA","-CAPA"], "CAPA (LÍNEA DE COMANDOS)", "view", "Gestión de capas por línea de comandos", cmdLayerCLI, true],
+  [["LAYMCUR"], "CAPA ACTUAL DE OBJETO", "view", "Hace actual la capa de un objeto", cmdLayMCur, true, true],
+  [["LAYCUR"], "OBJETOS A CAPA ACTUAL", "edit", "Pasa objetos a la capa actual", cmdLayCur, true, true],
+  [["LAYMOVE"], "MOVER A CAPA", "edit", "Mueve objetos a otra capa", cmdChangeLayer, true, true],
+  [["LAYISO"], "AISLAR CAPA", "view", "Apaga todas las capas salvo las de los objetos elegidos", cmdLayIso, true, true],
+  [["LAYUNISO"], "RESTAURAR CAPAS", "view", "Deshace LAYISO", cmdLayUniso, false],
+  [["LAYOFF"], "APAGAR CAPA", "view", "Apaga la capa de los objetos elegidos", cmdLayOff, true, true],
+  [["LAYON"], "ENCENDER CAPAS", "view", "Enciende todas las capas", cmdLayOn, false],
+  [["LAYLCK"], "BLOQUEAR CAPA", "view", "Bloquea la capa de los objetos elegidos", cmdLayLck, true, true],
+  [["LAYULK"], "DESBLOQUEAR CAPAS", "view", "Desbloquea todas las capas", cmdLayUlk, false],
+  [["PLOT","IMPRIMIR","PRINT"], "IMPRIMIR", "view", "Impresora virtual: PDF, SVG, PNG (Ctrl+P)", app => app.openPlot(), false],
+  [["DIN","ENTRADADIN"], "ENTRADA DINÁMICA", "view", "Activa/desactiva la entrada dinámica (F12)", app => app.toggle("din"), false]
+].forEach(d => {
+  COMMAND_DEFS.push(d);
+  const def = { aliases: d[0], name: d[1], group: d[2], desc: d[3], fn: d[4], gen: d[5], clearSel: !!d[6] };
+  for (const a of d[0]) COMMANDS[a] = def;
+});
+
+/* ============================================================
+   9. IMPRESORA VIRTUAL
+   ============================================================ */
+const PAPER_SIZES = { A0:[841,1189], A1:[594,841], A2:[420,594], A3:[297,420], A4:[210,297],
+  Carta:[215.9,279.4], Oficio:[215.9,355.6], Tabloide:[279.4,431.8], Personalizado:null };
+const UNIT_MM = { mm:1, cm:10, m:1000, in:25.4, ft:304.8 };
+const xmlEsc = s => String(s).replace(/[&<>"]/g, c => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;" }[c]));
+
+class Plotter {
+  constructor(app) {
+    this.app = app;
+    this.s = Object.assign({
+      paper: "A3", cw: 297, ch: 420, orient: "auto", area: "ext", scale: "fit", denom: 100,
+      pens: "mono", lw: true, frame: true, tblock: true, scalebar: true, north: false,
+      title: "", author: "", margin: 10
+    }, app.prefs.plot || {});
+    this.el = null;
+  }
+  save() { this.app.prefs.plot = this.s; this.app.savePrefs(); }
+  paperWH(bb) {
+    let [w, h] = PAPER_SIZES[this.s.paper] || [this.s.cw, this.s.ch];
+    const land = this.s.orient === "h" || (this.s.orient === "auto" && bb && (bb[2]-bb[0]) > (bb[3]-bb[1]));
+    return land ? [Math.max(w,h), Math.min(w,h)] : [Math.min(w,h), Math.max(w,h)];
+  }
+  area() {
+    const app = this.app, doc = app.doc, v = app.view;
+    if (this.s.area === "view") {
+      const a = v.toWorld([0, v._h]), b = v.toWorld([v._w, 0]);
+      return [a[0], a[1], b[0], b[1]];
+    }
+    if (this.s.area === "sel") { const sel = doc.selection(); if (sel.length) return doc.bbox(sel); }
+    return doc.bbox(doc.entities.filter(e => { const l = doc.layers[e.layer]; return l && l.visible && l.plot !== false; }));
+  }
+  penColor(c) {
+    const m = /^#([0-9a-f]{6})$/i.exec(c || "#000");
+    if (!m) return "#000";
+    const n = parseInt(m[1], 16), r = n >> 16, g = (n >> 8) & 255, b = n & 255;
+    const lum = (0.299*r + 0.587*g + 0.114*b) / 255;
+    if (this.s.pens === "mono") return "#000";
+    if (this.s.pens === "gray") { const k = Math.round(Math.min(lum, 0.6) * 255); return `rgb(${k},${k},${k})`; }
+    return lum > 0.82 ? "#000" : c;
+  }
+  svg() {
+    const app = this.app, doc = app.doc, s = this.s;
+    const bb = this.area();
+    const [W, H] = this.paperWH(bb);
+    const mg = Math.max(0, +s.margin || 0);
+    const tbH = s.tblock ? 16 : 0;
+    const aw = W - 2*mg - 4, ah = H - 2*mg - tbH - 4;
+    const umm = UNIT_MM[doc.units] || 1;
+    let k = 1, x0 = 0, y1 = 0, scaleTxt = "—";
+    if (bb) {
+      const bw = Math.max(bb[2]-bb[0], 1e-9), bh = Math.max(bb[3]-bb[1], 1e-9);
+      if (s.scale === "fit") k = Math.min(aw/bw, ah/bh) * 0.96;
+      else k = umm / Math.max(+s.denom || 1, 1e-9);
+      const px = mg + 2 + (aw - bw*k) / 2, py = mg + 2 + (ah - bh*k) / 2;
+      x0 = px - bb[0]*k; y1 = py + bh*k + bb[1]*k;
+      const ratio = umm / k;
+      const rs = ratio >= 1 ? `1:${ratio >= 10 ? Math.round(ratio) : fmt(ratio, 2)}` : `${fmt(1/ratio, 2)}:1`;
+      scaleTxt = s.scale === "fit" ? `${rs} (ajustada)` : `1:${fmt(+s.denom, 2)}`;
+    }
+    const X = x => x0 + x*k, Y = y => y1 - y*k;
+    const o = [];
+    o.push(`<svg xmlns="http://www.w3.org/2000/svg" width="${W}mm" height="${H}mm" viewBox="0 0 ${W} ${H}" font-family="Helvetica,Arial,sans-serif">`);
+    o.push(`<rect width="${W}" height="${H}" fill="#fff"/>`);
+    if (bb) {
+      o.push(`<clipPath id="clipArea"><rect x="${mg}" y="${mg}" width="${W-2*mg}" height="${H-2*mg-tbH}"/></clipPath><g clip-path="url(#clipArea)" fill="none" stroke-linecap="round" stroke-linejoin="round">`);
+      for (const e of doc.entities) {
+        const l = doc.layers[e.layer];
+        if (!l || !l.visible || l.plot === false) continue;
+        const col = this.penColor(doc.colorOf(e));
+        const lw = s.lw ? Math.max(0.05, doc.lwOf(e)) : 0.25;
+        const dash = (LINETYPES[doc.ltOf(e)] || []).map(x => fmt(x, 2)).join(" ");
+        const da = dash ? ` stroke-dasharray="${dash}"` : "";
+        if (e instanceof TextEnt) {
+          const p = [X(e.pos[0]), Y(e.pos[1])];
+          o.push(`<text x="0" y="0" transform="translate(${fmt(p[0],3)} ${fmt(p[1],3)}) rotate(${fmt(-e.angle*180/Math.PI,3)})" font-size="${fmt(e.height*k,3)}" fill="${col}" stroke="none">${xmlEsc(e.text)}</text>`);
+          continue;
+        }
+        if (e instanceof PointEnt) {
+          const p = [X(e.pos[0]), Y(e.pos[1])];
+          o.push(`<path d="M${fmt(p[0]-1,3)} ${fmt(p[1],3)}H${fmt(p[0]+1,3)}M${fmt(p[0],3)} ${fmt(p[1]-1,3)}V${fmt(p[1]+1,3)}" stroke="${col}" stroke-width="0.18"/>`);
+          continue;
+        }
+        let d = "", last = null;
+        for (const pr of e.primitives()) {
+          const pts = pr[0] === "seg" ? [pr[1], pr[2]] : arcPoints(pr[1], pr[2], pr[3], pr[4]);
+          const sp = pts.map(p => [X(p[0]), Y(p[1])]);
+          const a = sp[0];
+          if (!last || Math.hypot(last[0]-a[0], last[1]-a[1]) > 1e-4) d += `M${fmt(a[0],3)} ${fmt(a[1],3)}`;
+          for (let i = 1; i < sp.length; i++) d += `L${fmt(sp[i][0],3)} ${fmt(sp[i][1],3)}`;
+          last = sp[sp.length-1];
+        }
+        if (d) o.push(`<path d="${d}" stroke="${col}" stroke-width="${fmt(lw,2)}"${da}/>`);
+      }
+      o.push(`</g>`);
+    }
+    if (s.frame) o.push(`<rect x="${mg}" y="${mg}" width="${W-2*mg}" height="${H-2*mg}" fill="none" stroke="#000" stroke-width="0.5"/>`);
+    if (s.tblock) {
+      const ty = H - mg - tbH, tw = W - 2*mg;
+      const date = new Date().toLocaleDateString("es-CL");
+      o.push(`<g stroke="#000" stroke-width="0.35" fill="none"><rect x="${mg}" y="${ty}" width="${tw}" height="${tbH}"/>`);
+      const c1 = mg + tw*0.5, c2 = mg + tw*0.7, c3 = mg + tw*0.85;
+      o.push(`<path d="M${c1} ${ty}V${ty+tbH}M${c2} ${ty}V${ty+tbH}M${c3} ${ty}V${ty+tbH}"/></g>`);
+      const T = (x, y, sz, t, b) => `<text x="${fmt(x,2)}" y="${fmt(y,2)}" font-size="${sz}"${b ? ' font-weight="bold"' : ""} fill="#000">${xmlEsc(t)}</text>`;
+      o.push(T(mg+2, ty+5, 2.2, "PLANO", false), T(mg+2, ty+11.5, 5, s.title || "Sin título", true));
+      o.push(T(c1+2, ty+5, 2.2, "AUTOR", false), T(c1+2, ty+11.5, 3.6, s.author || "", false));
+      o.push(T(c2+2, ty+5, 2.2, "ESCALA", false), T(c2+2, ty+11.5, 3.2, scaleTxt.replace(" (ajustada)", ""), false));
+      o.push(T(c3+2, ty+5, 2.2, "FECHA · " + (s.paper === "Personalizado" ? "" : s.paper), false), T(c3+2, ty+11.5, 3.2, date, false));
+    }
+    if (bb && s.scalebar) {
+      const raw = 30 / k, p10 = Math.pow(10, Math.floor(Math.log10(raw)));
+      const nice = [1, 2, 5, 10].map(m => m * p10).reduce((b, v) => Math.abs(v - raw) < Math.abs(b - raw) ? v : b);
+      const L = nice * k, bx = mg + 6, by = H - mg - tbH - 8, h = 1.6;
+      o.push(`<g stroke="#000" stroke-width="0.25"><rect x="${bx}" y="${by}" width="${fmt(L/2,3)}" height="${h}" fill="#000"/><rect x="${fmt(bx+L/2,3)}" y="${by}" width="${fmt(L/2,3)}" height="${h}" fill="#fff"/></g>`);
+      const lab = (x, t) => `<text x="${fmt(x,2)}" y="${by-1}" font-size="2.4" text-anchor="middle" fill="#000">${t}</text>`;
+      o.push(lab(bx, "0"), lab(bx+L, `${fmt(nice, 4)} ${doc.units}`));
+    }
+    if (bb && s.north) {
+      const cx = W - mg - 12, cy = mg + 16;
+      o.push(`<g stroke="#000" stroke-width="0.3" fill="none"><circle cx="${cx}" cy="${cy}" r="7"/><path d="M${cx} ${cy-7}L${cx-3} ${cy+5}L${cx} ${cy+2.5}L${cx+3} ${cy+5}Z" fill="#000"/></g>`);
+      o.push(`<text x="${cx}" y="${cy-9}" font-size="4" text-anchor="middle" font-weight="bold" fill="#000">N</text>`);
+    }
+    o.push(`</svg>`);
+    return { svg: o.join(""), W, H };
+  }
+  open() {
+    if (!this.el) this.build();
+    this.el.classList.add("show");
+    this.refresh();
+  }
+  close() { if (this.el) this.el.classList.remove("show"); }
+  build() {
+    const bg = document.createElement("div");
+    bg.className = "modal-bg"; bg.id = "plot-modal";
+    bg.innerHTML = `<div class="modal" style="width:min(1000px,96vw);max-width:96vw;">
+      <button class="close">×</button><h2>Impresora virtual</h2>
+      <div class="plot-grid"><div class="plot-ctl" id="plot-ctl"></div><div class="plot-prev" id="plot-prev"></div></div>
+      <div class="pm-btns plot-btns"><button data-fmt="pdf" class="primary">PDF (imprimir)</button><button data-fmt="svg">SVG</button><button data-fmt="png">PNG</button></div></div>`;
+    document.body.appendChild(bg);
+    this.el = bg;
+    bg.addEventListener("click", e => { if (e.target === bg) this.close(); });
+    bg.querySelector(".close").onclick = () => this.close();
+    bg.querySelectorAll("[data-fmt]").forEach(b => b.onclick = () => this.output(b.dataset.fmt));
+    const ctl = bg.querySelector("#plot-ctl");
+    const s = this.s;
+    const row = (label, html) => { const r = document.createElement("div"); r.className = "pm-row"; r.innerHTML = `<span class="k">${label}</span>${html}`; ctl.appendChild(r); return r; };
+    const opts = (obj, cur) => Object.entries(obj).map(([k, v]) => `<option value="${k}"${k === cur ? " selected" : ""}>${v}</option>`).join("");
+    row("Papel", `<select data-k="paper">${Object.keys(PAPER_SIZES).map(p => `<option${p === s.paper ? " selected" : ""}>${p}</option>`).join("")}</select>`);
+    row("Ancho × alto (mm)", `<span><input data-k="cw" type="number" style="width:70px" value="${s.cw}"> × <input data-k="ch" type="number" style="width:70px" value="${s.ch}"></span>`);
+    row("Orientación", `<select data-k="orient">${opts({ auto:"Automática", h:"Horizontal", v:"Vertical" }, s.orient)}</select>`);
+    row("Área", `<select data-k="area">${opts({ ext:"Extensión", view:"Pantalla", sel:"Selección" }, s.area)}</select>`);
+    row("Escala", `<select data-k="scale">${opts({ fit:"Ajustada", n:"1:N" }, s.scale)}</select>`);
+    row("N (1:N)", `<input data-k="denom" type="number" min="0" step="any" value="${s.denom}">`);
+    row("Plumillas", `<select data-k="pens">${opts({ mono:"Monocromo", gray:"Grises", color:"Color" }, s.pens)}</select>`);
+    row("Márgenes (mm)", `<input data-k="margin" type="number" min="0" value="${s.margin}">`);
+    const chk = (k, l) => row(l, `<input data-k="${k}" type="checkbox" style="width:auto"${s[k] ? " checked" : ""}>`);
+    chk("lw", "Usar grosores"); chk("frame", "Marco"); chk("tblock", "Cajetín"); chk("scalebar", "Escala gráfica"); chk("north", "Norte");
+    row("Título", `<input data-k="title" type="text" value="${xmlEsc(s.title)}">`);
+    row("Autor", `<input data-k="author" type="text" value="${xmlEsc(s.author)}">`);
+    ctl.querySelectorAll("[data-k]").forEach(el => {
+      el.onkeydown = ev => ev.stopPropagation();
+      const h = () => {
+        const k = el.dataset.k;
+        s[k] = el.type === "checkbox" ? el.checked : el.type === "number" ? (parseFloat(el.value) || 0) : el.value;
+        if (k === "scale" && s.scale === "n" && !(s.denom > 0)) s.denom = 100;
+        this.save(); this.refresh();
+      };
+      el.oninput = h; el.onchange = h;
+    });
+  }
+  refresh() {
+    const r = this.svg();
+    this._last = r;
+    const prev = this.el.querySelector("#plot-prev");
+    prev.innerHTML = r.svg.replace(/width="[\d.]+mm" height="[\d.]+mm"/, 'style="width:100%;height:100%"');
+  }
+  output(fmtName) {
+    const r = this.svg();
+    const name = (this.s.title || "dibujo").replace(/[^\w\-]+/g, "_");
+    if (fmtName === "svg") return this._download(new Blob([r.svg], { type: "image/svg+xml" }), name + ".svg");
+    if (fmtName === "png") {
+      const dpi = 200, pxw = Math.round(r.W / 25.4 * dpi), pxh = Math.round(r.H / 25.4 * dpi);
+      const img = new Image();
+      img.onload = () => {
+        const c = document.createElement("canvas"); c.width = pxw; c.height = pxh;
+        const g = c.getContext("2d"); g.fillStyle = "#fff"; g.fillRect(0, 0, pxw, pxh); g.drawImage(img, 0, 0, pxw, pxh);
+        c.toBlob(b => this._download(b, name + ".png"));
+      };
+      img.src = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(r.svg.replace(/width="[\d.]+mm" height="[\d.]+mm"/, `width="${pxw}" height="${pxh}"`));
+      return;
+    }
+    const w = window.open("", "_blank");
+    if (!w) { this.app.log("El navegador bloqueó la ventana de impresión. Permite ventanas emergentes.", "warn"); return; }
+    w.document.write(`<!doctype html><title>${xmlEsc(name)}</title><style>@page{size:${r.W}mm ${r.H}mm;margin:0}html,body{margin:0}svg{display:block;width:${r.W}mm;height:${r.H}mm}</style>${r.svg}`);
+    w.document.close();
+    setTimeout(() => { w.focus(); w.print(); }, 300);
+    this.app.log("Se abrió la vista de impresión: elige «Guardar como PDF» para obtener el PDF vectorial.");
+  }
+  _download(blob, name) {
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob); a.download = name;
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(a.href), 3000);
+    this.app.log(`Exportado: ${name}`);
+  }
+}
+
+/* ============================================================
+   10. ENTRADA DINÁMICA, BARRA DE PROPIEDADES, ADMINISTRADOR DE CAPAS
+   ============================================================ */
+function evalExpr(s) {
+  s = String(s).trim().replace(",", ".");
+  if (!s || !/^[-+*/().\d\seE]+$/.test(s)) return NaN;
+  try { const v = Function(`"use strict";return (${s})`)(); return typeof v === "number" && isFinite(v) ? v : NaN; }
+  catch (_) { return NaN; }
+}
+
+Object.assign(App.prototype, {
+  /* ---- preferencias ---- */
+  loadPrefs() {
+    try { this.prefs = JSON.parse(localStorage.getItem("vectorcad5.prefs") || "{}") || {}; } catch (_) { this.prefs = {}; }
+    const p = this.prefs, v = this.view;
+    if (p.snap !== undefined) v.snapOn = p.snap;
+    if (p.grid !== undefined) v.showGrid = p.grid;
+    if (p.ortho !== undefined) v.ortho = p.ortho;
+    if (p.polar !== undefined) v.polar = p.polar;
+    if (p.osnap !== undefined) v.osnapOn = p.osnap;
+    if (p.gridSize > 0) v.grid = p.gridSize;
+    v.showLw = p.lwt !== undefined ? p.lwt : false;
+    this.din = p.din !== undefined ? p.din : true;
+  },
+  savePrefs() {
+    const v = this.view;
+    Object.assign(this.prefs, { snap: v.snapOn, grid: v.showGrid, ortho: v.ortho, polar: v.polar, osnap: v.osnapOn,
+      gridSize: v.grid, lwt: v.showLw, din: this.din });
+    try { localStorage.setItem("vectorcad5.prefs", JSON.stringify(this.prefs)); } catch (_) {}
+  },
+  openPlot() {
+    if (!this.plotter) this.plotter = new Plotter(this);
+    if (!this.doc.entities.length) { this.log("No hay objetos que imprimir.", "warn"); return; }
+    this.plotter.open();
+  },
+
+  /* ---- propiedades de objeto/actuales ---- */
+  applyProp(kind, value) {
+    const doc = this.doc;
+    const sel = doc.selection().filter(e => doc.isEditable(e));
+    const label = { color: "Color", lineweight: "Grosor", linetype: "Tipo de línea" }[kind];
+    const shown = kind === "lineweight" ? lwLabel(value) : kind === "color" ? (value || "PorCapa") : (value === "ByLayer" ? "PorCapa" : LT_LABEL[value] || value);
+    if (sel.length) {
+      doc.pushUndo(label.toLowerCase());
+      for (const e of sel) e[kind] = value;
+      this.log(`${label} ${shown} aplicado a ${sel.length} objeto(s).`);
+    } else {
+      if (kind === "color") doc.currentColor = value;
+      else if (kind === "lineweight") doc.currentLineweight = value;
+      else doc.currentLinetype = value;
+      this.log(`${label} actual: ${shown}`);
+    }
+    this.refreshAll();
+  },
+  buildPropbar() {
+    const bar = document.getElementById("propbar");
+    if (!bar) return;
+    bar.innerHTML = "";
+    const mk = (label, el) => { const w = document.createElement("label"); w.innerHTML = `<span>${label}</span>`; w.appendChild(el); bar.appendChild(w); return el; };
+    this.$pbLayer = mk("Capa", document.createElement("select"));
+    this.$pbColor = mk("Color", document.createElement("select"));
+    this.$pbLt = mk("Tipo", document.createElement("select"));
+    this.$pbLw = mk("Grosor", document.createElement("select"));
+    this.$pbColorPick = document.createElement("input"); this.$pbColorPick.type = "color"; this.$pbColorPick.style.display = "none";
+    bar.appendChild(this.$pbColorPick);
+    for (const s of [this.$pbLayer, this.$pbColor, this.$pbLt, this.$pbLw]) s.onkeydown = e => e.stopPropagation();
+    this.$pbLayer.onchange = () => {
+      const sel = this.doc.selection().filter(e => this.doc.isEditable(e));
+      if (sel.length) this.setLayerOf(sel, this.$pbLayer.value);
+      else { this.doc.currentLayer = this.$pbLayer.value; this.refreshAll(); }
+      this.$input.focus();
+    };
+    this.$pbColor.onchange = () => {
+      const v = this.$pbColor.value;
+      if (v === "__custom") { this.$pbColorPick.oninput = () => this.applyProp("color", this.$pbColorPick.value); this.$pbColorPick.click(); return; }
+      this.applyProp("color", v === "__bylayer" ? null : v); this.$input.focus();
+    };
+    this.$pbLt.onchange = () => { this.applyProp("linetype", this.$pbLt.value); this.$input.focus(); };
+    this.$pbLw.onchange = () => { this.applyProp("lineweight", parseFloat(this.$pbLw.value)); this.$input.focus(); };
+    this.$pbLt.innerHTML = Object.keys(LT_LABEL).map(k => `<option value="${k}">${LT_LABEL[k]}</option>`).join("");
+    this.$pbLw.innerHTML = `<option value="-1">PorCapa</option>` + LINEWEIGHTS.map(x => `<option value="${x}">${x.toFixed(2)} mm</option>`).join("");
+    this.$pbColor.innerHTML = `<option value="__bylayer">PorCapa</option>` + PALETTE.map((c, i) => `<option value="${c}" style="color:${c}">■ ${i+1} · ${c}</option>`).join("") + `<option value="__custom">Personalizado…</option>`;
+  },
+  refreshPropbar() {
+    if (!this.$pbLayer) return;
+    const doc = this.doc;
+    const sel = doc.selection();
+    const uni = (get, cur) => { if (!sel.length) return cur; const v = new Set(sel.map(get)); return v.size === 1 ? [...v][0] : "__mixed"; };
+    this.$pbLayer.innerHTML = Object.keys(doc.layers).map(n => `<option>${xmlEsc(n)}</option>`).join("");
+    const setSel = (el, val) => {
+      let o = [...el.options].find(x => x.value === String(val));
+      if (!o && val !== undefined) { o = document.createElement("option"); o.value = String(val); o.textContent = val === "__mixed" ? "(varios)" : String(val); el.appendChild(o); }
+      el.value = String(val);
+    };
+    setSel(this.$pbLayer, uni(e => e.layer, doc.currentLayer));
+    const col = uni(e => e.color || "__bylayer", doc.currentColor || "__bylayer");
+    setSel(this.$pbColor, col);
+    setSel(this.$pbLt, uni(e => e.linetype || "ByLayer", doc.currentLinetype));
+    setSel(this.$pbLw, uni(e => e.lineweight ?? -1, doc.currentLineweight));
+    document.getElementById("propbar").classList.toggle("sel", sel.length > 0);
+  },
+
+  /* ---- administrador de capas ---- */
+  openLayerManager() {
+    if (!this._lm) {
+      const bg = document.createElement("div");
+      bg.className = "modal-bg"; bg.id = "layers-modal";
+      bg.innerHTML = `<div class="modal" style="width:min(900px,96vw);max-width:96vw;"><button class="close">×</button><h2>Administrador de capas</h2>
+        <div style="overflow-x:auto"><table id="lm-table"></table></div>
+        <div class="pm-btns"><button id="lm-new">Nueva capa</button><button id="lm-purge">Purgar vacías</button><button id="lm-close" class="primary">Cerrar</button></div></div>`;
+      document.body.appendChild(bg);
+      this._lm = bg;
+      const close = () => { bg.classList.remove("show"); this.$input.focus(); };
+      bg.querySelector(".close").onclick = close; bg.querySelector("#lm-close").onclick = close;
+      bg.addEventListener("click", e => { if (e.target === bg) close(); });
+      bg.querySelector("#lm-new").onclick = () => { const n = this._askNewLayerName(); if (n) { this.doc.addLayer(n); this.refreshAll(); this._renderLayerManager(); } };
+      bg.querySelector("#lm-purge").onclick = () => {
+        let n = 0;
+        for (const l of Object.values(this.doc.layers)) {
+          if (l.name !== "0" && l.name !== this.doc.currentLayer && !this.doc.entities.some(e => e.layer === l.name)) { delete this.doc.layers[l.name]; n++; }
+        }
+        this.log(`${n} capa(s) vacías eliminadas.`); this.refreshAll(); this._renderLayerManager();
+      };
+    }
+    this._lm.classList.add("show");
+    this._renderLayerManager();
+  },
+  _renderLayerManager() {
+    const doc = this.doc, t = this._lm.querySelector("#lm-table");
+    t.innerHTML = `<tr><th>Act.</th><th>Nombre</th><th title="Encendida">On</th><th title="Bloqueada">Bl.</th><th title="Imprimir">Imp.</th><th>Color</th><th>Tipo</th><th>Grosor</th><th>Obj.</th><th></th></tr>`;
+    const ltOpts = Object.keys(LINETYPES).map(k => `<option value="${k}">${LT_LABEL[k]}</option>`).join("");
+    const lwOpts = LINEWEIGHTS.map(x => `<option value="${x}">${x.toFixed(2)} mm</option>`).join("");
+    for (const l of Object.values(doc.layers)) {
+      const n = doc.entities.filter(e => e.layer === l.name).length;
+      const tr = document.createElement("tr");
+      tr.innerHTML = `<td><input type="radio" name="lm-cur" ${l.name === doc.currentLayer ? "checked" : ""}></td>
+        <td class="lm-name" title="Doble clic: renombrar">${xmlEsc(l.name)}</td>
+        <td><input type="checkbox" data-f="visible" ${l.visible ? "checked" : ""}></td>
+        <td><input type="checkbox" data-f="locked" ${l.locked ? "checked" : ""}></td>
+        <td><input type="checkbox" data-f="plot" ${l.plot !== false ? "checked" : ""}></td>
+        <td><input type="color" data-f="color" value="${/^#[0-9a-f]{6}$/i.test(l.color) ? l.color : "#e2e2e6"}"></td>
+        <td><select data-f="linetype">${ltOpts}</select></td>
+        <td><select data-f="lineweight">${lwOpts}</select></td>
+        <td>${n}</td><td><button class="lm-del" title="Eliminar capa vacía">🗑</button></td>`;
+      tr.querySelector('[data-f="linetype"]').value = l.linetype || "Continuous";
+      tr.querySelector('[data-f="lineweight"]').value = String(l.lineweight ?? 0.25);
+      tr.querySelector('input[type=radio]').onchange = () => { doc.currentLayer = l.name; this.refreshAll(); };
+      tr.querySelectorAll("[data-f]").forEach(el => el.onchange = el.oninput = () => {
+        const f = el.dataset.f;
+        l[f] = el.type === "checkbox" ? el.checked : f === "lineweight" ? parseFloat(el.value) : el.value;
+        this.refreshAll();
+      });
+      tr.querySelector(".lm-name").ondblclick = () => {
+        const nn = (window.prompt("Nuevo nombre de la capa:", l.name) || "").trim();
+        if (!nn || nn === l.name) return;
+        if (doc.layers[nn]) { this.log("Ya existe una capa con ese nombre.", "warn"); return; }
+        doc.pushUndo("renombrar capa");
+        const ents = doc.entities.filter(e => e.layer === l.name);
+        const was = doc.currentLayer === l.name;
+        const rebuilt = {};
+        for (const [k, v] of Object.entries(doc.layers)) { if (k === l.name) { v.name = nn; rebuilt[nn] = v; } else rebuilt[k] = v; }
+        doc.layers = rebuilt;
+        for (const e of ents) e.layer = nn;
+        if (was) doc.currentLayer = nn;
+        this.refreshAll(); this._renderLayerManager();
+      };
+      tr.querySelector(".lm-del").onclick = () => {
+        if (l.name === "0" || l.name === doc.currentLayer || n) { this.log("No se puede eliminar: es la capa 0, la actual o contiene objetos.", "warn"); return; }
+        delete doc.layers[l.name]; this.refreshAll(); this._renderLayerManager();
+      };
+      t.appendChild(tr);
+    }
+  },
+
+  /* ---- entrada dinámica ---- */
+  dinActive() {
+    const p = this.prompt;
+    return this.din && this.gen && p && p.mode === "point";
+  },
+  dinReset() {
+    this.dinLocked = null; this.dinField = 0;
+    this.view.dinDist = null; this.view.dinAng = null;
+    this.updateDin();
+  },
+  dinInput() {
+    if (!this.dinActive()) { this.updateDin(); return; }
+    const v = evalExpr(this.$input.value);
+    const hasBase = !!this.prompt.base;
+    if (hasBase) {
+      if (this.dinField === 0) this.view.dinDist = isNaN(v) ? null : Math.abs(v);
+      else this.view.dinAng = isNaN(v) ? null : v * Math.PI / 180;
+    }
+    this.view.draw();
+    this.updateDin();
+  },
+  dinTab() {
+    if (!this.dinActive()) return false;
+    const v = evalExpr(this.$input.value);
+    if (this.dinField === 0) {
+      if (isNaN(v)) return true;
+      this.dinLocked = v; this.dinField = 1; this.$input.value = "";
+      if (this.prompt.base) this.view.dinDist = Math.abs(v);
+    } else {
+      this.dinField = 0; this.dinLocked = null; this.$input.value = "";
+      this.view.dinDist = null; this.view.dinAng = null;
+    }
+    this.view.draw(); this.updateDin();
+    return true;
+  },
+  dinCommit() {
+    if (!this.dinActive() || this.dinLocked === null) return false;
+    const base = this.prompt.base;
+    const second = evalExpr(this.$input.value);
+    const cur = this.view.resolvePoint(this.view.mouseScreen);
+    let pt;
+    if (base) {
+      const a = isNaN(second) ? (this.view.dinAng ?? V.angle(base, cur)) : second * Math.PI / 180;
+      pt = [base[0] + this.dinLocked * Math.cos(a), base[1] + this.dinLocked * Math.sin(a)];
+    } else {
+      pt = [this.dinLocked, isNaN(second) ? cur[1] : second];
+    }
+    this.log(`  ${fmt(pt[0],3)}, ${fmt(pt[1],3)}`);
+    this.lastPoint = pt;
+    this.$input.value = "";
+    this.dinReset();
+    this._step(pt);
+    return true;
+  },
+  updateDin() {
+    const el = document.getElementById("din");
+    if (!el) return;
+    if (!this.dinActive()) { el.style.display = "none"; return; }
+    const v = this.view, base = this.prompt.base;
+    const cur = v.resolvePoint(v.mouseScreen);
+    const typed = this.$input.value;
+    let f1, f2, l1, l2;
+    if (base) {
+      l1 = "Dist"; l2 = "Áng";
+      f1 = this.dinField === 0 ? (typed || fmt(V.dist(base, cur), 3)) : fmt(this.dinLocked, 3);
+      f2 = this.dinField === 1 ? (typed || fmt(V.angle(base, cur) * 180 / Math.PI, 2)) : fmt(V.angle(base, cur) * 180 / Math.PI, 2);
+    } else {
+      l1 = "X"; l2 = "Y";
+      f1 = this.dinField === 0 ? (typed || fmt(cur[0], 3)) : fmt(this.dinLocked, 3);
+      f2 = this.dinField === 1 ? (typed || fmt(cur[1], 3)) : fmt(cur[1], 3);
+    }
+    el.innerHTML = `<span class="${this.dinField === 0 ? "act" : ""}">${l1} ${xmlEsc(f1)}${this.dinField === 1 ? " 🔒" : ""}</span><span class="${this.dinField === 1 ? "act" : ""}">${l2} ${xmlEsc(f2)}</span>`;
+    el.style.display = "flex";
+    const s = v.mouseScreen, rect = v.el.getBoundingClientRect();
+    el.style.left = Math.min(rect.left + s[0] + 18, window.innerWidth - 200) + "px";
+    el.style.top = (rect.top + s[1] + 22) + "px";
+  },
+
+  /* ---- Tab: autocompletar alias ---- */
+  completeAlias() {
+    const t = this.$input.value.trim().toUpperCase();
+    if (!t) return;
+    const c = Object.keys(COMMANDS).filter(a => a.startsWith(t)).sort();
+    if (!c.length) return;
+    if (c.length === 1) { this.$input.value = c[0]; return; }
+    let pre = c[0];
+    for (const a of c) while (!a.startsWith(pre)) pre = pre.slice(0, -1);
+    this.$input.value = pre;
+    this.log("  " + c.slice(0, 20).join("  ") + (c.length > 20 ? " …" : ""));
+  },
+
+  /* ---- abrir archivo (botón y arrastrar/soltar) ---- */
+  loadFile(f) {
+    const rd = new FileReader();
+    rd.onload = () => {
+      try {
+        const d = new Document();
+        d.loadJSON(rd.result);
+        this._replaceDoc(d);
+        this.view.zoomExtents();
+        this.log(`Abierto: ${f.name} (${d.entities.length} objetos).`);
+      } catch (err) { this.log("No se pudo leer el archivo: " + err.message, "error"); }
+    };
+    rd.readAsText(f);
+  }
+});
 
 let app;
 window.addEventListener("DOMContentLoaded", () => {
