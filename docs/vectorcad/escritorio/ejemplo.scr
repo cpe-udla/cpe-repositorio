@@ -1,0 +1,27 @@
+; ejemplo.scr — script de VectorCAD (SCR / alias SCR)
+; Cada línea es un alias o una entrada del comando activo.
+LA
+REC
+0,0
+60,40
+REC
+5,5
+25,20
+C
+45,28
+9
+O
+2
+0,0
+0,-5
+
+DLI
+0,0
+60,0
+30,-10
+T
+6,33
+4
+0
+Planta base
+ZE
