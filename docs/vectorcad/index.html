@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>VectorCAD Web 5.0 — Centro Producción del Espacio</title>
+<title>VectorCAD Web 5.1 — Centro Producción del Espacio</title>
 <style>
   :root {
     --bg:#141417; --panel:#161619; --panel-alt:#1e1e23; --line:#2a2a31;
@@ -111,7 +111,16 @@
   #props-modal .pm-btns button{background:var(--panel-alt);color:var(--text);border:1px solid var(--line);
     padding:5px 14px;border-radius:3px;cursor:pointer;font:inherit;}
   #props-modal .pm-btns button.primary{border-color:var(--accent);color:var(--accent);}
-  #propbar{display:flex;gap:10px;align-items:center;padding:3px 8px;background:var(--panel);
+  #dimstyle-modal .pm-row{display:flex;justify-content:space-between;align-items:center;gap:10px;
+  padding:4px 0;border-bottom:1px solid var(--line);font-size:12px;}
+#dimstyle-modal .pm-row .k{color:var(--muted);}
+#dimstyle-modal .pm-row input:not([type=checkbox]),#dimstyle-modal .pm-row select{background:var(--panel-alt);
+  color:var(--text);border:1px solid var(--line);border-radius:3px;font-family:ui-monospace,monospace;font-size:12px;
+  padding:3px 6px;width:190px;text-align:right;}
+#dimstyle-modal .pm-row select{text-align:left;}
+#dimstyle-modal .pm-btns{position:sticky;bottom:-22px;background:var(--panel);padding:10px 0 0;margin-top:8px;}
+#dimstyle-modal .pm-row input:focus,#dimstyle-modal .pm-row select:focus{border-color:#3d5afe;outline:none;}
+#propbar{display:flex;gap:10px;align-items:center;padding:3px 8px;background:var(--panel);
     border-bottom:1px solid var(--line);flex-wrap:wrap;font-size:12px;}
   #propbar label{display:flex;align-items:center;gap:5px;color:var(--muted);}
   #propbar select{background:var(--panel-alt);color:var(--text);border:1px solid var(--line);
@@ -155,6 +164,12 @@
     <button data-alias="A" title="Arco">Arco</button>
     <button data-alias="EL" title="Elipse">Elipse</button>
     <button data-alias="T" title="Texto">Texto</button>
+<span class="sep"></span>
+<button data-alias="DAL" title="Cota alineada (DAL)">Cota alin.</button>
+<button data-alias="DLI" title="Cota recta horizontal/vertical (DLI)">Cota recta</button>
+<button data-alias="DET" title="Editar texto de cota o de área (DET · doble clic)">Texto cota</button>
+<button data-alias="DST" title="Estilo de cotas (DST)">Estilo cota</button>
+<button data-alias="IA" title="Indicador de área de un contorno cerrado (IA)">Área ▢</button>
     <span class="sep"></span>
     <button data-alias="M" title="Mover">Mover</button>
     <button data-alias="CO" title="Copiar">Copiar</button>
@@ -235,7 +250,7 @@
 <div class="modal-bg" id="help-modal">
   <div class="modal">
     <button class="close" onclick="document.getElementById('help-modal').classList.remove('show')">×</button>
-    <h2>VectorCAD Web 5.0 — Comandos</h2>
+    <h2>VectorCAD Web 5.1 — Comandos</h2>
     <p style="color:var(--muted);font-size:12px;">Versión web del sistema de dibujo 2D paramétrico del <b>Centro Producción del Espacio · UDLA</b>.</p>
     <h3>Entrada de puntos</h3>
     <p style="font-size:12px;">
@@ -260,7 +275,15 @@
       Arrastra de derecha a izquierda para <b>captura</b> (cruza), de izquierda a derecha para <b>ventana</b>.
       Mayús+clic o Ctrl+clic añade a la selección.
     </p>
-    <h3>Novedades 5.0</h3>
+    <h3>Novedades 5.1 — cotas y áreas</h3>
+<p style="font-size:12px;line-height:1.7;">
+<b>Cota alineada</b> (<code>DAL</code>): dos orígenes (o <kbd>Enter</kbd> y clic sobre un lado) y la posición de la línea de cota.<br>
+<b>Cota recta</b> (<code>DLI</code>): horizontal o vertical según dónde pongas la línea de cota; fuerza con <code>H</code> / <code>V</code>.<br>
+<b>Texto editable</b>: <code>T</code> durante la cota, o después con <code>DET</code> / doble clic sobre la cota. <code>&lt;&gt;</code> representa el valor medido
+(por ejemplo <code>&lt;&gt; m</code> o <code>≈ &lt;&gt;</code>); <code>-</code> restablece el texto automático. También se edita en <code>PR</code>.<br>
+<b>Estilo del sistema de cotas</b> (<code>DST</code>): altura del texto, flecha, marca oblicua o punto, desfases, decimales, factor de medida, prefijo, sufijo y separador decimal; puede aplicarse a todas las cotas ya dibujadas.<br>
+<b>Indicador de área</b> (<code>IA</code>): clic dentro de un contorno cerrado (líneas, polilíneas, arcos que se toquen), sobre una polilínea cerrada, círculo o elipse, o <code>P</code> para indicar los vértices. Mide el área y fija el texto donde elijas.</p>
+<h3>Novedades 5.0</h3>
     <p style="font-size:12px;line-height:1.7;">
       <b>Entrada dinámica (F12)</b>: durante un comando escribe la distancia y pulsa <b>Tab</b> para fijarla y pasar al ángulo
       (X→Y en el primer punto); <b>Enter</b> o <b>Espacio</b> acepta. Los campos aceptan expresiones (<code>1200/2</code>).<br>
@@ -863,6 +886,7 @@ class Document {
     this.currentLineweight = -1;       // -1 = PorCapa
     this.currentLinetype = "ByLayer";
     this.units = UNITS;
+    this.dimStyle = null;       // estilo de cotas e indicadores de área (se fija al usarlo)
     this.modified = false;
     this._undo = [];
     this._redo = [];
@@ -948,7 +972,7 @@ class Document {
   }
   toJSON() {
     return JSON.stringify({
-      app: "VectorCAD Web", version: "5.0", units: this.units,
+      app: "VectorCAD Web", version: "5.1", units: this.units, dimStyle: this.dimStyle,
       currentLayer: this.currentLayer,
       currentColor: this.currentColor, currentLineweight: this.currentLineweight, currentLinetype: this.currentLinetype,
       layers: Object.values(this.layers).map(l => ({...l})),
@@ -968,6 +992,7 @@ class Document {
     if (!Object.keys(this.layers).length) this.layers = { "0": new Layer("0") };
     this.currentLayer = d.currentLayer || Object.keys(this.layers)[0];
     this.units = d.units || UNITS;
+    this.dimStyle = d.dimStyle || null;
     this.currentColor = d.currentColor || null;
     this.currentLineweight = d.currentLineweight ?? -1;
     this.currentLinetype = d.currentLinetype || "ByLayer";
@@ -2065,6 +2090,7 @@ const EDITABLE_PROPS = new Set(["x1","y1","x2","y2","len","ang","cx","cy","r","d
   "rx","ry","rot","txt","h","x","y","closed"]);
 
 function setEntityProp(e, key, raw) {
+  if (e instanceof Dim || e instanceof AreaTag) return e.setProp(key, raw);
   if (key === "txt") { e.text = raw; return true; }
   const v = parseFloat(raw);
   if (!isFinite(v)) return false;
@@ -2133,7 +2159,7 @@ class App {
     this.buildPropbar();
     this._buildHelp();
     this.refreshAll();
-    this.log("VectorCAD Web 5.0 · Centro Producción del Espacio · UDLA");
+    this.log("VectorCAD Web 5.1 · Centro Producción del Espacio · UDLA");
     this.log("Escribe un comando (L, PL, C, REC…) o usa la barra superior. ? = ayuda · F12 entrada dinámica · Ctrl+P imprimir.");
   }
 
@@ -2909,6 +2935,676 @@ function* cmdLayerCLI(ctx) {
 });
 
 /* ============================================================
+   8b. COTAS E INDICADORES DE ÁREA (VectorCAD 5.1)
+   Cota alineada (DAL), cota recta horizontal/vertical (DLI), texto
+   editable (DET y doble clic), estilo del sistema de cotas (DST) e
+   indicador de área de un contorno cerrado (IA).
+   ============================================================ */
+const _niceNum = x => {
+  if (!(x > 0)) return 1;
+  const p = Math.pow(10, Math.floor(Math.log10(x)));
+  return [1, 2, 2.5, 5, 10].map(m => m * p).reduce((b, v) => Math.abs(v - x) < Math.abs(b - x) ? v : b);
+};
+function _fmtNum(v, dec, trz, sep) {
+  dec = Math.max(0, Math.min(8, dec | 0));
+  let s = Math.abs(v) < 0.5 * Math.pow(10, -dec) ? (0).toFixed(dec) : v.toFixed(dec);
+  if (trz && s.includes(".")) s = s.replace(/0+$/, "").replace(/\.$/, "");
+  return sep === "," ? s.replace(".", ",") : s;
+}
+const DIM_DEF = { h: 2.5, a: 2.5, mark: "arrow", eo: 1, ee: 1.25, dec: 2, trz: true, fac: 1, pre: "", suf: "", sep: "." };
+const DIM_KEYS = Object.keys(DIM_DEF);
+function _dimStyleOf(st) {
+  const o = Object.assign({}, DIM_DEF);
+  if (st) for (const k of DIM_KEYS) if (st[k] !== undefined && st[k] !== null) o[k] = st[k];
+  return o;
+}
+function _areaStyleOf(st) {
+  st = st || {};
+  const g = (k, d) => (st[k] !== undefined && st[k] !== null) ? st[k] : d;
+  return { h: g("ar_h", 5), dec: g("ar_dec", 2), fac: g("ar_fac", 1), pre: g("ar_pre", ""), suf: g("ar_suf", ""),
+           trz: g("trz", true), sep: g("sep", ".") };
+}
+// El estilo vive en el documento; se fija solo la primera vez, según el zoom actual, y luego es editable (DST).
+function ensureDimStyle(app) {
+  const doc = app.doc;
+  if (!doc.dimStyle) {
+    const h = _niceNum(app.view.px(14));
+    const mm = UNIT_MM[doc.units] || 1;
+    doc.dimStyle = Object.assign(_dimStyleOf({ h, a: h, eo: _niceNum(h * 0.4), ee: _niceNum(h * 0.5) }), {
+      ar_h: _niceNum(h * 1.4), ar_dec: 2, ar_fac: (mm / 1000) * (mm / 1000), ar_pre: "", ar_suf: " m²"
+    });
+    app.log(`Estilo de cotas fijado según el zoom actual (texto ${fmt(h)} ${doc.units}). Cámbialo con DST.`);
+  }
+  return doc.dimStyle;
+}
+function _pointInPoly(p, pts) {
+  let inside = false;
+  for (let i = 0, j = pts.length - 1; i < pts.length; j = i++) {
+    const a = pts[i], b = pts[j];
+    if ((a[1] > p[1]) !== (b[1] > p[1]) && p[0] < (b[0] - a[0]) * (p[1] - a[1]) / (b[1] - a[1]) + a[0]) inside = !inside;
+  }
+  return inside;
+}
+// Punto interior para el texto: centroide si cae dentro; si no, centro del tramo interior más ancho a su altura.
+function _labelPoint(pts) {
+  const c = polyCentroid(pts);
+  if (_pointInPoly(c, pts)) return c;
+  const xs = [];
+  for (let i = 0; i < pts.length; i++) {
+    const a = pts[i], b = pts[(i + 1) % pts.length];
+    if ((a[1] > c[1]) !== (b[1] > c[1])) xs.push(a[0] + (c[1] - a[1]) * (b[0] - a[0]) / (b[1] - a[1]));
+  }
+  xs.sort((u, v) => u - v);
+  let best = null, bw = -1;
+  for (let i = 0; i + 1 < xs.length; i += 2) if (xs[i + 1] - xs[i] > bw) { bw = xs[i + 1] - xs[i]; best = (xs[i] + xs[i + 1]) / 2; }
+  return best === null ? [...pts[0]] : [best, c[1]];
+}
+
+class Dim extends Entity {
+  // ang = null: cota alineada con los puntos; ang = número: cota recta con la línea de cota en esa dirección
+  constructor(p1, p2, loc, ang, style, opts = {}) {
+    super(opts); this.kind = "Dim";
+    this.p1 = [...p1]; this.p2 = [...p2]; this.loc = [...loc];
+    this.ang = ang === null || ang === undefined ? null : ang;
+    this.text = opts.text || "";
+    this.tp = opts.tp ? [...opts.tp] : null;
+    this.s = _dimStyleOf(style);
+  }
+  dirAng() { return this.ang === null ? V.angle(this.p1, this.p2) : this.ang; }
+  numStr(meas) { const s = this.s; return s.pre + _fmtNum(meas * s.fac, s.dec, s.trz, s.sep) + s.suf; }
+  label(meas) { const n = this.numStr(meas); return this.text ? this.text.replace(/<>/g, n) : n; }
+  geom() {
+    const s = this.s, th = this.dirAng(), u = [Math.cos(th), Math.sin(th)], n = V.perp(u);
+    const a = V.add(this.p1, V.mul(n, V.dot(V.sub(this.loc, this.p1), n)));
+    const b = V.add(this.p2, V.mul(n, V.dot(V.sub(this.loc, this.p2), n)));
+    const meas = Math.abs(V.dot(V.sub(this.p2, this.p1), u));
+    let dir = V.sub(b, a); const L = V.len(dir);
+    dir = L > TOL ? V.mul(dir, 1 / L) : u;
+    const nn = V.perp(dir), lines = [], fills = [], dots = [];
+    for (const [P, A] of [[this.p1, a], [this.p2, b]]) {
+      const v = V.sub(A, P), l = V.len(v);
+      if (l > s.eo + TOL) { const w = V.mul(v, 1 / l); lines.push([V.add(P, V.mul(w, s.eo)), V.add(A, V.mul(w, s.ee))]); }
+    }
+    const ah = s.a;
+    if (s.mark === "tick") {
+      const t45 = V.norm(V.add(dir, nn)), hl = ah * 0.7;
+      for (const P of [a, b]) lines.push([V.sub(P, V.mul(t45, hl)), V.add(P, V.mul(t45, hl))]);
+      lines.push([V.sub(a, V.mul(dir, ah * 0.5)), V.add(b, V.mul(dir, ah * 0.5))]);
+    } else {
+      lines.push([a, b]);
+      if (s.mark === "dot") dots.push({ c: a, r: ah * 0.3 }, { c: b, r: ah * 0.3 });
+      else {
+        const arrow = (P, d) => {
+          const base = V.add(P, V.mul(d, ah));
+          fills.push([P, V.add(base, V.mul(nn, ah / 6)), V.sub(base, V.mul(nn, ah / 6))]);
+        };
+        if (L >= 2 * ah) { arrow(a, dir); arrow(b, V.mul(dir, -1)); }
+        else {
+          arrow(a, V.mul(dir, -1)); arrow(b, dir);
+          lines.push([a, V.sub(a, V.mul(dir, ah * 2.2))], [b, V.add(b, V.mul(dir, ah * 2.2))]);
+        }
+      }
+    }
+    let tang = Math.atan2(dir[1], dir[0]);
+    if (tang > Math.PI / 2 + 1e-9) tang -= Math.PI; else if (tang <= -Math.PI / 2 + 1e-9) tang += Math.PI;
+    const t = [Math.cos(tang), Math.sin(tang)], nT = V.perp(t);
+    const str = this.label(meas), w = Math.max(str.length, 1) * s.h * 0.6;
+    const mid = V.lerp(a, b, 0.5);
+    const anchor = this.tp ? V.sub(this.tp, V.mul(nT, s.h * 0.35)) : V.add(mid, V.mul(nT, s.h * 0.4));
+    const left = V.sub(anchor, V.mul(t, w / 2));
+    const corners = [left, V.add(left, V.mul(t, w)), V.add(V.add(left, V.mul(t, w)), V.mul(nT, s.h)), V.add(left, V.mul(nT, s.h))];
+    return { a, b, dir, meas, lines, fills, dots, str, anchor, left, tang, t, nT, w, h: s.h, corners };
+  }
+  primitives() { return this.geom().lines.map(l => ["seg", l[0], l[1]]); }
+  sample() {
+    const G = this.geom(), o = [];
+    for (const l of G.lines) o.push(l[0], l[1]);
+    for (const f of G.fills) o.push(...f);
+    return o.concat(G.corners);
+  }
+  snaps() {
+    const G = this.geom();
+    return [["end", this.p1], ["end", this.p2], ["end", G.a], ["end", G.b], ["mid", V.lerp(G.a, G.b, 0.5)]];
+  }
+  distTo(p) {
+    const G = this.geom();
+    let best = Infinity;
+    for (const l of G.lines) best = Math.min(best, distPointSeg(p, l[0], l[1]));
+    const d = V.sub(p, G.left), x = V.dot(d, G.t), y = V.dot(d, G.nT);
+    best = Math.min(best, Math.hypot(Math.max(0, -x, x - G.w), Math.max(0, -y, y - G.h)));
+    return best;
+  }
+  _map(f) { this.p1 = f(this.p1); this.p2 = f(this.p2); this.loc = f(this.loc); if (this.tp) this.tp = f(this.tp); }
+  _rotExtra(a) { if (this.ang !== null) this.ang += a; }
+  _mirrorExtra(ax) { if (this.ang !== null) this.ang = 2 * ax - this.ang; }
+  explode() {
+    const G = this.geom(), o = { layer: this.layer, color: this.color }, out = [];
+    for (const l of G.lines) out.push(new Line(l[0], l[1], o));
+    for (const f of G.fills) out.push(new Polyline(f, true, o));
+    for (const d of G.dots) out.push(new Circle(d.c, d.r, o));
+    out.push(new TextEnt(G.left, G.str, G.h, G.tang, o));
+    return out;
+  }
+  draw(ctx, view, pen) {
+    const G = this.geom();
+    ctx.strokeStyle = pen.color; ctx.fillStyle = pen.color; ctx.lineWidth = pen.width;
+    ctx.setLineDash(pen.dash || []);
+    ctx.beginPath();
+    for (const l of G.lines) { const a = view.toScreen(l[0]), b = view.toScreen(l[1]); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); }
+    ctx.stroke();
+    ctx.setLineDash([]);
+    for (const f of G.fills) {
+      const sp = f.map(p => view.toScreen(p));
+      ctx.beginPath(); ctx.moveTo(sp[0][0], sp[0][1]);
+      for (let i = 1; i < sp.length; i++) ctx.lineTo(sp[i][0], sp[i][1]);
+      ctx.closePath(); ctx.fill();
+    }
+    for (const d of G.dots) { const c = view.toScreen(d.c); ctx.beginPath(); ctx.arc(c[0], c[1], Math.max(1.5, d.r * view.scale), 0, TAU); ctx.fill(); }
+    const s = view.toScreen(G.anchor);
+    ctx.save();
+    ctx.translate(s[0], s[1]); ctx.rotate(-G.tang);
+    ctx.font = `${Math.max(8, G.h * view.scale)}px sans-serif`;
+    ctx.textAlign = "center"; ctx.textBaseline = "alphabetic";
+    ctx.fillText(G.str, 0, 0);
+    ctx.restore();
+  }
+  plotSVG(X, Y, k, col, lw) {
+    const G = this.geom(), P = p => `${fmt(X(p[0]), 3)} ${fmt(Y(p[1]), 3)}`, o = [];
+    const d = G.lines.map(l => `M${P(l[0])}L${P(l[1])}`).join("");
+    if (d) o.push(`<path d="${d}" stroke="${col}" stroke-width="${fmt(Math.min(lw, 0.25), 2)}"/>`);
+    for (const f of G.fills) o.push(`<path d="M${f.map(P).join("L")}Z" fill="${col}" stroke="none"/>`);
+    for (const c of G.dots) o.push(`<circle cx="${fmt(X(c.c[0]), 3)}" cy="${fmt(Y(c.c[1]), 3)}" r="${fmt(c.r * k, 3)}" fill="${col}" stroke="none"/>`);
+    o.push(`<text transform="translate(${P(G.anchor)}) rotate(${fmt(-G.tang * 180 / Math.PI, 3)})" font-size="${fmt(G.h * k, 3)}" text-anchor="middle" fill="${col}" stroke="none">${xmlEsc(G.str)}</text>`);
+    return o.join("");
+  }
+  props() {
+    const s = this.s, G = this.geom();
+    const tipo = this.ang === null ? "Alineada"
+      : (Math.abs(Math.sin(this.ang)) < 1e-9 ? "Horizontal" : Math.abs(Math.cos(this.ang)) < 1e-9 ? "Vertical" : "Rotada");
+    return [
+      ["dtype", "Tipo de cota", tipo],
+      ["dmeas", "Medida", fmt(G.meas)],
+      ["dtxt", "Texto (<> = medida)", this.text],
+      ["dh", "Altura del texto", fmt(s.h)], ["dah", "Tamaño de marca", fmt(s.a)],
+      ["ddec", "Decimales", String(s.dec)], ["dfac", "Factor de medida", fmt(s.fac, 10)],
+      ["dpre", "Prefijo", s.pre], ["dsuf", "Sufijo", s.suf]
+    ];
+  }
+  setProp(key, raw) {
+    const v = parseFloat(String(raw).replace(",", "."));
+    const s = this.s;
+    if (key === "dtxt") { this.text = String(raw).trim() === "-" ? "" : String(raw); return true; }
+    if (key === "dpre") { s.pre = String(raw); return true; }
+    if (key === "dsuf") { s.suf = String(raw); return true; }
+    if (!isFinite(v)) return false;
+    if (key === "dh" && v > 0) { s.h = v; return true; }
+    if (key === "dah" && v > 0) { s.a = v; return true; }
+    if (key === "ddec" && v >= 0 && v <= 8) { s.dec = Math.round(v); return true; }
+    if (key === "dfac" && v > 0) { s.fac = v; return true; }
+    return false;
+  }
+  toDict() {
+    return Object.assign(super.toDict(), { p1: [...this.p1], p2: [...this.p2], loc: [...this.loc], ang: this.ang,
+      text: this.text, tp: this.tp ? [...this.tp] : null, s: { ...this.s } });
+  }
+  static fromDict(d) {
+    return new Dim(d.p1, d.p2, d.loc, d.ang, d.s, { layer: d.layer, color: d.color, text: d.text, tp: d.tp });
+  }
+}
+
+class AreaTag extends Entity {
+  constructor(pts, pos, style, opts = {}) {
+    super(opts); this.kind = "AreaTag";
+    this.pts = pts.map(p => [...p]);
+    this.pos = pos ? [...pos] : _labelPoint(this.pts);
+    this.text = opts.text || "";
+    this.fill = opts.fill !== false;
+    this.s = _areaStyleOf(style);
+  }
+  areaVal() { return Math.abs(polyArea(this.pts)); }
+  perim() {
+    let L = 0;
+    for (let i = 0; i < this.pts.length; i++) L += V.dist(this.pts[i], this.pts[(i + 1) % this.pts.length]);
+    return L;
+  }
+  numStr() { const s = this.s; return s.pre + _fmtNum(this.areaVal() * s.fac, s.dec, s.trz, s.sep) + s.suf; }
+  label() { const n = this.numStr(); return this.text ? this.text.replace(/<>/g, n) : n; }
+  polygon() { return this.pts.slice(); }
+  primitives() { return []; }
+  _box() {
+    const w = Math.max(this.label().length, 1) * this.s.h * 0.6, h = this.s.h;
+    return [this.pos[0] - w / 2, this.pos[1] - h / 2, this.pos[0] + w / 2, this.pos[1] + h / 2];
+  }
+  sample() { const b = this._box(); return [[b[0], b[1]], [b[2], b[1]], [b[2], b[3]], [b[0], b[3]]]; }
+  snaps() { return [["ins", this.pos]]; }
+  distTo(p) {
+    const b = this._box();
+    return Math.hypot(Math.max(0, b[0] - p[0], p[0] - b[2]), Math.max(0, b[1] - p[1], p[1] - b[3]));
+  }
+  _map(f) { this.pts = this.pts.map(f); this.pos = f(this.pos); }
+  explode() {
+    const o = { layer: this.layer, color: this.color }, b = this._box();
+    return [new Polyline(this.pts, true, o), new TextEnt([b[0], b[1]], this.label(), this.s.h, 0, o)];
+  }
+  draw(ctx, view, pen) {
+    const scr = this.pts.map(p => view.toScreen(p));
+    const ghost = !!(pen.dash && pen.dash.length);
+    if (scr.length >= 3 && (this.fill || this.selected || ghost)) {
+      ctx.save();
+      ctx.beginPath(); ctx.moveTo(scr[0][0], scr[0][1]);
+      for (let i = 1; i < scr.length; i++) ctx.lineTo(scr[i][0], scr[i][1]);
+      ctx.closePath();
+      if (this.fill) { ctx.globalAlpha = 0.13; ctx.fillStyle = pen.color; ctx.fill(); }
+      if (this.selected || ghost) { ctx.globalAlpha = 0.8; ctx.strokeStyle = pen.color; ctx.lineWidth = 1; ctx.setLineDash([4, 3]); ctx.stroke(); }
+      ctx.restore();
+    }
+    const s = view.toScreen(this.pos);
+    ctx.save();
+    ctx.fillStyle = pen.color;
+    ctx.font = `${Math.max(8, this.s.h * view.scale)}px sans-serif`;
+    ctx.textAlign = "center"; ctx.textBaseline = "middle";
+    ctx.fillText(this.label(), s[0], s[1]);
+    ctx.restore();
+  }
+  plotSVG(X, Y, k, col) {
+    return `<text x="${fmt(X(this.pos[0]), 3)}" y="${fmt(Y(this.pos[1]), 3)}" dy="0.35em" font-size="${fmt(this.s.h * k, 3)}" text-anchor="middle" fill="${col}" stroke="none">${xmlEsc(this.label())}</text>`;
+  }
+  props() {
+    const s = this.s;
+    return [
+      ["aarea", "Área medida", this.numStr()],
+      ["aper", "Perímetro", fmt(this.perim())],
+      ["atxt", "Texto (<> = área)", this.text],
+      ["ah", "Altura del texto", fmt(s.h)], ["adec", "Decimales", String(s.dec)],
+      ["afac", "Factor de área", fmt(s.fac, 12)],
+      ["apre", "Prefijo", s.pre], ["asuf", "Sufijo", s.suf],
+      ["ax", "Texto X", fmt(this.pos[0])], ["ay", "Texto Y", fmt(this.pos[1])]
+    ];
+  }
+  setProp(key, raw) {
+    const v = parseFloat(String(raw).replace(",", "."));
+    const s = this.s;
+    if (key === "atxt") { this.text = String(raw).trim() === "-" ? "" : String(raw); return true; }
+    if (key === "apre") { s.pre = String(raw); return true; }
+    if (key === "asuf") { s.suf = String(raw); return true; }
+    if (!isFinite(v)) return false;
+    if (key === "ah" && v > 0) { s.h = v; return true; }
+    if (key === "adec" && v >= 0 && v <= 8) { s.dec = Math.round(v); return true; }
+    if (key === "afac" && v > 0) { s.fac = v; return true; }
+    if (key === "ax") { this.pos[0] = v; return true; }
+    if (key === "ay") { this.pos[1] = v; return true; }
+    return false;
+  }
+  toDict() {
+    return Object.assign(super.toDict(), { pts: this.pts.map(p => [...p]), pos: [...this.pos], text: this.text, fill: this.fill, s: { ...this.s } });
+  }
+  static fromDict(d) {
+    const t = new AreaTag(d.pts, d.pos, null, { layer: d.layer, color: d.color, text: d.text, fill: d.fill });
+    if (d.s) t.s = Object.assign(_areaStyleOf(null), d.s);
+    return t;
+  }
+}
+ENTITY_TYPES.Dim = Dim;
+ENTITY_TYPES.AreaTag = AreaTag;
+["dtxt", "dh", "dah", "ddec", "dfac", "dpre", "dsuf", "atxt", "ah", "adec", "afac", "apre", "asuf", "ax", "ay"]
+  .forEach(k => EDITABLE_PROPS.add(k));
+
+/* ---- detección de contornos cerrados ---- */
+// Segmentos de todos los objetos visibles de dibujo (los arcos se muestrean cada 1°).
+function _boundarySegs(doc) {
+  const segs = [];
+  for (const e of doc.visibleEntities()) {
+    if (e instanceof TextEnt || e instanceof PointEnt || e instanceof Dim || e instanceof AreaTag) continue;
+    for (const pr of e.primitives()) {
+      if (pr[0] === "seg") segs.push([pr[1], pr[2]]);
+      else {
+        const span = normAng(pr[4] - pr[3]) || TAU;
+        const pts = arcPoints(pr[1], pr[2], pr[3], pr[4], Math.max(8, Math.ceil(span / (Math.PI / 180))));
+        for (let i = 0; i + 1 < pts.length; i++) segs.push([pts[i], pts[i + 1]]);
+      }
+    }
+  }
+  return segs;
+}
+// Traza las caras del grafo plano formado por los segmentos y devuelve la menor que contiene p.
+function _faceAt(segs, p) {
+  if (!segs.length) return null;
+  let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
+  for (const s of segs) for (const q of s) { x0 = Math.min(x0, q[0]); y0 = Math.min(y0, q[1]); x1 = Math.max(x1, q[0]); y1 = Math.max(y1, q[1]); }
+  const eps = Math.max(x1 - x0, y1 - y0, 1e-9) * 1e-7;
+  const N = segs.length;
+  const tOn = (s, q) => {
+    const d = V.sub(s[1], s[0]), l2 = V.dot(d, d);
+    return l2 < 1e-30 ? 0 : Math.max(0, Math.min(1, V.dot(V.sub(q, s[0]), d) / l2));
+  };
+  const bb = segs.map(s => [Math.min(s[0][0], s[1][0]) - eps, Math.min(s[0][1], s[1][1]) - eps, Math.max(s[0][0], s[1][0]) + eps, Math.max(s[0][1], s[1][1]) + eps]);
+  const ts = segs.map(() => [0, 1]);
+  for (let i = 0; i < N; i++) for (let j = i + 1; j < N; j++) {
+    if (bb[i][2] < bb[j][0] || bb[j][2] < bb[i][0] || bb[i][3] < bb[j][1] || bb[j][3] < bb[i][1]) continue;
+    for (const q of intLineLine(segs[i][0], segs[i][1], segs[j][0], segs[j][1])) { ts[i].push(tOn(segs[i], q)); ts[j].push(tOn(segs[j], q)); }
+    for (const q of segs[j]) if (distPointSeg(q, segs[i][0], segs[i][1]) < eps) ts[i].push(tOn(segs[i], q));
+    for (const q of segs[i]) if (distPointSeg(q, segs[j][0], segs[j][1]) < eps) ts[j].push(tOn(segs[j], q));
+  }
+  // vértices únicos (rejilla de tamaño eps)
+  const grid = new Map(), V_ = [];
+  const vid = q => {
+    const cx = Math.round(q[0] / eps), cy = Math.round(q[1] / eps);
+    for (let dx = -1; dx <= 1; dx++) for (let dy = -1; dy <= 1; dy++) {
+      const c = grid.get((cx + dx) + "," + (cy + dy));
+      if (c) for (const id of c) if (V.dist(V_[id], q) <= eps) return id;
+    }
+    const id = V_.length; V_.push([q[0], q[1]]);
+    const key = cx + "," + cy;
+    if (!grid.has(key)) grid.set(key, []);
+    grid.get(key).push(id);
+    return id;
+  };
+  const edges = [], seen = new Set();
+  for (let i = 0; i < N; i++) {
+    const t = [...new Set(ts[i].map(v => +v.toFixed(12)))].sort((a, b) => a - b);
+    let prev = vid(V.lerp(segs[i][0], segs[i][1], t[0]));
+    for (let k = 1; k < t.length; k++) {
+      const cur = vid(V.lerp(segs[i][0], segs[i][1], t[k]));
+      if (cur !== prev) {
+        const key = Math.min(prev, cur) + "|" + Math.max(prev, cur);
+        if (!seen.has(key)) { seen.add(key); edges.push([prev, cur]); }
+      }
+      prev = cur;
+    }
+  }
+  // semiaristas: 2k = u→v, 2k+1 = v→u
+  const out = V_.map(() => []);
+  const ang = h => { const e = edges[h >> 1], a = (h & 1) ? e[1] : e[0], b = (h & 1) ? e[0] : e[1]; return Math.atan2(V_[b][1] - V_[a][1], V_[b][0] - V_[a][0]); };
+  const from = h => (h & 1) ? edges[h >> 1][1] : edges[h >> 1][0];
+  const to = h => (h & 1) ? edges[h >> 1][0] : edges[h >> 1][1];
+  for (let h = 0; h < edges.length * 2; h++) out[from(h)].push(h);
+  const pos = new Array(edges.length * 2);
+  for (const list of out) { list.sort((a, b) => ang(a) - ang(b)); list.forEach((h, i) => { pos[h] = i; }); }
+  const next = h => { const list = out[to(h)], i = pos[h ^ 1]; return list[(i - 1 + list.length) % list.length]; };
+  const seenH = new Uint8Array(edges.length * 2), faces = [];
+  for (let h0 = 0; h0 < edges.length * 2; h0++) {
+    if (seenH[h0]) continue;
+    const ids = []; let h = h0, guard = 0;
+    do { seenH[h] = 1; ids.push(from(h)); h = next(h); } while (h !== h0 && ++guard < edges.length * 2 + 5);
+    // elimina "espinas" (tramos recorridos de ida y vuelta)
+    const st = [];
+    for (const id of ids) { if (st.length >= 2 && st[st.length - 2] === id) st.pop(); else st.push(id); }
+    while (st.length >= 3 && st[st.length - 1] === st[1]) { st.shift(); st.pop(); }
+    if (st.length < 3) continue;
+    const pts = st.map(id => V_[id]), area = polyArea(pts);
+    if (area > 1e-12 * (x1 - x0 + 1) * (y1 - y0 + 1)) faces.push({ ids: st, pts, area });
+  }
+  let best = null;
+  for (const f of faces) if (_pointInPoly(p, f.pts) && (!best || f.area < best.area)) best = f;
+  if (!best) return null;
+  const mine = new Set(best.ids);
+  let islands = 0;
+  for (const f of faces) {
+    if (f === best || f.area >= best.area || f.ids.some(id => mine.has(id))) continue;
+    if (_pointInPoly(f.pts[0], best.pts)) islands++;
+  }
+  return { pts: best.pts.map(q => [...q]), islands };
+}
+// Contorno cerrado en p: objeto cerrado bajo el cursor (polilínea cerrada, círculo, elipse) o recinto que lo rodea.
+function _regionAt(doc, view, p) {
+  const hit = doc.pickAt(p, view.px(9));
+  if (hit instanceof Polyline && hit.closed && hit.points.length >= 3) return { pts: hit.points.map(q => [...q]), islands: 0 };
+  if (hit instanceof Circle) return { pts: arcPoints(hit.center, hit.radius, 0, TAU, 360).slice(0, -1), islands: 0 };
+  if (hit instanceof Ellipse) return { pts: hit.polygon(360), islands: 0 };
+  return _faceAt(_boundarySegs(doc), p);
+}
+
+/* ---- comandos ---- */
+function _dimAngAuto(p1, p2, loc) {
+  const x0 = Math.min(p1[0], p2[0]), x1 = Math.max(p1[0], p2[0]), y0 = Math.min(p1[1], p2[1]), y1 = Math.max(p1[1], p2[1]);
+  const dx = Math.max(x0 - loc[0], loc[0] - x1, 0), dy = Math.max(y0 - loc[1], loc[1] - y1, 0);
+  if (dy > dx + TOL) return 0;
+  if (dx > dy + TOL) return Math.PI / 2;
+  return Math.abs(loc[1] - (y0 + y1) / 2) >= Math.abs(loc[0] - (x0 + x1) / 2) ? 0 : Math.PI / 2;
+}
+function _segAt(ctx, q) {
+  const e = ctx.pick(q, 9);
+  if (e instanceof Line) return [e.p1, e.p2];
+  if (e instanceof Polyline) {
+    let best = null, bd = Infinity;
+    for (const pr of e.primitives()) { const d = distPointSeg(q, pr[1], pr[2]); if (d < bd) { bd = d; best = [pr[1], pr[2]]; } }
+    return best;
+  }
+  return null;
+}
+function* _cmdDim(ctx, linear) {
+  const st = ensureDimStyle(ctx.app);
+  let p1 = yield new Prompt("Origen de la 1.ª línea de referencia <Enter=seleccionar objeto>", "point");
+  let p2;
+  if (p1 === null || p1 === undefined) {
+    const q = yield new Prompt("Selecciona la línea o el lado a acotar", "point");
+    if (!q) return;
+    const seg = _segAt(ctx, q);
+    if (!seg) { ctx.log("Selecciona una línea, una polilínea o un rectángulo.", "warn"); return; }
+    p1 = seg[0]; p2 = seg[1];
+  } else {
+    p2 = yield new Prompt("Origen de la 2.ª línea de referencia", "point", { base: p1 });
+    if (!p2) return;
+  }
+  let text = "", orient = null, loc;
+  const mk = cur => new Dim(p1, p2, cur, linear ? (orient !== null ? orient : _dimAngAuto(p1, p2, cur)) : null, st,
+    { layer: ctx.doc.currentLayer, text });
+  while (true) {
+    loc = yield new Prompt(linear ? "Posición de la línea de cota [H=horizontal/V=vertical/T=texto]" : "Posición de la línea de cota [T=texto]",
+      "point", { base: V.lerp(p1, p2, 0.5), keywords: linear ? { H: "h", V: "v", T: "text" } : { T: "text" }, preview: cur => [mk(cur)] });
+    if (loc === "h") { orient = 0; continue; }
+    if (loc === "v") { orient = Math.PI / 2; continue; }
+    if (loc === "text") {
+      const s = yield new Prompt("Texto de la cota (<> = valor medido)", "text");
+      if (s !== null && s !== undefined) text = s;
+      continue;
+    }
+    break;
+  }
+  if (!loc) return;
+  const d = mk(loc);
+  if (d.geom().meas < 1e-9) { ctx.log("La medida es cero: elige otro par de puntos o la otra orientación (H/V).", "warn"); return; }
+  ctx.add(d);
+  ctx.log(`Cota ${linear ? "recta" : "alineada"} · ${d.label(d.geom().meas)}`);
+}
+function* cmdDimAligned(ctx) { yield* _cmdDim(ctx, false); }
+function* cmdDimLinear(ctx) { yield* _cmdDim(ctx, true); }
+
+function* cmdDimText(ctx) {
+  let ents = ctx.sel().filter(e => e instanceof Dim || e instanceof AreaTag);
+  if (!ents.length) {
+    const p = yield new Prompt("Selecciona una cota o un indicador de área <Enter=fin>", "point");
+    if (!p) return;
+    const e = ctx.pick(p);
+    if (!(e instanceof Dim || e instanceof AreaTag)) { ctx.log("Ese objeto no es una cota ni un indicador de área.", "warn"); return; }
+    ents = [e];
+  }
+  const cur = ents[0].text || "<>";
+  const s = yield new Prompt(`Texto (<> = valor medido, - = restablecer) <${cur}>`, "text");
+  let place = null;
+  if (ents.length === 1) {
+    const e = ents[0];
+    place = yield new Prompt("Nueva posición del texto [A=automática] <Enter=mantener>", "point", {
+      keywords: e instanceof Dim ? { A: "auto" } : {},
+      preview: cur2 => ghost([e], c => { if (c instanceof Dim) c.tp = [...cur2]; else c.pos = [...cur2]; })
+    });
+  }
+  const changeText = s !== null && s !== undefined;
+  if (!changeText && !place) return;
+  ctx.touch();
+  for (const e of ents) {
+    if (changeText) e.text = s.trim() === "-" ? "" : s;
+    if (ents.length === 1 && place) {
+      if (place === "auto") e.tp = null;
+      else if (e instanceof Dim) e.tp = [...place];
+      else e.pos = [...place];
+    }
+  }
+  ctx.log(`${ents.length} texto(s) actualizado(s).`);
+}
+
+function* cmdAreaTag(ctx) {
+  const st = ensureDimStyle(ctx.app);
+  const p = yield new Prompt("Punto dentro de un contorno cerrado, o sobre una polilínea cerrada/círculo [P=por vértices] <Enter=fin>",
+    "point", { keywords: { P: "pts" } });
+  if (p === null || p === undefined) return;
+  let reg = null;
+  if (p === "pts") {
+    const pts = [];
+    while (true) {
+      const q = yield new Prompt(pts.length < 3 ? "Vértice" : "Siguiente vértice [C=cerrar] <Enter=cerrar>", "point", {
+        base: pts[pts.length - 1], keywords: { C: "close" },
+        preview: cur => [new Polyline([...pts, cur], pts.length >= 2, { layer: ctx.doc.currentLayer })]
+      });
+      if (q === null || q === undefined || q === "close") break;
+      pts.push(q);
+    }
+    if (pts.length < 3) { ctx.log("Se necesitan al menos tres vértices.", "warn"); return; }
+    reg = { pts, islands: 0 };
+  } else {
+    reg = _regionAt(ctx.doc, ctx.view, p);
+    if (!reg) { ctx.log("No hay un contorno cerrado en ese punto. Revisa que los lados se toquen, o usa P para indicar los vértices.", "warn"); return; }
+  }
+  let text = "";
+  const mk = pos => new AreaTag(reg.pts, pos, st, { layer: ctx.doc.currentLayer, text });
+  const base = mk(null);
+  ctx.log(`Contorno de ${reg.pts.length} vértices · área = ${base.numStr()} · perímetro = ${fmt(base.perim())} ${ctx.doc.units}`);
+  if (reg.islands) ctx.log(`Aviso: el contorno contiene ${reg.islands} recinto(s) interior(es) aislado(s) que NO se descuentan.`, "warn");
+  let q;
+  while (true) {
+    q = yield new Prompt("Ubicación del indicador [T=texto] <Enter=centro del contorno>", "point",
+      { keywords: { T: "text" }, preview: cur => [mk(cur)] });
+    if (q === "text") {
+      const s = yield new Prompt("Texto del indicador (<> = área medida)", "text");
+      if (s !== null && s !== undefined) text = s;
+      continue;
+    }
+    break;
+  }
+  const tag = mk(q || null);
+  ctx.add(tag);
+  ctx.log(`Indicador de área fijado: ${tag.label()}`);
+}
+
+[
+  [["DAL","DIMALI","COTAALINEADA"], "COTA ALINEADA", "draw", "Cota alineada con los dos puntos (o con un lado)", cmdDimAligned, true],
+  [["DLI","DIMLIN","COTA","COTARECTA"], "COTA RECTA", "draw", "Cota recta horizontal o vertical (H/V)", cmdDimLinear, true],
+  [["IA","INDAREA","AREAIND"], "INDICADOR DE ÁREA", "draw", "Mide un contorno cerrado y fija el texto de su área", cmdAreaTag, true],
+  [["DET","DIMTEXTO","EDITACOTA"], "EDITAR TEXTO DE COTA", "edit", "Edita el texto de una cota o indicador de área (también doble clic)", cmdDimText, true, true],
+  [["DST","DEST","DIMESTILO","DIMSTYLE"], "ESTILO DE COTAS", "view", "Texto, marcas, decimales, prefijo y sufijo del sistema de cotas y de áreas", app => app.openDimStyle(), false]
+].forEach(d => {
+  COMMAND_DEFS.push(d);
+  const def = { aliases: d[0], name: d[1], group: d[2], desc: d[3], fn: d[4], gen: d[5], clearSel: !!d[6] };
+  for (const a of d[0]) COMMANDS[a] = def;
+});
+
+/* ---- diálogo de estilo ---- */
+const DS_FIELDS = [
+  ["Cotas"],
+  ["h", "Altura del texto", "num", { min: 0, strict: true }],
+  ["a", "Tamaño de la marca", "num", { min: 0, strict: true }],
+  ["mark", "Tipo de marca", "sel", { arrow: "Flecha", tick: "Marca oblicua (arquitectónica)", dot: "Punto" }],
+  ["eo", "Desfase de la línea de referencia", "num", { min: 0 }],
+  ["ee", "Extensión sobre la línea de cota", "num", { min: 0 }],
+  ["dec", "Decimales", "int", { min: 0, max: 8 }],
+  ["fac", "Factor de medida (p. ej. 0,001 para mm → m)", "num", { min: 0, strict: true }],
+  ["pre", "Prefijo del texto", "txt"],
+  ["suf", "Sufijo del texto (p. ej. « m»)", "txt"],
+  ["sep", "Separador decimal", "sel", { ".": "Punto (.)", ",": "Coma (,)" }],
+  ["trz", "Quitar ceros decimales finales", "chk"],
+  ["Indicador de área"],
+  ["ar_h", "Altura del texto", "num", { min: 0, strict: true }],
+  ["ar_dec", "Decimales", "int", { min: 0, max: 8 }],
+  ["ar_fac", "Factor de área (unidades² → m²)", "num", { min: 0, strict: true }],
+  ["ar_pre", "Prefijo (p. ej. « A = »)", "txt"],
+  ["ar_suf", "Sufijo (p. ej. « m²»)", "txt"]
+];
+App.prototype.openDimStyle = function () {
+  const st = ensureDimStyle(this);
+  let bg = document.getElementById("dimstyle-modal");
+  if (!bg) {
+    bg = document.createElement("div");
+    bg.className = "modal-bg"; bg.id = "dimstyle-modal";
+    bg.innerHTML = `<div class="modal" style="width:min(560px,96vw);"><button class="close">×</button>
+      <h2>Estilo de cotas e indicadores de área</h2><div id="ds-body"></div><div id="ds-err" style="color:#ff5252;font-size:12px;min-height:16px;margin-top:8px;"></div>
+      <label style="display:flex;gap:6px;align-items:center;font-size:12px;margin-top:6px;"><input type="checkbox" id="ds-all" checked>
+      Aplicar también a las cotas e indicadores ya dibujados</label>
+      <div class="pm-btns"><button id="ds-cancel">Cancelar</button><button id="ds-apply" class="primary">Aplicar</button></div></div>`;
+    document.body.appendChild(bg);
+    const close = () => { bg.classList.remove("show"); this.$input.focus(); };
+    bg.querySelector(".close").onclick = close;
+    bg.querySelector("#ds-cancel").onclick = close;
+    bg.addEventListener("mousedown", e => { if (e.target === bg) close(); });
+    bg.addEventListener("keydown", e => {
+      e.stopPropagation();
+      if (e.key === "Escape") { e.preventDefault(); close(); }
+      else if (e.key === "Enter" && e.target.tagName !== "SELECT") { e.preventDefault(); this._applyDimStyle(); }
+    });
+    bg.querySelector("#ds-apply").onclick = () => this._applyDimStyle();
+  }
+  const body = bg.querySelector("#ds-body");
+  body.innerHTML = "";
+  for (const f of DS_FIELDS) {
+    if (f.length === 1) { const h = document.createElement("h3"); h.textContent = f[0]; body.appendChild(h); continue; }
+    const [key, label, type, opt] = f;
+    const row = document.createElement("div"); row.className = "pm-row";
+    const k = document.createElement("span"); k.className = "k"; k.textContent = label;
+    let inp;
+    if (type === "sel") {
+      inp = document.createElement("select");
+      for (const [v, t] of Object.entries(opt)) { const o = document.createElement("option"); o.value = v; o.textContent = t; inp.appendChild(o); }
+      inp.value = st[key];
+    } else if (type === "chk") { inp = document.createElement("input"); inp.type = "checkbox"; inp.checked = !!st[key]; }
+    else { inp = document.createElement("input"); inp.value = type === "txt" ? String(st[key] ?? "") : fmt(+st[key], 12); }
+    inp.dataset.key = key;
+    row.append(k, inp); body.appendChild(row);
+  }
+  bg.querySelector("#ds-err").textContent = "";
+  bg.classList.add("show");
+  setTimeout(() => body.querySelector("input,select").focus(), 0);
+};
+App.prototype._applyDimStyle = function () {
+  const bg = document.getElementById("dimstyle-modal"), st = this.doc.dimStyle, nx = {};
+  for (const f of DS_FIELDS) {
+    if (f.length === 1) continue;
+    const [key, label, type, opt] = f, el = bg.querySelector(`[data-key="${key}"]`);
+    if (type === "chk") nx[key] = el.checked;
+    else if (type === "sel" || type === "txt") nx[key] = el.value;
+    else {
+      const v = parseFloat(String(el.value).replace(",", "."));
+      const bad = !isFinite(v) || (opt.min !== undefined && (opt.strict ? v <= opt.min : v < opt.min)) || (opt.max !== undefined && v > opt.max);
+      if (bad) { bg.querySelector("#ds-err").textContent = `Valor no válido en «${label}».`; el.focus(); return; }
+      nx[key] = type === "int" ? Math.round(v) : v;
+    }
+  }
+  this.doc.pushUndo("estilo de cotas");
+  Object.assign(st, nx);
+  let n = 0;
+  if (bg.querySelector("#ds-all").checked) {
+    for (const e of this.doc.entities) {
+      if (e instanceof Dim) { Object.assign(e.s, _dimStyleOf(st)); n++; }
+      else if (e instanceof AreaTag) { e.s = _areaStyleOf(st); n++; }
+    }
+  }
+  bg.classList.remove("show");
+  this.log(`Estilo de cotas actualizado${n ? ` (${n} objeto(s) existentes)` : ""}.`);
+  this.refreshAll();
+  this.$input.focus();
+};
+App.prototype.initCotas = function () {
+  this.view.el.addEventListener("dblclick", ev => {
+    if (this.gen) return;
+    const r = this.view.el.getBoundingClientRect();
+    const e = this.doc.pickAt(this.view.toWorld([ev.clientX - r.left, ev.clientY - r.top]), this.view.px(8));
+    if (e instanceof Dim || e instanceof AreaTag) {
+      this.doc.clearSelection(); e.selected = true;
+      this.refreshProps(); this.view.draw();
+      this.runCommand("DET");
+    }
+  });
+};
+
+/* ============================================================
    9. IMPRESORA VIRTUAL
    ============================================================ */
 const PAPER_SIZES = { A0:[841,1189], A1:[594,841], A2:[420,594], A3:[297,420], A4:[210,297],
@@ -2982,6 +3678,7 @@ class Plotter {
         const lw = s.lw ? Math.max(0.05, doc.lwOf(e)) : 0.25;
         const dash = (LINETYPES[doc.ltOf(e)] || []).map(x => fmt(x, 2)).join(" ");
         const da = dash ? ` stroke-dasharray="${dash}"` : "";
+        if (typeof e.plotSVG === "function") { o.push(e.plotSVG(X, Y, k, col, lw)); continue; }
         if (e instanceof TextEnt) {
           const p = [X(e.pos[0]), Y(e.pos[1])];
           o.push(`<text x="0" y="0" transform="translate(${fmt(p[0],3)} ${fmt(p[1],3)}) rotate(${fmt(-e.angle*180/Math.PI,3)})" font-size="${fmt(e.height*k,3)}" fill="${col}" stroke="none">${xmlEsc(e.text)}</text>`);
@@ -3401,6 +4098,7 @@ let app;
 window.addEventListener("DOMContentLoaded", () => {
   app = new App();
   window.vectorcad = app;
+  app.initCotas();
   app.$input.focus();
 });
 </script>
