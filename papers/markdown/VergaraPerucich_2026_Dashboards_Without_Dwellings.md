@@ -1,0 +1,1138 @@
+---
+author: VergaraPerucich
+year: 2026
+title: Dashboards Without Dwellings
+source: VergaraPerucich_2026_Dashboards_Without_Dwellings.pdf
+---
+
+# Dashboards Without Dwellings
+
+**Author:** VergaraPerucich
+**Year:** 2026
+**Source:** VergaraPerucich_2026_Dashboards_Without_Dwellings.pdf
+
+---
+
+## Content
+
+### Page 1
+
+Article
+Dashboards Without Dwellings: Big Data, Real-Time Interfaces,
+and the Tokenisation of Housing in the Chilean Smart City
+JoséFranciscoVergara-Perucich
+NúcleodeInvestigaciónCentrodeProduccióndelEspacio(CPE),FacultaddeArquitectura,Animación,Diseñoy
+Construcción,UniversidaddeLasAméricas,Santiago8320000,Chile;jvergara@udla.cl
+Abstract
+Housingtokenisationusuallyreachesthepublicasastoryabouttechnologicalinnovation.
+Theaccountofferedherestartselsewhere,fromitslegalformanditsdataarchitecture,and
+situatesthephenomenonamongtheinfrastructuresofthesmartcity. Chileanevidence
+gatheredbetween2022and2026pointstoaspecificconclusionaboutwhatactuallychanges
+hands. Theobjectthatcirculatesasahousingtokenisacontractualclaimontheincome
+adwellingcangenerate,andneitherthebuildingnoranyrealrightoveritmoveswith
+thetoken;forretailbuyers,thatclaimisdressedinthelanguageofareal-timeinvestment
+dashboard. BecauseChile’sregistryregimestillrunsonnineteenth-centurydemandsof
+solemnityandinscription,titlecannotbetokenisedatall. Theworkaroundadoptedby
+industryactorsistolodgelegalownershipinsideaspecial-purposevehicleandpeeloffthe
+economicrights,whichthencirculateasfractionspricedthroughinternalratesofreturn
+(IRRs). Howthatinterfacepresentsinvestmentopportunitiestoprospectiveretailbuyers
+wasexaminedthroughaheadless-browserextractionofthepublicmarketplaceofReity,a
+ChileanplatformseekingregistrationundertheFintecLaw. Theprocedureconverteda
+JavaScript-renderedsingle-pageapplicationintoastructuredcross-sectionaldatasetofthe
+35listingsactiveon31August2026withcompletefinancialfields. Twofindingsstandout.
+Acrossthe29listingsthatreportbothmetrics,theadvertisedinternalrateofreturnexceeds
+thedisplayedcurrentyield(actualisedCapRate)byameanof7.70percentagepoints,agap
+betweenaprospectivemetricandacurrent-performancemetricthattheinterfaceplaces
+sidebyside. Inaddition,32of35listingscarrya‘100%funded’labelwhileofferingtokens;
+onallofthem,thecardswitchesfrom‘tokensavailable’to‘tokensforsale’anddeparts
+fromtheCLP100,000issueprice,signalsconsistentwithresalebyexistingholdersthatthe
+interfaceleavesunexplained. Threemomentsorganisetheargumentthatfollows,namely,
+speculation,fiction,anddematerialisation. Thedataset,codebookandextractioncodeare
+openlyreleased.
+Keywords: smartcities;bigdata;real-timeinformation;informationarchitecture;digital
+platforms;webscraping;housingfinancialisation;tokenisation;Chile;fictitiouscapital
+AcademicEditors:DiegoGabriel
+RossitandPedroMoreno-Bernal
+Received:2September2026
+Revised:28September2026
+1. Introduction
+Accepted:30September2026
+Published:3October2026 AnaveragehomeinaChileancitycostaround3800UnidadesdeFomento(UF)by
+Copyright:©2026bytheauthor. themiddleof2026. Takeaconventionalmortgagewithatwentypercentdownpayment
+LicenseeMDPI,Basel,Switzerland.
+andthemonthlyrepaymentlandsnearCLP650,000,setagainstmedianlabourearningsof
+Thisarticleisanopenaccessarticle
+CLP757,752[1,2]. Servicingthatloanswallowsupwardsofeighty-fivepercentofatypical
+distributedunderthetermsand
+wage. Thereisnothingconcealedaboutthesum,sincetherealestateindustrypublishes
+conditionsofthe CreativeCommons
+Attribution(CCBY)license. theseveryfiguresitself.
+Data2026,11,262 https://doi.org/10.3390/data11100262
+
+### Page 2
+
+Data2026,11,262 2of23
+Whatdevelopersandfinanciersmakeofthatsumisthequestiondrivingthisstudy.
+Owning a whole apartment now sits out of range for households on the median wage,
+andyetthesamesectorhandsthemfractionalclaimsonrentalyieldsforaslittleasCLP
+100,000[3–5]. Shutoutofthemarketasbuyers,familieswalkbackintoitassmall-scale
+investors. Theflatstaysunaffordablewhileasliceofsomeoneelse’srentremainsperfectly
+purchasable. Democratisationisthewordtheindustryattachestothismove.
+Scholarshipondigitalrealestatehasgrownquickly,thoughitsempiricalweightstill
+clustersintheNorthAtlantic. Legalanalyseshavealreadysettledonepoint,whichisthat
+theseinstrumentshandovernorealownership[6].Fromthequantitative-financeside,stud-
+iestrackfragmentedmicro-investmentinlow-costUSrentalstock[7]andreportthefastest
+growthwherevaluationsaredepressed,demandisweak,andlendingisconstrained[8].
+Anagent-basedsimulationoftheSwedishmarketsuggeststhatswappingconveyancing
+forsmartcontractswouldlifttransactionactivityandpricevolatilityintandem, sothe
+efficiencygainshowsupwithalessstablemarketboltedontoit[9]. Geographerscastthe
+sametrendasreintermediationinanewguise[10,11],afreshlayerofintermediariesthat
+channelscapitaltowardsthosewhoalreadyholditandreproducesracialisedstructures
+of ownership [12]. Latin America hardly registers in any of this. One recent exception
+looked at the promotional discourse of Chilean platforms and turned up narratives of
+liquidityanddemocratisationthatsaidnothingaboutspeculativerisk[13]. Wherethat
+workreadwhattheplatformssay,thepresentstudymeasureswhattheirinterfacesdisplay.
+Settingcivil-lawjurisdictionsasidematters,sincepropertyregimesshiftthemeaningthat
+fractionalownershipcancarryinthefirstplace.
+Aparallelliteraturehasgrownuparoundsmarturbanism,andthetwodebateshave
+stayed oddly disconnected. Critical work shows that real-time dashboards and urban
+indicators help govern the city by settling which conditions become visible and which
+slipoutofview[14–16]. Studiesofdataficationpushthepointintopoliticaleconomyand
+treaturbandataasanassetclassgeneratedthroughaccumulation[17,18]. Amorehopeful
+strandarguesthatdistributedledgersandbehaviouraldesignmightbeturnedtowards
+participatoryurbanfinance,providedcitizenparticipationoutweighscapitalconcentra-
+tion[19];researchonsmartwastegovernancegoesfurther,showingdigitalsystemsthat
+reorganisehowgovernanceactorsdecideinsteadofmerelyfeedingtheminformation[20].
+Housingtokenisationlandsexactlyontheseambetweenthesebodiesofwork,andyet
+neitherhasexamineditclosely. Fortheinvestor, theinstrumentarrivesasaninterface,
+amarketplacecardthattheplatformpresentsasliveandthatcompressesabuilding,its
+tenantsanditslegalstructureintoahandfuloffields. Readasdatainfrastructureinstead
+ofasafinancialproduct,tokenisationbecomessomethinganempiricalstudycanactually
+getholdof.
+Four features make Chile a particularly strategic case. Law 21.521 [21] regulates
+fintechrealestateassetshead-on. ItspropertyregimeisNapoleonic, sotransferoftitle
+runsthroughapublicdeedandthenregistrationattheConservadordeBienesRaíces,with
+unregisteredbearerinstrumentsleftout. TheUnidaddeFomentohaspeggedcontractsto
+inflationsince1967. Ontopofthat,Chileanhousingcountsamongthemostfinancialised
+inLatinAmerica[22,23].
+ThecentralclaimadvancedhereisthatthefractionalisationofChileanhousingworks
+bygoingaroundthephysicalasset;whatgetsdigitisedistheincomeitthrowsoff,whilethe
+dwellingstayswhereitis. Fractionaltitlehasnowaythroughtheregistry,somarketactors
+have engineered a structural split. Legal ownership stays lodged in a special-purpose
+vehicle,whilethefinancialentitlementsattachedtoitaredetachedandsentcirculating
+throughdigitalplatforms. Theempiricalcomponentfocusesontheretailinterfacethrough
+whichthissplitreachesprospectiveinvestors,anditisorganisedaroundthreequestions:
+https://doi.org/10.3390/data11100262
+
+### Page 3
+
+Data2026,11,262 3of23
+ThroughwhichlegalandcontractualarrangementsdoChileanplatformsseparatetitle
+from income(RQ1)? Whichfinancial, spatial andlegal attributesdoes themarketplace
+renderasinvestablemetrics,andwhichremainoutsidethedisplay(RQ2)? Whatdothe
+displayedmetricscommunicateaboutreturns,fundingandavailability,andwheredothey
+remainambiguous(RQ3)? RQ1isaddressedthroughdocumentaryandlegalanalysis;RQ2
+andRQ3areaddressedthroughareproducibleextractionofoneplatform’smarketplaceat
+asingledate,releasedasanopendataset. Thestudyobservestheofferasitispresented;
+investors,transactionsandtradingdynamicslieoutsideitsdata. Theanalysisthenmoves
+throughthreemoments,namely,speculation,fiction,anddematerialisation.
+2. HousingasAsset,DwellingasAbstraction
+2.1. FinancialisationandtheFractionalClaim
+Residentialpropertyhasbeensteadilyrecastasavehicleforaccumulatingwealth,and
+thatshiftsitsattheheartofhousingfinancialisation[24]. Farha[25]trackshowhousing’s
+socialpurposegetspushedasideintheprocess. Laterworkfollowsthesamelogicinto
+digital property management and portfolio selection. Fields [26] names the resulting
+formationtheautomatedlandlord,awealth-buildingstrategyinwhichalgorithmstake
+overthelabourofcoordination.
+Mostofthisscholarshippitchesitsanalysisattheinstitutionalscale,lookingatthe
+mortgage-backed security, the listed landlord, or the private equity fund. Rolnik [27]
+showshowtheworldwidepromotionofhomeownershipturnedhousingrightsintocredit
+relations,andChristophers[28]setsthatconversionwithinabroadersettlementwhere
+incomeflowstothecontrolofassetsmorethantoproduction. Fractionaltokenscarrythe
+settlementdownward. Builtforhouseholdsthatcannotbuy,theinstrumentinvitesthem
+toholdaclaimontheincomeofadwellingtheywillneverlivein. Gettingintohome-
+ownershiphaslongbeenreadasathresholdshapedbysavingscapacity,familytransfers,
+andlabour-marketposition[29]. Tokenisationleavesthatthresholduntouchedandsetsa
+secondonealongsideit,pricedatCLP100,000anddenominatedinadifferentcurrency
+ofsuccess. Holdingsscatteredthiswayarehardtoseetoo. Recenteffortstoestimatein-
+comeandwealthtogetherinsidethenationalaccounts[30]leanonhouseholdsurveysand
+balance-sheetaggregates,andmicro-shareholdingsheldthroughplatformintermediaries
+surfaceinneitherthehousingstatisticsnortheusualregistersoffinancialwealth.
+2.2. TokenisationBetweenPromiseandEvidence
+Theempiricalliteratureontokenisedpropertyissparseandrecent, anditpullsin
+differentdirections. Swinkels[7]recordsgenuineretailparticipationinlow-valueUSrental
+assets, together with thin secondary trading. Cornelli [8] locates the strongest growth
+inweakmarketsandtreatstokenisationasfillinggapsthatconventionalfinanceleaves
+open. MoringielloandOdinet[6]showthatwhatthebuyerlegallyreceivesisacontractual
+claim,whateverthemarketingasserts,whileaninterestinthelanditselfneverchanges
+hands. ProskurovskaandMorawski[9]modelwhatnational-scaleadoptionwouldbring
+andconcludethatthecheerfulgeneralisationsaboutefficiencygainssurviveonlyunder
+narrow assumptions, given that smart-contract conveyancing drives up turnover and
+volatilitytogether.
+Design-led research puts the same technical substrate to other uses. Wang and
+Jiang [31] sketch a platform where ownership itself is made fluid and traded continu-
+ously,sohouseholdscanshifttheirhousingpositionasneedsandincomesmove,with
+liquidityworkingintheserviceofinhabitation. Dorostkar[32]holdsthattokenisedcollec-
+tiverightsmightunderwritehousingcooperatives,commonsgovernance,andanti-eviction
+contracts,solongascorporateissuersdonotdictatethetermsofimplementation. Cran-
+https://doi.org/10.3390/data11100262
+
+### Page 4
+
+Data2026,11,262 4of23
+dall[12]askswhoactuallyendsupwiththeequityonceitissplitintofractionsandfinds
+concentrationreappearingundertheretaillabel. Takentogether,thesestudiessuggestthe
+ledgersettlesnothingonitsown. Whatseparatesacooperativesharefromarenttoken
+isthepropertyrelationencodedinthefraction,andwhoeverdesignsthecontractwrites
+thatrelation.
+One claim keeps surfacing in both the promotional and academic literature and
+deservesitsowntreatment: theclaimthatfractionalisationsuppliesliquidity. Swinkels[7]
+findsownershipgenuinelyspreadamongsmallholdersevenassecondarytradingstays
+thin,whichleavesthecapacitytoexitfarweakerthanthecapacitytoenter. Proskurovska
+andBirch[11]explainwhythatasymmetryisbuiltinandnotapassingphase. Aledger
+can log a transfer with great efficiency, yet it cannot conjure a counterparty, price an
+illiquidbuilding,orgoverntheinstitutionsonwhichvaluationrests. Tokenisationshifts
+the settlement layer and leaves the market-making problem exactly as it found it. For
+the present study, the consequence is methodological. Once liquidity is understood as
+somethingbuyersproduce,andnotthetechnologyoftransfer,whatamarketplaceshows
+aboutavailabilityandfundingturnsintoanobjectofanalysisinitsownright,andSection6
+treatsitthatway.
+2.3. DigitalInstruments,Credit,andtheBankingMargin
+ThemechanisminChilecannotbedescribedwithoutfirstpinningdowntheobject.
+Kochergin and Andryushin [33] set digital assets apart from crypto-assets and digital
+currencies, and they mark off virtual currencies, which do the work of payment and
+savings, from digital tokens, which serve investment or utility ends. Chilean housing
+fractionsfallsquarelyintothesecondclass. Anidentifiablepartyissuesthem,theycome
+with an expected return, and money is neither their design nor their use. Evidence on
+commercialtransactionsincryptocurrenciesshowswhythedistinctionholdsupinpractice,
+sincesettlingordinarysalesincryptostaysoperationallyawkwardforsellersandbuyers
+alike[34]. TheChileanplatformsthereforekeeppesosandUFonthepaymentrailsand
+handtheblockchainthenarrowerjobofregistration.
+Asecondbodyofworkclarifieswhattheinstrumentdoestocredit. Debatesoncentral
+bankdigitalcurrencyaskhowfaradigitalclaimhelddirectlybyhouseholdserodesthe
+intermediatingroleofcommercialbanks,aneffectthatturnsonaccess,remuneration,and
+thetechnologyofissuance[35–37]. Housingtokenisationreproducesasmallerversionof
+thatdisplacementfromtheprivatesidebecausethehouseholdchannelscapitalstraight
+toadeveloperwithnobanksittinginbetween. Whetherthatisagoodthinghangson
+wherethecreditendsup. Workingwith417banksacross46countries,Andries,Ongena,
+,
+and Sprincean [38] find that lending to households and to non-tradable sectors tracks
+system-widedistress,whereascreditextendedtotradableproductiondoesnot. Where
+retailfundingfinancesconstruction,itmovescreditinthedirectionthisevidenceassociates
+withfragility,outsidetheprudentialperimeterthatsupervisesbankexposures.
+2.4. AbstractSpace,FictitiousCapital,andtheInterface
+Tokenisationsitswithinthistrajectory[10,12]. Whathastobedonehereistospell
+outhowthemechanismoperatesundercivillaw. Thatworkdrawsfirstontwotheoretical
+instruments,andthenonathirdthattakesuptheroleoftheinterface.
+ThefirstisLefebvre’sabstractspace[39]. Broughtintobeingthroughthejointaction
+ofcapitalandthestate,abstractspacefavoursexchangevalueasithomogenises,fragments,
+andhierarchises. Tokenisationhandstheseoperationsanunusuallyliteralshape,since
+carvingonedwellingintodigitalsharesdoesallthreeatonce. Whatthebuyermeetsisthe
+https://doi.org/10.3390/data11100262
+
+### Page 5
+
+Data2026,11,262 5of23
+propertyrenderedasaconceptualrepresentationofspacebuiltforinvestment. Here,the
+conceptualmetaphorhasbecomepartoftheproduct’sarchitecture.
+Thesecondinstrumentisfictitiouscapital.ReadingMarx,Harvey[40]describesclaims
+onfutureincomethatcirculateasthoughtheywerepresent-dayassets. Digitalinstruments
+stretchthechainoutfurther. Atokengrantsarightsetbyacontract;thecontractspecifies
+paymentsowedbyanentity;theentityholdsthelegaldeed. Thelogicofthatchainstays
+thesamethroughout,andwhatshiftsisthescaleatwhichitcanbesplit.
+Thosefirsttwoconceptsleaveonequestionopen: Whydoestheclaimcometofeel
+credibletoaretailuser? Theinterfaceiswhatdoesthatjob. Urbandashboardsborrowthe
+visualgrammarofthecontrolroom,whereliveindicatorsmakeachosensetofvariables
+lookcomprehensive[15,16]. Measurementdrawstheboundaryofattention. Anything
+thedashboardleavesoutgrowshardtothinkaboutwithinthetermsthedisplayhasset.
+Ontokenisationmarketplaces,thefieldsonshowareyield,fundingprogress,andtoken
+availability. Inthemarketplaceexaminedhere,occupancy,arrears,buildingageandtenant
+incomedonotappearasfieldsonthelistingcard(Table1). Thedashboardisthustheplace
+whereabstractspaceacquiresaninterface,andwherefictitiouscapitalturnsintoanobject
+thatcanbetapped,compared,andbought.
+Forempiricalpurposes,thedashboardcritique[14–16]yieldsthreeobservableproper-
+tiesofamarketplaceinterface: Selectionconcernswhichattributesofadwellingappear
+asfieldsatall. Hierarchyconcernswhichfieldsareshownbydefaultonthelistingcard
+andwhichonlyafterexpansionoronasecondarypage. Temporalityconcernswhichfields
+arepresentedaslivestatussignals,suchasfundingprogressandavailability. Section3
+translatesthesepropertiesintothevariablesandtheinterfaceauditanalysedinSections5–7.
+Experimentalevidencefromothersettingssuggeststhemediumitselfreshapescon-
+duct. Stiversandcolleagues[41]reportthatparticipantstakeonmarkedlymoreriskwhen
+thesamestakeisdenominatedindigitalcoinsinsteadofcash,withthehouse-moneyeffect
+surfacing under digital media as the break-even effect drops away. Lower moneyness
+loosensthedisciplineahouseholdbringstoitsownsavings. Studiesofuseracceptancein
+blockchainandmetaversecommerceruninthesamedirection,tracingperceivedusefulness
+tocompatibility,enjoyment,andtrust,whileanyjudgementoftheunderlyingassetbarely
+enters[42]. Adisplaythatturnsabuildingintoaprogressbarandapercentageis,onthis
+evidence,anythingbutaneutralinstrumentofinformation.
+TheseconceptsalsothrowlightonapreconditionpeculiartoChile. TheUnidadde
+Fomento,broughtinduring1967,splittheunitofaccountusedincontractsawayfromthe
+nationalpeso. Ahouseholdborrowsunderonemonetarystandardanddrawsitswages
+underanother. Digitalrealestateinstrumentstakethisarrangementoverandrepackageit
+asasellingpoint,shownstraightontheplatformdashboards.
+https://doi.org/10.3390/data11100262
+
+### Page 6
+
+Data2026,11,262 6of23
+Table1.DatadictionaryandinterfaceauditofReitylistingcard.
+WhereItIs Permissible Impermissible
+Variable/Attribute LiteralLabel Type Observed/Derived Valid(n)
+Displayed Inference Inference(s)
+Renta/RentaGaranti-
+Productcategory Buyerprofile;contract
+Assettype zada/Desarrollo/Socio Collapsedcard Categorical Observed 35
+aslabelled terms
+Preferente
+Capitalflows;investor
+Location commune+Santiago Collapsedcard Categorical Observed 35 Listinggeography
+preference
+Collapsedcard Projectedreturnas
+AdvertisedIRR ‘TIR’(±UF) Numeric% Observed 35 Realisedreturns
+(firstreturnfield) displayed
+35(29
+rental-based;
+ActualisedCap Collapsed+ Currentyieldas Totalreturn;
+‘CapRate’ Numeric% Observed 6fixed
+Rate expanded displayed overpricing
+construction-
+debtyields)
+Collapsed+ Fundinglabelas Capitalactually
+Fundedstatus ‘%financiado’ Numeric% Observed 35
+expanded displayed subscribed
+Selleridentity,timeon
+‘tokensdisponibles’
+Wordingseparates offer,executedtrades,
+(funded< Collapsed+
+Tokensavailable Count Observed 35 pre-and whetherpost-funding
+100%)/‘tokensenventa’ expanded
+post-fundingoffers offersareresaleor
+(funded=100%)
+laterissuance
+Collapsed+ Platform’sown Ratingmethodology,
+Riskrating ‘Riesgo’ Categorical Observed 35
+expanded risklabel realisedlosses
+Investment
+Collapsed+
+Term ‘Xañosparasutérmino’ Ordinal Observed 35 horizonas Actualholdingperiod
+expanded
+displayed
+Collapsed+
+Tokenprice ‘Desde$X/token’ CLP Observed 35 Priceasdisplayed Executionprice
+expanded
+https://doi.org/10.3390/data11100262
+
+### Page 7
+
+Data2026,11,262 7of23
+Table1.Cont.
+WhereItIs Permissible Impermissible
+Variable/Attribute LiteralLabel Type Observed/Derived Valid(n)
+Displayed Inference Inference(s)
+Presenceofan Itsreferent(units,
+Unlabelledinteger (none) Nexttoassettype Integer Observed 35 undocumented tranches,holdersor
+field other)
+‘Arriendo
+tradicional’/‘Arriendo
+garantizadoporla
+Leasetypeas
+Leasetype inmobil- Expandedcard Categorical Observed 29 Actualcontractterms
+stated
+iaria’/‘Opcionalmente,
+arriendogarantizado
+porlainmobiliaria’
+Whetherunitsare
+Occupancy — Absent — — 0 —
+leasedorvacant
+Arrears — Absent — — 0 — Paymentdefault
+Buildingage — Absent — — 0 — Condition/depreciation
+Tenantincome — Absent — — 0 — Tenantincomeprofile
+Holdings Concentrationof
+— Absent — — 0 —
+distribution holders
+Subscription
+— Absent — — 0 — Capitalraised
+volume
+https://doi.org/10.3390/data11100262
+
+### Page 8
+
+Data2026,11,262 8of23
+3. Case,Corpus,andMethod
+Thisstudycombinesdocumentaryandlegalanalysiswithanoriginalcross-sectional
+datasetextractedfromaretailmarketplace(Figure1). Thedocumentarystrand,covering
+November2022toAugust2026,establishesthelegalandcontractualobjectthatthetoken
+represents(RQ1). Thedatasetstrandcharacteriseshowthatobjectisrenderedasasetof
+investablemetricsontheplatform’sinterface(RQ2,RQ3). Thetwostrandsareintegrated
+inSections5–7andsummarisedinajointdisplayattheopeningofSection8,whereeach
+findingistracedtoitssourceandtothescopeofinterpretationitsupports.
+Figure1.Theresearchdesign:thedocumentary/legalstrand,themarketplace-datasetstrand,and
+theirintegration.
+3.1. QualitativeCorpus
+Fourgroupsmakeupthequalitativematerial.Thefirstgathersregulatoryinstruments,
+amongthemLeyN◦ 21.521[21],NormadeCarácterGeneralN◦ 502,LeyN◦ 18.045[43],
+and CMF guidance [44–46]. The second holds platform documents, including Reity’s
+regulatoryfilingsandtermsofservicealongsideFraccional.cl’sarticlesoncorporatereor-
+ganisation[3,47–50].Industryjournalismmakesupthethirdgroup. Blockchainevidence
+pulledfromtheAlgorandpublicexplorer[51]formsthefourth. Throughout,corporate
+communicationsarereadasspatialrepresentationsandcross-checkedagainsttherelevant
+statutorysources. DocumentswerecollectedbetweenNovember2022andAugust2026.
+Inclusionrequiredthatadocumenteitherdefinethelegalformoftheinstrument,describe
+theplatform’sproductorcontractterms,orrecordanissuance. Thefinalcorpuscomprises
+7regulatoryinstruments,10platformdocuments,6pressitemsand1blockchainrecord.
+Claimsmadeincorporatecommunicationswereretainedasevidenceofhowplatforms
+https://doi.org/10.3390/data11100262
+
+### Page 9
+
+Data2026,11,262 9of23
+presenttheinstrumentandwerecheckedagainststatutorysourcesbeforebeingtreatedas
+descriptionsofitslegalform.
+3.2. WebScrapingandAutomatedDataExtraction
+Marketplacedatawerecollectedon31August2026todocumenthowtheplatform
+presentstokenisedhousingtoprospectiveretailinvestors. Reitywasselectedbecauseit
+operatesapublicmarketplaceaccessiblewithoutauthentication,liststokenisedhousing
+assetswhileseekingregistrationunderChile’sFintecLaw(NCG502)[3,52],anddisplays
+comparable financial metrics on each listing card—the three conditions required for a
+reproduciblesingle-dateextraction. Fraccionalandotherplatformsenterthestudythrough
+thedocumentarycorpusonlybecausetheirpubliclistingsdonotdisplaythesamesetof
+per-cardmetrics(IRR,CapRate,fundedstatusandtokenavailability)extractedfromReity.
+Mostcontemporaryfintechmarketplacesaresingle-pageapplications(SPAs),whichmeans
+theirassetdataarerenderedthroughJavaScriptoncethepagehasloaded. OrdinaryHTML
+scrapingconsequentlymissestheverymetricsthatuserssee.
+Playwright,anautomatedheadlessbrowser,wasusedtomovethroughtheReity.cl
+marketplace,cleartheinitialloadingsequence,andcapturetherawinterfacetexttiedto
+everylisting. Python3.14’spandaslibraryandRegularExpressions(Regex)thenparsed
+thatunstructureddashboardtextintodiscretequantitativevariables:
+• AssetType: Theassettyperepresentstheproductcategoryaslabelledbytheplatform
+(Renta/RentaGarantizada/Desarrollo/SocioPreferente).
+• Location: Thelocationvariablerepresentsthecommunedisplayedfortheunderly-
+ingasset.
+• AdvertisedIRR:TheadvertisedIRRistheprojectedinternalrateofreturndisplayed
+underthelabel‘TIR’,recordedtogetherwithitsdenomination(‘UF+X%’wherethe
+cardisinflation-indexed,apercentagedisplayedwithoutthe‘UF+’prefix).
+• ActualisedCapRate: TheactualisedCapRaterepresentsthecurrentyielddisplayed
+underthelabel‘CapRate’;thevalueisreportedbytheplatformandwasnotcomputed
+bytheauthor.
+• Funded Status: The funded status is the percentage displayed under the label ‘%
+financiado’,recordedasdisplayed.
+• Tokens Available: Tokens available represents the number of tokens displayed as
+availableforpurchase(‘tokensdisponibles’/‘tokensenventa’)atthesnapshotdate.
+Theextractiondoesnotidentifywhethertheseunitsoriginateinprimaryissuance,
+resalebyexistingholdersorsubsequentissuance.
+• RiskRating: Theriskratingisthecategoryshownunderthelabel‘Riesgo’.
+• Term: Thisvariablerepresentsthehorizonshownas‘Xañosparasutérmino’.
+• TokenPrice: Thetokenpriceisthepriceshownas‘Desde$X/token’.
+• UnlabelledInteger: Anunlabelledintegerisanintegerdisplayednexttotheasset
+typewithnoliterallabelonthecardandnoaccompanyinglegend. Itsreferentcould
+notbeestablishedfromtheinterfaceorfromtheplatform’spublicdocumentation. It
+isnotusedinanyanalysisandisretainedinthereleaseddatasetandcodebookasa
+documentedinstanceofanundocumentedinterfaceelement;Section8.1returnstoit.
+• ProductDescription(expandedview): Theproductdescriptionisthetextstatingthe
+leasetype(‘Arriendotradicional’/‘Arriendogarantizadoporlainmobiliaria’).
+Thescrapercaughteachlistingcardtwice: oncecollapsedandonceafterexpansion.
+Thatleftarawextractionof71rows. Deduplicationkeptthefirstoccurrenceofeachunique
+property URL and brought the count to 36 listings. Of those, 35 carried the full set of
+financialfieldsandmakeuptheanalyticalsample. Theunitofanalysisisthelistingcardas
+observedatthesnapshotdate. Severallistingscorrespondtounitsinthesamebuildingor
+https://doi.org/10.3390/data11100262
+
+### Page 10
+
+Data2026,11,262 10of23
+totranchesofthesameproject(20distinctbuildingsorprojects),sothedatasetdescribes
+the platform’s offer and should not be read as a population of buildings, investors or
+transactions. Becausetheextractioncapturedeverylistingactiveonthemarketplaceatthat
+date,thedatasetconstitutesacross-sectionalcensusoftheplatform’sofferon31August
+2026, and it is not a probability sample of the Chilean market. These eleven fields are
+thecompletesetdisplayedonthecollapsedandexpandedcard;theanalysiscentreson
+thesixfinancialandlocationalfields,andtheremainingfiveareincludedinthereleased
+datasetandcodebook. Fieldsshownonlyonindividualassetpageswerenotextracted
+systematically; Table 1 records, for each attribute discussed in the article, whether it is
+displayed,where,andwhatitallowstheanalysistoinfer. Twoofthe35listings(IDs85
+and86)arecommercialpremises(‘LocalesComerciales’); theyareretainedbecausethe
+platformliststheminthesamemarketplaceandproductcategoriesasapartments,and
+resultsarereportedwithandwithoutthemwhererelevant. Figure2reconstructsthecard
+fromthecapturedtext.
+Figure2. Thelistingcardreconstructedfromcapturedtext(ID51), withthesixextractedfields
+numberedinbothviews. Theschematicreconstructionisfromtheextractedtext;thelayoutand
+typographyoftheoriginalinterfacearenotreproduced.
+3.3. DataValidation,LimitationsandReuse
+Validationranthroughthreestages. First,deduplicationbypropertyURLstripped
+outthepairedcollapsedandexpandedcaptures. Second,Regex-parsedfieldswerechecked
+byhandagainstrenderedmarketplacecardsforarandomsubsetof10listings(of35)and,
+whereavailable,againsttheplatform’sindividualassetpages. Third,anymissingfieldwas
+loggedasmissingandneveraszero. TheCapRateistheonedeliberateexception,asthe
+platformdisplays0.00%forlistingswithoutreportedcurrentrentalincome,whichmakes
+zeroasubstantivelymeaningfulobservation.
+Fourlimitationsbearonreuse. Thepipelinecapturesoneplatformatasinglemoment,
+sonotimeseriescanbeinferredfromit. Itrecordswhattheinterfacedisplays,andthe
+https://doi.org/10.3390/data11100262
+
+### Page 11
+
+Data2026,11,262 11of23
+underlyingcontractsmaycarrydifferentoradditionalterms. Itcontainsnoinformation
+on investors, subscription volumes, trades or time on offer, so claims about investor
+behaviour,marketliquidityoraggregateexposurefalloutsidewhatthedatacansupport;
+wherethearticlediscussesthem,itdoessoasinterpretationgroundedinthedocumentary
+corpus and the comparative literature and marks them as such. Finally, because the
+marketplaceisaclient-renderedsingle-pageapplication,anychangetotheDOMstructure
+ordisplayedcopywillrequirerevisionstotheparsinglayer. Boththeextractionscriptand
+thestructureddatasetarereleasedsotheseconstraintsstayopentoinspection. Table2sets
+outarepresentativesubsetoftheresultingvariables.
+Table2. Extracteddashboardmetricsfromtokenisedhousingplatform(selectedlistings,31Au-
+gust2026).
+Asset Advertised Actual Funded Available
+ID Property Location Denomination
+Type IRR CapRate Status Tokens
+EdificioDomeyko Santiago
+14 Renta CLP 15.20% 0.00% 100% 71
+Depto217 Centro
+EdificioDomeyko Santiago
+12 Renta CLP 15.20% 0.00% 100% 121
+Depto715 Centro
+Locales
+5.33%
+85 Comerciales Ñuñoa Renta UF 8.87%(UF) 23% 4718
+(UF)
+Irarrázaval
+Socio
+ProyectoSan Santiago 8.00%
+68 Prefer- UF 8.30%(UF)* 100% 6
+Francisco(1de5) Centro (UF)*
+ente
+Locales Renta
+Santiago 9.00%
+86 Comerciales Garanti- UF 8.37%(UF) 76% 2744
+Centro (UF)
+Curicó zada
+*SocioPreferenteassetscarryafixedconstruction-debtyield(8.0–8.1%UF)shownunderthe‘Cap
+Rate’ label, not a rental yield. Denomination indicates the unit in which the return is labelled
+onthecard: ‘UF’forinflation-indexedreturnsand‘CLP’forapercentagedisplayedwithoutthe
+‘UF+’prefix.
+4. RegistryFrictionandEngineeringtheDivide
+Chileanrealestatelawthrowsupadirectbarriertobringingdigitalassetsin. Owner-
+shippassesonlythroughanotarisedpublicdeedanditsregistrationattheConservador[47].
+Byadifferentlegalroute,thisarrivesatthesameplaceasMoringielloandOdinet[6]be-
+causeChileanconveyancingrestsonsolemnexecution,aformalitythatresistsautomation.
+Withinsuchasystem,adigitalcoincanneverstandinforadeed.
+Developershaveworkedaroundthatconstraintthroughorganisationaldesign. A
+special-purposevehiclebuysthepropertyandregistersthetitle,andtheeconomicentitle-
+mentsarethensplitintodigitalshares[47,48]. Earlierplatformsleanedonthesociedadpor
+accionesform. Itsadministrativeburdenssoonbecamethepracticalbottleneck,including
+notarialcostsandthetaxdisputestiedtoDeclaration1949[49]. Newermodelsstrippedout
+thecorporatelayerandturnedtostandardisedadhesioncontractsbackedbyring-fenced
+patrimonies[49,50]. Innovationthusclusteredaroundthecorporateregistry,andthehis-
+toriclandregistrywasleftuntouched. Whatcomesoutthefarendofthisengineeringisa
+digitaltokeninthestrictinvestmentsensethatKocherginandAndryushin[33]identify—
+anentitlementtoastreamofpayments,issuedbyanamedparty,carryingnomonetary
+functionandnoattachmenttotheland.
+Financialregulationgrewupalongthesameboundary. UnderLeyN◦18.045,adigital
+asset conveying equity or debt counts as a security [44,53]. NCG 502 then set up the
+https://doi.org/10.3390/data11100262
+
+### Page 12
+
+Data2026,11,262 12of23
+RegistrodePrestadoresdeServiciosFinancieros[3,46,52]. Theserulesdefineandprotect
+theinvestorandregulatethefinancialinstrument,andyetthepeoplelivinginthedigitised
+propertiesneverentertheirfieldofconcern. Taxtreatmentroundsthearrangementoff,
+astheSIIautomaticallyreadsatenant’srentpaymentasadividendreceivedbyamicro-
+shareholder[54,55]. Rentierstatustherebytakesonanadministrativeformwithinreachof
+anyoneholdinganationalIDandCLP100,000.
+5. Speculation: ForgingtheMicro-Landlord
+Theplatform’sfinancialproductscomeinfourkinds: Renttokensattachtocompleted
+units. Guaranteed-renttokensattachtocompletedunitswithaguaranteedrentalincome.
+Developmenttokensrestonsalepromisesforoff-planprojects[47,56]. PreferredPartner
+tokensworkasmezzaninedebt[47,57]. Arightofhabitationcomeswithnoneofthem.
+Together, though, they cover the developer’s whole funding stack (Table 3). Platform
+operatorspresenttheseinstrumentsasaresponsetotighterconstructioncredit[50].
+Table3.Descriptivestatisticsbyassettype(31August2026).
+CapRate Tokens
+Listings Buildings/ IRRMean %‘100%
+AssetType Mean Available
+(n) Projects(n) (Median) Financiado’
+(Median) (Median)
+Rent 18 12 12.74(12.45) 2.84(3.24) 89% 36
+GuaranteedRent 9 6 11.32(11.30) 7.29(7.21) 89% 29
+Development 2 1 11.37(11.37) 7.02(7.02) 100% 20
+PreferredPartner 6 2 8.32(8.30) 8.02(8.00)* 100% 6
+*PreferredPartnerlistingsdisplayafixedUFyield(8.0–8.1%)underthe‘CapRate’label; itisa
+construction-debtreturn,notarentalyield.
+5.1. EmpiricalEvidenceoftheCapitalStack
+Thescrapedmarketplacedatabringthiscapital-stackfunctionintoview. Insidethe
+‘Asset Type’ variable, 17% of active listings were tagged as Socio Preferente (Preferred
+Partner). The platform’s own scraped metadata calls these instruments, in plain terms,
+a way of ‘financing the construction’ (author’s translation) of named developments in
+exchange for fixed UF yields. Six listings, five tranches of Proyecto San Francisco and
+oneofProyectoDomeyko,displayunderthe‘TIR’labelafixedreturnof‘UF+8.3%’or
+‘UF+8.41%’ and a Cap Rate of 8.0–8.1% in UF. The accompanying platform copy asks
+usersto‘bepartofthestartofarealestateprojectbyfinancingtheconstruction’(author’s
+translation).Theseobservationsdocumentthepresenceofretail-facingconstruction-finance
+instrumentsintheplatform’sproductmix: sixof35activelistings,tiedtotwoprojects,
+offerafixedUF-indexedreturninexchangeforfundingconstruction. Thesnapshotrecords
+neitherthecapitalraisedthroughtheseinstrumentsnorthenumberorprofileofsubscribers
+northeirshareineachproject’sfinancing. Itthereforecannotestablishwhether,ortowhat
+extent,retailfundingsubstitutesforbankormezzanineconstructioncredit.
+Thecomparativeliteratureindicateswhythisconfigurationmeritsmonitoring. Cross-
+countryevidenceassociatescredittonon-tradablesectors,realestateincluded,withsystem-
+widedistress[38],anddebatesondigital-currencydisintermediationexaminewhatfollows
+whenhouseholdclaimsbypassbankbalancesheets[35,36]. Whenabankfinancesconstruc-
+tion,theexposuresitsonasupervisedbalancesheetsubjecttocapitalrequirements;when
+retailsubscribersfinanceitthroughaplatform,astalleddevelopmenttransferstheloss
+totheirsavings. Whetherthischannelreachesascalerelevanttofinancialstabilityisan
+empiricalquestionthatthepresentdatacannotanswer,andSection8.3includesitonthe
+researchagenda.
+https://doi.org/10.3390/data11100262
+
+### Page 13
+
+Data2026,11,262 13of23
+5.2. ListingGeography
+At the listing level, the platform’s offer is strongly concentrated. Of the 35 active
+listings,27(77%)arelocatedinSantiagoCentro,three(9%)inEstaciónCentral,twoeach
+(6%)inÑuñoaandLaFlorida,andone(3%)inSanMiguel. Measuredbydistinctbuildings
+orprojects,theSantiagoCentroshareis70%(14of20). Thesesharesdescribewherethe
+platformliststokenisedunits;theydonotmeasurewhereretailcapitalhasbeeninvested,
+whichwouldrequiresubscriptionvolumes. Thepatternisconsistentwiththeinternational
+findingthattokenisationgrowswherevaluesaredepressedandcreditistight[8],andwith
+rent-gapreadingsofSantiago’scentralbelt[58];testingeitherlinkwouldrequirepriceand
+capital-flowdatathatthesnapshotdoesnotcontain.
+Aplainparadoxholdstheproductup,sincehousingunaffordabilityiswhatsupplies
+the conditions for its appeal. The same UF measure that drives mortgage repayments
+beyondthereachofsalariedhouseholdsalsosharpensthepullofindexeddigitalyields,
+anditshiftstheinflationaryburdenontotenantswhereleasesareUF-denominated.
+5.3. SpeculativeReasonandtheExcludedBuyer
+That paradox connects with what Sajter and Kuzmic´ [59] call financial nihilism, a
+conditioninwhichhouseholdsfacinghousinginflation,mountingconsumerdebt,stagnant
+realpayandlowsentimentturntowardsshort-horizon,attention-drivenspeculation. Read
+through this concept, the way the platform frames its product is compatible with such
+conditions. Itsmarketingdrawsonthevocabularyofprudence,withbricks,rent,inflation
+indexationandasupervisedissuer,whilethereturnsitadvertisesareprojectedreturns
+thatdependonassumptionstheplatformdoesnotdiscloseinfull,andexitdependson
+findinganotherbuyer. Thisisaninterpretationofhowtheofferisframed;thisstudydoes
+notobservethemotivesorbehaviourofChileaninvestors.
+Contractually,retailsubscribersjointhedeveloper’sgrowthcoalitionontermsthe
+developersets. Studiesof localgrowthcoalitions notedlong agothat non-capitalistin-
+terestsjoinsuchallianceswithtokenrepresentation,admittedasparticipantsyetgiven
+nomatchingshareofthedecision[60]. Reity’sterms[61]andthecontractual structure
+describedinSection4providenochannelthroughwhichaholdercaninfluencethetiming
+ofasale,thechoiceoftenantorthelevelofrentthatgeneratestheyield.
+6. Fiction: PossessionDevoidofLegalTitle
+Platformcopyaddressesusersaspartownersoftangibleproperty. Reity’stermswrap
+thepromiseinthelanguageof‘democratización’inpropertyinvestment[61]. Thecontracts
+underneath, though, parcel out the economic benefits tied to rental income. Fraccional
+statesthatadigitalfractionmaymatchzerocorporateshares,zerophysicaldeeds,orzero
+blockchaincoins[49]. Whatthepurchaseractuallyholdsisthedigitalrepresentation,while
+thephysicalobjectstaysoutofreach[6].
+6.1. AmbiguousSignalsofFundingandAvailability
+Cornelli[8]showsthatrepurchasearrangementscansustainliquidityduringstress
+episodes. Thefundingandavailabilityfieldsofthismarketplaceraiseapriorquestion,
+namely,whetheraprospectivebuyercantellfromthedisplaywhatkindofoffertheyface.
+Medianfundedstatusstandsat100%(mean=95.29%;SD=17.00%). Atthesnapshot
+date, 32 of 35 listings (91%) displayed the label ‘100% financiado’ together with units
+offeredforpurchase. Theinterfacemarksthissituationintwoways. All32fullyfunded
+listingsdescribetheunitsonofferas‘tokensenventa’(tokensforsale),whereasthethree
+listingsbelow100%describethemas‘tokensdisponibles’(tokensavailable);andthethree
+partiallyfundedlistingsarepricedatexactlyCLP100,000pertoken, whilethe32fully
+https://doi.org/10.3390/data11100262
+
+### Page 14
+
+Data2026,11,262 14of23
+fundedlistingsdisplaypricesfromCLP97,231to111,500(median≈CLP103,600). This
+patternisconsistentwithexistingholdersofferingunitsonfullyfundedlistingsforresaleat
+pricesaboveorbelowissue;theplatform’stermsofuseprovidethatacquiredtokensmay
+subsequentlybesoldtootherinvestors[61]. Thecarddoesnotsayso,andtheextraction
+recordsneitherwhoissellingnorthetimeonoffernorwhethertradesareexecuted. The
+distinctionbetweenprimaryandsecondaryoffersisthusencodedinachangeofwording
+and in the token price and is left for the buyer to decode through a single ‘buy’ action.
+Whatever the origin, the contract attached to each unit carries no vote, no say over the
+timingofasaleandnorightofhabitation[61].
+Thisambiguitymattersinlightofthethinsecondarytradingdocumentedfortokenised
+rentals elsewhere [7] and of the argument that ledgers settle transfers without creating
+counterparties[11]. Iftheseunitsareresaleoffers,astheirlabelsandpricessuggest,the
+displaypresentsaqueueofsellerswiththevisualcuesofasuccessfulassetstillsellingand
+signalsthedifferenceonlythroughwordingandprice,withoutexplanation. Establishing
+whether these offers are resale, and whether and how quickly they clear, requires the
+longitudinalextractionoftheavailability,priceandfundedstatusperlisting,whichthe
+pipelinedevelopedheresupports(Section8.3),andSection8.3statestheoutcomesthat
+wouldconfirmordisplacetheresalereading.
+6.2. DemocratisationWithoutDecision
+Thevocabularytheplatformshavetakenupcarriesalonglineageinhousingresearch.
+Arnstein[62]filedinforming,consultation,andplacationundertokenismonthegrounds
+thateachhandsouttheappearanceofinvolvementwhilekeepingbackthecapacityto
+decide. The evidence since has held steady. Public participation in Portuguese master
+plansworksmostlyasaconduitforindividualprivateinterests,andaffordablehousing
+barely comes up [63]. Residents’ associations in London estate regeneration win real
+concessionsonlywheretheyhadorganisedbeforehandandwhereapublicauthoritystayed
+answerabletothem[64]. Swedishredevelopmentschemessummonplaceidentityinways
+thatputsentimentwhereinfluenceoverinvestmentdecisionsoughttobe[65]. Reading
+participatoryupgradinginAccrathroughLukes’sthreefacesofpower,Azunre[66]shows
+howtheverytechniqueofparticipationcanfixtheboundaryofwhatmaybediscussed.
+Fractional ownership turns the terms of that critique upside down while keeping
+its structure intact. Nobody consults the tenant living in the digitised apartment. The
+micro-investor, by contrast, is consulted without pause, through the interface, on one
+questionalone: whethertobuyornot. Consultationofthiskindisamarkettransaction
+and calling it democratisation lends a financial product the legitimacy that a political
+vocabularyspentdecadesbuildingup. InLefebvre’sformulation[67],therighttothecity
+runsthroughparticipationinthedecisionsthatproduceurbanspaceandtheappropriation
+ofthatspaceforuse. Arenttokendeliversneither;forhouseholdspricedoutofownership,
+itispresentedasanaccessibleformofparticipationinurbanproperty.
+7. Dematerialisation: ReducingtheHometoaYieldStream
+Fraccional’spubliccommunicationssuggestthat,byJuly2026,theplatformhadgiven
+uppricingunitsbysquaremetreandshiftedtovaluingfractionssolelythroughinternal
+rateofreturn[68].Squaremetresdescribeabuilding;IRRdescribesacashflow.Changethe
+unitofmeasurementandanapartmentinÑuñoa,astoragefacility,andamezzanineloan
+canallappearinsideonecategory. Dematerialisationhappens,then,withinthemetricitself.
+OntheReitymarketplace,theIRRislikewisethefirstreturnmetricshownoneverylisting
+card(Table1). TheReitymarketplaceitselflistscommercialpremisesnexttoapartments
+underthesame‘Renta’categories.
+https://doi.org/10.3390/data11100262
+
+### Page 15
+
+Data2026,11,262 15of23
+Architectural theory has come at this displacement from the opposite side. Dami-
+ani[69]describesadisciplinewhoseobjectnolongerstopsatreal-worldmateriality,as
+hybridrealitiesopenspatialquestionsthattheindustrialisedmodelofconstructioncould
+neverpose. Onthemarketplace,theparallelmoveismetrologicalinsteadofrepresenta-
+tional. Thebuildingstaysputinconcreteandsteel, whilethethingputupforsaleisa
+projectedcashflowmadecommensurablewithanyother. WangandJiang[31]imagine
+the fluidisation of ownership as a way to restore the value of housing as a home, with
+liquidityarrangedaroundchanginghouseholdneeds. Chileanplatformskeepthefluidity
+andthrowouttheinhabitation. Liquiditygoestotheinvestor,andthetenantsuppliesthe
+flowthatmakesthatfluidityworthbuying.
+ProjectedReturnandCurrentYieldontheSameCard
+TheadvertisedIRRandactualisedCapRatemeasuredifferentthings. TheIRRisa
+prospective,multi-periodreturnwhosevaluedependsonassumptionsaboutfutureincome
+andexitvalue;thecarddisplaysthehorizon(‘añosparasutérmino’)butnottheincome
+andexit-valueassumptions. TheCapRatedisplayedbytheplatformisacurrent-yield
+metricthatrelatesthepresentrentalincometothetokenprice. Agapbetweenthetwo
+isexpectedbyconstruction,anditssizeisnottreatedhereasanestimateofspeculative
+overpricing. Itisuseddescriptivelyasameasureofthedistancebetweentheprospective
+andcurrentindicatorsdisplayedontheinterfaceforthesamelisting.
+Acrossthe29listingsreportingbothmetrics(thesixSocioPreferentelistingsdisplaya
+fixedconstruction-debtyieldunderthe‘CapRate’label),themeanadvertisedIRRis12.21%
+(SD=1.63%)andthemeanCapRateis4.51%(SD=2.56%). Themeanwithin-listinggapis
+7.70percentagepoints(median=7.51;IQR=4.93),andtheIRRexceedstheCapRatein28
+of29listings(Figure3). ThetwolistingsinthissubsetwhosereturnsarelabelledinUF
+(IDs85and86)arealsoitsonlycommercialpremises;excludingthemwidensthemean
+gapto8.16percentagepoints,andthesinglenegativegapcorrespondstooneofthem.
+Because the dataset is a census of the listings active on one date, p-values do not
+quantifysamplinguncertaintyaboutthatpopulation.Theyarereportedonlyasanauxiliary
+checkontheconsistencyofthegapacrosslistings: apairedt-test(t(28)=10.62,p<0.001;
+Cohen’sd=1.97)andaWilcoxonsigned-ranktest(Z=−4.68,p<0.001)pointinthesame
+direction.Sincelistingsinthesamebuildingorprojectarenotindependent,thecomparison
+wasrepeatedwithvaluesaveragedbybuildingorproject(n=18),yieldingameangapof
+6.91percentagepoints(t(17)=8.76,p<0.001). Theseresultsestablishalargeandconsistent
+gapbetweentwometricsdisplayedsidebysideinthissnapshot;theysaynothingabout
+realisedreturnsorabouttheChileanmarketasawhole.
+TwolistingsdisplayaCapRateof0.00%—units217and715ofEdificioDomeyko—
+each with an IRR of 15.2%. Other units in the same building display low but positive
+yields(0.99%to3.11%),whichisconsistentwithanoperatingbuildinginwhichthesetwo
+unitsproducednorentalincomeatthesnapshotdate;thedatadonotestablishwhy. Both
+cardscarrytheplatform’sriskrating‘Muyconservador’(veryconservative),shownon
+28of35listings;theremainingseven,includingallsixconstruction-financelistings,are
+rated ‘Conservador’, and no listing carries a higher-risk rating. The card thus places a
+double-digitprojectedreturn,azerocurrentyieldandtheplatform’slowestriskratingon
+thesamescreen,withoutdisclosinghowtheratingisassigned.
+Blockchainregistrationroundsthearrangementoff. AtleastoneReityissuance,the
+SocioPreferenteasset2229464160,isregisteredontheAlgorandnetworkasastandard
+asset [51], and press coverage reports the same procedure for others [70,71]. The same
+apartmentthereforelivesintwoparallelregistries,withtheConservadorrecordinglegal
+titleinpublicwhiletheblockchainrecordsholdersofincomeclaimsinprivate. Lefebvre’s
+https://doi.org/10.3390/data11100262
+
+### Page 16
+
+Data2026,11,262 16of23
+triadsurfacesinthisdivision. HomogenisationturnsdwellingsintointerchangeableUF-
+denominatedflows;fragmentationsplitstheassetbyfunction;hierarchisationchannels
+moneyfromrent-payingtenantstodispersedmicro-owners. Tenantsappearinnofieldof
+thelistingcard(Table1);theyentertheproductonlyindirectly,throughtherentalincome
+that the Cap Rate summarises and through the ‘guaranteed rent’ category that insures
+investorsagainstitsabsence. Dematerialisationwritesthehouseholdoutofthedescription
+oftheasset.
+Figure3.AdvertisedIRRandactualisedCapRateperlisting(n=29),orderedbywithin-listinggap.
+TrianglesmarktheCapRateandcirclestheIRR,andthesegmentjoiningthemisthewithin-listing
+gap. BluedenotestheEdificioDomeykolistings,redthesinglenegativegap(ID86),andgreyall
+otherlistings;thedottedverticallinemarks0%.LabelsgivethelistingIDandtheprojectname.
+8. DiscussionandConclusions
+WhatmakesChilemattercomparativelyisthequestionofwhogetstoholdtheclaim.
+Chile’sFintecLaw,setagainsttheUSframework,drawsasupervisedretailperimeterwith
+anentrypriceofonehundredthousandpesos. Accesscanwidenontheincomesideof
+housingevenasexclusionholdsfirmontheuseside. Forahouseholdsavingtowardsa
+https://doi.org/10.3390/data11100262
+
+### Page 17
+
+Data2026,11,262 17of23
+deposit,arenttokencompetesforthesamesavings. Whethertokenpurchasesdelaysaving
+forownershiporaccompanyitisanopenquestionthatholder-leveldatacouldanswer.
+Whatthelegaldesigndoesmakeavailable,atanentrypriceofCLP100,000,istherentier
+position[28].
+ThisresultsharpensthecontinuitythesisthatProskurovskaandPaccoud[10]develop
+(Table4). TheChileancaseshowsregistrysolemnitychannellingfinancialreorganisation.
+Thenineteenth-centuryConservadornowservesasthestablelegalanchorfromwhich
+incomerightscirculateprivatelyandatspeed. Thecivil-lawregistry,longimaginedasa
+brakeonhousingfinancialisation,insteadsuppliestheconditionsforanunusuallyclean
+splitbetweentitleandincome.
+Table4.Jointdisplayofevidence,interpretationandinferentialscope.
+Interpretation NottestedbyThese
+Theme Source ObservedResult
+Supported Data
+Titlestayswiththe
+Registryfriction Statutes,platform Structuralseparation
+vehicle;economic Investormotives
+(Section4) documents oftitleandincome
+rightscirculate
+6/35Socio Retail Volumes,household
+Constructionfinance Assettype,platform
+Preferente;fixedUF construction-finance exposure,systemic
+(Section5.1) copy
++8.3–8.41% offerexists risk
+Listinggeography 27/35listingsin Concentrationofthe Capitalflows,
+Location
+(Section5.2) SantiagoCentro offer investorpreference
+Prudential
+vocabulary;no Compatibilitywith
+Framing(Section5.3) Marketing,terms Investorbehaviour
+holderdecision speculativeframing
+rights
+32/35fullyfunded; Interfaceencodesa
+Executedtrades,
+Funding/availability Fundedstatus, alllabelunits‘en primary/resale
+timeonoffer,
+(Section6.1) tokensavailable venta’anddepart distinctionwithout
+illiquidity
+fromissueprice explainingit
+Juxtapositionof
+Returnmetrics Gap7.70pp;IRR> Overpricing,realised
+IRR,CapRate prospectiveand
+(Section7) Capin28/29 returns
+currentmetrics
+Occupancy,arrears,
+Omittedattributes Effectofomissionon
+Interfaceaudit buildingage,tenant Selectivevisibility
+(Sections2.4and7) decisions
+incomeabsent
+28/35‘Muy Ratingjuxtaposed
+Risklabelling Ratingmethodology,
+Riskrating conservador’,incl. withzerocurrent
+(Section7) realisedlosses
+0%yield yield
+Thedashboardevidenceaddsanempiricallayertothatregulatoryargument. Chile
+hasdrawnaperimeteraroundthefinancialinstrumentandleftitshousingeffectslargely
+beyondregulatoryview. Withinthatperimeter,theinterfacedetermineswhichinformation
+reachesprospectivebuyers. Inthesnapshotanalysedhere,itdisplaysaprojectedreturn
+averaging12.21%nexttoacurrentyieldaveraging4.51%,labels91%oflistingsasfully
+funded while still offering units, and leaves occupancy, tenure and building condition
+offthelistingcard. Thephysicalconditionofthedwellingistherebyplacedoutsidethe
+informationenvironmentinwhichthepurchaseismade.
+https://doi.org/10.3390/data11100262
+
+### Page 18
+
+Data2026,11,262 18of23
+8.1. WhattheOptimisticCaseWouldRequire
+Amorefavourablereadingoftheseinfrastructuresisavailable, anditdeservesan
+answeronitsownterms. DeLosReyes-Martínandcolleagues[19]putforwarddecen-
+tralisedbehaviouralfinanceasaframeworkforparticipatoryurbanfinanceandderive
+acooperativestabilitycondition,wherebydecentralisedgovernanceholdsstablewhere
+participation, amplifiedbytechnologicalenforcement, outweighscapitalconcentration.
+Their Spanish longitudinal evidence links citizen participation and technological adop-
+tiontogovernancestabilityandsocialhousingoutcomesandconcentrationtoinstability.
+Dorostkar[32]arrivesatacomparablepositionbyanotherpath,holdingthattokenised
+collectiverightscouldbackcooperativesandanti-evictioncontractswherevercorporate
+issuersdonotdictatetheimplementation.
+TheChileancontractsandinterfaceallowpartofthatconditiontobeexamined. The
+carddisplaysanunlabelledintegernexttoeachasset(Table1),anditsreferentisnowhere
+documented,sothenumberofparticipantscannotbeestablishedfromthemarketplace;
+thestructureofparticipationcan. EntryrunstoCLP100,000,andtheentitlementitbuys
+carriesnovote,noinfluenceoverdisposal,andnoclaimonuse. Technologicalenforcement
+is in force, and what it enforces is the contract the issuer wrote. On the far side of the
+inequality,concentrationcannotbereadofftheinterfaceatallbecausethedistributionof
+holdingsisneverpublished. Theonevariableoncontinuousdisplay,projectedreturn,is
+thevariableleasttiedtogovernanceofanysort.Measuredagainstthecriteriatheoptimistic
+frameworkitselfsetsout,theChileanconfigurationfailstheparticipationtermandleaves
+theconcentrationtermunobservable.
+Theoutcomeherefollowsfromdesignchoices, andthetechnologyhaslittletodo
+withit, adistinctionthatpointstowhatwouldactuallyhavetochange. Acooperative
+configurationwouldneedthefractiontocarryadecisionright,theregistertodisclosethe
+distributionofholdings,andtheinstrumenttoattachtouseandnottoyieldalone. None
+ofthesedemandsmuchofanAlgorandstandardassettechnically. Eachiscommercially
+unappealingtoanissuerwhoserevenueridesontransactionvolume.
+8.2. RegulatingtheFieldofVision
+Thesmart-citycontributionofthecaseliesintreatingthemarketplaceasareal-time
+urbandashboard. OfthethreepropertiessetoutinSection2.4,thesnapshotdocuments
+selection(theattributesabsentfromTable1),ordering(theTIRprecedestheCapRatein
+thereadingorderofall35cards)andtemporality(fundingandavailabilitysignalswhose
+meaningthedisplayleavesundetermined). Theargumentthereforeconcernsgovernance
+throughselectivevisibilityandmakesnoclaimaboutbehaviouraleffectsoninvestors.
+Thisopensawiderproblemforsmart-citydatagovernance. Mosturbandataregula-
+tionhasbeenbuiltaroundprivacyandsecurity,thatis,whomayaccessarecordandhow
+itmustbeprotected. Tokenisationdashboardsraiseadifferentregulatoryquestion. The
+recordsherearepublicbydesign,andthepotentialharmsitsinwhatthedisplayleaves
+outmorethaninwhatitreveals. Aninterfacewhoseselectionoffieldsomitsmaterialinfor-
+mationcansitcomfortablyinsidefullcompliancewithdataprotectionrulesbecausethose
+rulesgovernhowfieldsaretreatedonceselectedwhilesayingnothingaboutthecriteriafor
+selectingthem. Arequirementtoshowactualisedperformancewhereverprojectedperfor-
+manceappearswouldreachthatprioractofselection,andcurrentsmart-citygovernance
+frameworksarepoorlyequippedforit. Researchondigitallymediatedgovernanceinother
+municipaldomainslandsonaparallelconclusion,namely,thatincentivesaimedatasingle
+actorrarelyyieldsystemicequilibriumbecausethetransmissioneffectstravelthroughthe
+interactionsbetweenactors[20].
+https://doi.org/10.3390/data11100262
+
+### Page 19
+
+Data2026,11,262 19of23
+Fourproposalsfollowfromthelegalandinterfaceanalysis. Theircalibrationdepends
+on data about holdings and volumes that are not currently public, which is itself an
+argumentforthefirst. First,platformsoughttodiscloselocationandtenurecomposition.
+Second, where holdings prove concentrated, aggregated tokenised holdings ought to
+be treated as institutional landlords. Third, the CMF and the Ministerio de Vivienda y
+Urbanismo need a formal coordination mandate. Fourth, dashboard metrics ought to
+comeunderregulatoryoversight,withactualisedCapRatesdisplayedalongsideprojected
+IRRswithequalprominence,theassumptionsbehindprojectedreturnsdisclosed,andrisk
+ratingsaccompaniedbythecriteriausedtoassignthem.
+The technology carries no politics of its own. A distributed ledger that slices rent
+into hundred-thousand-peso fractions can just as readily record shares in cooperative
+housing[31,32]. Thedecisivequestionisthepropertyrelationthefractionencodes. Chilean
+lawleavesroomforacooperativeconfiguration,andtheFintecLawstaysindifferentto
+whicheverconfigurationmarketactorsbuild. Thatlegalindifferenceisitselfapolicychoice.
+8.3. LimitationsandaResearchAgenda
+ThisstudyoffersthefirstempiricalsnapshotoftokenisedhousingmetricsinChile,
+thoughitscross-sectionaldesignisaclearlimitation,sincethedatasetcapturesoneplat-
+formatonepointintime. Fivequestionsshouldshapethenextempiricalstage,andthe
+paragraphthatfollowssetsoutwhateachwouldsettle.Thefirstislongitudinal,askinghow
+dashboardIRRscomparewithactualinvestorpayoutsovertimeandhowfartheprojected
+returnsdisplayedarerealised. ThePlaywrightextractionprotocolbuiltherealreadyruns
+repeatedlywithoutstructuralmodificationandissetupforlongitudinalcollection. The
+secondturnsonwhethertheleasetypesstatedonthecardsmatchactualcontracts,aswell
+astheshareofshort-stayarrangements. Thethirdturnsonwhetherresaleoffersonfully
+funded listings are executed, at what prices, and after how long, which would resolve
+theambiguitydocumentedinSection6.1. Thefourthturnsonthevolumessubscribedby
+instrumenttype,whichwouldestablishthescaleofretailconstructionfinancedocumented
+inSection5.1. Thefifthturnsonthesocioeconomicprofileoftokenholders,whichwould
+meanlinkingplatformregistriestothekindofjointincomeandwealthaccountsnowbeing
+assembledfromhouseholdsurveysandmacroeconomicbalancesheets[30]. Suchevidence
+wouldshowwhetherthepromiseddemocratisationhasmaterialised,orwhether,asinthe
+UnitedStates[12],concentrationhasre-emergedbeneatharetaillabel. Thelongitudinal
+designoutlinedabovebearsunevenlyontheconclusionsreachedhere, anditisworth
+statinginadvancewhichofthemitcanrevise. Twoareindependentofthesnapshot. The
+separationoftitlefromincome(Section4)andtheabsenceofdecisionrightsattachedtothe
+fraction(Sections6.2and8.1)restonstatutesandcontracts,sorepeatedextractionwould
+leave them untouched. Three others are expected to be refined rather than overturned.
+Thecompositionoftheproductmix(Section5.1),theconcentrationoflistingsinSantiago
+Centro(Section5.2)andthemagnitudeoftheIRR–CapRategap(Section7)arepropertiesof
+asingleday’soffer,andrepeatedcapturewouldestablishwhethertheyarestablefeatures
+oftheplatformortheprofileofonemomentinitsportfolio. Theargumentaboutselective
+visibility (Section 8.2) would be strengthened if the fields absent from Table 1 remain
+absentacrosssuccessivecaptures,sinceapersistentomissionisadesigndecisionandnot
+amomentarygap. Oneconclusionisgenuinelyopentoreconsideration. Thereadingof
+fullyfundedlistingswithunitsonofferforresalebyexistingholders(Section6.1)follows
+fromwordingandpriceatasingledate;aseriesinwhichavailabilitycountsmoveinboth
+directions while prices drift would support it, whereas counts that only decline would
+pointtostagedorlaterissuanceandrequirethatpassagetoberewritten. Untilthosedata
+https://doi.org/10.3390/data11100262
+
+### Page 20
+
+Data2026,11,262 20of23
+exist, one question stays decisive: who decides which dwellings become data streams,
+underwhatrules,andwithwhatconsequencesfortherighttothecity?
+Funding:ThisresearchwasfundedbyUniversidaddelasAméricasthroughitsprogramforsupport-
+ingopenaccesspublishingandthroughtheNúcleodeInvestigaciónCentroProduccióndelEspacio.
+InstitutionalReviewBoardStatement: Notapplicable. Thisstudyisbasedonpubliclyavailable
+regulatoryinstruments,platformdisclosures,presscoverage,andblockchainrecords. Nohuman
+participantswererecruited,andnoprimarydatainvolvinghumansubjectswerecollected. Auto-
+matedextractionfromtheReitymarketplacewaslimitedtoasset-levelinformationdisplayedpublicly
+throughtheplatforminterface;itdidnotaccesspersonaldata,useraccounts,orauthenticatedcontent.
+InformedConsentStatement:Notapplicable.
+DataAvailabilityStatement:Thisstudygeneratedanewdataset.Thestructureddatasetoftokenised
+housingassetsextractedfromtheReitymarketplaceon31August2026(reity_listings_35.csv),the
+rawextractionoutput(reity_data_20260831.csv),thecodebookandtheextractionandanalysiscode
+aredepositedinZenodoandopenlyreleased[https://zenodo.org/records/22713487?token
+=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6ImU2NTM5NGQxLTRhZDYtNDI2YS04NTY0LTM2YT
+FlNTVkODFhYSIsImRhdGEiOnt9LCJyYW5kb20iOiJhN2UzNGUwODEzODdlNmM0N2
+Y3MjAwOTZhOTNjMjg4NSJ9.mbJTYaJUenpeKksn7yq8XyPrEQ3sExLfjHZMnfrmh3f7M
+aOzW1FOrDCeKeA-TOkRInQ2gsU3oc3QbV0Hm1JwOw].Thequalitativematerialsanalysed
+inthisstudy—regulatoryinstruments,platformcommunications,industrypress,andblockchain
+records—arepubliclyavailableandcitedthroughoutthemanuscript.
+ConflictsofInterest:Theauthordeclaresnoconflictsofinterest.
+Abbreviations
+Thefollowingabbreviationsareusedinthismanuscript:
+CMF ComisiónparaelMercadoFinanciero(ChileanFinancialMarketCommission)
+MINVU MinisteriodeViviendayUrbanismo(ChileanMinistryofHousingandUrbanPlanning)
+UF UnidaddeFomento(inflation-indexedaccountingunit)
+NCG NormadeCarácterGeneral(CMFgeneralrule)
+SpA SociedadporAcciones(joint-stockcompany)
+SII ServiciodeImpuestosInternos(ChileanInternalRevenueService)
+INE InstitutoNacionaldeEstadísticas(ChileanNationalStatisticsInstitute)
+KYC KnowYourCustomer
+References
+1. Charles, T. Lo Pensó, lo Hizo: Fraccional.cl y el Acceso a la Inversión Inmobiliaria [Interview]. El Mercurio Online, 6 May
+2024.Availableonline:https://www.emol.com/noticias/Economia/2024/05/06/1129649/tomas-charles-fraccional-empresa-
+chilena.html(accessedon30August2026).
+2. InstitutoNacionaldeEstadísticas(INE).EncuestaSuplementariadeIngresos;INEChile:Santiago,Chile,2024.
+3. ReitySpA.PlataformadeInversiónInmobiliariaTokenizada:Garantías,CostosyPólizadeResponsabilidadCivilNCG502;ReitySpA:
+Santiago,Chile,2025.Availableonline:https://www.reity.cl/(accessedon30August2026).
+4. Charles,T.¿CómoCalculamoslaRentabilidad? TIR,PlusvalíayFactoresdeRiesgo[HowWeCalculateReturns]. Fraccional
+Blog,15April2025.Availableonline:https://www.fraccional.cl/blog/posts/como-calculamos-la-rentabilidad(accessedon30
+August2026).
+5. ElDiarioInmobiliario.CuatroAlternativasCreadasporChilenosparaserPropietario.ElDiarioInmobiliario,10October2025.
+Availableonline: https://eldiarioinmobiliario.cl/tendencias/cuatro-alternativas-creadas-por-chilenos-para-ser-propietario/
+(accessedon30August2026).
+6. Moringiello,J.M.;Odinet,C.K.BlockchainrealestateandNFTs.WilliamMaryLawRev.2023,64,1131–1191.
+7. Swinkels,L.Empiricalevidenceontheownershipandliquidityofrealestatetokens. Financ. Innov. 2023,9,45. [CrossRef]
+[PubMed]
+https://doi.org/10.3390/data11100262
+
+### Page 21
+
+Data2026,11,262 21of23
+8. Cornelli,G.WhenBricksMeetBytes:DoesTokenisationFillGapsinTraditionalRealEstateMarkets?BISWorkingPapersNo.1311;Bank
+forInternationalSettlements:Basel,Switzerland,2025.Availableonline:https://www.bis.org/publ/work1311.pdf(accessedon
+30August2026).
+9. Proskurovska,A.;Morawski,J.Blockchainsinhousingmarkets:Asimulationanalysisoftheimpactonhousepricedynamics.
+Hous.Stud.2026;inpress.[CrossRef]
+10. Proskurovska,A.;Paccoud,A.Isthetokenizationofpropertythenextstepinthefinancializationofhousing?Prog.Econ.Geogr.
+2026,4,100068.[CrossRef]
+11. Proskurovska,A.;Birch,K.Tokenizationofeverything? Exploringthelimitsofblockchaintechnologiesinthegovernanceof
+financialmarketsandassets.FinanceSoc.2026,12,220–240.[CrossRef]
+12. Crandall,J.Livingontheblock:Howequitableistokenizedequity?BigDataSoc.2023,10,20539517231208455.[CrossRef]
+13. Vergara-Perucich,F.;Aguirre-Núñez,C.TokenizationofhousinginChile.Speculation,fictionanddematerialization.Rev.Geogr.
+NorteGd.2025,92,25.
+14. Kitchin,R.Thereal-timecity?Bigdataandsmarturbanism.GeoJournal2014,79,1–14.[CrossRef]
+15. Kitchin,R.;Lauriault,T.P.;McArdle,G.Knowingandgoverningcitiesthroughurbanindicators,citybenchmarkingandreal-time
+dashboards.Reg.Stud.Reg.Sci.2015,2,6–28.[CrossRef]
+16. Mattern,S.Missioncontrol:Ahistoryoftheurbandashboard.PlacesJ.2015.[CrossRef][PubMed]
+17. Sadowski,J.Whendataiscapital:Datafication,accumulation,andextraction.BigDataSoc.2019,6,2053951718820549.[CrossRef]
+18. Shelton,T.;Zook,M.;Wiig,A.The‘actuallyexistingsmartcity’.Camb.J.Reg.Econ.Soc.2015,8,13–25.[CrossRef]
+19. DeLosReyes-Martín,O.;Gil,I.P.;Torres-Prunonosa,J.;Gómez-Martínez,R.Decentralizedbehavioralfinance: Abehavioral-
+technologicalframeworkforurbanfreedomandparticipatorygovernance.Cities2026,173,106936.[CrossRef]
+20. Hao,X.;Tian,T.;Li,K.;Zhang,X.;Dong,L.Unpackingthedecision-makingevolutionmechanismofgovernanceactorstowards
+smartmunicipalsolidwaste(MSW)management: Aninsightfromgameapproach. Technol. Forecast. Soc. Change2025,220,
+124319.[CrossRef]
+21. DiarioOficialdelaRepúblicadeChile. LeyN◦21.521de2023,QuePromuevelaCompetenciaeInclusiónFinancieraaTravésdela
+InnovaciónyTecnologíaenlaPrestacióndeServiciosFinancieros;DiarioOficialdelaRepúblicadeChile:Santiago,Chile,2023.
+22. López-Morales,E.GentrificationinSantiago,Chile:Aproperty-ledprocessofdispossessionandexclusion.UrbanGeogr.2016,37,
+1109–1131.[CrossRef]
+23. Vergara-Perucich,J.F.;Boano,C.Vidaurbananeoliberal:Estudiodefactoresdejerarquizaciónyfragmentacióncontraelderecho
+alaciudadenChile.Rev.DireitoCid.2019,11,426–452.[CrossRef]
+24. Aalbers,M.B.TheFinancialisationofHousing:APoliticalEconomyApproach;Routledge:London,UK,2016.
+25. Farha,L.ReportoftheSpecialRapporteuronAdequateHousingasaComponentoftheRighttoanAdequateStandardofLiving,andonthe
+RighttoNon-DiscriminationinThisContext(A/HRC/34/51);UnitedNationsHumanRightsCouncil:Geneva,Switzerland,2017.
+26. Fields,D.Automatedlandlord:Digitaltechnologiesandpost-crisisfinancialaccumulation.Environ.Plan.A2022,54,160–181.
+[CrossRef]
+27. Rolnik, R.Lateneoliberalism: Thefinancializationofhomeownershipandhousingrights. Int. J.UrbanReg. Res. 2013, 37,
+1058–1066.[CrossRef]
+28. Christophers,B.RentierCapitalism:WhoOwnstheEconomy,andWhoPaysforIt?Verso:London,UK,2020.
+29. Cui,C.;Geertman,S.;Hooimeijer,P.AccesstohomeownershipinurbanChina:Acomparisonbetweenskilledmigrantsand
+skilledlocalsinNanjing.Cities2016,50,188–196.[CrossRef]
+30. Blatnik,N.;Kavonius,I.K.;Morais,L.T.Firstattempttoestimateajointdistributionforincomeandwealthwithinthedistributional
+nationalaccountsframework.Rev.IncomeWealth2026,72,e70075.[CrossRef]
+31. Wang,J.;Jiang,W.OTDFplatform:Anewparadigmofhomeownershipforlifewithmobilityandliquidity.Int.J.Archit.Comput.
+2024,22,129–148.[CrossRef]
+32. Dorostkar,E.Beyondsolutionism:Quantum-securedNFTsascontestedinfrastructuresforradicalurbanfutures.LocalEnviron.
+2026,31,732–739.[CrossRef]
+33. Kochergin, D.A.; Andryushin, S.A. Digital assets, crypto-assets and digital currencies: Economic content and potential of
+convergence.St.PetersburgUniv.J.Econ.Stud.2023,39,496–533.[CrossRef]
+34. Yarotska,T.R.;Yakushenko,O.S.Complexityofsellingproductsandservicesforcryptocurrencies.Acad.Rev.2025,2,174–186.
+[CrossRef]
+35. Chen,W.;Phelan,G.Digitalcurrencyandbanking-sectorstability.J.Financ.Stab.2025,78,101414.[CrossRef]
+36. Bhattacharjee,A.;Carlomagno,G.;VeronesePassarella,M.TheimpactofCBDC-baseddisintermediationonthebankingsector
+andtheeconomy:AnSFCapproach.Rev.Polit.Econ.2025;inpress.[CrossRef]
+37. Parra-Polanía,J.A.;Martínez-Ventura,C.OptimalCBDCdesign:Amodelwithtwoaccessmechanismsandtheroleofanonymity.
+J.Financ.Stab.2026,83,101516.[CrossRef]
+38. Andries,A.M.;Ongena,S.;Sprincean,N.Sectoralcreditallocationandsystemicrisk.J.Financ.Stab.2025,76,101363.[CrossRef]
+,
+https://doi.org/10.3390/data11100262
+
+### Page 22
+
+Data2026,11,262 22of23
+39. Lefebvre,H.TheProductionofSpace;Nicholson-Smith,D.,Translator.OriginalWorkPublished1974;Blackwell:Oxford,UK,1991.
+40. Harvey,D.TheLimitstoCapital,Newed.;OriginalWorkPublished1982;Verso:London,UK,2006.
+41. Stivers,A.;Tsang,M.;Deaves,R.;Hoffer,A.Behaviorwhenthechipsaredown:Anexperimentalstudyofwealtheffectsand
+exchangemedia.J.Behav.Exp.Financ.2020,27,100323.[CrossRef]
+42. Toraman,Y.;Geçit,B.B.Useracceptanceofmetaverse:Ananalysisfore-commerceintheframeworkofTechnologyAcceptance
+Model(TAM).Sosyoekonomi2023,31,85–104.[CrossRef]
+43. DiarioOficialdelaRepúblicadeChile.LeyN◦18.045de1981,LeydeMercadodeValores;DiarioOficialdelaRepúblicadeChile:
+Santiago,Chile,1981.
+44. ComisiónparaelMercadoFinanciero(CMF).TodoSobreFintec:LeyN◦21.521yNormadeCarácterGeneralN◦502;CMFEduca:
+Santiago,Chile,2024. Availableonline: https://www.cmfchile.cl/educa/621/w3-propertyvalue-48145.html(accessedon30
+August2026).
+45. ComisiónparaelMercadoFinanciero(CMF).CMFPublicaNormativaqueRegulaelSistemadeFinanzasAbiertasdelaLeyFintec
+(NCGN◦514).3July2024.Availableonline:https://www.cmfchile.cl/portal/prensa/625/w4-article-82737.html(accessedon30
+August2026).
+46. ComisiónparaelMercadoFinanciero(CMF).RegistrodePrestadoresdeServiciosFinancierosyPlazosdeAutorizaciónbajo
+NCG502. 3February2025. Availableonline:https://www.cmfchile.cl/portal/principal/623/w4-propertyvalue-48738.html
+(accessedon30August2026).
+47. ReitySpA.¿QuéesyCómoFuncionaReity?TipologíasdeTokensyRegistroDigital.ReityBlog,14January2025.Availableonline:
+https://maroon-emails-347318.framer.app/blog/que-es-y-como-funciona-reity(accessedon30August2026).
+48. FraccionalSpA.TokenizacióndeInmuebles:VehículosPatrimonialesyDerechosEconómicos;FraccionalSpA:Santiago,Chile,2025.
+Availableonline:https://www.fraccional.cl/(accessedon30August2026).
+49. Charles,T.10RazonesporquéDejamosAtráslasSPAs[TenReasonsWhyWeLeftSpAsBehind].FraccionalBlog,19July2026.
+Availableonline:https://www.fraccional.cl/blog/posts/no-mas-spa(accessedon30August2026).
+50. Charles,T.¿UnMercadoFraccionarioparaNegociosInmobiliarios?[AFractionalMarketforRealEstateBusiness?].Fraccional
+Blog,12March2025.Availableonline:https://www.fraccional.cl/blog/posts/como-financiar-proyectos-en-fraccional(accessed
+on30August2026).
+51. AlgorandFoundation.AlgorandStandardAssetID2229464160:ReitySocioPreferente.PeraAlgorandExplorer.2026.Available
+online:https://explorer.perawallet.app/asset/2229464160/(accessedon30August2026).
+52. ReitySpA.NosEstamosRegulandoantelaCMF;ReitySpA:Santiago,Chile,2026.Availableonline:https://www.reity.cl/regulacion
+(accessedon30August2026).
+53. ComisiónparaelMercadoFinanciero(CMF).DictámenesSobreCalificacióndeTokensyValoresNegociablesbajolaLeyN◦18.045;
+CMFChile:Santiago,Chile,2023.Availableonline:https://www.cmfchile.cl/institucional/inc/dictamenes.php(accessedon30
+August2026).
+54. FraccionalSpA.¿QuéDebesDeclararsiComprasteenFraccional?GuíaTributariayDeclaraciónJurada1949.FraccionalBlog,12
+March2025.Availableonline:https://www.fraccional.cl/blog/posts/que-debes-declarar-si-compraste-en-fraccional(accessed
+on30August2026).
+55. ServiciodeImpuestosInternos(SII).TratamientoTributariodeOperacionesconCriptomonedasyActivosDigitales. 24Oc-
+tober2025. Availableonline: https://www.sii.cl/preguntas_frecuentes/criptomonedas/001_250_7873.htm(accessedon30
+August2026).
+56. Chócale.Reity:StartupPermiteInvertirenPropiedadesconTokensDesde100milPesos.Chócale,14September2023.Availableon-
+line:https://chocale.cl/2023/09/reity-startup-permite-invertir-propiedades-token-100-mil-pesos/(accessedon30August2026).
+57. DiarioFinanciero. ReityLanzaTokenparaMasificarAccesoaInversiónInmobiliaria. FinteChile,13August2024. Available
+online:https://www.fintechile.org/noticias/reity-lanza-token-para-masificar-acceso-a-inversion-inmobiliaria(accessedon30
+August2026).
+58. Smith,N.Towardatheoryofgentrification: Abacktothecitymovementbycapital,notpeople. J.Am. Plan. Assoc. 1979,45,
+538–548.[CrossRef]
+59. Sajter,D.;Kuzmic´,M.Financialnihilismandthephenomenonofmemecoins.Ekon.Vjesn.2026,39,255–271.[CrossRef]
+60. Axford,N.;Pinch,S.GrowthcoalitionsandlocaleconomicdevelopmentstrategyinsouthernEngland: Acasestudyofthe
+HampshireDevelopmentAssociation.Polit.Geogr.1994,13,344–360.[CrossRef]
+61. Reity SpA. Términos y Condiciones de Uso de la Plataforma Reity; Reity SpA: Santiago, Chile, 2025. Available online:
+https://www.reity.cl/terminos-y-condiciones(accessedon30August2026).
+62. Arnstein,S.R.Aladderofcitizenparticipation.J.Am.Inst.Plan.1969,35,216–224.[CrossRef]
+63. Fernandes,M.L.;MorenoPires,S.;Lopes,S.;Polido,A.Unveilingthepublicvoices:Analysisofpublicparticipationinurban
+masterplansinPortugal.Cities2026,173,106961.[CrossRef]
+https://doi.org/10.3390/data11100262
+
+### Page 23
+
+Data2026,11,262 23of23
+64. Nelson,S.;Lewis,J.Residentengagementintheregenerationofsocialhousing:ThecaseofWoodberryDown,London.Int.J.
+Hous.Policy2021,21,48–69.[CrossRef]
+65. Gustavsson,E.;Elander,I.SustainabilitypotentialofaredevelopmentinitiativeinSwedishpublichousing:Theambiguousrole
+ofresidents’participationandplaceidentity.Prog.Plan.2016,103,1–25.[CrossRef]
+66. Azunre,G.A.Unpackingthepracticeofparticipationinparticipatoryslumupgrading:CriticalinsightsfromGhanaianinformal
+settlements.HabitatInt.2025,166,103611.[CrossRef]
+67. Lefebvre,H.WritingsonCities;Kofman,E.,Lebas,E.,Eds.andTranslators;Blackwell:Oxford,UK,1996.
+68. Charles,T.¡FraccionalCambiódeLook!DeMetrosCuadradosaFraccionesyCálculoporTIR[FromSquareMetrestoFractions].
+FraccionalBlog,20July2026.Availableonline:https://www.fraccional.cl/blog/posts/fraccional-cambio-de-look(accessedon30
+August2026).
+69. Damiani,J.Architectureinpostreality:Emergingapproachestospaceinhybridrealities.Archit.Des.2023,93,38–47.[CrossRef]
+70. PortalInnova.FintechChilenaCompletaporPrimeraVezelCicloTotaldeunActivoInmobiliarioTokenizado.PortalInnova,7
+November2024.Availableonline:https://portalinnova.cl/fintech-chilena-completa-por-primera-vez-el-ciclo-total-de-un-activo-
+inmobiliario-tokenizado/(accessedon30August2026).
+71. EcosistemaStartup.FintechChilenaCompletaCicloTotaldeActivoInmobiliarioTokenizado.EcosistemaStartup.5November
+2024.Availableonline:https://ecosistemastartup.com/fintech-chilena-completa-ciclo-total-de-activo-inmobiliario-tokenizado/
+(accessedon30August2026).
+Disclaimer/Publisher’sNote: Thestatements, opinionsanddatacontainedinallpublicationsaresolelythoseoftheindividual
+author(s)andcontributor(s)andnotofMDPIand/ortheeditor(s).MDPIand/ortheeditor(s)disclaimresponsibilityforanyinjuryto
+peopleorpropertyresultingfromanyideas,methods,instructionsorproductsreferredtointhecontent.
+https://doi.org/10.3390/data11100262
+

@@ -1,0 +1,1016 @@
+---
+author: VergaraPerucich
+year: 2026
+title: Excluded Before Arrival
+source: VergaraPerucich_2026_Excluded_Before_Arrival.pdf
+---
+
+# Excluded Before Arrival
+
+**Author:** VergaraPerucich
+**Year:** 2026
+**Source:** VergaraPerucich_2026_Excluded_Before_Arrival.pdf
+
+---
+
+## Content
+
+### Page 1
+
+Article
+Excluded Before Arrival: Labour Informality, Foreign Nationality,
+and Housing as a Barrier to Immigrant Integration in Chile
+FranciscoVergara-Perucich
+NúcleodeInvestigaciónCentroProduccióndelEspacio,UniversidaddeLasAméricas,EdificioJ,piso6,Manuel
+Montt948,Providencia,Santiago7500975,RegiónMetropolitana,Chile;jvergara@udla.cl
+Abstract
+Housingaccessisadecisivebutunderexamineddimensionofimmigrantintegration,shap-
+ingwhethernewcomersachievebelongingorremainconfinedtospatialandinstitutional
+margins. Thisstudyexaminesinformalsettlements(campamentos)inChile,whichhave
+grownby75.9%between2017and2020,reaching120,584familiesby2024–2025,ofwhom
+39.3%areinternationalmigrants. Usinglogisticregressiononthe2022CASENnational
+survey,thisresearchidentifieslabourinformalityandforeignnationalityasthecharacteris-
+ticsmoststronglyassociatedwithresidenceininformalsettlements. Internationalmigrants
+showoddsofresidingininformalsettlementsapproximatelytwicethoseofChileannation-
+als(OR=2.06forLatinAmericanand2.09forotherforeignnationals),andself-employment
+isassociatedwithmoderatelybutsignificantlyhigheroddsrelativetoformalpublic-sector
+employment (OR = 1.49). Campamento residence is treated as an indicator of housing
+exclusionthatmayconstrainbroaderintegrationprocesses, withinamultidimensional
+integration framework. These associations are consistent with the operation of Chile’s
+demand-side subsidy model, which conditions housing access on documented income
+and legal residency status, as a contributor to the exclusion of the populations that the
+integrationpolicyismeanttoserve. Regionwasmodelledasacategoricalfactor,revealing
+substantialterritorialheterogeneityindependentofhouseholdcharacteristics,andajoint
+testoftheinteractionbetweenoccupationalcategoryandnationalitywassignificant,sug-
+gestingthatlabour-marketpositionandnationaloriginmayintersectratherthanoperateas
+fullyindependentaxesofexclusion. Thearticlearguesthatimmigrantintegrationmaybe
+constrainedwhilehousingsystemsremainfilteredthroughlabourformalityrequirements,
+andproposesreforms—expandingsubsidyeligibility,removingresidencythresholds,and
+decentralisinghousinggovernance—asevidence-informedproposalsalignedwithSDG
+8 (Decent Work and Economic Growth), SDG 10 (Reduced Inequalities), and SDG 11
+(SustainableCitiesandCommunities).
+Keywords:immigrantintegration;housingexclusion;informalsettlements(campamentos);
+labourinformality;foreignnationality;Chile;logisticregression;SustainableDevelopment
+AcademicEditors:SecilErdogan
+ErtorerandEsraAri Goals(SDGs);barrierstoinclusion
+Received:29July2026
+Revised:15September2026
+Accepted:19September2026
+Published:24September2026 1. Introduction
+Copyright:©2026bytheauthor. Housing access is a decisive, yet frequently overlooked, dimension of immigrant
+LicenseeMDPI,Basel,Switzerland.
+integration: itdetermineswhetherformallegalstatustranslatesintosubstantivebelonging,
+Thisarticleisanopenaccessarticle
+or whether newcomers remain confined to the spatial and institutional margins of the
+distributedunderthetermsand
+societiesthatreceivethem. Forapproximatelythreedecades,Chileanhousingpolicywas
+conditionsofthe CreativeCommons
+Attribution(CCBY)license. widelycitedasaninternationalreference. Multilateralorganisationsfrequentlycitedthe
+Soc.Sci.2026,15,653 https://doi.org/10.3390/socsci15100653
+
+### Page 2
+
+Soc.Sci.2026,15,653 2of19
+country’sdemand-sidesubsidyprogrammeasevidencethatmarkets,withappropriate
+institutionaldesign,coulddeliveraffordablehousingonamassivescale(Hidalgo2002;
+Rodríguez and Sugranyes 2004; Vergara-Perucich et al. 2023). For a time, the headline
+figuresappearedtosupportthisclaimasthehousingdeficitfellfrom888,681unitsin1992
+toapproximately450,000by2000(HidalgoDattwyler2007).Whatthesereductionsmasked,
+however, was that the Chilean model focused primarily on tenure insecurity—namely,
+householdslackingsecuretenure—ratherthanonthestructural,multidimensionalfactors
+thatunderpinhousinginstability,includingthebarriersthatkeepmigrantsandprecarious
+workersoutsidetheformalsystemaltogether.
+Thewindowfordeferringthisdiagnosisisnowclosing. Between2017and2020,the
+numberofhouseholdslivingincampamentos—theChileantermforinformalsettlements,
+usedthroughoutthisarticle—roseby75.9%(TECHO-Chile2021). Themostrecentnational
+registeraccountsfor1428settlementshousing120,584families,a5.8%increaseoverthe
+2022–2023 figures (TECHO-Chile 2024). By any measure, these statistics are alarming.
+In practice, this is not merely a residual pocket of underdevelopment lingering on the
+fringesofanotherwisefunctionalsystem;rather,itrepresentsthevisiblemanifestationof
+persistentfailuresinbothhousingprovisionandimmigrantintegration(AbufheleMilad
+2023;Alegría-Corona2024;Dohnkeetal.2015;Özler2012).
+ContemporaryacademicresearchonunauthoriseddwellingsinChileconcentrates
+heavily on cross-border population movements. Scholars consistently emphasise this
+demographic factor when analysing settlement proliferation (Alegría and Dovey 2024;
+CelhayandGil2020; Vergara-PerucichandBarramuño2023). Suchscholarlyemphasis
+stemsdirectlyfromthetransformationofresidentprofileswithinprecariouszonesover
+thepreviousdecade(COES2023;TECHO-Chile2024). Investigatorsexaminehowforeign
+arrivalsnavigateexclusionarypropertymarketsthatpushthemtowardirregularencamp-
+ments (Contreras et al. 2019; López-Morales et al. 2018). A parallel qualitative strand
+documentshowmultinationalsettlementcommunitiesorganisecollectivelyinresponseto
+thatexclusion,drawingpredominantlyonthemacrocampamentoLosArenalesinAntofa-
+gasta, where Latin American migrant households form the majority (Arias-Loyola and
+Vergara-Perucich2021;Vergara-PerucichandArias-Loyola2019,2025). Nationalstatistics
+furthercorroboratethesespatialreconfigurationsdrivenbyrecentmigratorywaves(INE
+andSERMIG2023;SJM2024). However,thisemphasisonnationality,oftenfuelledbya
+riseinxenophobicsentiment, hasobscuredamorefundamentalquestion: whatlabour
+conditionsdeterminewhoispermittedtoentertheformalhousingsysteminthefirstplace?
+InChile,informalemploymentandtheabsenceofaformalcontractareriskfactorsatthe
+very core of housing precariousness. Access to subsidies, mortgages, and even formal
+tenancyagreementsmaydependinpracticeondocumentedandreasonablystableincome,
+dependingontheprogrammeormarketsegment1. Whenonefactorsintheslowcreepof
+housingfinancialisationdrivingupprices,realwagesthatremainstagnantformuchofthe
+workforce,andasubsidyframeworkoriginallydesignedfor“formal”citizens,thelikely
+outcomeisanexpandingpopulationofinformallyemployedhouseholdsandmigrantsdis-
+placedtowardtheurbanperiphery.TheChileanparadoxliesinasophisticatedinstitutional
+apparatusthatinadvertentlyreproducesexclusion,coexistingwithaninformalsettlement
+sector that grows year after year and undermines the country’s stated commitment to
+migrantintegration.
+This article argues that living in a campamento is rarely a matter of choice in any
+meaningfulsense;itisalikelyoutcomeforhouseholdsexcludedunderconstrainedcon-
+ditions,associatedwiththeintersectionofprecariouslabour,nationality-basedbarriers,
+andasubsidysystemtailoredtoformallyemployedcitizens. Utilisingalogisticregres-
+sionanalysisofhouseholddatafromthe2022CASENsurvey,2 thisstudyidentifiesthe
+https://doi.org/10.3390/socsci15100653
+
+### Page 3
+
+Soc.Sci.2026,15,653 3of19
+socio-economicfactorsmoststronglyassociatedwithresidenceininformalsettlements,
+treating this residence as an indicator of housing exclusion that may constrain broader
+integrationprocesses,ratherthanasahousing-marketanomaly. Indoingso,theanalysis
+movesbeyondsimplesupply-and-demandexplanationsthatreducethegrowthofthese
+settlementstolandscarcityorpricepressure,andinsteadsituatesthemwithinthebroader
+policyandpracticedebateonhowsocietiesinclude—orexclude—newcomers.
+Fromthesefindings,threecontributionsemergeforthestudyofimmigrantintegration.
+First,thestudyprovidesanempiricallyrobustidentificationoftheprimarycorrelatesof
+residence in informal settlements using nationally representative data, addressing the
+limitationsofpreviousstudiesbasedonsmallerornon-representativesamples. Second,it
+situatesthecross-sectionalresultsalongsideTECHO-Chile’saggregatetemporalregister
+evidence,documentingthatthegrowthofcampamentoshasacceleratedovertheperiod
+observed,thusaddingatemporaldimensionthathousehold-levelregressionalonecannot
+capture. Third,itmovesfromdiagnosistoaconcretereformagendaforintegrationpolicy
+andpractice,framedinalignmentwiththe2030AgendaforSustainableDevelopment.
+The article proceeds as follows. Section 2 reviews the literature and develops the
+theoreticalframework; Section3contextualisesChileanhousingpolicyandthegrowth
+ofcampamentos;Section4describesthedataandmethods;Section5reportstheresults;
+Section6discussesthem;Section7concludeswithpolicyimplicationsandlimitations.
+2. LiteratureReviewandTheoreticalFramework
+2.1. GlobalandRegionalPerspectivesonHousingInformality
+InformalsettlementsacrosstheGlobalSouthexpandduetosocio-economicinequality,
+governance gaps, and the limitations of housing programmes (Alene 2022; Baye et al.
+2020). AlthoughthediscussionnarrowstoLatinAmericaandChilebelow,thisopening
+literatureisdeliberatelydrawnfromthewiderGlobalSouth—includingEthiopia,Iranand
+comparativeworkacrossChina,IndiaandBrazil—becauseinformalsettlementgrowthisa
+sharedstructuralprocessratherthanaregionalexception. Aslandpricesrise,low-income
+householdsarestructurallyexcludedfromformaloptions,apatternreinforcedbyweak
+municipalfinancesandpoorinter-governmentalcoordination(Ren2018). InLatinAmerica,
+thisisexacerbatedbyneoliberalhousingregimes—prioritisingcredit-basedownership
+over public provision—and high labour informality (Contreras et al. 2019; Lonardoni
+andBolay2016). Volatilewagesandlimitedsocialprotectionsheightenprecariousness
+(Garcíaetal.2024). Whilesomesettlementsofferproximitytoemploymentandnetworks
+(CelhayandGil2020),theyoftenentrenchmarginalisation,especiallyformigrantfamilies
+(Hosseini et al. 2023; Lépore and Simpson Lapp 2018). When market-based provision
+replacesredistribution, exclusionrigidifies(Contrerasetal.2019). Labourandhousing
+informality function as two sides of the same regulatory coin, withdrawing protection
+fromthoseoutsidestablesalariedwork(Garcíaetal.2024;LonardoniandBolay2016). In
+Chile,whereaccesstosubsidiesandmortgagesrequiresdocumentedincome,thislinkis
+especiallyacutefortheintegrationprospectsofnewlyarrivedpopulations.
+Migration further exacerbates these pressures. Both internal and international mi-
+grantsfaceprohibitivehousingcostsanddiscriminatorytreatmentwithinformalmarkets,
+oftenbeingconcentratedininformalsolutionsasaresult(Contrerasetal.2019;Rogerson
+2018). The financialisation of housing has deepened urban inequality by transforming
+landanddwellingsintospeculativeassetsratherthansocialgoods(DesaiandLoftus2013;
+Fields and Uffer 2016; Hidalgo Dattwyler et al. 2026). While internal migration drives
+informalurbangrowthwheredisplacementmeetsweakgovernanceandspeculativeland
+markets—typicallyrural-to-urbaninmuchoftheGlobalSouth,thoughinter-regionalin
+already highly urbanised contexts such as Chile (Hosseini et al. 2023; Niva et al. 2019;
+https://doi.org/10.3390/socsci15100653
+
+### Page 4
+
+Soc.Sci.2026,15,653 4of19
+seeSection3)—internationalmigrantsfaceanadditionallayerofexclusion. Nationality
+requirements,residencythresholds,anddocumentationbarriersmayrestrictthemfrom
+bothpublicprogrammesandprivaterentalmarkets(Rogerson2018). Whenthosebarriers
+closetheformalchannels, migrantslookforspaceswheretheycanwait. Itisherethat
+housinginformalityemergesasasalientindicatorofhousingexclusionthatmayconstrain
+broaderintegration.
+TheLatinAmericantrajectoryisinstructive. Neoliberalreformstransformedhous-
+ing into a financial asset and pushed decommodified public provision to the margins
+(NascimentoNetoandSalinasArreortúa2020;Vergara-Perucichetal.2022). Consequently,
+informalsettlementshaveexpandedsteadilyinperi-urbanzonesandredevelopmentar-
+eas,wherelow-incomehouseholdsfindthemselvesdisplacedbyrisinglandvaluesand
+exclusionary planning instruments (Yunda and Sletto 2017). Large-scale state interven-
+tionshavefailedtoresolvethiscontradiction(Ren2018). Twodecadesago,theEconomic
+Commission for Latin America and the Caribbean (ECLAC), known in Spanish as the
+ComisiónEconómicaparaAméricaLatinayelCaribe(CEPAL),concludedthatmetropoli-
+tangrowthintheregionwasoutstrippingtheinstitutionalcapacityofhousingsystems,
+creatingstructuraldeficitsthatdemand-sidesubsidiescouldneverrectifyalone(Rodríguez
+andOviedo2001). Price-to-incomeratioshaveonlyworsenedsince. Ontheurbanfringe,
+theinformalsettlementisoftenlessachoicethanthemostrealisticoutcomeremainingfor
+thoseexcludedfromintegrationpathways(Helbleetal.2020;Yinetal.2019).
+2.2. TheChileanContext: FromSubsidisedOwnershiptoSpatialExclusion
+Chileoccupiesadistinctivepositionwithinthisregionalnarrative. Itsdemand-side
+subsidyprogrammedramaticallyreducedcampamentopopulationsbetweenthe1990sand
+the2000s,andforyearsthecountrywasupheldasproofthathousingmarketscouldflourish
+if the state intelligently subsidised demand (Hidalgo 2002; Rodríguez and Sugranyes
+2004). However, this quantitative reduction masked qualitative and spatial issues that
+wouldeventuallyresurfaceintheformofnewsettlementsandintegrationchallengesona
+differentscale. HidalgoDattwyler(2007)coinedthetermprecariópolisestatal(State-led
+Precariopolis) to describe the vast, peripheral social housing estates produced through
+state-subsidisedprogrammes—estatesdefinedbyurbanisolation,infrastructuredeficits,
+absentservices,andfracturedsocialcohesion. Thedemand-sidemodelgeneratedhousing
+unitsbutfailedtoeliminatehousingprecariousness;rather,itrelocatedit. Rodríguezand
+Sugranyes(2004)capturedthissameoutcomewiththephrase“thecrisisofthosewitha
+roof”(lacrisisdeloscontecho): acrisisofpeoplewhohaveahomebutremaintrapped
+inspatialexclusion—farfromthecity,poorlyconnected,andcutofffromwork,public
+services, and prior social networks. The subsidiary solution had, in effect, traded the
+precariousnessofthecampamentoforadifferentformofperi-urbanisolation. Bothterms
+areusedhereafterwithoutfurthergloss.
+HidalgoDattwyler’s(2019)subsequentworkonsocialhousinginChiletraceshowthe
+gradualshiftinthewelfarestate—awayfromdirectconstructionandtowardsdemand-side
+subsidies—steadily narrowed eligibility criteria. Along the way, informally employed
+households,recentmigrants,andthemostvulnerablefamilieswerefilteredout. Thisis
+preciselywhyinformalsettlementshavepersisteddespitedecadesofhousingprogrammes.
+Policiesfocusedsolelyonthequantitativedeliveryofunitshaverepeatedlyneglectedsocial
+andspatialintegration. López-Moralesetal. (2018)documenttheover-representationof
+immigranthouseholds(particularlyLatinAmericanmigrants)inChileancampamentos,
+linkingthistorentalmarketdiscriminationandobstaclesinaccessingsubsidies. Cortés-
+Urraetal.(2024)arguethatthehousingdeficitremainsconcentratedamongthestructurally
+poor,whoseirregularorinformalincomeskeepthemoutsideanyprogrammetheymight
+https://doi.org/10.3390/socsci15100653
+
+### Page 5
+
+Soc.Sci.2026,15,653 5of19
+wishtoapplyfor. Fromthisperspective,theinformalsettlementisapredictablebyproduct.
+Ahousingmodelbuiltaroundformalemployment,documentedcitizenship,andmortgage
+creditislikely,soonerorlater,toproducearesiduethatintegrationpolicyhasbeenunable
+toabsorb.
+2.3. TheoreticalFramework: HousingExclusionWithinaMultidimensionalConceptofIntegration
+Immigrantintegrationisunderstoodhereasamultidimensionalprocess. Agerand
+Strang’s (2008) conceptual framework distinguishes economic, social, institutional, cul-
+turalandpoliticaldimensionsofintegration,withhousingoperatingasafoundational
+domain that enables or constrains progress across the others. Accordingly, this article
+treatsresidenceinacampamentoasanindicatorofhousingexclusionthatmayconstrain
+broaderintegrationprocesses—notasadirectorcompletemeasureofintegrationitself.
+Tokeeptheargumentprecise, sevendimensionsaredistinguished: housingaccess(ob-
+taining a dwelling through formal channels); housing stability (security of tenure over
+time);residentialsegregation(spatialconcentrationofgroups);spatialexclusion(removal
+fromcentrality,servicesandurbanlife);socialintegration(participationinnetworksand
+institutions);institutionalintegration(accesstoprogrammesandlegalrecognition);and
+belonging(subjectiveandrecognisedmembership). Theempiricalanalysisspeaksdirectly
+tohousingaccessand,byextension,spatialexclusion;implicationsforsocialintegration
+andbelongingareinterpretiveanddevelopedintheDiscussion.
+ThetheoreticallensiscompletedbyLefebvre’s(1996)“RighttotheCity”,whichisnot
+reducibletoaccesstoahousingunitintheabstract:itcallsforaccesstourbanlife,centrality,
+andcollectiveuse-value—conditionsalignedwithintegrationunderstoodasbelonging.
+Onthisbasis,fourhypothesesareformulated:
+H1. Informalemploymentisassociatedwithhigheroddsofresidenceininformalsettlements.
+H2. Foreignnationalityisassociatedwithhigheroddsofresidenceininformalsettlements.
+H3. The association between foreign nationality and settlement residence varies according to
+labour-marketformality.
+H4. Theseassociationsvaryacrossregions.
+3. ChileanHousingPolicyContextandtheGrowthofCampamentos
+The resurgence of informal settlements since 2010 has made visible, on a national
+scale,thelimitsofthedemand-sidemodeldescribedabove. AsnotedintheIntroduction,
+eligibilityforthemainsubsidyprogrammehasbeenconditionedondocumentationand
+incomeverifiability(D.S.N◦ 49,MinisteriodeViviendayUrbanismo2011),andmortgage
+financeandformalrentalcontractslikewisetendtorequiredocumentedincomeinpractice,
+dependingontheprogrammeormarketsegment(Cortés-Urraetal.2024). Householdsin
+informalemploymentorwithrecentmigrationtrajectoriesarethereforedisproportionately
+filteredoutofformalchannels.
+Demographicshiftsandspatialdistributiondefinethecurrentmigrationlandscapein
+Chile. Overthetenyearsbeforetheanalysedsurvey,foreignarrivalssurged. TheCASEN
+wavereferenceperiodinDecember2022recorded1,625,074foreign-bornresidents. This
+digitrepresentsroughly8.2percentofthetotalinhabitants,asignificantjumpfromthe
+4.1percentdocumentedduringthe2017census(INEandSERMIG2023). Justsixcountries
+makeup85.3percentofthesenewcomers. Venezuelaleadswith32.8percent,followed
+byPeruat15.4percent,Colombiaat11.7percent,Haitiat11.4percent,Boliviaat9.1per-
+cent,andArgentinaat4.9percent(INEandSERMIG2023). Between2018and2022,the
+https://doi.org/10.3390/socsci15100653
+
+### Page 6
+
+Soc.Sci.2026,15,653 6of19
+Venezuelandemographicexpandedby55.6percent(INEandSERMIG2023). Thissame
+groupfacesthehighestvulnerabilityregardinglegalstanding. Theyrepresent65.9percent
+ofthe107,223individualslackingregularmigratorystatus. Suchanirregularcondition
+inherentlypreventsfulfillingthepreviouslymentionedCertificadodePermanenciaDefini-
+tivacriteria. Spatially,thesecommunitiesclusterinspecificareas. TheMetropolitanRegion
+containsmostofthem. Meanwhile,Tarapacá,AntofagastaandAricayParinacotashow
+the largest foreign-born shares relative to their local inhabitants, reaching 18.5 percent,
+15.4percentand12.2percent,respectively(CEP2024). Thisdistributionperfectlyoverlaps
+withterritorieswherecampamentosarepredominantlyinhabitedbyforeigners.
+Economic integration for newcomers happens quickly yet remains restricted to a
+limited array of industries. Individuals born abroad predominantly find jobs in retail,
+culinaryservices,buildingprojects,farming,householdchoresandbasicroles. Suchfields
+typically exhibit frequent staff changes, weak union presence and widespread lack of
+formalcontracts(SJM2024). Genderheavilydictatestheseoccupationalpaths. Female
+migrantspredominantlyengageinhouseholdchores,caregivingandretail. Conversely,
+malesmostlysecurerolesinbuildingprojects,transitandmachineryhandling(Garcésand
+García2021). Unregisteredworkintheseareasmanifestsviatwopathwaysmatchingthe
+occupationalvariablesdetailedinSection5. Thesepathwaysinvolvewagedjobslacking
+writtenagreementsandself-employedactivities. Self-employmentamongforeignersstems
+frommarketneedsalongsidebureaucratichurdles. Suchhurdlesencompassthelengthy
+processingofresidencypapersandthedismissalofoverseascredentials. Theseobstacles
+blockaccesstostandardwagedrolesduringtheinitialyearspostarrival(AcuñaandBravo
+2025). Thisdynamiclinkstheforthcomingoccupationalcoefficientstotheaforementioned
+paperworkprerequisites. Identicaladministrativeconditionsthatpostponeformalhiring
+simultaneouslypostponeentryintothehousingsubsidyprogramme.
+DomesticpopulationmovementsacrossChileoperateunderdistinctparadigmscom-
+paredtotheruraltourbanshiftstypicaloftheGlobalSouth. Givenanurbanisationlevel
+nearing88percent,localmobilityoccursprimarilybetweenregionsandcitiesinsteadof
+countrysidetocityroutes. Sincethe1980s, thenationalexportdriveneconomiclayout
+has shaped these patterns (INE 2020). Mainstream trajectories head towards zones fo-
+cusedonresourceextractionandexports(Vergara-Perucich2018). Theseincludemining
+operationsinTarapacá,AntofagastaandAtacama,plusfarminginO’HigginsandMaule,
+alongsideaquacultureinLosLagos. Historically,theseareassentpeopleaway,butrela-
+tivelyhighindustrypayrolshavetransformedthemintomigrationmagnets. Meanwhile,
+the Metropolitan Region has seen its historical pull weaken somewhat (Rodríguez and
+González2006;INE2020). Withinthenorthernminingterritories,arrivingpopulations
+focusontheextractionsitesthemselves. Theyalsotakeupbuildingandtechnicalsupport
+rolesservingthosesites(ArocaandAtienza2008). Subcontractingandinformalhiring
+remainprevalentatthebottomofthepayscalewithinthesespecificindustries.
+Spatialdynamicsarecrucialheresincedomesticandcross-bordermovementstarget
+identicallocations. Tarapacá,AntofagastaandAtacamadrawbothdemographicstreams.
+Thesesameterritoriesexhibitthesharpestcampamentoexpansionsandhostforeignborn
+majorities within their informal settlements. Newcomers of both types penetrate local
+propertymarketslackingsavedcapitalandpriorrentingrecords,alongsidethecommunity
+tiesthatusuallyfacilitateinformalleasing.Simultaneously,theyconfrontpropertyexpenses
+boostedbyminingincomesthatthesenewcomersrarelyactuallyearn. Suchconditions
+clarifywhythestatisticalmodelyieldselevatedcampamentolivingprobabilitiesforrecent
+domesticmovers(OR=1.34)alongsideforeigncitizens. Thesharedelementbetweenthese
+cohortsistheirfreshentryintoatightmunicipalpropertysector,ratherthantheirspecific
+nationalorigin.
+https://doi.org/10.3390/socsci15100653
+
+### Page 7
+
+Soc.Sci.2026,15,653 7of19
+TheexpansionofcampamentosinChilehasnotfollowedalinearorsmoothtrajectory.
+Table1identifiesthreedistinctphases: aperiodofgradualgrowthbetween2007and2017,
+arapidexpansionbetween2017and2022–2023,andcontinued,albeitslower,growthin
+2024–2025. Crucially,thetrendhasneverreversed. Thedatarevealsustained,cumulative
+pressurewithinahousingandintegrationsystemthathasfailedtoabsorbpopulations
+excludedfromformalprovision.
+Table1.Longitudinaltrendoffamiliesincampamentos,Chile(TECHO-Chileregisters).
+Year Settlements Families %MigrantFamilies %ChangeinFamilies
+2007 533 ~27,000 n/a —
+2011 657 ~35,000 n/a 29.6%
+2017 822 46,423 ~8% 32.6%
+2020 969 81,643 ~23% 75.9%
+2021 1091 82,000 27% 0.4%
+2022–2023 1290 113,887 33.5% 38.8%
+2024–2025 1428 120,584 39.3% 5.8%
+Source: TECHO-Chile Registers 2007–2025. Note: Figures prior to 2017 are estimates; post-
+2017figuresarederivedfromcomprehensivenationalregisters. The2017–2020changeof75.9%
+is calculated directly from the family counts reported in this table (81,643 − 46,423 = 35,220;
+35,220/46,423=75.9%).n/astandsforameasurementthatisnotavailableforthisstudy.
+TECHO-Chile’snationalregistersprovideaggregatetemporalevidenceusedtocon-
+textualisethecross-sectionalCASENanalysis. Theyaresuccessiveaggregatecountsrather
+thanahouseholdpanel,andfiguresbefore2017areestimateswhilelaterfiguresderive
+fromcomprehensivenationalregisters, socross-editioncomparisonsshouldbereadas
+indicativeoftrend. Householdsincampamentosgrewby75.9%between2017and2020.
+By2024–2025,1428settlementshoused120,584families—a5.8%increasefromtheprevious
+113,887 families and a 10.6% rise in the total number of settlements. Of these families,
+39.3% are international migrants, up from 33.5% in 2022–2023. In absolute terms, this
+representsa19.7%growthinmigrantfamilies(from39,567to47,391). Inthethreeregions
+wheremigranthouseholdsaremostheavilyconcentratedwithinsettlements—Tarapacá,
+theMetropolitanRegion,andAntofagasta—migrantsnowconstitute63.6%,61.5%,and
+59.9%ofthetotalcampamentopopulation,respectively(TECHO-Chile2024). Whilethis
+mirrorsthebroadergeographyofrecentmigrationtoChile,italsorevealsamorespecific
+trend: migrantsaredisproportionatelyconcentratedincampamentos,apatternconsistent
+withexclusionarybarriersinotherhousingchannels.
+Geographically,thepatternremainsuneven. Tarapacá,theMetropolitanRegion,and
+Antofagastashowmigrantmajoritieswithintheirsettlements,whilethehighestabsolute
+concentrations of families are found in Viña del Mar, Alto Hospicio, Antofagasta, San
+Antonio, and Copiapó—a profile that corresponds closely to TECHO-Chile and Déficit
+Cero’s(2024)“MajorMigrantSettlements”typology,oneoffivedistinctsettlementprofiles
+theyidentify,characterisedbyinternationalmigrantconcentrationinperipheralzoneswith
+severeinfrastructuredeficitsandminimalaccesstopublicservices. COES(2023)estimates
+Chile’s total housing deficit at approximately 650,000 units, attributing the growth of
+campamentos to five structural factors: housing policy, the lived experience of urban
+exclusion,migrationgovernance,gender,andenvironmentalvulnerability. Takentogether,
+theevidenceresistsaconvenientinterpretation: theexpansionofcampamentosinChile
+is not a temporary anomaly but an ongoing structural process associated with labour
+informality,migrantexclusion,andthelimitsofademand-sidehousingpolicythatfailsto
+reachthehouseholdsmostexposedtoboth.
+https://doi.org/10.3390/socsci15100653
+
+### Page 8
+
+Soc.Sci.2026,15,653 8of19
+4. MaterialsandMethods
+Thisstudyutilisesthe2022CASENsurveytoestimatethesocio-economiccorrelates
+of residence in campamentos in Chile. CASEN is the nation’s primary socio-economic
+instrument, covering 202,231 households and providing granular data on income, em-
+ployment, education, health, and housing. Its national scope makes it well-suited for
+analysingcampamentoresidence—anoutcomeoflowprevalence(2.07%ofthesample)at
+acountry-widescale—thoughthe“rareevent”structureofthedatanecessitatesspecific
+methodologicaladjustments.
+Giventhebinarynatureofthedependentvariable,logisticregressionservesasthe
+naturalmodellingframework. Theobjectiveistoestimateinterpretableassociationsbe-
+tweenhouseholdcharacteristicsandtheprobabilityofresidinginaninformalsettlement.
+Resultsarereportedasoddsratios(OR),inaccordancewithstandardpracticeforbinary
+responsemodels(HosmerandLemeshow2000).
+Theunitofanalysisisthehousehold,classifiedbytheself-reportedheadofhousehold
+(“jefe/jefadehogar”,CASENvariablepco1_a). Employment,education,age,nationality
+andmigrationvariablesrefertothehead;mixedhouseholdsheadedbyaChileannational
+are therefore classified as Chilean. To assess whether the reported associations reflect
+nationallyrepresentativepatternsratherthanwithin-sampleassociationsalone,themodel
+wasre-estimatedusingsvyglm()withCASEN’sregionalexpansionfactor(variableexpr);
+resultsarereportedbelow,alongsidetheunweightedspecification.
+The outcome variable is constructed from CASEN’s v13 variable, which records
+housingoccupancystatus. Householdsincategories10and11(campamentosandpre-
+cariousinformalsettlements)areassignedavalueof1;allothersareassigned0. Ofthe
+202,231householdsinthetotalsample,4196(2.07%)fallintotheinformalcategory. Both
+categoriesdescribeoccupancyarrangementsoutsidetheformaltenuresystemrecognised
+elsewhereinthevariable;combiningthemmaximisesstatisticalpowerforarareoutcome.
+Asensitivitymodelseparatingthecategorieswasnotstatisticallystable,giventhesizeof
+thesmallercategory,andwasthereforenotretained.
+Labourinformalitywasreconstructedfromoccupationalcategoryandcontractstatus,
+ratherthanfromanemployment-statusfilterquestion. Anearlierworkingspecification
+usedCASEN’so1variable(“Didyouworkatleastonehourlastweek?”)asaproxyfor
+informality;onreview,thisvariableisalabour-forcefilterquestion,notameasureofinfor-
+mality,anditsresponsecategoriesdonotdistinguishformalfrominformalemployment.
+Thefinalspecificationinsteadcombineso15(“Inyourmainjob,doyouworkas...?”)with
+o19 (written contract status), yielding nine mutually exclusive occupational categories:
+formalpublic-sectorsalariedemployee(referencecategory),formalprivate-sectorsalaried
+employeewithawrittencontract,private-sectorsalariedemployeewithoutorpending
+awrittencontract,self-employed,employer,domesticserviceworker,armedforcesper-
+sonnel,unpaidfamilyworker,andnoteconomicallyactive(householdheadswhodidnot
+workinthereferenceweek). Thisreconstructionincreasedthemodel’sexplanatorypower
+substantiallyrelativetotheearlierspecification(McFaddenR2 rosefrom0.146to0.375),
+consistentwitho15×o19capturingtheintendedconstructmoreaccuratelythanthefilter
+questionitreplaced.
+Explanatoryvariablesareorganisedintofivedomains. Employmentconditionsare
+capturedthroughthereconstructedoccupationalcategorydescribedabove. Educationis
+includedviayearsofschoolingandhighestlevelattained. Migratorystatusdistinguishes
+internalmigrantsfromnon-migrants,whilstnationalitydifferentiatesChileancitizensfrom
+LatinAmericanandnon-LatinAmericanforeignnationals. Socio-economicstandingis
+measuredthroughNSE(socio-economiclevel3),povertystatus,andincomedeciles. Finally,
+demographiccontrolsencompassage,region,andovercrowding(definedaspersonsper
+https://doi.org/10.3390/socsci15100653
+
+### Page 9
+
+Soc.Sci.2026,15,653 9of19
+bedroom). Regionwasmodelledasacategoricalfactorwith16levels(RegiónMetropoli-
+tanaasreference),ratherthanasalinearnumericscale,becauseChileanadministrative
+regionsdonotrepresentanorderedcontinuum;alikelihoodratiotestconfirmedthatthe
+categorical specification fits significantly better than a model without regional controls
+(∆deviance=1148.6,df=15,p<0.001),supportingH4.
+Onemodellingdecisionwarrantsexplicitmention: indicatorsofhousingdeprivation
+fromtheMPI-CASEN(MultidimensionalPovertyIndex)—includinglackofbasicservices,
+structural condition, overcrowding, and habitability—were deliberately excluded. The
+MPI’s categorical overcrowding indicator is a component of housing deprivation itself
+andwasexcludedtoavoiddefinitionaloverlapwiththeoutcome;“personsperbedroom”,
+retainedinthemodel,isacontinuousdemographiccovariatedescribinghouseholdcom-
+positionrelativetodwellingsize, treatedasacontrolratherthanaproximateindicator
+of settlement residence. Each excluded MPI item indexes a condition or consequence
+simultaneouswithsettlementresidence. Theirinclusionwouldhavemechanicallyinflated
+themodelfitwhilstobscuringthestructuralfactorsassociatedwithcampamentoresidence
+longbeforesuchdeprivationsmanifest.
+Missing valuesweretreateddifferentlydepending on theirsubstantive origin, fol-
+lowing inspection of CASEN’s questionnaire flow logic. Variables whose missingness
+reflects a genuine skip pattern—values that are structurally “not applicable” because a
+preceding filter question routes respondents away from them (migratory origin, 53.3%
+missing; highest educational level attained, 26.3% missing)—were coded as an explicit
+“notapplicable”categoryratherthanmergedwiththesubstantivereferencelevel,toavoid
+conflatingadistinctpopulationwiththereferencegroup. Variableswithatrivialrateof
+genuinemissingness(povertystatusandincomedecile,both0.06%)wererecodedtozero,
+consistentwiththesurvey’sowntreatmentofnon-applicablemultidimensional-poverty
+items. Categoricalvariables(socio-economiclevel,occupationalcategory,education,migra-
+toryorigin,andnationality)wereconvertedintofactors. Thesamplewasthenpartitioned
+intoatrainingset(80%)andatestset(20%)usingstratifiedsamplingwithafixedseed
+(seed=123)toensuretheproportionofinformalhouseholdsremainedconsistentacross
+bothsets.
+ModelperformanceisevaluatedusingMcFadden’sR-squared,theAkaikeInformation
+Criterion(AIC),andaconfusionmatrixappliedtothetestset. Giventherareeventstruc-
+tureoftheoutcome(2.07%),thedefaultclassificationthresholdof0.5provedeffectively
+redundant. FollowingKingandZeng’s(2001)diagnosisoftherare-eventsproblem,the
+classification threshold is treated as a decision distinct from estimation-bias correction:
+loweringthethresholdfrom0.50to0.05affectsonlyhowpredictedprobabilitiesareclassi-
+fiedforevaluationanddoesnotcorrectrare-eventsestimationbias(e.g.,Firth’spenalised
+likelihood),whichwasnotappliedandisnotedasalimitation. Themodel’saimisthe
+identificationofcorrelatesofsettlementresidence,notout-of-samplepredictionorformal
+classification. Varianceinflationfactors(VIF)werecomputedforthefinalmodeltoassess
+multicollinearity; all values were below acceptable thresholds (GVIF(1/2·df) < 2.3 for all
+covariates),indicatingnoproblematiccollinearityamongpredictors. Allanalyseswere
+conductedinR(version4.5.0)usingtheglm(),svyglm(),caret,car,andhavenpackages.
+5. Results
+5.1. LogisticRegressionResults
+Table2reportsthelogisticregressionestimatesbasedonthetrainingsample. The
+McFaddenR-squaredis0.375andtheAICis20,530.7,asubstantialimprovementinfitover
+the earlier specification (R2 = 0.146) attributable to the corrected occupational-category
+variabledescribedinSection4. H1andH2aresupportedbythecoefficientsbelow. H4
+https://doi.org/10.3390/socsci15100653
+
+### Page 10
+
+Soc.Sci.2026,15,653 10of19
+issupported: region,enteredasacategoricalfactor,isjointlysignificant(likelihoodratio
+test,∆deviance=1148.6,df=15,p<0.001). H3receivesqualifiedsupport. Aninteraction
+term between occupational category and nationality improves model fit relative to the
+model without interaction (likelihood ratio test, ∆deviance = 26.75, df = 16, p = 0.044),
+but no individual interaction coefficient reaches significance. The joint test therefore
+indicatesthattheassociationbetweenlabour-marketpositionandcampamentoresidence
+variesmodestlyacrossnationalitygroups,whilethedatadonotidentifywhichspecific
+occupationalcontrastsdrivethatvariation. Thisisreadassuggestiveevidencethatthese
+axesintersect,withoutlocatingpreciselywheretheinteractionoperates.
+Table2.Logisticregressionresults:predictorsofinformalsettlementresidence,Chile(CASEN2022).
+Variable OR 95%CI p Sig.
+Occupationalcategory(ref.: formalpublic-sectorsalaried)
+Formalprivate-sectorsalaried
+1.18 0.93–1.50 0.176
+(withcontract)
+Informalprivate-sectorsalaried
+1.09 0.82–1.46 0.559
+(no/pendingcontract)
+Self-employed 1.49 1.17–1.90 0.001 **
+Employer 1.06 0.71–1.59 0.767
+Domesticservice 0.70 0.45–1.10 0.119
+Armedforces 0.50 0.12–2.05 0.332
+Unpaidfamilyworker 0.65 0.25–1.70 0.380
+Noteconomicallyactive 0.93 0.73–1.17 0.519
+Nationality(ref.: Chilean)
+Foreignnational(Other) 2.09 1.84–2.38 <0.001 ***
+Foreignnational(LatinAmerican) 2.06 1.45–2.93 <0.001 ***
+Education
+Yearsofschooling 0.90 0.88–0.92 <0.001 ***
+Socio-economiclevel(ref.: E,lowest)
+D 0.28 0.25–0.32 <0.001 ***
+C3 0.05 0.03–0.08 <0.001 ***
+C2 0.50 0.46–0.58 <0.001 ***
+C1a 0.68 0.31–1.50 0.336
+ABC1 0.24 0.18–0.31 <0.001 ***
+Incomeandpoverty
+Povertystatus(higher=lesspoor) 0.34 0.31–0.36 <0.001 ***
+Nationalincomedecile 1.05 1.02–1.08 0.003 **
+Migration(ref.: noresidentialchange)
+Internalmigrant(fromotherregion) 1.34 1.14–1.58 <0.001 ***
+Migrationstatusnotapplicable 1.35 1.19–1.54 <0.001 ***
+Demographics
+Age 0.98 0.98–0.99 <0.001 ***
+Overcrowding(personsperbedroom) 1.01 0.99–1.04 0.407
+Jointly
+Region(ref.: RegiónMetropolitana;
+significant,
+15additionallevels)
+LRTp<0.001
+Note: Trainingsample; McFaddenR2 =0.375; AIC=20,530.7. Regioncoefficients(15levels)are
+reportedinTableA1ratherthaninthemaintableforconciseness; thejointlikelihoodratiotest
+confirmssignificantregionalheterogeneity(∆deviance=1148.6,df=15,p<0.001).TheSig.column
+followsconventionalthresholds(***p<0.001;**p<0.01)asavisualaid;exactp-valuesarereported
+intheadjacentcolumn.
+https://doi.org/10.3390/socsci15100653
+
+### Page 11
+
+Soc.Sci.2026,15,653 11of19
+Self-employmentisassociatedwithmarkedlyhigheroddsofcampamentoresidence
+relativetoformalpublic-sectorsalariedemployment(thereferencecategory),consistent
+withthebroaderpatternthatnon-salariedandnon-contractualworkarrangementscarry
+thehighestexposuretoinformalhousing. Householdswhoseheadisself-employedare
+associatedwithhigherodds(OR=1.49, 95%CI:1.17–1.90, p=0.001)thanthosewitha
+formalpublic-sectorjob.
+Foreign nationality emerges as a strong correlate, directly bearing on integration
+outcomes. Non-LatinAmericanforeignnationalsareassociatedwith2.09timeshigher
+oddsofsettlementresidencethanChileannationals(95%CI:1.84–2.38,p<0.001),while
+LatinAmericanmigrantsareassociatedwith2.06timeshigherodds(95%CI:1.45–2.93,
+p<0.001). Internalmigrationisassociatedinthesamedirection: householdswhosehead
+movedfromanotherChileanregionwithinthepreviousfiveyearsshowhigheroddsof
+campamentoresidencethanthosewithnoresidentialchange(OR=1.34,95%CI:1.14–1.58,
+p<0.001). Thisreversesthenegativeassociationreportedundertheearliermisspecified
+occupationalvariableandindicatesthatrecentresidentialmobility—internalaswellas
+international—isassociatedwithgreaterexposuretoinformalhousing. Householdsfor
+whommigrationstatusisnotapplicableshowasimilarassociation(OR=1.35,p<0.001);
+thiscategoryshouldbereadasareference-categoryartefactoftheexplicit“notapplicable”
+codingdescribedinSection4ratherthanasasubstantivefinding.
+Socio-economiccoefficientsdisplayasharpgradient. UsingstratumE(thelowest)as
+thereferencecategory,everyhigherstratumshowslowerodds,withthemosteconomically
+vulnerablegroupsshowingthestrongestassociationwithsettlementresidence. Reduced
+povertyseverityisassociatedwithloweroddsofsettlementresidence(OR=0.34,p<0.001),
+andeachadditionalyearofschoolingisassociatedwithlowerodds(OR=0.90,95%CI:
+0.88–0.92,p<0.001). Overcrowdingshowsnosignificantassociationonceoccupational
+categoryandregionareincluded(OR=1.01,p=0.41),withamagnitudeandsignificance
+levelconsiderablysmallerthantheeffectsofoccupationalcategory,nationality,orsocio-
+economicstanding.
+5.2. ModelPerformanceandClassification
+Withtheclassificationthresholdadjustedto0.05,balancedaccuracyreached0.716. Be-
+causecaret’sconfusionMatrix()functionassignsthepositiveclassbydefaulttothemajority
+category(non-campamento),performancemetricsarereportedexplicitlydisaggregatedby
+classtoavoidtheambiguitythatthisconventioncanintroduce: recallfornon-campamento
+householdswas93.1%,recallforcampamentohouseholdswas50.0%,positivepredictive
+value for campamento residence was 12.3%, and negative predictive value was 99.0%.
+The fully labelled confusion matrix, with cell counts, is reported in Table A2. The low
+positivepredictivevalueisadirectconsequenceoftheoutcome’srarity(approximately
+1.9% prevalence in the test set) rather than an indication of poor model discrimination,
+andisconsistentwiththeknownbehaviourofthreshold-adjustedclassifiersappliedto
+rare-eventdata(KingandZeng2001).
+5.3. Robustness
+Re-estimatingthemodelwithCASEN’sregionalexpansionfactor(expr)viasvyglm()
+producedoddsratiosconsistentwiththeunweightedspecificationforthekeypredictorsof
+interest(e.g.,non-LatinAmericannationality: OR=2.08weightedvs. 2.09unweighted;
+self-employment: OR = 1.40 weighted vs. 1.49 unweighted), supporting the claim that
+thereportedassociationsholdundernationallyrepresentativeweightingratherthanre-
+flectinganartefactoftheunweightedsamplecomposition. Varianceinflationfactorsfor
+https://doi.org/10.3390/socsci15100653
+
+### Page 12
+
+Soc.Sci.2026,15,653 12of19
+allcovariatesinthefinalmodelwerebelow2.3(GVIF(1/2·df)),indicatingnoproblematic
+multicollinearity.
+6. Discussion
+Theregressionidentifiesstrongassociationsbetweenlabour-marketposition,foreign
+nationality,andresidenceininformalsettlements;thesefindingsarecompatiblewiththe
+interpretationthatlabour-andmigration-relatedbarrierscontributetohousingexclusion,
+althoughthecross-sectionaldesigndoesnotestablishthecausalmechanisms. Theasso-
+ciations reported above are interpreted in two registers: empirical claims are stated as
+probabilisticassociationsconditionalonthemodel;theLefebvrianreadingthatfollowsis
+aninterpretiveframeworkappliedtothoseassociations,notaclaimtestedbytheregres-
+sion. WhileTECHO-Chile’sregistershadalreadydocumentedthescaleofgrowthwithin
+campamentos, this model puts numbers on the correlates behind that growth. Labour
+precariousnessandinternationalmigrationrankamongthecharacteristicsmoststrongly
+associatedwithinformalresidenceinthemodel,andthesignificantinteractionbetween
+occupationalcategoryandnationalityindicatesthatthetwoaxesoverlap.
+Self-employmentisassociatedwithhigheroddsofresidinginacampamentorelative
+toformalpublic-sectoremployment. Thiseffect,whilesmallerinmagnitudethaninan
+earlierworkingspecificationthatusedamisspecifiedinformalityproxy,issubstantively
+meaningfulandtheoreticallyconsistentwiththeliterature: inChile,formalemployment
+operatesasthepracticalgatewaytothehousingsystem,andsubsidies,mortgages,and
+formaltenancyagreementsmaydependinpracticeondocumentedandstableincome,
+dependingontheprogrammeormarketsegment(Section3). Withoutadocumentedand
+reasonablystableincome,ahouseholdsimplycannotdemonstratethe“institutionallegal-
+ity”demandedbythecurrentsubsidyarchitecture. Housingexclusionandlabourmarket
+exclusionmovetogether,andtheiroverlapbecomesasubstantialbarriertobelonging.
+This helps explain why campamentos persist under a regime that demonstrably
+reducedthequantitativehousingdeficitinpreviousdecades. Theevidencesuggeststhat
+thesubsidymodelwasbuiltaroundaspecificisedtypeof“ideal”beneficiary: households
+capableofdocumentingincome,accumulatingsavingsoveryearsofdeferredconsumption,
+andmaintainingalegalstatusbeforethestatethroughoutprotractedapplicationperiods.
+Manyhouseholdssimplycannotmeetthesecriteria. AsHidalgoDattwyler(2007,2019)has
+argued,themodeldisplacedprecariousnesstotheurbanperiphery. Thecurrentgrowth
+of campamentos suggests that even this peripheral displacement, as a mechanism for
+absorption,hasreacheditslimit.
+Internationalmigrationrepresentsasecondaxisofexclusion,andthescaleofrecent
+changeisdramatic. By2024–2025,47,391migrantfamilieswerelivingincampamentos—
+39.3%ofthenationaltotal. InregionssuchasTarapacáandAntofagasta,migrantsnow
+constitutethemajorityofthesettlementpopulation. Whilethisconcentrationpartlyreflects
+thegeographyofrecentmigratoryflows,italsostemsfromthediscriminatorystructureof
+formalhousingaccessinChile.Discriminationintherentalmarket,residencyrequirements
+embedded in subsidy eligibility, and documentation barriers that filter migrants out of
+formalchannelsaredocumentedbarriers(López-Moralesetal.2018),consistentwithexclu-
+sionarymechanismsthatdisproportionatelyconcentratemigrantsininformalsettlements.
+Thesignificantinteractionbetweenoccupationalcategoryandnationality(H3)suggests
+thatthesetwoaxesappeartooverlapforsomeoccupationalgroups,apatternconsistent
+withtheintersectionaloverlapbetweenmigrationstatusandlabour-marketpositionraised
+inpeerreview.
+Thesocio-economicgradientreinforcesthisreading. Everystratumabove‘E’shows
+a reduced probability of residing in a campamento. There is a persistent gap here: a
+https://doi.org/10.3390/socsci15100653
+
+### Page 13
+
+Soc.Sci.2026,15,653 13of19
+significantsegmentoftheChileanpopulationearnstoolittlefortheprivatemarketandtoo
+irregularlyforeffectiveaccesstosubsidies. Thesehouseholdsinhabitaninstitutional“no-
+man’s-land”—excludedfrommortgagefinancingandpoorlyservedbypublicprogrammes
+inequalmeasure.Thelikelyoutcomesundertheseconstraintsareovercrowding,precarious
+rentalconditions,peripheraldisplacement,orresidenceincampamentos.
+Regionalheterogeneity,confirmedstatisticallybythecategoricalspecification(H4),
+expressesthissameprobleminterritorialterms.Thegrowthofinformalsettlementsconcen-
+trateswherehousingmarketsareunderthegreatestpressure,wheregovernancecapacityis
+thinnest,andwhereformalprovisionhasfailedtoabsorblow-incomedemand. Thesecity-
+levelpatternsaredrawnfromTECHO-Chile’saggregateregister(Section3);theregression
+estimatesregion-levelcoefficients(Table2,TableA1)butdoesnotprovidecity-specificesti-
+mateswithintheregions. Inthesecities,theconflictbetweenlandtreatedasaspeculative
+assetandlandunderstoodasaplaceofrefugeandbelongingisparticularlyacute.
+Returning to the theoretical framework of Section 2, these findings revisit the “cri-
+sis of those with a roof” (los con techo) identified by Rodríguez and Sugranyes (2004).
+TheChileanmodelprovidedaroofformanywhilesimultaneouslyreproducingdistance,
+isolation,andexclusionfromurbanandciviclife—aconditionHidalgoDattwyler(2007)
+conceptualisedasthe“State-ledprecariopolis”(precariópolisestatal). ReadthroughLefeb-
+vre’slens,campamentosmaybeinterpretedasthespacesthroughwhichthemodelabsorbs
+thepopulationitcannotintegrate—aformofspatiallyconstituted“waitinglist”within
+the territory; this is a theoretical interpretation of the associations reported here, not a
+conclusionestablishedbytheregression. Chileanhousingpolicyhasofferedsomethingfar
+narrowerthanLefebvre’srighttothecity: debt-encumberedpropertyforsome,peripheral
+relegationforothers,andexpandinginformalityforthoseexcludedfrombothpaths. The
+evidenceraisesafundamentalquestion: canahousingsystemorganisedaroundformal
+employment,mortgagelogic,andstatesubsidiaryactionevertrulyguaranteebothhousing
+asarightandintegrationasalivedreality? Ontheevidenceassembledhere,itscurrent
+institutionaldesignconstrainsthatpossibility.
+7. Conclusions
+ResidenceininformalsettlementsinChileisassociatedwithlabourmarketposition
+andforeignnationality—twocharacteristicsthatlieattheheartofconstrainedimmigrant
+integration. Thelogisticregressionof2022CASENdata,consideredalongsideTECHO-
+Chile’saggregatetemporalregisters,indicatesthatself-employmentandforeignnationality
+areamongthestrongestobservedcorrelatesofcampamentoresidence,withsignificant
+regionalheterogeneityandamodest,jointlysignificantinteractionbetweenoccupational
+category and nationality, whose specific contrasts the data do not resolve. These are
+preciselytheconditionsthatChile’smarket-orientedhousingmodelisleastequippedto
+address. TheconcurrentaccelerationofsettlementgrowthdocumentedbyTECHO-Chile
+(2024)isconsistentwithreadingthisgrowthasastructuraldynamicassociatedwiththe
+designofthecountry’shousingandlabourinstitutions,withdirectconsequencesforthe
+integrationprospectsofnewcomers.
+Thecontributionofthisworktotheliteratureonimmigrantintegrationandurban
+informalityintheGlobalSouthisthreefold: first,intheempiricallyrobustidentificationof
+campamentocorrelatesusingnationallyrepresentativedata,confirmedthroughsurvey-
+weightedestimation;second,inlinkingindividual-levelsurveyevidencewithaggregate
+temporaltrends;andthird,insituatingtheChileanexperiencewithinbroaderdebateson
+labourprecariousness, migrationgovernance, andthestructurallimitsofdemand-side
+housingpolicyasanintegrationmechanism.
+https://doi.org/10.3390/socsci15100653
+
+### Page 14
+
+Soc.Sci.2026,15,653 14of19
+7.1. ImplicationsforIntegrationPolicyandPractice
+The following recommendations are normative, evidence-informed proposals, in-
+formedbytheassociationsreportedaboveandbythewiderliterature;theregressiondoes
+notbyitselfevaluatetheireffectiveness. Eachisspecifiedintermsofitsinstrument,target
+population,responsibleinstitution,evidentiarybasis,andimplementationconstraint.
+First, regarding subsidy eligibility: the instrument is the modification of income
+verificationruleswithinDecretoSupremoN◦ 49;thetargetpopulationisself-employed
+andinformallyemployedworkers;theresponsibleinstitutionisMINVU;theevidentiary
+basisisthesignificantassociationbetweenself-employmentandcampamentoresidence
+(OR = 1.49); the implementation constraint is the administrative difficulty of verifying
+non-standardincome,thoughthiscomplementsratherthansubstitutesstructurallabour-
+formalisationpolicy. Acceptingnon-standardworkrecordsandimplementingincome-
+averagingmechanismsarecrucialtomeetSDG8.3(DecentWorkandEconomicGrowth).
+Second,regardingresidencythresholds:theinstrumentistheeliminationoftheCertifi-
+cadodePermanenciaDefinitivarequirementforhousingsubsidies;thetargetpopulationis
+internationalmigrants;theresponsibleinstitutionisMINVU/DepartamentodeExtranjería;
+the evidentiary basis is the elevated odds for foreign nationals (OR = 2.06 to 2.09); the
+constraintispoliticalresistance. AligningwithSDGs10.7(ReducedInequalities)and11.1
+(SustainableCitiesandCommunities)necessitatesextendingeligibilitytoallregularresi-
+dents(definedlegallyasholdersofpermanentortemporaryresidenceunderLey21.325)
+andenforcinganti-discriminationmeasuresinprivaterentalmarkets.
+Third, regardingsettlementheterogeneity: theinstrumentistheapplicationofthe
+TECHO-ChileandDéficitCero(2024)typologiesfordifferentiatedinterventions;thetar-
+getpopulationisspecificcampamentoprofiles;theresponsibleinstitutionsareregional
+SEREMIsandmunicipalities;theevidentiarybasisisthedocumenteddiversityofsettle-
+mentdrivers,reinforcedbytheconfirmedregionalheterogeneityintheregression(H4);the
+constraintisthefragmentationofmunicipalcapacities. Interventionsmustbecalibratedto
+thespecificdriversofeachsettlementratherthanrelyingonuniformrelocationstrategies.
+Fourth,regardinginteriminfrastructure:theinstrumentistheprovisionofbasicwater,
+sanitation,andelectricityinsitu;thetargetpopulationiscurrentcampamentoresidents;
+theresponsibleinstitutionsaremunicipalitiesandutilitycompanies;theevidentiarybasis
+is the national deficit of 650,000 units, which precludes immediate formal absorption;
+theconstraintistenuresecurityandlegalframeworks. Providinginteriminfrastructure
+prevents public health crises and preserves vital social and employment networks that
+underpin integration. Incremental urban integration should be viewed as a legitimate
+policytrajectory(MinisteriodeViviendayUrbanismo2014).
+Finally, regarding governance: the instrument is the decentralisation of housing
+andintegrationpolicyfunding; thetargetpopulationisresidentsofintermediatecities
+andregionswiththehighestregionalcoefficients(e.g., Antofagasta, ViñadelMar); the
+responsibleinstitutionsareGobiernosRegionales(GOREs); theevidentiarybasisisthe
+statisticallyconfirmedterritorialconcentrationofsettlementgrowth;theconstraintisthe
+need for equalisation mechanisms to prevent regional disparities. Regional authorities
+require the funding and autonomy needed to address the fragmented governance that
+ECLAC(RodríguezandOviedo2001)identifiesasapersistentbarriertoeffectiveprovision.
+7.2. Limitations
+Several limitations qualify the conclusions that can be drawn, distinguished by
+whethertheyaffectcausalinferenceorprediction.
+Causalinference: thecross-sectionaldesignmeansthereportedoddsratiosareassoci-
+ationsconditionalonincludedcovariates,notcausaleffects;labourinformality,housing
+https://doi.org/10.3390/socsci15100653
+
+### Page 15
+
+Soc.Sci.2026,15,653 15of19
+exclusion,andmigrationstatusmayreinforceoneanotherovertimeinwaysthisdesign
+cannotdisentangle;selectionintoinformalemploymentandintocampamentoresidence,
+andunobservedconfounding(discriminationexperiences,socialnetworks,localhousing
+pricesandsupplyconditions,householdcomposition,migrationtrajectories),maybias
+coefficients;foreignnationalityservesasaproxyformigrationstatus,sinceCASENrecords
+neitherlegalresidencestatusnordurationofresidence;nationalitycategoriesmayconceal
+heterogeneity across migrant groups (refugee versus labour-migration pathways, legal
+statusdifferences,lengthofresidencecannotbedisaggregatedwiththevariablesavail-
+able);gender,householdcomposition,andotherintersectingaxesofvulnerabilityarenot
+analysedhereandrepresentapriorityforfutureintersectionalresearch;andthefive-year
+internal-migrationwindowmaymissshort-termdynamics.
+Measurementandspecification: missingvaluesreflectinggenuineskippatterns(mi-
+grationorigin,educationalattainment)werecodedasanexplicit“notapplicable”category
+ratherthanmergedwiththereferencelevel,whilemissingvalueswithtrivialgenuinemiss-
+ingnessrateswererecodedtozero,followingthesurvey’streatmentofnon-applicableitems;
+survey-weightedestimationusingCASEN’sregionalexpansionfactorwasconductedas
+a robustness check and produced results consistent with the unweighted specification,
+thoughfullcomplex-samplevarianceestimation(incorporatingstrataandprimarysam-
+pling units) was not implemented; variance inflation factors indicated no problematic
+collinearityamongcovariates;regionwasmodelledasacategoricalfactorwithconfirmed
+jointsignificance;andhousing-priceandsupplyconditionsremainunobserved.
+Prediction: thelowprevalenceoftheoutcome(2.07%)limitspositivepredictivevalue
+evenafterthresholdadjustment(12.3%atthe0.05threshold);thethresholdadjustment
+isaclassificationdecision,notabiascorrection,andbias-reducedestimators(e.g.,Firth’s
+penalised likelihood) were not applied; and entry into, persistence in, or exit from a
+campamentocannotbeobserved.
+Finally, TECHO-Chile’s registers are successive aggregate counts with changing
+methodologyacrosseditions,sotemporalcomparisonsareindicativeratherthanexact,
+and no direct measures of housing prices, discrimination, or subsidy applications and
+rejectionsareavailable. Quantitativemodelscannotcaptureresidents’livedexperiences
+ormicro-leveldecision-making,necessitatingcomplementaryethnographicresearchon
+integration trajectories (Hosseini et al. 2023; Vergara-Perucich and Arias-Loyola 2021).
+These limitations define the boundary within which the associations reported here are
+interpretedandsetaconcreteagendaforfutureresearch.
+Futureresearchshouldcomplementthiscross-sectionalquantitativeapproachwith
+longitudinalpanelmethodscapableofestablishingcausaldirection,withqualitativefield-
+worktocapturethelivedexperiencesofresidentsandthemicro-leveldecision-making
+processes through which households navigate structural exclusion and pursue—or are
+denied—integration,andwithanexplicitlyintersectionalframeworkincorporatinggender
+andhouseholdcomposition. Thetypologicaldifferentiationofcampamentosproposedby
+TECHO-ChileandDéficitCero(2024)alsoopensaresearchagendaonsettlementhetero-
+geneitythatthisanalysis,bynatureofworkingwithaggregatesurveydata,cannotpursue.
+Funding:ThisresearchwasfundedbyVicerrectoríadeInvestigaciónofUniversidaddeLasAméricas
+throughitsprogrammeofsupportingopenaccesspublications.
+InstitutionalReviewBoardStatement: Thisstudyreliesexclusivelyonsecondary,de-identified
+microdatafromthe2022CASENsurvey(EncuestadeCaracterizaciónSocioeconómicaNacional),a
+publiclyavailablenationalsurveyadministeredbytheChileanMinistryofSocialDevelopmentand
+Family,whichdoesnotrequireadditionalinstitutionalreviewforsecondaryanalysis.
+https://doi.org/10.3390/socsci15100653
+
+### Page 16
+
+Soc.Sci.2026,15,653 16of19
+InformedConsentStatement:Thisstudydidnotinvolvedirectcontactwithhumanparticipants;it
+reliesexclusivelyonanonymisedsecondarydatafromthepubliclyavailable2022CASENsurvey.
+DataAvailabilityStatement:TheCASEN2022datasetispubliclyavailablefromtheChileanMinistry
+ofSocialDevelopmentandFamilyObservatorioSocial(http://observatorio.ministeriodesarrollosocial.
+gob.cl,accessedon23August2026). TECHO-Chilesettlementregistersarepubliclyavailableat
+https://www.techo.org/chile/(accessedon23August2026).
+Acknowledgments:TheauthorthankstheNúcleodeInvestigaciónCentroProduccióndelEspacioat
+UniversidaddeLasAméricasforinstitutionalsupport.Theauthordisclosestheuseofgenerative
+artificialintelligencetools,specificallyClaudeSonnet5andQwen3.8Max,fortexteditingtoreduce
+length,foreditingtheformattingofcitations,andforsometranslationsfromSpanishintoEnglish.
+Thesetoolswereusedsolelyaswriting-assistanceaids;alloutputswerereviewedandverifiedbythe
+author,whoassumesfullauthorshipandresponsibilityforthecontentofthismanuscript.
+ConflictsofInterest:Theauthordeclaresnoconflictsofinterest.
+AppendixA
+TableA1.Regioncoefficients.
+Region OR 95%CI p Sig
+Metropolitana(ref.) 1.00(ref.) — —
+Tarapacá 2.07 1.69–2.53 p<0.001 ***
+Antofagasta 4.69 3.94–5.57 p<0.001 ***
+Atacama 3.38 2.83–4.02 p<0.001 ***
+Coquimbo 0.35 0.24–0.51 p<0.001 ***
+Valparaíso 1.91 1.61–2.27 p<0.001 ***
+O’Higgins 0.89 0.71–1.11 0.309
+Maule 0.14 0.09–0.22 p<0.001 ***
+Biobío 0.97 0.80–1.17 0.732
+LaAraucanía 0.97 0.79–1.19 0.781
+LosLagos 1.38 1.12–1.70 0.003 **
+Aysén 1.15 0.80–1.66 0.454
+Magallanes 0.21 0.11–0.44 p<0.001 ***
+LosRíos 1.23 0.98–1.55 0.069
+AricayParinacota 2.12 1.73–2.59 p<0.001 ***
+Ñuble 0.28 0.19–0.40 p<0.001 ***
+Note:Referencecategory:RegiónMetropolitanadeSantiago.Significance:***p<0.001;**p<0.01.
+Jointlikelihoodratiotestforregion:∆deviance=1148.6,df=15,p<0.001.
+TableA2.Confusionmatrixforthelogisticregressionmodel,testset(classificationthreshold=0.05).
+Actual: Actual:
+Total
+Campamento Non-Campamento
+Predicted: campamento 384 2738 3122 PPV=12.3%
+Predicted:
+384 36,940 37,324 NPV=99.0%
+non-campamento
+Total 768 39,678 40,446
+Classrecall 50.0% 93.1% Balancedaccuracy=71.6%
+Note:Testset(n=40,446);classificationthreshold=0.05;prevalenceofcampamentoresidence=1.9%.
+Thepositiveclassreportedhereiscampamentoresidence.Becausecaret’sconfusionMatrix()assigns
+thepositiveclassbydefaulttothemajoritycategory,allmetricsarereporteddisaggregatedbyclass
+toavoidambiguity.PPV=positivepredictivevalue;NPV=negativepredictivevalue.
+https://doi.org/10.3390/socsci15100653
+
+### Page 17
+
+Soc.Sci.2026,15,653 17of19
+Notes
+1 UnderDecretoSupremoN◦49(MinisteriodeViviendayUrbanismo2011),regulatingtheFondoSolidariodeEleccióndeVivienda
+(SolidarityFundforHousingChoice),foreignapplicantsmustpresentaCertificadodePermanenciaDefinitiva(Permanent
+ResidencyCertificate),andallapplicantsmustberegisteredintheRegistroSocialdeHogares(SocialHouseholdRegistry),Chile’s
+means-testedsocio-economicregistrywhoseeligibilityassessmentrequiresverifiableincomerecords.
+2 CASEN(EncuestadeCaracterizaciónSocioeconómicaNacional/NationalSocioeconomicCharacterisationSurvey)isChile’s
+principalhouseholdsurvey,administeredbytheMinisteriodeDesarrolloSocialyFamilia.
+3 NSE(nivelsocioeconómico)referstoChile’sstandardhouseholdsocio-economicstratification,constructedinCASENfrom
+theeducationalattainmentandoccupationalcategoryofthehouseholdheadfollowingtheESOMARmodeladaptedforthe
+Chileanmarket-researchcontext(AdimarkGfK2010). Thescaleordershouseholdsintosixaggregatestrata,fromhighestto
+lowestsocio-economicstanding:ABC1(upperandupper-middlegroups,conventionallyaggregatinglevelsA,BandC1),C2
+(middle),C3(lower-middle),D(workingclass)andE(householdsinsituationsofextremevulnerability),withEservingasthe
+referencecategoryinTable2. Becausetheclassificationrestsonthehead’seducationandoccupationratherthandirectlyon
+income,itcapturesdurablesocio-economicpositionandpartiallyoverlapswith—butisnotreducibleto—theincomedeciles
+reportedseparatelyinthesamemodel.
+References
+AbufheleMilad,Valentina.2023.ThereproductionofinformalsettlementsinSantiago:Housingpolicy,cyclesofrepopulationandthe
+‘politicsofpoverty’asaregimeofgovernment.UrbanStudies61:294–312.[CrossRef]
+Acuña,José,andJuanBravo.2025.EstudioIntegralSobrelaInformalidadLaboralenChile.Santiago:ObservatoriodeContextoEconómico,
+UniversidadDiegoPortales.
+AdimarkGfK.2010. MapaSocioeconómicodeChile: NivelSocioeconómicodelosHogaresdelPaísBasadoenDatosdelCenso. Santiago:
+AdimarkGfK.
+Ager,Alastair,andAlisonStrang.2008.Understandingintegration:Aconceptualframework.JournalofRefugeeStudies21:166–91.
+[CrossRef]
+Alegría,Víctor,andKimDovey.2024.MorphogenesisofcontemporaryinformalsettlementinChile.UrbanDesignInternational29:
+171–87.[CrossRef]
+Alegría-Corona,Víctor.2024.Morfologíasurbanasdelaciudadinformal:Lógicasypatronesespacialesenlasáreasmetropolitanas
+chilenas.CiudadyTerritorioEstudiosTerritoriales56:225–42.[CrossRef]
+Alene,EndalewTerefe.2022.DeterminantfactorsfortheexpansionofinformalsettlementinGondarcity,NorthwestEthiopia.Journal
+ofUrbanManagement11:321–37.[CrossRef]
+Arias-Loyola,Martín,andFranciscoVergara-Perucich. 2021. Co-producingtherighttofail: Resilientgrassrootcooperativismina
+Chileaninformalsettlement.InternationalDevelopmentPlanningReview43:33–62.[CrossRef]
+Aroca,Patricio,andMiguelAtienza. 2008. LaconmutaciónregionalenChileysuimpactoenlaRegióndeAntofagasta. EURE34:
+97–120.[CrossRef]
+Baye,Fentaw,FissehaWegayehu,andSolomonMulugeta.2020.Driversofinformalsettlementsattheperi-urbanareasofWoldia:
+Assessmentondemographicandsocio-economictriggerfactors.LandUsePolicy95:104573.[CrossRef]
+Celhay,PabloA.,andDiegoGil.2020.Thefunctionandcredibilityofurbanslums:Evidenceoninformalsettlementsandaffordable
+housinginChile.Cities99:102605.[CrossRef]
+CentrodeEstudiosPúblicos(CEP).2024.DualidadenPercepcionesdelaOlaMigratoriaenChile.Santiago:VocesdelCEP.
+COES—CentrodeEstudiosdeConflictoyCohesiónSocial.2023.NotadeInvestigación:CampamentosenChile,DimensionesdelProblema
+Habitacional.Santiago:COES.
+Contreras,Yasna,LauraNeville,andRodrigoGonzález.2019.In-formalityinaccesstohousingforLatinAmericanmigrants:Acase
+studyofanintermediateChileancity.InternationalJournalofHousingPolicy19:411–35.[CrossRef]
+Cortés-Urra,Valentina,DarinkaCzischke,andVincentGruis.2024.Addressinghousingdeficitsfromamulti-dimensionalperspective:
+AreviewofChileanhousingpolicy.InternationalJournalofHousingPolicy24:546–60.[CrossRef]
+Desai,Vandana,andAlexLoftus.2013.Speculatingonslums:InfrastructuralfixesininformalhousingintheGlobalSouth.Antipode
+45:789–808.[CrossRef]
+Dohnke,Jan,DirkHeinrichs,SigrunKabisch,KerstinKrellenberg,andJulianeWelz.2015.Achievingasocio-spatialmix?Prospects
+andlimitationsofsocialhousingpolicyinSantiagodeChile.HousingStudies30:839–57.[CrossRef]
+Fields,Desiree,andSabinaUffer.2016.Thefinancialisationofrentalhousing:AcomparativeanalysisofNewYorkCityandBerlin.
+UrbanStudies53:1486–502.[CrossRef]
+Garcés,Antonia,andFlaviaGarcía.2021.InformeCASENyMigración:BrechasdeGéneroDentrodelMercadoLaboral.Santiago:Servicio
+JesuitaaMigrantes.
+https://doi.org/10.3390/socsci15100653
+
+### Page 18
+
+Soc.Sci.2026,15,653 18of19
+García,GustavoA.,ErikaRaquelBadillo,andJuanManuelAristizábal.2024.Housinginformalityandlaborinformalityinspace:In
+searchofthemissinglinks.AppliedSpatialAnalysisandPolicy17:923–49.[CrossRef]
+Helble,Matthias,SomikVinayLall,andErnestoMarinaoPernia. 2020. HousinginAsiaandthePacific. Tokyo: AsianDevelopment
+BankInstitute.
+Hidalgo,Rodrigo.2002.ViviendasocialyespaciourbanoenSantiagodeChile:UnamiradaretrospectivaalaaccióndelEstadoenlas
+primerasdécadasdelsigloXX.EURE28:83–106.[CrossRef]
+HidalgoDattwyler,Rodrigo.2007.¿Seacabóelsueloenlagranciudad?Lasnuevasperiferiasmetropolitanasdelaviviendasocialen
+SantiagodeChile.EURE33:57–75.[CrossRef]
+HidalgoDattwyler,Rodrigo.2019.LaViviendaSocialenChileylaConstruccióndelEspacioUrbanoenelSantiagodelSigloXX.Santiago:
+PontificiaUniversidadCatólicadeChile.
+HidalgoDattwyler,Rodrigo,AbrahamPaulsen,AlexPaulsen,andJoséFranciscoVergara-Perucich.2026.UrbanNeofracturesand
+LandMafias: CriminalisedInformality,PropertyViolenceandthePoliticsofHousinginChileanCities. Antipode58: e70204.
+[CrossRef]
+Hosmer,DavidW.,andStanleyLemeshow.2000.AppliedLogisticRegression,2nded.NewYork:Wiley.
+Hosseini,Ali,BrandonMarcFinn,andAliMomeni.2023.Thecomplexitiesofurbaninformality:Amulti-dimensionalanalysisof
+residents’perceptionsoflife,inequality,andaccessinanIranianinformalsettlement.Cities132:104099.[CrossRef]
+InstitutoNacionaldeEstadísticas(INE).2020.MigraciónInternaenChile:CensodePoblaciónyVivienda2017.Santiago:INE.
+InstitutoNacionaldeEstadísticas(INE),andServicioNacionaldeMigraciones(SERMIG).2023. EstimacióndePersonasExtranjeras
+ResidentesHabitualesenChileal31deDiciembrede2022;Santiago:INE–SERMIG.
+King,Gary,andLangcheZeng.2001.Logisticregressioninrareeventsdata.PoliticalAnalysis9:137–63.[CrossRef]
+Lefebvre,Henri.1996.WritingsonCities.EditedandTranslatedbyEleonoreKofman,andElizabethLebas.Oxford:Blackwell.
+Lépore,Eduardo,andSimcaSimpsonLapp.2018.Concentratedpovertyandneighbourhoodeffects:YouthmarginalisationinBuenos
+Aires’informalsettlements.OxfordDevelopmentStudies46:28–44.[CrossRef]
+Lonardoni,Fernanda,andJeanClaudeBolay.2016.Rentalhousingandtheurbanpoor:Understandingthegrowthandproductionof
+rentalhousinginBrazilianfavelas.InternationalJournalofUrbanSustainableDevelopment8:49–67.[CrossRef]
+López-Morales,Ernesto,PabloFloresPineda,andHernánOrozcoRamos.2018.InmigrantesencampamentosenChile:¿mecanismo
+deintegraciónoefectodeexclusión?RevistaINVI33:161–87.[CrossRef]
+MinisteriodeViviendayUrbanismo. 2011. DecretoSupremoN◦ 49: ReglamentodelProgramaFondoSolidariodeEleccióndeVivienda;
+Santiago:DiarioOficialdelaRepúblicadeChile.
+Ministerio de Vivienda y Urbanismo. 2014. Política Nacional de Desarrollo Urbano: Ciudades Sustentables Y Calidad de Vida; Santi-
+ago:MINVU.
+NascimentoNeto,Paulo,andLuisSalinasArreortúa. 2020. FinancializationofhousingpoliciesinLatinAmerica: Acomparative
+perspectiveofBrazilandMexico.HousingStudies35:1633–60.[CrossRef]
+Niva,Venla,MaijaTaka,andOlliVaris.2019.Rural-urbanmigrationandthegrowthofinformalsettlements:Asocio-ecologicalsystem
+conceptualizationwithInsightsThrougha“WaterLens”.Sustainability11:3487.[CrossRef]
+Özler,SerifeI˙lgü.2012.TheConcertaciónandhomelessnessinChile:Market-basedhousingpoliciesandlimitedpopularparticipation.
+LatinAmericanPerspectives39:53–70.[CrossRef]
+Ren,Xuefei. 2018. Governingtheinformal: HousingpoliciesoverinformalsettlementsinChina,India,andBrazil. HousingPolicy
+Debate28:79–93.[CrossRef]
+Rodríguez,Alfredo,andAnaSugranyes.2004.Elproblemadeviviendadelos‘contecho’.EURE30:53–65.[CrossRef]
+Rodríguez,Alfredo,andEnriqueOviedo.2001.GestiónUrbanayGobiernodeÁreasMetropolitanas.SerieMedioAmbienteyDesarrollo;
+Santiago:NacionesUnidas,CEPAL,DivisióndeMedioAmbienteyAsentamientosHumanos.
+Rodríguez,Jorge,andDanielaGonzález.2006.RedistribucióndelaPoblaciónyMigraciónInternaenChile.Santiago:CEPAL/CELADE.
+Rogerson,ChristianM.2018.InformalityandmigrantentrepreneursinCapeTown’sinnercity.BulletinofGeography.Socio-Economic
+Series40:157–71.[CrossRef]
+ServicioJesuitaaMigrantes(SJM).2024.AnuariodeEstadísticasMigratorias.Santiago:SJM.
+TECHO-Chile.2021.CatastroNacionaldeCampamentos2021.Santiago:TECHO-Chile.
+TECHO-Chile.2024.CatastroNacionaldeCampamentos2024–2025.Santiago:TECHO-Chile.
+TECHO-Chile,andDéficitCero.2024.TipologíasdeCampamentosenChile:HaciaunaPolíticaDiferenciada.Santiago:TECHO-Chile.
+Vergara-Perucich,Francisco,andMacarenaBarramuño.2023.Habitarlainformalidadmulticultural:Repensarlapolíticahabitacional
+desdeelmacrocampamentoLosArenales.RevistaAUS33:41–49.[CrossRef]
+Vergara-Perucich,Francisco,andMartinArias-Loyola.2021.Communitymappingwithapublicparticipationgeographicinformation
+systemininformalsettlements.GeographicalResearch59:268–84.[CrossRef]
+Vergara-Perucich,Francisco,andMartínArias-Loyola.2025.Contestingtherighttosustainablecitiesunderneoliberalism:Thecaseof
+MacrocampamentoLosArenales,Chile.UrbanPlanning10:10051.[CrossRef]
+https://doi.org/10.3390/socsci15100653
+
+### Page 19
+
+Soc.Sci.2026,15,653 19of19
+Vergara-Perucich,Francisco,MartínArias-Loyola,andCamilloBoano,eds.2023.LosArenales:HaciaElDerechoaLaCiudad.Santiago:
+SangríaEditora.
+Vergara-Perucich, Francisco, Xenia Fuster-Farfán, Ignacio Rojas Rubio, Rodrigo Hidalgo Dattwyller, Sasha Rincón Quiroz, Juan
+CamiloÁlvarez,VoltaireAlvaradoPeterson,OliverMeseguerRuiz,andFabiánLizanaVásquez.2022.Viviendainformalylas
+organizacionesterritorialesenAméricaLatina.RevistadegeografíaNorteGrande81:5–14.[CrossRef]
+Vergara-Perucich,JoséFrancisco. 2018. Aplicacionesdelateoríaimplosión/explosión: RelaciónentrelaRegiónMetropolitanade
+SantiagodeChileylosterritoriosproductivosregionales.EURE44:71–90.[CrossRef]
+Vergara-Perucich,José-Francisco,andMartínArias-Loyola. 2019. Breadforadvancingtherighttothecity: Academia,grassroots
+groupsandthefirstcooperativebakeryinaChileaninformalsettlement.Environment&Urbanization31:533–51.[CrossRef]
+Yin,Jun,MaoYe,andMinYe.2019.HousingaffordabilityandtheurbanhousinggapinChina.HabitatInternational83:19–28.
+Yunda,JuanGuillermo,andBjørnSletto.2017.Housingpolicy,inequitableplanningandinformalperipheryinLatinAmerica.Habitat
+International67:111–20.
+Disclaimer/Publisher’sNote: Thestatements, opinionsanddatacontainedinallpublicationsaresolelythoseoftheindividual
+author(s)andcontributor(s)andnotofMDPIand/ortheeditor(s).MDPIand/ortheeditor(s)disclaimresponsibilityforanyinjuryto
+peopleorpropertyresultingfromanyideas,methods,instructionsorproductsreferredtointhecontent.
+https://doi.org/10.3390/socsci15100653
+
