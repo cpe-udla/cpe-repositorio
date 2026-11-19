@@ -163,6 +163,9 @@ a.card:focus-visible .tag,a.card:focus-visible .meta{color:var(--paper)}
 .project .years{font-size:.8rem;color:var(--gray);letter-spacing:.05em}
 .project h3{font-size:1.05rem;font-weight:500;margin:12px 0 6px;max-width:60ch;line-height:1.45}
 .project .role{font-size:.82rem;color:var(--gray);text-transform:uppercase;letter-spacing:.08em}
+.project .proj-link{margin-top:8px;font-size:.82rem;text-transform:uppercase;letter-spacing:.08em}
+.project .proj-link a{color:var(--ink);text-decoration:underline;text-underline-offset:3px}
+.project .proj-link a:hover,.project .proj-link a:focus-visible{background:var(--ink);color:var(--paper);outline:none}
 
 /* publicaciones */
 .pub-tools{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:34px;align-items:center}
